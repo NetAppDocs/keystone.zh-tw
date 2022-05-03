@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/legal-notices.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsfaq_keystone_subscription.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsfaq_netapp_service_engine_self-service_access_portal.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsfaq_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsfaq_service_offer_details.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm-keystone-and-aiq.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_data_protection.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_equinix.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_keystone_service_capacity_definitions.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_keystone_service_delivery_architecture_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_kfs_billing.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_netapp_global_services_and_support_center_@gssc@.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_nrd.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_performance.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_service_level_metrics_and_definitions.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_service_terms_and_description_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_site_requirements.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_tenancy_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_tiering.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/nkfsosm_uscs.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/rn_fixed_issues.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/rn_known_issues.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/rn_whats_new.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_@consumer@_administration_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_administrator_apis_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_authorization_and_authentication.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_backups_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_block_storage_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_cloud_orchestration_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_consumer_apis_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_file_services_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_jobs.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_netapp_service_engine_rest_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_object_storage_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_ontap_clusters.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_overview_of_netapp_service_engine_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_regions.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_reporting_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_service_levels.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_service_requests.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_storagegrid_instances.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_subnets_apis.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_subtenants.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_tenants.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_users.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/seapiref_zones.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone//search.html</loc>
+      
+      <lastmod>2022-05-03T05:32:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_add_a_subscribed_service.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_add_a_user.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_alerts.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_back_up_file_shares_and_disks.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_billing.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_a_disk_from_a_snapshot.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_a_file_server.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_a_new_disk.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_a_new_file_share.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_adhoc_snapshot_of_a_file_share.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_an_adhoc_snapshot_of_a_disk.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_an_object_storage_group.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_an_s3_key_for_a_user.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_buckets.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_file_share_from_snapshot.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_create_object_storage_user.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_dashboard.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_define_network_configurations.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_delete_a_disk.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_delete_a_file_share.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_delete_a_subscribed_service.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_delete_a_user.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_delete_an_object_storage_group.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_delete_an_s3_key_for_a_user.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_delete_file_server.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_getting_started_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_initialize_object_storage.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_log_in_to_the_netapp_service_engine_web_interface.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_azure_capacity_pools.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_azure_netapp_accounts.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_azure_volumes.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_gcp_cvs.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_service_requests_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_subscribed_services_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_subscriptions.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_tenants_and_subtenants.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_modify_a_disk.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_modify_a_file_share.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_modify_an_object_storage_group.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_modify_an_object_storage_user.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_modify_file_server.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_modify_the_subscribed_service_details.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_modify_user_details.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_netapp_service_engine_web_interface_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_partner_service_provider.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_raise_a_service_request.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_select_tenant.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_service_request_process.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_track_a_service_request.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_view_a_list_of_subscribed_services.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_view_a_list_of_users.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_view_buckets.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_view_disks.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_view_host_groups.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_view_servers.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_view_shares.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_view_the_object_storage_group_and_users.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_working_with_block_storage_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_working_with_file_services_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_working_with_object_storage_overview.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/keystone/sewebiug_working_with_reports.html</loc>
+      
+      <lastmod>2022-05-03T05:32:32+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
