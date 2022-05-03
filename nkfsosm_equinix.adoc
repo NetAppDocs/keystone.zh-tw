@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_equinix.html 
+keywords: netapp, keystone, Equinix 
+summary: Keystone Flex 訂閱與 Equinix 
+---
+= 採用 Equinix 技術的 Flex 訂購
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 已與 Equinix 合作、在 NetApp Keystone Equinix 資料中心內代管以 FlexData 訂閱（ Flex 訂閱）的功能、確保為您提供統一化的解決方案。
+
+採用 Equinix 技術的 Flex 訂購與標準 Flex 訂閱方案不變。
+
+除了標準的 Flex 訂閱服務、您還需要選擇 Equinix 資料中心來裝載您的 Flex 訂閱設備。

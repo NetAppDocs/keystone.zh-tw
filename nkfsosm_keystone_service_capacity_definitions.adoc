@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_keystone_service_capacity_definitions.html 
+keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
+summary: Keystone 服務容量定義 
+---
+= 彈性訂閱服務容量定義
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+《 Flex訂購 》（ Flex 訂購）服務容量包括： NetApp Keystone
+
+
+
+== 邏輯容量
+
+這是客戶放入 Flex 訂購基礎架構的資料。所有 Flex 訂閱容量均指邏輯容量。例如、如果一個 1 TiB 檔案儲存在 Flex 訂閱基礎架構上、則必須購買至少 1 個 TiB 容量。
+
+
+
+== 承諾容量
+
+每月在期限內計費的最低邏輯容量：
+
+* 容量是針對每個效能層級所承諾。
+* 承諾容量在期限內無法減少。
+* 在期限內、您可以新增承諾的容量和額外的效能等級。
+
+
+
+
+=== 已認可容量的變更
+
+在訂閱期間、您可以變更已提交的容量。不過、有些先決條件是：
+
+* 提交的容量無法減少
+* 承諾的容量不得在您的訂閱到期前 90 天增加、除非該訂閱將續約 12 個月。
+* 您可以透過 NetApp 服務引擎介面或 Keystone Success Manager 要求變更已提交的容量。如需要求變更的相關資訊、請參閱 link:sewebiug_raise_a_service_request.html["提出服務要求"]。
+
+
+
+
+== 突發容量
+
+這是超出已提交容量的邏輯容量。請注意以下幾點：
+
+* 彈性訂閱服務提供超過承諾容量 20% 的容量。
+* 突發容量可以彈性使用、並依每日耗用的平均來收費。
+* 高達 20% 的突發容量會以與已認可容量相同的速率充電。
+* 超過 20% 的突發容量會以高費率收費。如有任何額外的連絡要求超過 20% 、請聯絡支援部門。
+
+
+
+
+== 已用 / 已配置的容量
+
+耗用容量是指服務目前使用的儲存設備 TiB 容量。Flex 訂閱服務會將特定效能服務層級上所有磁碟區的已配置大小總和（而非所使用的邏輯或實體容量）視為該效能服務層級的已用容量。這包括：
+
+* 透過建立、修改、刪除或潛在的磁碟區自動成長來配置的容量。
+* Snapshot 複本與複製。
++
+
+NOTE: 儲存在已配置容量內的資料量、或是實際寫入磁碟的資料量、都不會納入考量。
+
+
+
+
+
+== 計費容量
+
+每月帳單 = （提交容量 [TiB] * 提交率 [$/TiB] ） + （每日平均資源配置突發容量 [TiB] * 資源暴增率 [$/TiB] ）。每月帳單包含根據承諾容量所計算的最低費用。
+
+每月帳單金額會根據每日平均突發容量使用量而異、超過最低收費。如需帳單的詳細資訊、請參閱 link:nkfsosm_kfs_billing.html["彈性訂閱帳單"]。

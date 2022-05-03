@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_buckets.html 
+keywords: netapp, keystone, view, buckets, 
+summary: Keystone 檢視儲存區 
+---
+= 檢視儲存庫
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+「庫位」清單會顯示所選子租戶的現有庫位。
+
+. 若要檢視清單、請從功能表中選取「物件儲存」 > 「儲存區」。
+. 如有需要、請使用子租戶下拉式功能表選取其他子租戶。
++
+顯示每個儲存桶的簡單資訊、例如：
+
++
+** 名稱
+** 建立日期
+** 使用量
++
+如需如何使用清單功能的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視"]。
+
+
+
+

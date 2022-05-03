@@ -1,0 +1,387 @@
+---
+sidebar: sidebar 
+permalink: seapiref_tenants.html 
+keywords: netapp, keystone, tenants, 
+summary: Keystone 租戶 
+---
+= 租戶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用下表所列的方法擷取、建立、修改及刪除租戶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 
+
+
+| 《 Get 》（取得） | 《 v2.1 / 租戶》 | 擷取所有租戶的清單。 
+
+
+| 《 Get 》（取得） | 「 v2.1 / 租戶 / ｛ id ｝ 」 | 依租戶 ID 擷取租戶。 
+
+
+| 貼文 | 《 v2.1 / 租戶》 | 建立新租戶。 
+
+
+| 《投入》 | 「 v2.1 / 租戶 / ｛ id ｝ 」 | 修改租戶的詳細資料。 
+
+
+| " 刪除 " | 「 v2.1 / 租戶 / ｛ id ｝ 」 | 刪除租戶。 
+|===
+
+
+=== 租戶屬性
+
+下表列出租戶屬性。
+
+|===
+| 屬性 | 類型 | 說明 
+
+
+| "id" | 字串 | 租戶的唯一識別碼。 
+
+
+| 代碼 | 字串 | 代表租戶的客戶指定（或預設）代碼。此屬性可以包含大小寫字母、數字和底線。 
+
+
+| 名稱 | 字串 | 租戶名稱。 
+
+
+| 期望地點：上海市市轄區 | 字串 | 所學專業：電子商務 
+
+
+| 期望地點：上海市市轄區 | 字串 | 所學專業：金融學 
+
+
+| 「描述」 | 字串 | 租戶的描述。 
+
+
+| 使用量 | – | 適用於租戶的服務與服務詳細資料。對於每個服務層級、此屬性會顯示下列項目： * 名稱： * 服務層級名稱 * 已用 _Size_GB ： * 服務層級名稱 * 角色名稱： * 使用者角色（使用者、管理員、讀取、合作夥伴或 root ） 
+|===
+
+
+=== 擷取所有租戶
+
+使用下表所列的方法擷取所有租戶或所有租戶的子集。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | 《 v2.1 / 租戶》 | 擷取所有租戶。 | 「偏移」和「限制」–請參閱 link:seapiref_netapp_service_engine_rest_apis.html#pagination>["常見分頁"] 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 2 records.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 2,
+    "total_records": 23,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 2,
+    "records": [
+      {
+        "id": "5e7c3af7aab46c00014ce877",
+        "name": "MyTenant",
+        "zuora_account_name": "MyAccount",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "mytenantcode",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 10,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 1.94,
+              "committed": 30,
+              "burst": 0
+            }
+          ],
+          "A-S00004566": [
+            {
+              "service_level": "object",
+              "consumed": 3.31,
+              "committed": 300,
+              "burst": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "5d914499869caefed0f39eee",
+        "name": "MyOrg",
+        "zuora_account_name": "MyOrg Inc",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "myorg",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "standard",
+              "consumed": 12.33,
+              "committed": 30,
+              "burst": 0
+            },
+            {
+              "service_level": "object",
+              "consumed": 0,
+              "committed": 40,
+              "burst": 0
+            }
+          ],
+          "A-S00003969": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 5,
+              "burst": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+....
+
+
+=== 依 ID 擷取租戶
+
+使用下表所列的方法、依 ID 擷取租戶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | 「 v2.1 / 租戶 / ｛ id ｝ 」 | 擷取 ID 指定的租戶。 | 「 ID （字串）」：租戶的唯一識別碼。 
+|===
+必要的要求內容屬性：「無」
+
+申請本文範例：
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e7c3af7aab46c00014ce877",
+        "name": "MyTenant",
+        "zuora_account_name": "MyAccount",
+        "zuora_account_number": "A00000415",
+        "description": "",
+        "code": "mytenantcode",
+        "usage": {
+          "A-S00003875": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 10,
+              "burst": 0
+            },
+            {
+              "service_level": "premium",
+              "consumed": 2.4,
+              "committed": 20,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 1.94,
+              "committed": 30,
+              "burst": 0
+            },
+            {
+              "service_level": "object",
+              "consumed": 0,
+              "committed": 40,
+              "burst": 0
+            }
+          ],
+          "A-S00003969": [
+            {
+              "service_level": "extreme",
+              "consumed": 0,
+              "committed": 5,
+              "burst": 0
+            },
+            {
+              "service_level": "standard",
+              "consumed": 0,
+              "committed": 30,
+              "burst": 0
+            }
+          ],
+          "A-S00004566": [
+            {
+              "service_level": "object",
+              "consumed": 3.31,
+              "committed": 300,
+              "burst": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+....
+
+
+=== 建立租戶
+
+使用下表所列的方法來建立租戶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 貼文 | 《 v2.1 / 租戶》 | 建立新租戶。 | 無 
+|===
+所需的申請內容屬性：「 Code 」、「 Name 」、「期望職位名稱」、「期望職位名稱」、「期望職位」
+
+* 索取本文範例： *
+
+....
+{
+  "name": "MyNewTenant",
+  "code": "mytenant",
+  "zuora_account_name": "string",
+  "zuora_account_number": "A00000415",
+  "description": "DescriptionOfMyTenant"
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ac802c356a0001a735af",
+        "name": "MyNewTenant",
+        "zuora_account_name": "string",
+        "zuora_account_number": "A00000415",
+        "description": "DescriptionOfMyTenant",
+        "code": "mytenant",
+        "usage": null
+      }
+    ]
+  }
+}
+....
+
+
+=== 修改租戶
+
+使用下表所列的方法來修改租戶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《投入》 | 「 v2.1 / 租戶 / ｛ id ｝ 」 | 修改 ID 所指定的租戶。所學專業：電子商務（電子商務） | 「 ID （字串）」：租戶的唯一識別碼。 
+|===
+必要的要求內容屬性：「 Code 」
+
+* 索取本文範例： *
+
+....
+{
+  "name": "MyNewTenant",
+  "code": "mytenant",
+  "zuora_account_name": "string",
+  "zuora_account_number": "A00000415",
+  "description": "New description of my tenant"
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5ac802c356a0001a735af",
+        "name": "MyNewTenant",
+        "zuora_account_name": "string",
+        "zuora_account_number": "A00000415",
+        "description": "New description of my tenant",
+        "code": "mytenant",
+        "usage": null
+      }
+    ]
+  }
+}
+....
+
+
+=== 刪除租戶
+
+使用下表所列的方法刪除租戶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| " 刪除 " | 「 v2.1 / 租戶 / ｛ id ｝ 」 | 刪除 ID 指定的租戶。 | 「 ID （字串）」：租戶的唯一識別碼。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+No content for successful delete
+....

@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: rn_fixed_issues.html 
+keywords: netapp, keystone, release notes, fixed issues, hot fixes 
+summary: 已修正NetApp服務引擎的問題 
+---
+= 已修正NetApp服務引擎的問題
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+先前版本的NetApp Service Engine已修正下列問題、讓您成功使用NetApp Keystone 您的《支援更新訂閱》服務。
+
+[cols="3*"]
+|===
+| 問題說明 | 修正之後 | 已在版本中修正 
+
+
+| 當叢集上存在非FabricPool Aggregate時、就會自動觸發Volume Move。對磁碟區或磁碟所做的任何修改、都會觸發磁碟區移至另一個Aggregate。 | 磁碟區作業不會觸發任何磁碟區移動。 | NetApp服務引擎2.2 
+
+
+| 刪除主機群組會從NetApp服務引擎使用者介面（UI）移除主機群組、但不會從叢集移除。 | 已解決。 | NetApp服務引擎2.2 
+
+
+| 主機群組可從NetApp服務引擎UI上的磁碟取消對應、但無法從叢集取消對應。 | 已解決。 | NetApp服務引擎2.2 
+
+
+| 無法從NetApp服務引擎UI刪除匯出原則。 | 變更的原則可從UI儲存。 | NetApp服務引擎2.2 
+|===

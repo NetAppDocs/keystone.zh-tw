@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_a_disk.html 
+keywords: netapp, keystone, modify, disk, 
+summary: Keystone 修改磁碟 
+---
+= 修改磁碟
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以變更磁碟名稱、主機群組對應、效能服務層級、容量和快照原則。使用此方法、您可以將磁碟移至不同的服務層級（若有）。
+
+磁碟必須處於作業狀態。如需瞭解 Volume 狀態及其運作步驟、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["檢視磁碟"] 和 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["物件狀態"]
+
+.步驟
+. 檢視 link:sewebiug_view_disks.html#view-disks["磁碟清單"]。
+. 在清單中找到磁碟、然後按一下該磁碟的「 Edit （編輯）」圖示。（如需使用清單中項目的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視動作"]）。
+. 視需要進行任何變更；請參閱 link:sewebiug_create_a_new_disk.html["建立新磁碟"] 以取得欄位說明。
+. 按一下「 * 完成 * 」。這會建立工作來修改磁碟。
+
+
+修改磁碟會以非同步工作的形式執行。您可以：
+
+* 檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
+* 工作完成後、請檢查磁碟清單中的磁碟狀態。
+

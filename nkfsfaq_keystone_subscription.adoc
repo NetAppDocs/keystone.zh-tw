@@ -1,0 +1,141 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_keystone_subscription.html 
+keywords: netapp, keystone, subscription, subscriptions, 
+summary: 訂購 NetApp Keystone 
+---
+= Flex訂購 常見問題集 NetApp Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+下列問題可解答您對於 NetApp Keystone 《支援不規則》訂閱服務的常見問題。
+
+
+
+=== 什麼是 NetApp Keystone 作爲簽署的一部分提供的？
+
+支援以訂購為基礎的服務項目、適用於區塊、檔案及物件資料服務、可部署於內部部署、並可由 NetApp 、合作夥伴或客戶操作。 NetApp Keystone
+
+
+
+=== 在 Flex 訂閱中提供哪些儲存服務？
+
+如需相關資訊、請參閱 link:nkfsosm_performance.html["效能服務層級"]
+
+
+
+=== 支援哪些附加服務？
+
+進階資料保護（備份與災難恢復）和混合雲分層 FabricPool 搭配使用介紹功能、是附加服務、可額外付費選擇。
+
+
+
+=== NetApp 保證該服務具備哪些服務層級？
+
+在 NetApp 營運的案例中 NetApp Keystone 、針對已配置的儲存設備及每個服務層級的延遲、提供 EIOS/TiB 保證。
+
+
+
+=== Flex 訂閱對應的目標為何？
+
+Flex 訂閱對應至單一站台或單一資料中心、可由不同的效能服務層級組成。
+
+
+
+=== 極端分層和優質分層效能等級有哪些優點？
+
+分層功能可在極致分層和優異分層效能層級中啟用、讓您減少儲存設備佔用空間及相關成本。NetApp 假設 25% 的資料很熱、而其餘 75% 的資料則較少使用或冷卻、並將其移至冷儲存設備。此外、您也可以查看使用量報告、瞭解存取資料的頻率、並根據資訊啟用分層服務。
+
+
+
+=== 合作夥伴是否能向客戶銷售比向 NetApp 購買更多的容量？
+
+租戶訂閱不受合作夥伴所購買容量的限制。合作夥伴可以向客戶銷售比從 NetApp 購買更多的容量。超過購買容量的容量稱為超額訂閱。
+
+
+
+=== 是否提供 API 來整合客戶工具？
+
+是的、 RESTful API 可整合至您自己的應用程式。請瀏覽至 * support> API Documentation * 以查看 Flex 訂閱服務的 API 文件。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Keystone Flex 訂閱 API 指南"]。
+
+
+
+=== 什麼是突發容量？
+
+使用量最多可增加或減少 20% 、超過承諾容量。突發容量使用量是每日測量、僅在使用時計費。例如、如果提交的容量為 100 TiB 、則最多可增加 120 TiB 。
+
+
+
+=== 使用「連拍」是否需要額外付費？
+
+高達 20% 的已提交容量的突發容量使用量會以與已提交容量相同的費率計費、超過 20% 已提交容量的任何使用量則會以 50% 的費率計費。
+
+
+
+=== 突發容量有何優點？
+
+突發容量可讓您靈活地隨需使用儲存設備、而不需長期投入。
+
+
+
+=== 如何將突發容量分配給租戶？
+
+「連拍容量」會分配給合作夥伴、由合作夥伴根據需求進一步將其分配給客戶。
+
+
+
+=== 我可以在哪裡看到已承諾及突發容量的使用量？
+
+NetApp 服務引擎內建儀表板、可根據已認可的容量來報告已用容量。
+
+
+
+=== 如果我在已提交的容量使用量中達到某個百分比、是否會有任何通知？
+
+是的、管理工具會透過 NetApp 服務引擎儀表板提供容量使用通知。
+
+
+
+=== 如何檢視 Flex 訂閱使用量？
+
+NetApp Service Engine 提供儀表板檢視、其中包含所有訂閱服務的相關資訊、以及使用量。如需 NetApp 服務引擎的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["請按這裡"]。
+
+
+
+=== 我要如何回報服務的任何問題？
+
+支援支援可透過下列各種管道取得： NetApp Keystone
+
+* 支援電子郵件： mailto ： keystone.services@netapp.com[keystone.services@netapp.com^]
+* 提報電子郵件： mailto ： keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
+
+
+
+
+=== 我可以訂購新的儲存服務嗎？
+
+是的、您可以從 NetApp 服務引擎入口網站申請新的儲存服務或擴充至儲存服務。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。
+
+
+
+=== 是否能立即增加儲存承諾？
+
+視所要求的容量量而定、系統會判斷容量是否已部署、或是需要運送和安裝額外設備。
+
+
+
+=== 工作負載可以在不同層級之間移動嗎？
+
+是的、只要使用者已訂閱工作負載移至的層級、即可在不同層級之間移動工作負載。不過、我們不建議從較高層移至較低層、因為這可能會導致效能降低。只要編輯檔案共用並變更服務層級設定、即可完成此程序。
+
+
+
+=== 預設安裝的是哪個軟體版本（例如 ONTAP 、功能不均）？
+
+視訂閱的服務層而定（例如 ONTAP 、使用檔案和區塊服務的功能進行支援、 SANtricity 使用功能區塊的功能進行支援、 StorageGRID 以及使用物件的功能）、支援團隊會安裝最新的穩定版本、而不會發生安全性或功能問題。

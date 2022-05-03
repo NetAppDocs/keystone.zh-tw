@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_service_level_metrics_and_definitions.html 
+keywords: netapp, keystone, service, level, metrics, definitions, 
+summary: Keystone 服務層級的度量和定義 
+---
+= 服務層級指標與定義
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+下列詞彙與定義適用於 NetApp Keystone 《不適用彈性訂閱》（ Flex 訂購）服務：
+
+* * GiB 、 TiB 及 PIB 。 * 使用 1024 （ 1 GiB = 101010^3^ 位元組、 1 TiB = 1010^4^ 位元組、以及 1PiB = 10104^5^ 位元組、測量資料儲存容量。
+* * IOPS/TiB 。 * 應用程式所要求的每秒傳輸協定作業、除以已分配的磁碟區邏輯大小。
+* * 可用度 * 係以服務成功回應的 I/O 要求數百分比、除以服務在特定月份內所提出的 I/O 要求總數（以服務劃分的方式計算）、而不包括排定的服務停機時間或所需設施無法使用、 網路或由客戶提供的其他服務。
+* * 持久性 * 是指在不影響保真度的情況下存取資料的百分比、不包括客戶造成的刪除或毀損。
+* * 每 TiB 的目標 IOPS 。 * 在達到每 TiB 的目標 IOPs 臨界值之前、所有對磁碟區的 I/O 要求均保證 IOPS 。磁碟區的效能上限為每 TiB 所選的 IOPS 。
+
+
+
+NOTE: 每個 TiB 的目標 IOPS 效能指標是根據 TiB 中的邏輯耗用容量來計算。
+
+* * 延遲 * 從用戶端收到的 I/O 要求服務時間、以服務劃分（儲存控制器 I/O 連接埠）為測量單位。
+

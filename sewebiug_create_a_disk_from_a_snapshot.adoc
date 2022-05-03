@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_disk_from_a_snapshot.html 
+keywords: netapp, keystone, create, disk, Snapshot 
+summary: 從 Snapshot 建立磁碟 
+---
+= 從 Snapshot 建立磁碟
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以從現有的 Snapshot 建立新磁碟。從 Snapshot 複製的新磁碟、其內容與建立 Snapshot 的磁碟相同。
+
+.步驟
+. 從左側導覽窗格中選取 * 區塊儲存 * 、然後選取 * 磁碟 * 。
+. 單擊 * Create Disk* （創建磁碟 * ）並選擇 * Clone from snapshot （從快照複製） *「 * 選取磁碟 * 」畫面會顯示租戶的所有磁碟。您可以依區域、區域和子租戶篩選磁碟。您可以選取任何處於作業狀態的磁碟。
+. 選取您要的磁碟旁的核取方塊、然後按一下「 * 下一步 * 」。此時將顯示 * Select Snapshot* （選擇快照）屏幕，其中包含該磁碟的所有快照。
++
+
+NOTE: 對於選取的磁碟、如果 SnapCenter 您在 NetApp 服務引擎以外的環境中建立了一些 Snapshot 快照、您可以找到這些 Snapshot 已匯入並列出供您選擇。您可以選取這些匯入的快照、然後從這些快照中複製新磁碟。
+
++
+您可以搜尋特定的 Snapshot 或選取排程類型來篩選 Snapshot 。
+
+. 選中要從中克隆的 Snapshot 旁邊的複選框，然後單擊 * Next* （下一步 * ）。新磁碟會繼承所選 Snapshot 的內容。
+. 新增 * 名稱 * 和 * 磁碟路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。
+
+
+* Create Disk* 是以非同步工作的形式執行。您可以：
+
+* 檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
+* 工作完成後、請檢查「 * 磁碟 * 」清單中的磁碟狀態。
+

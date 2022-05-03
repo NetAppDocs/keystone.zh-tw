@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: seapiref_subnets_apis.html 
+keywords: netapp, keystone, subnets, networks, apis 
+summary: Keystone 網路 API 
+---
+= 使用子網路 API 定義網路組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用子網路 API 來檢視及建立子網路、以供子租戶和區域使用。您可以使用它們來定義網路組態。
+
+[cols="1,1,3,2"]
+|===
+| HTTP Verb | 路徑 | 說明 | 必要參數 / 要求本文 
+
+
+ a| 
+《 Get 》（取得）
+ a| 
+「 v2.1 / 租戶 / ｛ 租戶 ID ｝ / 」「區域 / ｛ zo_name ｝ / 子網路」
+| 您可以擷取租戶和區域的所有子網路物件。擷取子網路的詳細資料、例如 VLAN 、子租戶、區域、路由、 和標記。  a| 
+「租戶 ID 」：租戶的 ID 。區域名稱：區域名稱。「偏移」：開始收集結果集之前要跳過的項目數。「限制」：要退回的項目數量。
+
+
+
+ a| 
+《 Get 》（取得）
+ a| 
+/v2.1 / 租戶 / ｛ 租戶 ID ｝ / ' 區域 / ｛ zo_name ｝ / 子網路 / ' ｛ id ｝ '
+| 您可以擷取為租戶和區域所建立之特定子網路物件的詳細資料。擷取子網路的詳細資料、例如 VLAN 、子租戶、區域、路由、 和標記、以輸入的 ID 為基礎。  a| 
+「租戶 ID 」：租戶的 ID 。區域名稱：區域名稱。「 id 」：子網路的 ID 。
+
+
+
+ a| 
+貼文
+ a| 
+「 v2.1 / 租戶 / ｛ 租戶 ID ｝ / 」「區域 / ｛ zo_name ｝ / 子網路」
+| 您可以為特定租戶和區域建立子網路物件。新增要求本文中的值、以建立具有指定參數的子租戶物件、例如名稱、 VLAN 、 CIDR 、子租戶 ID 、 路由和標記。  a| 
+「租戶 ID 」：租戶的 ID 。區域名稱：區域名稱。「」、「 vlan 」：「 1000 」、「 CIDR 」：「 10.0.0.0/24 」、「 sub租 戶 ID 」：「 5d2fb0fb4f47df00015274e3 」、「 Routes 」： [ ｛ 「 ditment 」：「 10.0.0/24 」、「 gateway 」：「 vlan2 、「 keyValue 」、「 keyN 」、「 keyN 」、「 keyN 」 ｝ 、「 keyN 」「 keyValue 」、「 001.
+
+
+
+ a| 
+貼文
+ a| 
+/v2.1 / 租戶 / ｛ 租戶 ID ｝ / ' 區域 / ｛ zip_name ｝ / 子網路 / ' ｛ id ｝ / 標籤 '
+| 您可以為租戶建立或取代子網路物件的標記。在要求本文中、以「 key:value 配對」格式新增子網路物件的 ID 和標記值。  a| 
+「租戶 ID 」：租戶的 ID 。區域名稱：區域名稱。「 id 」：備份物件的 ID 。'' ｛ "key1" ： "<Tag1>" 、 "key2" ： "<Tag2>" 、 "keyN" ： "<TagN>" } '
+
+|===

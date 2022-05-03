@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_azure_volumes.html 
+keywords: netapp, keystone, managing, azure, volumes, 
+summary: Keystone 管理 Azure Volume 
+---
+= 管理 Azure Volume
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本節說明如何管理 Azure Volume 。
+
+
+NOTE: 管理 Azure Volume 需要客戶管理存取權。
+
+本節說明如何執行下列工作：
+
+* 檢視 Azure Volume 清單。
+* 新增 Azure Volume 。
+* 修改 Azure Volume 詳細資料。
+* 刪除 Azure Volume 。
+
+
+
+
+=== 檢視 Azure Volume 清單
+
+Azure Volumes 清單會顯示指定子租戶和位置的 Azure Volume Pool 清單。若要檢視清單、請從功能表中選取 * 檔案服務 > Azure Volumes * 。
+
+清單會顯示每個 Azure Volume 的簡單資訊。每個 Azure Volume 旁的行動圖示可讓您修改或刪除 Azure Volume 。
+
+
+
+=== 新增 Azure Volume
+
+本節說明如何新增 Azure Volume 。
+
+您需要：
+
+* Azure Volume 所屬的子租戶
+* ANF 帳戶
+* Azure 虛擬網路（ vnet ）與子網路
+* 儲存磁碟區的容量資源池
+* Volume 的名稱
+* 檔案路徑
+* 磁碟區的配額（大小）
+
+
+.步驟
+. 從功能表中選取 * 檔案服務 > Azure Volumes * 。
+. 按一下「 * 建立 * 」。
+. 在「建立 Azure Volume 」對話方塊中、指定子租戶、 ANF 帳戶、 vnet 、子網路、 容量集區、磁碟區名稱、檔案路徑和配額。請務必輸入唯一的檔案路徑、以便成功建立 Volume 。
+. 如有需要、請將標記新增至 Volume 。
+. 按一下「 * 建立 * 」。建立 Azure Volume 時、 Volume 的狀態會變更為「已退選」（可在 Azure Volumes 清單中檢視）。
+
+
+
+
+=== 修改 Azure Volume 詳細資料
+
+使用此方法修改 Azure Volume 的詳細資料。您可以修改檔案路徑和配額、以及新增或移除標記。
+
+.步驟
+. 從功能表中選取 * 檔案服務 > Azure Volumes * 。
+. 從清單中找出 Azure Volume 、然後按一下編輯圖示。
+. 在「管理 Azure Volume 」對話方塊中、進行必要的變更。如果您要修改檔案路徑或配額、請確定檔案路徑是唯一的、而且配額不會超過資源池中的可用配額。
+. 按一下 * 更新 * 。
+
+
+
+
+=== 刪除 Azure Volume
+
+使用此方法刪除 Azure Volume 。
+
+.步驟
+. 從功能表中選取 * 檔案服務 > Azure Volumes * 。
+. 在清單中找到 Azure Volume 、然後按一下刪除圖示。
+. 在「確認刪除」對話方塊中、輸入要刪除的 Azure Volume 名稱。
+. 按一下「 * 確認 * 」。
+

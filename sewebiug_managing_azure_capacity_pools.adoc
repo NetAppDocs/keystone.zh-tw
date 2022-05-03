@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_azure_capacity_pools.html 
+keywords: netapp, keystone, managing, azure, capacity, pools, 
+summary: Keystone 管理 Azure 容量資源池 
+---
+= 管理 Azure 容量資源池
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本節說明如何管理 Azure 容量資源池：
+
+
+NOTE: 管理 Azure 容量資源池需要客戶管理存取權。
+
+本節說明如何執行下列工作：
+
+* 檢視 Azure 容量資源池清單
+* 新增 Azure 容量資源池
+* 修改 Azure 容量資源池詳細資料
+* 刪除 Azure 容量資源池
+
+
+
+
+=== 檢視 Azure 容量資源池清單
+
+Azure 容量資源池清單會顯示指定子租戶和位置的容量資源池清單。若要檢視清單、請從功能表中選取 * 檔案服務 > Azure 容量 Pools* 。
+
+清單會顯示每個 Azure 容量集區的簡單資訊。每個 Azure 容量資源池旁的行動圖示可讓您修改或刪除 Azure 容量資源池。
+
+
+
+=== 新增 Azure 容量資源池
+
+本節說明如何新增 Azure 容量資源池。
+
+您需要：
+
+* 容量所屬的子租戶
+* ANF 帳戶
+* 服務層級
+* 容量集區的名稱
+* 資源池的大小
+
+
+.步驟
+. 從功能表中選取 * 檔案服務 > Azure 容量 Pools* 。
+. 按一下「 * 建立 * 」。
+. 在「建立 Azure 容量資源池」對話方塊中、指定子租戶、 ANF 帳戶、服務層級、名稱和大小。
+. 視需要新增標記至容量資源池。
+. 按一下「 * 建立 * 」。建立容量資源池時、狀態會變更為「已退選」（可在 Azure 容量資源池清單中檢視）。
+
+
+
+
+=== 修改 Azure 容量資源池詳細資料
+
+使用此方法修改 Azure 容量資源池的詳細資料。您可以修改資源池大小的服務層級、也可以新增或移除標記。
+
+.步驟
+. 從功能表中選取 * 檔案服務 > Azure 容量 Pools* 。
+. 從清單中找出 Azure 容量資源池、然後按一下編輯圖示。
+. 在「管理 Azure 容量資源池」對話方塊中、視需要進行任何變更。
+. 按一下 * 更新 * 。
+
+
+
+
+=== 刪除 Azure 容量資源池
+
+使用此方法可刪除 Azure 容量資源池。
+
+.步驟
+. 從功能表中選取 * 檔案服務 > Azure 容量 Pools* 。
+. 從清單中找出 Azure 容量資源池、然後按一下刪除圖示。
+. 在「確認刪除」對話方塊中、輸入要刪除的 Azure 容量資源池名稱。
+. 按一下「 * 確認 * 」。
+

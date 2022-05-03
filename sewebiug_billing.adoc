@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_billing.html 
+keywords: netapp, keystone, monthly charges, billing, flex subscription, flex utility, cloud services 
+summary: 檢視及下載帳單詳細資料 
+---
+= 檢視帳單
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以在 NetApp Keystone NetApp Service Engine 儀表板和 Billing （帳單）畫面上、檢視您的《支援》（ Flex 訂購）上所有訂閱服務的每月費用。
+
+您可以檢視先前幾個月內所有已訂閱的 Flex 訂閱服務的帳單詳細資料。每個月的尖峰流量計費會以高亮顯示。
+
+
+NOTE: 如果您的任何訂閱都是每年開立帳單、發票會反映按比例計算的金額、而非實際的每月發票金額。
+
+您可以依月份排序表格中的資料、並檢視任何特定月份的所有儲存訂閱清單。
+
+.步驟
+. 從功能表中選取 * 管理 * > * 帳單 * 。
++
+
+NOTE: 您也可以按一下儀表板上 * 每月費用 * 小工具右上角的箭頭、或是在小工具中代表一個月的任何列、以檢視「帳單」頁面。系統會顯示您所選月份的所有訂閱內容。
+
+. 您也可以將游標停留在代表一個月的長條上、以檢視其他詳細資料。
+. 選取表格中所列的任何月份。表中會顯示您本月的所有訂閱內容、以及相關的帳單。費用會根據承諾的容量和突發使用量來分攤。
+

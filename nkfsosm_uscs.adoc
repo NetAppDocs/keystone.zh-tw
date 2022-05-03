@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_uscs.html 
+keywords: netapp, keystone, US citizen support, USCS 
+summary: Keystone Flex 訂閱效能 
+---
+= 美國公民支援（ USCS ）
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+透過 NetApp 全球服務與支援中心（ GSSC ）、支援美國公民支援（ USCS ）服務（ Flex訂購 ）、持續監控及支援。 NetApp Keystone
+
+GSSC 是一個分散各地的團隊、負責服務各種 NetApp 客戶。USCS 彈性訂閱方案可確保 Flex 訂閱服務的監控與支援、由位於美國的美國公民提供。此外還提供現場支援與疑難排解（必要時可維護系統）。

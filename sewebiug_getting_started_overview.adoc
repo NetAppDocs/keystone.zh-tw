@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_getting_started_overview.html 
+keywords: netapp, keystone, getting, started, overview, 
+summary: Keystone 入門概述 
+---
+= 總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本節說明如何使用 NetApp 服務引擎入口網站開始使用。其中包括：
+
+* 登入 NetApp Service Engine 網路介面：
++
+** 以使用者名稱和密碼登入
+** 使用 NetApp SSO 登入
+** 登出 NetApp Service Engine 網路介面
+
+
+* 選取租戶
+* NetApp Service Engine 網路介面總覽
+

@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_overview.html 
+keywords: netapp, keystone, overview, 
+summary: 概述 NetApp Keystone 
+---
+= 常見問題集 NetApp Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+下列問題可回答您經常提出 NetApp Keystone 的有關解決方法的問題。
+
+
+
+=== 什麼是 NetApp Keystone 功能？
+
+包含內部部署資本支出（ capex ）替代方案的產品組合、包含了《恆科靈活支付》（ Flex Pay ）和《恆科彈性訂閱》（ Flex 訂閱） NetApp Keystone NetApp Keystone NetApp Keystone 。
+
+* * 彈性付款： * 一種付款解決方案組合、包括傳統融資、租賃及固定 / 變動選項、可滿足客戶的現金流需求。
+* * 彈性訂閱： * 隨成長付費訂閱型服務、透過成果型服務選項（ NetApp 營運）、在內部環境中提供雲端般的體驗。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/index.html["請按這裡"]。
+
+
+
+
+=== 此功能如何讓客戶受益？ NetApp Keystone
+
+這個橋樑連接了資本支出和混合雲策略的支柱、提供敏捷度、財務靈活度及降低財務風險、協助客戶滿足現金流和業務需求。 NetApp Keystone
+
+此產品組合提供一系列靈活的付款解決方案、包括傳統融資、租賃、以及固定 / 可變選項、適合注重現金的客戶、以及彈性訂閱。 NetApp Keystone
+
+* * 彈性付款（財務靈活度、付款解決方案）： *
++
+** 偏好擁有資產所有權、但需要支付 / 財務彈性（租賃模式、租賃、貸款、分期付款）
+** 嚴格的安全要求、沒有外部資料連線選項可啟用訂閱
+** 工作負載具有可預測的容量成長、並符合資本支出預算
+** 妥善管理的基礎架構、具備高資產使用率
+** 偏好以原始容量為基礎採購儲存設備、並保留效率效益
+
+
+* * 彈性訂閱（ OPEX 、雲端體驗）： *
++
+** 偏好 100% 的營運績優、因此資產不會最終在客戶的結算表上
+** 內部 / 外部服務供應商希望將成本與使用量 / 營收保持一致
+** 容量成長無法預測的工作負載
+** 從一般儲存工作（移轉、技術更新、升級等）重新分配 IT 資源
+** 將工作負載移轉至雲端之前的短期解決方案
+** 將工作負載從雲端移回內部部署
+
+
+
+
+
+
+=== 什麼是 Flex 訂閱？
+
+彈性訂閱是一種全新、靈活的內部部署訂購型採購模式。它可讓客戶消除管理資源的障礙、並完成冗長的採購週期、進而加速實現價值。彈性訂閱可讓客戶根據業務優先順序調整經濟效益。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/index.html#netapp-keystone-flex-subscription["請按這裡"]。
+
+
+
+=== 內部部署是什麼意思？
+
+內部部署是指客戶擁有的資料中心、或是主機代管機構中客戶擁有的空間。客戶負責空間、電力和冷卻。
+
+
+
+=== 彈性訂閱服務有哪些優點？
+
+彈性訂閱服務的部分優點包括：
+
+* 讓 IT 人員不再需要執行複雜的儲存相關工作、也能專注於應用程式管理
+* 減少前期資本投資
+* 讓客戶在不過度資源配置的情況下、也能滿足他們的需求
+* 使資料儲存成本符合業務需求 / 活動
+* 繞過複雜的組織採購程序、簡化基礎架構的資源配置
+* 確保內部部署的資料安全無虞
+* 如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/index.html#benefits-of-flex-subscription["請按這裡"]。
+

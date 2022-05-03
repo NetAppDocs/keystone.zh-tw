@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_user.html 
+keywords: netapp, keystone, delete, user, 
+summary: Keystone 刪除使用者 
+---
+= 刪除使用者
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法刪除使用者。
+
+
+NOTE: 無法恢復刪除的使用者。
+
+.步驟
+. 從功能表中選取管理 > 使用者。
+. 在清單中找出使用者、然後按一下刪除圖示。
+. 在「確認刪除」對話方塊中、輸入要刪除的使用者名稱。
+. 按一下「 * 確認 * 」。
+

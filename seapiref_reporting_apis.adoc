@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: seapiref_reporting_apis.html 
+keywords: netapp, keystone, reporting, apis, 
+summary: Keystone 報告 API 
+---
+= 報告 API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用下表中的方法擷取及產生報告。
+
+|===
+| HTTP 方法 | 路徑 | 說明 
+
+
+| 《 Get 》（取得） | 《 V2.1 / 報告》 | 擷取所有報告清單。 
+
+
+| 貼文 | /`v2.1 / 報告 / ｛ fileName ｝ ' | 擷取報告。 
+|===
+
+
+=== 擷取報告清單
+
+使用下表所列的方法擷取報告清單。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | 《 V2.1 / 報告》 | 擷取租戶的所有可用報告。報告可依日期範圍篩選。  a| 
+* 「租戶 ID （字串）」
+* 「 Start(stry) 」：擷取報告的最新日期、比開始日期更早。
+* 「 END （字串）」：擷取結束日期之前的報告
+
+
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "filename": "string"
+      }
+    ]
+  }
+}
+....
+
+
+==== 擷取以檔案名稱識別的報告
+
+使用下表中的方法擷取以檔案名稱識別的報告。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /`v2.1 / 報告 / ｛ fileName ｝ ' | 擷取以檔案名稱識別的報告。 | 「檔案名稱（字串）」：報告檔案名稱。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "filename": "string"
+      }
+    ]
+  }
+}
+....

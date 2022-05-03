@@ -1,0 +1,128 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_netapp_service_engine_web_interface_overview.html 
+keywords: netapp, keystone, service, engine, web, interface, overview, 
+summary: NetApp 服務引擎網路介面總覽 
+---
+= NetApp Service Engine 網路介面總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+下圖為 NetApp 服務引擎網路介面的範例。它包含下列元件：
+
+* * 顯示區域。 * 這是螢幕的主要工作區域、有兩種檢視：
++
+** 儀表板檢視：顯示各種工具、以監控使用量、帳單、警示和服務要求。
+** 清單檢視：顯示可瀏覽及排序的項目清單（稍後再提供更多資訊）。
+
+
+* * 功能表。 * 使用功能表來檢視及管理儲存項目、檢視報告及存取支援。
+* * NetApp 標誌。 * 隨時按一下此按鈕、即可將顯示畫面返回儀表板檢視。
+* * 租戶 * 顯示目前選取的租戶。若要變更租戶、請參閱 link:sewebiug_select_tenant.html["選取租戶"]。
+* * 工作。 * 按一下以檢視最近的資源配置工作狀態。圖示會變更色彩以顯示組態工作狀態。如需詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["工作與工作狀態指標"]。
+* * 使用者登入。 * 顯示目前登入的使用者名稱。按一下此圖示即可登出。如需詳細資訊、請參閱 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["登出 NetApp Service Engine 網路介面"]。
+
+
+image:sewebiug_image9_dashboard1.png["NSE 儀表板 -1"]
+
+image:sewebiug_image9_dashboard2.png["NSE 儀表板 -2"]
+
+
+
+== 儀表板檢視
+
+儀表板會顯示 NetApp Keystone 有關您的不二儲存訂閱資訊、例如使用容量、根據使用量計費、以及最近的警示和服務要求。這是您第一次登入 NetApp 服務引擎時的預設檢視。如需儀表板的詳細資訊、請參閱 link:sewebiug_dashboard.html["檢視 Flex 訂閱儀表板"]。
+
+
+
+== 清單檢視
+
+「清單」檢視可用來檢視物件清單。例如、支援訂閱中檔案共用的伺服器清單會顯示在清單檢視中、如下面的快照所示。
+
+從清單檢視中、您可以：
+
+* 針對清單中的項目執行動作：請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視動作"]。
+
+
+
+
+=== 清單檢視動作
+
+清單檢視會顯示項目清單、並提供部分項目詳細資料（包括狀態）的快速檢視。在清單檢視中、您可以執行下表所列的動作。
+
+|===
+| 行動 | 說明 
+
+
+| 建立項目 | 使用「建立」按鈕建立新項目。 
+
+
+| 使用行動圖示 | 使用「行動」圖示對清單項目執行動作。 
+
+
+| 排序清單 | 使用清單欄中的箭號圖示、依該欄的遞增或遞減順序來排序清單。當您將游標停留在欄名稱附近時、會看到箭頭圖示。 
+
+
+| 變更顯示的項目數、瀏覽清單 | 變更頁面上顯示的項目數量、然後使用每頁項目欄位和清單底部的 < 和 > 圖示來瀏覽清單。 
+
+
+| 重新整理頁面 | 使用重新整理圖示重新整理頁面： 
+|===
+
+
+== 物件狀態
+
+在資源配置與修改期間、儲存物件會在運作前經歷一系列狀態。儲存物件的狀態會顯示在這些項目的「清單」檢視中。物件可能處於下列其中一種狀態：
+
+* * 正在建立。 * 正在建立儲存資源。
+* * 正在更新。 * 項目目前正在修改中。
++
+發生在儲存資源（檔案伺服器、檔案 hare 、區塊存放區、磁碟等）發生變更時。其中包括調整共用大小、變更快照原則設定、變更匯出原則、擷取快照、重新命名項目等。
+
+* * 運作 * 。 * 表示儲存資源已正確配置 / 修改、可供使用、線上及功能正常。
+* * 正在刪除 .* 物件、並正在處理中。
+* * 佇列中 * 物件處於佇列狀態、正在處理中。
+* * 在 NetApp 服務引擎外部配置的「已匯入」物件、若不符合 NetApp Keystone 「支援此彈性訂閱」（ Flex 訂閱）的條件、則會以此狀態匯入。
++
+
+NOTE: 此狀態通常表示物件上未套用 QoS 原則、因此無法由 NetApp 服務引擎作為 Flex 訂閱的一部分加以管理。您可以修改物件（透過編輯筆）、並指派適當的服務層級。這會將該物件的狀態變更為「運作中」。
+
+* * 在 NetApp 服務引擎外部配置的非標準 * 物件、若不符合 NetApp Keystone 「支援彈性訂閱」（ Flex 訂閱）的條件、則會以此狀態匯入。
++
+
+NOTE: 此狀態通常表示物件遺漏了一或多個準則、以供 NetApp 服務引擎管理、做為 Flex 訂閱的一部分。您可以 link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["提出服務要求"] 讓他們透過 NetApp 服務引擎入口網站進行標準化與管理、並由支援團隊進行營運。
+
+* * 聯絡支援部門。 * 當資源配置或修改工作無法完全完成時、即會出現此狀態。針對處於此狀態的項目、提出支援要求以解決此問題。
+* * 運作（用於備份的來源物件）。 * 下列為可能的狀態：
++
+** 使用編輯筆：表示備份物件可運作且正常運作。
+** 不使用編輯筆：表示備份是孤立的、亦即備份物件與其來源 Volume 的 SnapMirror 關係中斷、或來源 Volume 已移除。
+
+
+
+
+
+
+== 工作與工作狀態指標
+
+NetApp 服務引擎中的某些資源配置工作（例如建立、修改或刪除儲存項目）可能需要一些時間才能完成。這些工作不會立即執行（如同步工作）、而是以非同步方式執行。在開始執行此類工作時、 NetApp 服務引擎會傳回工作記錄。您可以透過右上角的警示圖示來追蹤狀態、以指出已提交的工作是否已成功完成。您也可以透過 API 追蹤工作狀態。如需相關資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/seapiref_jobs.html#retrieve-jobs["請按這裡"]
+
+|===
+| 指示燈色彩 | 說明 
+
+
+| 黑 | 工作目前正在執行中。 
+
+
+| 紅色 | 最後一項工作無法完成。 
+
+
+| 綠色 | 最後一項工作已成功完成。 
+|===
+按一下狀態指標、即可檢視最近 10 項工作的狀態。

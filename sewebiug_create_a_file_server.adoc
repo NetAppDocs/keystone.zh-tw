@@ -1,0 +1,92 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_file_server.html 
+keywords: netapp, keystone, create, file, server, 
+summary: Keystone 建立檔案伺服器 
+---
+= 建立檔案伺服器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+檔案伺服器屬於子租戶、並在區域內建立。建立伺服器時、您可以選擇：
+
+* 為伺服器啟用災難恢復 DP 。如需 NetApp Service Engine 中災難恢復運作方式的詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["災難恢復"]。
+* 將其設定為啟用 CIFS 。若為採用 CIFS 的伺服器：
++
+** 您必須提供 Active Directory 使用者名稱、 Active Directory 密碼、網域、 DNS 伺服器、伺服器名稱、以及 也可以選擇 Active Directory 組織單位（ OU ）。
+** Active Directory 認證（ Active Directory 使用者名稱和 Active Directory 密碼）必須是擁有權限的使用者、才能將電腦加入 Active Directory 網域。
+** 當 Active Directory OU 結構為階層式時（如下圖所示）、請指定從最低層到最高層的 OU 。在此範例中、若要指定墨爾本 OU 、請將「 CIFs_ou 」設為「 CIFs_ou 」：「 Ou=Meltne, ou=CIFS 」
+
+
+
+
+image:sewebiug_image20.png["錯誤：缺少圖形影像"]
+
+請確定您有下列項目來建立伺服器：
+
+* 主控伺服器的子租戶。
+* 伺服器所屬的區域和區域。
+* 網路詳細資料、例如子網路和 IP 位址（選用）。如果您不熟悉網路、請洽詢 IT 部門以瞭解適當的值。
+* 若要在檔案伺服器上啟用非同步災難恢復、即災難恢復區域（檔案伺服器將複寫到的區域）。
+
+
+.步驟
+. 檢視 link:sewebiug_view_servers.html#view-servers["檔案伺服器清單"]。
+. 按一下「 * 建立伺服器 * 」。
+. 在「 Create Server （建立伺服器）」頁面上、完成下列欄位：
++
+|===
+| 欄位 | 說明 
+
+
+| 子租戶 | 從清單中選取子租戶。 
+
+
+| 區域 | 選取伺服器所在的區域。 
+
+
+| 區域 | 選取伺服器所在的區域。 
+
+
+| 名稱 | 輸入伺服器名稱。 
+
+
+| 子網路 | 從清單中選取任何預先定義的子網路。 
+
+
+| IP 位址 | （選用）指定 IP 位址。如果未指定、伺服器將會獲得下一個可用的 IP 位址。 
+|===
+. 選取服務：
++
+NFS 預設為啟用。此時會顯示使用中的 NFS 傳輸協定。
+
++
+如果要建立啟用 CIFS 的檔案伺服器：
+
++
+.. 切換啟用 CIFS 的按鈕以檢視 CIFS 相關欄位。
+.. 填寫 Active Directory 使用者名稱、 Active Directory 密碼、網域、 DNS 伺服器、伺服器名稱及 也可以選擇 Active Directory 組織單位。Active Directory 認證必須是擁有權限的使用者、才能將電腦加入 Active Directory 網域。
+
+
+. 若要在此檔案伺服器上啟用非同步災難恢復 DP ：
++
+.. 切換「非同步災難恢復」按鈕以啟用。
+.. 選取災難恢復區域和區域。
+.. 選取災難恢復複寫排程。
+
+
+. 如果啟用同步災難恢復 DP 、同步災難恢復切換就會啟用且無法停用。
+. 按一下「 * 建立 * 」。這會建立工作來建立伺服器。
+
+
+建立伺服器會以非同步工作的形式執行。您可以：
+
+* 檢查工作清單中的工作狀態。
+* 工作完成後、請檢查伺服器清單中的伺服器狀態。
+

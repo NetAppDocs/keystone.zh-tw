@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_track_a_service_request.html 
+keywords: netapp, keystone, track, service, request, 
+summary: Keystone 會追蹤服務要求 
+---
+= 追蹤服務要求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+服務要求遵循本節所述的程序。
+
+下表列出服務要求狀態。
+
+|===
+| 狀態 | 說明 
+
+
+| 新功能 | 這是新建立的要求。 
+
+
+| 開啟 | 申請正在審查 / 履行中。 
+
+
+| 擱置中 | 要求正在等待第三方採取行動（亦即等待其他資訊）。 
+
+
+| 已解決 | 要求已解決。 
+
+
+| 保留中 | 此要求正在等待超出支援控制範圍的活動、可能需要一段時間才能處理要求。 
+
+
+| 已關閉 | 要求已關閉。 
+|===
+您可以查看 NetApp 服務引擎中的狀態（如下所述）來追蹤服務要求的狀態、也可以追蹤在流程中傳送的自動化電子郵件中的狀態。
+
+. 從功能表中、選取 Support （支援） > Service Requests （服務要求）。隨即顯示服務要求清單。
++
+image:sewebiug_image44.png["錯誤：缺少圖形影像"]
+
+. 在清單中找出服務要求、然後在「 Status （狀態）」欄中檢視狀態。
+
+
+image:sewebiug_image42.png["錯誤：缺少圖形影像"]

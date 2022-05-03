@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: seapiref_netapp_service_engine_rest_apis.html 
+keywords: netapp, keystone, service, engine, rest, apis, 
+summary: NetApp 服務引擎 REST API 
+---
+= NetApp 服務引擎 REST API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+=== 分頁
+
+許多 API 呼叫會傳回大量記錄。可以指定「偏移」和「限制」值來限制記錄數量：
+
+* * 限制 * 要傳回的記錄數。
+* * 偏移。 * 傳回第一筆記錄之前要跳過的記錄數。例如、偏移一筆會跳過第一筆記錄、並從兩筆開始傳回記錄。
+
+
+您也可以排序回應：
+
+* * Sort_by-.* 使用指定的屬性排序記錄。例如、若要依建立日期排序、請指定「已建立」。
+* * order_by_.* 依遞增（ asc ）或遞減（ desc ）順序排列記錄。
+

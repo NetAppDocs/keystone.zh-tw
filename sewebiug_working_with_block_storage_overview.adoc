@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_working_with_block_storage_overview.html 
+keywords: netapp, keystone, working, block, storage, overview, 
+summary: Keystone 使用區塊儲存概述 
+---
+= 總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在區塊儲存系統中、資料儲存設備會以獨特的識別碼分成個別的區塊。NetApp 服務引擎將區塊資料儲存區塊稱為區塊儲存區、個別區塊則稱為磁碟區。
+
+區塊存放區屬於子租戶、並在區域內指定（每個子租戶每個區域一個區塊存放區）。區塊存放區具有網路屬性（例如 IP 位址和 VLAN ID ）、可用來透過 iSCSI 或 FC 傳輸協定存取磁碟。災難恢復 DP 可在區塊存放區上啟用。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery.html["災難恢復"]。
+
+區塊存放區必須先初始化、才能使用。如果區塊儲存設備可用且尚未初始化、則可在建立磁碟程序的一部分、在區塊儲存區上建立第一個磁碟之前先初始化該儲存設備。
+
+磁碟是在區塊存放區上建立。磁碟具有許多可設定的屬性、包括容量和相關的服務層級。DP 選項、例如 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["快照"] 和 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["災難恢復"] 可為磁碟啟用。
+
+磁碟存取是透過主機群組來控制。主機群組由啟動器節點名稱組成；您可以將一或多個主機群組對應至磁碟、以定義哪些啟動器可以存取磁碟。
+
+主機群組：
+
+* 是特定於傳輸協定的。它們可以是：
++
+** FC 傳輸協定主機群組：由 FC 全球連接埠名稱（ WWPN ）的啟動器組成。例如、「 20 ： 56 ： 00 ： a0 ： 98 ： 5c ： 0d ： da 」）。
+** iSCSI 傳輸協定主機群組：由 iSCSI 合格名稱（ IQN ）的啟動器組成。例如、「 iqn.1998-01.com.vmware:esx2` 」。
+
+
+* 由別名 / 啟動器配對組成。別名可讓您以簡單的方式識別啟動器。例如「 esxserver1 」。
+* 無需任何啟動器即可建立。空的主機群組可對應至磁碟做為預留位置、但必須完全定義、才能存取磁碟。使用主機群組可：
+* 將多個磁碟對應至同一組啟動器
+* 在多個磁碟上更新啟動器集。
+
+
+本節包含下列資訊：
+
+* 使用主機群組：
++
+** 檢視主機群組
+** 建立主機群組
+** 修改主機群組啟動器
+** 刪除主機群組
+
+
+* 使用磁碟：
++
+** 檢視磁碟
+** 建立新磁碟
+** 從 Snapshot 建立磁碟
+** 修改磁碟
+** 刪除磁碟
+** 建立磁碟的 adocad 快照
+
+
+

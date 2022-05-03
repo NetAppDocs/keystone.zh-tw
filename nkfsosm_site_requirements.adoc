@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_site_requirements.html 
+keywords: netapp, keystone, sire, requirements, 
+summary: Keystone 站台需求 
+---
+= 站台需求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 NetApp Keystone 您的環境中啟用「支援不限彈性訂閱」（ Flex 訂閱）服務有多項需求、例如空間、機架、 PDU 、電力、 以及散熱、並於稍後討論其他網路和安全需求。
+
+
+
+== 空間
+
+代管 Flex 訂閱基礎架構設備的場地空間（由客戶提供）。NetApp 會根據最終組態提供重量規格。
+
+
+
+== 機架
+
+客戶營運產品中的四個柱式機架（由客戶提供）。在 NetApp 營運的產品中、 NetApp 或客戶可以視需求提供機架。NetApp 提供 42 個深機架。
+
+
+
+== PDU
+
+您應該提供電力分配單元（ PDU ）、連接到兩個獨立且受保護的電路、並有足夠的 C13 插座。在客戶營運的產品中、在某些情況下、需要 C19 插座。在 NetApp 營運的產品中、 NetApp 或客戶可視需求提供 PDU 。
+
+
+
+== 強大威力
+
+您應該提供所需的電力。NetApp 將根據 200V 額定值（典型 A 、 Max A 、典型 W 、最大 W 、電源線類型、 和數量）。所有元件都有備援電源供應器。NetApp 將提供機櫃內的電源線。
+
+
+
+== 散熱
+
+NetApp 可根據最終組態和需求、提供散熱需求規格（一般 BTU 、最大 BTU ）。
+
+
+
+== 網路
+
+根據客戶需求和使用的儲存控制器、 NetApp 可在客戶現場提供 10 GB 、 40 GB 和 100 GB 的連線能力。
+
+NetApp 僅為 NetApp 提供的 Flex 訂購基礎架構裝置提供所需的收發器。您應提供客戶裝置所需的收發器、並將纜線連接至 NetApp 提供的 Flex 訂購基礎架構裝置。

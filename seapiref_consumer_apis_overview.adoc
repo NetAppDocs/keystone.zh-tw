@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: seapiref_consumer_apis_overview.html 
+keywords: netapp, keystone, consumer, apis, overview, 
+summary: Keystone 使用者 API 總覽 
+---
+= 總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本節說明下列使用者 API ：
+
+* 雲端協調 API
+* 區塊儲存 API
+* 檔案服務 API
+* 物件儲存 API
+* 報告 API
+* （使用者）管理 API
+

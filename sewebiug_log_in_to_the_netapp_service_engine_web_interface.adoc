@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_log_in_to_the_netapp_service_engine_web_interface.html 
+keywords: netapp, keystone, log, in, netapp, service, engine, web, interface, 
+summary: 登入 NetApp 服務引擎網路介面 
+---
+= 登入 NetApp Service Engine 網路介面
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要使用 NetApp Service Engine 網路介面、您必須擁有帳戶。您的帳戶會被指派一或多個角色（由 NetApp 服務引擎管理員指派）來決定您的權限、以及您可以在 NetApp 服務引擎入口網站中執行的活動。
+
+NetApp 服務引擎可讓您使用下列認證登入：
+
+* 使用者名稱和密碼（請參閱 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-user-name-and-password["以使用者名稱和密碼登入"]）
+* NetApp SSO （請參閱 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-netapp-sso["使用 NetApp SSO 登入"]）
++
+向 NetApp 服務引擎管理員確認您的 NetApp 服務引擎執行個體所使用的登入選項。
+
+
+
+
+
+=== 角色型存取
+
+下表列出角色型存取說明。
+
+|===
+| 角色 | 存取 
+
+
+| 合作夥伴管理員 / 帳戶擁有者 | 可執行管理租戶及其訂閱的所有工作。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["此連結"]。 
+
+
+| 客戶 / 租戶管理員 | 客戶或租戶管理員可以執行與管理子租戶相關的所有行動。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["此連結"]。 
+
+
+| NetApp 管理員（讀取） | 所有元件的唯讀存取權。 
+
+
+| NetApp 管理員 | 完整存取權限、可在 NetApp Service Engine 入口網站中執行所有功能、以管理 NetApp Keystone 「支援資訊」訂閱、以及合作夥伴與租戶管理的所有活動。 
+|===
+
+
+=== 以使用者名稱和密碼登入
+
+若要以使用者名稱和密碼登入、您需要：
+
+* 您的 NetApp Service Engine 網路介面使用者名稱和密碼
+* NetApp 服務引擎入口網站的 URL
+* 網頁瀏覽器
+
+
+.步驟
+. 在網頁瀏覽器中、前往 NetApp 服務引擎入口網站的 URL 。隨即顯示登入頁面。
+. 選取 * 本機使用者登入 * 。
+. 在「登入 NetApp Keystone 到資訊區」頁面上、輸入您的使用者名稱和密碼、然後按一下「 * 登入 * 」。
+. 成功登入後、 NetApp Service Engine 網路介面會載入、並在儀表板開啟。如需 GUI 總覽、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服務引擎 Web 介面總覽"]。
+
+
+
+NOTE: 如果登入成功、但看不到儀表板、請洽詢 NetApp 服務引擎入口網站管理員、確認您的 NetApp 服務引擎入口網站帳戶已獲指派正確的角色。
+
+
+
+=== 使用 NetApp SSO 登入
+
+若要使用 NetApp SSO 登入、您需要：
+
+* NetApp SSO 帳戶。您可以在 NetApp 支援網站申請帳戶、從登入畫面選取 * 建立 NetApp SSO 帳戶 * 、然後依照後續步驟進行。
+* NetApp 服務引擎入口網站的 URL 。
+* 網頁瀏覽器。
+
+
+.步驟
+. 在網頁瀏覽器中、前往 NetApp 服務引擎入口網站的 URL 。隨即顯示登入頁面。
+. 選擇 NetApp SSO 。
+. 在 SSO 登入頁面上、輸入您的使用者名稱和密碼、然後按一下 * 登入 * 。
++
+成功登入 NetApp 服務引擎網路介面後、會顯示 Flex 訂閱儀表板。如需 GUI 總覽、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服務引擎 Web 介面總覽"]。
+
+
+
+
+
+=== 登出 NetApp Service Engine 網路介面
+
+.步驟
+. 若要登出介面、請按一下使用者圖示、然後按一下 * 登出 * 。
+
+
+image:sewebiug_image7.png["錯誤：缺少圖形影像"]

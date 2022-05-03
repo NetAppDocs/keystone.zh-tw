@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm-keystone-and-aiq.html 
+keywords: netapp, keystone, aiq keystone customers, Active IQ and keystone 
+summary: 客戶可在 Active IQ 《關於 Keystone 的資訊 
+---
+= Flex 訂閱客戶可以在 Active IQ 功能不全的情況下檢視哪些內容？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您訂閱 NetApp Keystone 了《支援不限彈性訂閱》（ Flex 訂閱）服務、您可以在 Active IQ 《支援不限數位顧問》儀表板上檢視您的使用報告和圖表。
+
+如需 Active IQ 更多關於「景點數位顧問」的資訊、請參閱 link:https://docs.netapp.com/us-en/active-iq/index.html["《數位顧問》文件 Active IQ"]
+
+如果您的站台預設已安裝 NetApp 服務引擎、除了 Active IQ 透過「支援資訊顧問」之外、您還可以透過 NetApp 服務引擎介面檢視使用量圖表。不過、在客戶管理的環境中、您無法存取 NetApp 服務引擎介面、而且您只能透過 Active IQ 「 BMC Digital Advisor 儀表板」檢視容量圖表和使用報告。如需客戶管理環境的相關資訊、請參閱 link:nkfsosm_overview.html["營運模式、角色和責任"]
+
+從您的網站收集度量資料的時間間隔為 5 分鐘。
+
+身為客戶、如果您已訂閱 Flex 訂閱服務、您可以在 Active IQ 下列資訊中檢視：
+
+* * Keystone Flex 訂閱 * 小工具：如果您已登入 Active IQ 到 SageDigital Advisor 、您可以看到 * Keystone Flex 訂閱 * 小工具、其中摘要說明您購買的 Flex 訂閱服務的容量使用量。
+* 如果您按一下小工具上的 * 檢視詳細資料 * 、就會看到 * 基礎概念 - 容量使用率 * 儀表板。「 * 基礎概念 - 容量使用率 * 」儀表板可根據訂閱的服務（例如服務層級、資料保護和進階資料保護服務）、進一步細分和分析容量和使用量資料。儀表板也會顯示過去 1 、 7 和 30 天的已用、已認可和突發容量使用量圖表、並計算和分割您目前的計費期間內的平均累積量。
+
+
+如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["透過「 View Flex 訂閱」檢視容量使用率 NetApp Keystone"]。

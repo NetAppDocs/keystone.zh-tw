@@ -1,0 +1,257 @@
+---
+sidebar: sidebar 
+permalink: seapiref_regions.html 
+keywords: netapp, keystone, regions, 
+summary: Keystone 區域 
+---
+= 區域
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用下表所列的方法來建立、修改及刪除區域。如需可讓您擷取區域的 API 、請參閱（消費者）管理 API 。
+
+|===
+| HTTP 方法 | 路徑 | 說明 
+
+
+| 《 Get 》（取得） | /v2.1 / 地區 | 取得地區。 
+
+
+| 《 Get 》（取得） | /`v2.1 / 地區 / ｛ name ｝ ' | 依名稱取得地區。 
+
+
+| 貼文 | /v2.1 / 地區 | 建立新區域。 
+
+
+| 《投入》 | /`v2.1 / 地區 / ｛ name ｝ ' | 修改區域的詳細資料。 
+
+
+| " 刪除 " | /`v2.1 / 地區 / ｛ name ｝ ' | 刪除區域。 
+|===
+
+
+=== 區域屬性
+
+下表列出區域屬性。
+
+|===
+| 屬性 | 類型 | 說明 
+
+
+| "id" | 字串 | 區域的唯一識別碼。 
+
+
+| 名稱 | 字串 | 區域名稱。 
+
+
+| 「描述」 | 字串 | 區域的說明。 
+|===
+
+
+=== 擷取區域
+
+使用下表所列的方法擷取所有區域或區域子集。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / 地區 | 擷取區域。 | 「偏移」和「限制」、請參閱 link:seapiref_netapp_service_engine_rest_apis.html#pagination>["常見分頁"] 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 4,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5e7bf44daab46c00014ce77f",
+        "name": "au-east8",
+        "description": "This is the new region description",
+        "zones": []
+      }
+    ]
+  }
+}
+....
+
+
+=== 依名稱擷取區域
+
+使用下表所列的方法、依名稱擷取區域。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /`v2.1 / 地區 / ｛ name ｝ ' | 依名稱擷取區域。 | 名稱（字串）：區域名稱。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "au-east1",
+        "description": "string",
+        "zones": [
+          "au-east1-a"
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== 建立區域
+
+使用下表所列的方法建立區域。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 貼文 | /v2.1 / 地區 | 建立新區域。 | 無 
+|===
+必要的要求內容屬性：「 name 」
+
+* 索取本文範例： *
+
+....
+{
+  "name": "MyRegionName",
+  "description": "DescriptionOfMyRegion"
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e616f849b64790001fe9658",
+        "name": "MyRegionName",
+        "Description": "DescriptionOfMyRegion",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "created": "0001-01-01T00:00:00Z",
+        "tags": null
+      }
+    ]
+  }
+}
+....
+
+
+=== 修改區域
+
+請使用下表所列的方法來修改區域。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《投入》 | /`v2.1 / 地區 / ｛ name ｝ ' | 修改依名稱識別的區域。您可以變更區域的名稱和說明。 | 名稱（字串）：區域名稱。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+{
+  "name": "MyRegionName",
+  "description": "NewDescriptionOfMyRegion"
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e616f849b64790001fe9658",
+        "name": "MyRegionName",
+        "description": "NewDescriptionOfMyRegion",
+        "zones": []
+      }
+    ]
+  }
+}
+....
+
+
+=== 刪除區域
+
+使用下表所列的方法刪除區域。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| " 刪除 " | /`v2.1 / 地區 ｛ name ｝ ' | 刪除以名稱識別的單一區域。必須先刪除區域內的所有區域。 | 「 Name （ string ）（名稱（字串））」：區域名稱。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+No content for succesful delete
+....

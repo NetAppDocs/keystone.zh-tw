@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_file_server.html 
+keywords: netapp, keystone, modify, file, server, 
+summary: 修改檔案伺服器 
+---
+= 修改檔案伺服器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以對現有伺服器進行下列變更：
+
+. 變更伺服器名稱
+. 啟用伺服器 CIFS 、並指定 Active Directory 使用者名稱和密碼、 Active Directory 網域、 DNS 伺服器、伺服器名稱、以及 Active Directory 組織單位（選用）。Active Directory 認證必須是擁有權限的使用者、才能將電腦加入 Active Directory 網域。
+. 指定要將伺服器複寫到的區域或區域、以啟用非同步災難恢復 DP 。
+
+
+
+NOTE: 如果已啟用非同步災難恢復、則無法停用。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["災難恢復"]。
+
+.步驟
+. 檢視 link:sewebiug_view_servers.html#view-servers["檔案伺服器清單"]。
+. 在清單中找到伺服器、然後按一下該伺服器的「 Edit （編輯）」圖示。（如需使用清單中項目的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視動作"]）。
+. 視需要進行任何變更；請參閱 link:sewebiug_create_a_file_server.html["建立檔案伺服器"] 以取得欄位說明。
+. 按一下「 * 完成 * 」。這會建立工作來修改伺服器。
+
+
+修改伺服器會以非同步工作的形式執行。您可以：
+
+* 檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
+* 工作完成後、請檢查伺服器清單中的伺服器狀態。
+

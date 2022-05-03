@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_service_requests_overview.html 
+keywords: netapp, keystone, managing, service, requests, overview, 
+summary: Keystone 管理服務要求總覽 
+---
+= 總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+針對下列項目提出服務要求：
+
+* 備份還原
+* 災難恢復容錯移轉
+* NetApp 服務引擎的技術問題
+* 本節不涵蓋的任何其他問題說明：
+* 如何提出服務要求
+* 如何追蹤服務要求
+* 服務要求程序
+

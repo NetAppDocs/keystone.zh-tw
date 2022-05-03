@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_overview.html 
+keywords: netapp, service, engine, web, portal, 
+summary: NetApp 服務引擎網站入口網站總覽 
+---
+= NetApp Service Engine 網路介面
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp 服務引擎入口網站可讓您管理及監控 NetApp Keystone 一套《支援不限彈性訂閱》（ Flex 訂購）服務。入口網站包含下列元件：
+
+* 圖形化使用者介面（ NetApp Service Engine 網路介面）、可支援監控及簡單的儲存資源配置。使用者介面（ UI ）上的功能表選項可根據租戶和子租戶的服務和訂閱來使用。
+* 一組 REST API 、可執行更進階的設定與儲存管理動作。本指南說明如何使用 NetApp 服務引擎網路介面。本文件不涵蓋僅透過 REST API 提供的功能。
+
+
+本節說明 NetApp 服務引擎的概念與元素。
+
+
+
+=== NetApp 服務引擎的主要概念
+
+NetApp 服務引擎支援區域和區域的概念。區域代表資料中心或站台、而區域代表區域內的儲存子單位（技術上是資料中心或站台內的叢集）。多個區域支援資料可用度與資料保護（ DP ）功能。
+
+image:sewebiug_image1.png["錯誤：缺少圖形影像"]
+
+單一 NetApp 服務引擎執行個體可支援一或多個租戶。NetApp Service Engine 將租戶和子租戶的概念當成階層實體、用來擁有或管理儲存服務。
+
+租戶可以是客戶、合作夥伴或帳單實體。租戶持有 Flex 訂閱服務的訂閱（或多份訂閱）。
+
+子租戶是租戶內的實體。它可用於顯示、安全性分離等。
+
+每個子租戶都會建立儲存項目。每個子租戶都可以擁有多個適合該子租戶的類型和編號儲存項目。
+
+NetApp 服務引擎支援下列類型的儲存設備：
+
+* 區塊儲存區和磁碟中的區塊儲存
+* 檔案伺服器和檔案共用中的檔案儲存設備
+* 儲存在貯體中的物件
+* Cloud Volume Services for Google Cloud Platform 與 Azure NetApp Files 架構
+
+
+
+
+=== 功能可用度取決於訂閱
+
+根據您在 NetApp 服務引擎營運模式中的訂閱、租賃和角色、您可以使用這些功能和選項（畫面和索引標籤）。如需相關資訊、請參閱服務供應商與客戶及營運模式、角色與責任。

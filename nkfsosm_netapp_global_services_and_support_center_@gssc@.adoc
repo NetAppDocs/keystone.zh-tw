@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html 
+keywords: netapp, keystone, global, services, support, center, gssc, 
+summary: NetApp 全球服務與支援中心（ GSSC ） 
+---
+= 彈性訂閱服務營運
+:allow-uri-read: 
+
+
+[role="lead"]
+利用 NetApp 全球服務與支援中心（ GSSC ）、《成功案例》（英文）和《支援服務》（英文）經理來執行《支援服務》（英文） NetApp Keystone NetApp Keystone NetApp Keystone 。
+
+
+
+== NetApp 全球服務與支援中心（ GSSC ）
+
+NetApp 可遠端為 NetApp Keystone 客戶提供營運服務。這些服務涵蓋各種儲存管理活動的營運領域、包括資產與組態管理、容量與效能管理、變更管理、事件、事件與問題管理、服務要求履行及報告。NetApp 將視需要證明控管狀態和支援證據。
+
+
+
+== 其他資訊與支援聯絡人
+
+NetApp 全球服務與支援中心（ GSSC ）團隊主要支援 NetApp Keystone 服務對象為 SESTFlex 訂閱客戶。
+
+直接從 NetApp 服務引擎入口網站（ * 支援 > 服務要求 * ）提出問題單、並提供適當的問題詳細資料以取得協助。
+
+您也可以使用下列資訊聯絡支援團隊。
+
+* 全球服務聯絡人：https://www.netapp.com/us/contact-us/support.aspx[]
+* 如果您有需要提報的待處理個案 / 問題單、請傳送電子郵件至下列其中一個地址： Keystone.services@netapp.com Keystone.escalations@netapp.com
+* NetApp 使用 OpsRamp, 這是一種雲端型遠端閘道解決方案 , 可主動監控 NetApp Keystone 及連線至該環境以進行疑難排解。如需 OpsRamp 的相關資訊、請參閱 https://www.opsramp.com/#[]。
+
+
+
+NOTE: 在合作夥伴營運的模式中、租戶與租戶的服務要求會指派給合作夥伴的服務服務台。合作夥伴的支援工具可能已與 OpsRamp 和 GSSC 應用程式整合。只有 L3 問題會透過 GSSC 提報給 NetApp 。
+
+若要深入瞭解本文所述資訊、請檢閱下列文件和 / 或網站：
+
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* NetApp 產品文件https://docs.netapp.com["https://docs.netapp.com"^]
+

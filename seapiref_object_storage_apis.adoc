@@ -1,0 +1,1285 @@
+---
+sidebar: sidebar 
+permalink: seapiref_object_storage_apis.html 
+keywords: netapp, keystone, object, storage, apis, 
+summary: Keystone 物件儲存 API 
+---
+= 物件儲存 API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本節提供 API 來管理物件儲存設備、物件儲存使用者及物件儲存群組。
+
+物件儲存工作流程包括下列工作：
+
+* 建立物件儲存帳戶。
+* 建立物件儲存群組。
+* 建立物件儲存使用者。
+* 為使用者建立 S3 金鑰。
+
+
+
+
+=== 物件儲存群組
+
+使用下表所列的方法擷取、建立或修改物件儲存群組。
+
+|===
+| HTTP 方法 | 路徑 | 說明 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 群組 | 擷取物件儲存群組。 
+
+
+| 《 Get 》（取得） | 「 v2.1 / 物件 / 群組 / ｛ id ｝ 」 | 依 ID 擷取物件儲存群組。 
+
+
+| 貼文 | /v2.1 / 物件 / 群組 | 建立物件儲存身分識別存取管理群組。 
+
+
+| 《投入》 | 「 v2.1 / 物件 / 群組 / ｛ id ｝ 」 | 修改 ID 識別的物件儲存群組。 
+
+
+| " 刪除 " | 「 v2.1 / 物件 / 群組 / ｛ id ｝ 」 | 刪除 ID 識別的物件儲存群組。 
+|===
+
+
+==== 物件儲存群組屬性
+
+下表列出物件儲存屬性。
+
+|===
+| 屬性 | 類型 | 說明 
+
+
+| "id" | 字串 | 物件儲存群組的唯一識別碼。 
+
+
+| 名稱 | 字串 | 物件儲存群組名稱。 
+
+
+| 《 Sub租 戶》 | 字串 | 群組所屬的子租戶名稱。 
+
+
+| 《 Subenter_id 》 | 字串 | 群組所屬子租戶的識別碼。 
+
+
+| 《租戶》 | 字串 | 群組所屬租戶的名稱。 
+
+
+| 租戶 ID | 字串 | 群組所屬租戶的識別碼。 
+
+
+| "s_policy_" |   a| 
+S3 原則例如：
+
+[listing]
+----
+"s3_policy": {
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": "s3:*",
+        "Resource": "arn:aws:s3:::*"
+      }
+    ]
+  }
+----
+|===
+
+
+=== 擷取物件儲存群組
+
+使用下表所列的方法擷取所有物件儲存群組或物件儲存群組的子集。指定「子租戶 ID 」只會傳回屬於該子租戶的物件儲存群組。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 群組 | 擷取所有物件儲存群組。您也可以指定子租戶 ID 、以便只擷取與子租戶相關聯的物件儲存群組。 | 「 ubtenter_id （字串）」：與身分識別與存取管理（ IAM ）使用者 / 群組相關的子租戶 ID 。「偏移」和「限制」、請參閱 link:seapiref_netapp_service_engine_rest_apis.html#pagination>["常見分頁"] 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 1,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 20,
+    "records": [
+      {
+        "id": "5eb1eff8bc5c0300011c989c",
+        "name": "MyGroup",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant",
+        "subtenant_id": "5e7c3af8aab46c00014ce878",
+        "subtenant": "MySubtenant",
+        "s3_policy": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:*"
+              ],
+              "Effect": "Allow",
+              "Resource": "arn:aws:s3:::*"
+            }
+          ]
+        }
+      }
+    ]
+
+....
+
+
+==== 依 ID 擷取物件儲存群組
+
+使用下表所列的方法、依 ID 擷取物件儲存群組。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | 「 v2.1 / 物件 / 群組 / ｛ id ｝ 」 | 依 ID 擷取物件儲存群組。 | 「 ID （字串）」：物件儲存群組的唯一識別碼。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5eb1eff8bc5c0300011c989c",
+        "name": "MyGroup",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant",
+        "subtenant_id": "5e7c3af8aab46c00014ce878",
+        "subtenant": "MySubtenant",
+        "s3_policy": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:*"
+              ],
+              "Effect": "Allow",
+              "Resource": "arn:aws:s3:::*"
+            }
+          ]
+        }
+      }
+    ]
+  }
+....
+
+
+==== 建立物件儲存群組
+
+使用下列方法建立物件儲存群組。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 貼文 | /v2.1 / 物件 / 群組 /' | 建立新的物件儲存群組服務、以裝載物件儲存使用者。 | 無 
+|===
+必要的要求內容屬性：「 name 」、「 shubenter_id 」、「 s3Policy 」
+
+* 索取本文範例： *
+
+....
+{
+  "name": "MyNewGroup",
+  "subtenant_id": "5e7c3af8aab46c00014ce878",
+  "s3_policy": {
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": "s3:*",
+        "Resource": "arn:aws:s3:::*"
+      }
+    ]
+  }
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5fa312c356a0001a73841",
+        "action": "create",
+        "job_summary": "Create request is successfully submitted",
+        "created": "2020-06-02T07:05:21.130260774Z",
+        "updated": "2020-06-02T07:05:21.130260774Z",
+        "object_id": "5ed5fa312c356a0001a73840",
+        "object_type": "sg_groups",
+        "object_name": "MyNewGroup",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+
+==== 修改物件儲存群組
+
+使用下表所列的方法來修改物件儲存群組。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《投入》 | 「 v2.1 / 物件 / 群組 / ｛ id ｝ 」 | 修改物件儲存群組。 | 「 ID （字串）」：物件儲存群組的唯一識別碼。 
+|===
+必要的要求內容屬性：「 name 」、「 shubenter_id 」、「 s3Policy 」
+
+* 索取本文範例： *
+
+....
+{
+  "s3_policy": {
+    "Statement": [
+        {
+        "Action": [
+            "s3:ListAllMyBuckets",
+            "s3:ListBucket",
+            "s3:ListBucketVersions",
+            "s3:GetObject",
+            "s3:GetObjectTagging",
+            "s3:GetObjectVersion",
+            "s3:GetObjectVersionTagging"
+        ],
+        "Effect": "Allow",
+        "Resource": "arn:aws:s3:::*"
+        }
+    ]
+  }
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed5fe822c356a0001a73859",
+        "action": "update",
+        "job_summary": "Update request is successfully submitted",
+        "created": "2020-06-02T07:23:46.43550235Z",
+        "updated": "2020-06-02T07:23:46.43550235Z",
+        "object_id": "5ed5fa312c356a0001a73840",
+        "object_type": "sg_groups",
+        "object_name": "MyNewGroup",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+
+==== 依 ID 刪除物件儲存群組
+
+使用下表所列的方法、依 ID 刪除物件儲存群組。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| " 刪除 " | 「 v2.1 / 物件 / 群組 / ｛ id ｝ 」 | 依 ID 刪除物件儲存群組。 | 「 ID （字串）」：物件儲存群組的唯一識別碼。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5eb1eff8bc5c0300011c989c",
+        "name": "MyGroup",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant",
+        "subtenant_id": "5e7c3af8aab46c00014ce878",
+        "subtenant": "MySubtenant",
+        "s3_policy": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:*"
+              ],
+              "Effect": "Allow",
+              "Resource": "arn:aws:s3:::*"
+            }
+          ]
+        }
+      }
+    ]
+  }
+....
+
+
+=== 物件儲存使用者
+
+請使用下表所列的方法來執行下列工作：
+
+* 擷取、建立或修改物件儲存使用者。
+* 建立 S3 金鑰、擷取使用者的 S3 金鑰、或依金鑰 ID 擷取金鑰。
+
+
+|===
+| HTTP 方法 | 路徑 | 說明 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 使用者 | 擷取物件儲存使用者。 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 使用者 / ｛ id ｝ | 依 ID 擷取物件儲存使用者。 
+
+
+| 貼文 | /v2.1 / 物件 / 使用者 | 建立物件儲存使用者。 
+
+
+| 《投入》 | /v2.1 / 物件 / 使用者 / ｛ id ｝ | 修改識別 ID 的物件儲存使用者。 
+
+
+| " 刪除 " | /v2.1 / 物件 / 使用者 / ｛ id ｝ | 依 ID 刪除物件儲存使用者。 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 使用者 / ｛ user_id ｝ / s3keys ｝ | 取得所有對應至使用者的 S3 金鑰。 
+
+
+| 貼文 | /v2.1 / 物件 / 使用者 / ｛ user_id ｝ / s3keys ｝ | 建立 S3 金鑰。 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 使用者 / ｛ user_id ｝ / s3keys/{key_id} | 依金鑰 ID 取得 S3 金鑰。 
+
+
+| " 刪除 " | /v2.1 / 物件 / 使用者 / ｛ user_id ｝ / s3keys/{key_id} | 依金鑰 ID 刪除 S3 金鑰。 
+|===
+
+
+==== 物件儲存使用者屬性
+
+下表列出物件儲存使用者屬性。
+
+|===
+| 屬性 | 類型 | 說明 
+
+
+| "id" | 字串 | 物件儲存使用者的唯一識別碼。 
+
+
+| "DisPlay_name" | 字串 | 使用者的顯示名稱。 
+
+
+| 《 Sub租 戶》 | 字串 | 使用者所屬的子租戶名稱。 
+
+
+| 《 Subenter_id 》 | 字串 | 使用者所屬的子租戶識別碼。 
+
+
+| 《租戶》 | 字串 | 使用者所屬的租戶名稱。 
+
+
+| 租戶 ID | 字串 | 使用者所屬租戶的識別碼。 
+
+
+| 《物件 am_user_urn' 》 | 字串 | URN ： 
+
+
+| "g_group 成員資格 " | 字串 | NetApp StorageGRID 團隊成員資格。例如： "SG_group_bodes" ： [ "5d2fb0fb4f47df00015274e3" ] 
+|===
+
+
+=== 擷取物件儲存使用者
+
+使用下表所列的方法擷取所有物件儲存使用者或物件儲存使用者的子集。指定「子租戶 ID 」只會傳回屬於該子租戶的物件儲存群組。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 使用者 | 擷取所有物件儲存使用者。 | 「 ubenture_id （字串）」：與 IAM 使用者 / 群組相關聯的子租戶 ID 。「偏移」和「限制」–請參閱 link:seapiref_netapp_service_engine_rest_apis.html#pagination>["常見分頁"] 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 1,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 20,
+    "records": [
+      {
+        "id": "5eb2212d1cbe3b000134762e",
+        "display_name": "MyUser",
+        "subtenant": "MySubtenant",
+        "subtenant_id": "5e7c3af8aab46c00014ce878",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant",
+        "objectiam_user_urn": "urn:sgws:identity::96465636379595351967:user/myuser",
+        "sg_group_membership": [
+          "5eb1eff8bc5c0300011c989c"
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+==== 依 ID 擷取物件儲存使用者
+
+使用下表所列的方法、依 ID 擷取物件儲存設備使用量。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 使用者 ｛ id ｝ | 依 ID 擷取物件儲存使用者。 | 「 id 」：物件儲存帳戶 ID 。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5eb2212d1cbe3b000134762e",
+        "display_name": "MyUser",
+        "subtenant": "MySubtenant",
+        "subtenant_id": "5e7c3af8aab46c00014ce878",
+        "tenant_id": "5e7c3af7aab46c00014ce877",
+        "tenant": "MyTenant",
+        "objectiam_user_urn": "urn:sgws:identity::96465636379595351967:user/myuser",
+        "sg_group_membership": [
+          "5eb1eff8bc5c0300011c989c"
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+==== 建立物件儲存使用者
+
+使用下表所列的方法來建立物件儲存使用者。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 貼文 | /v2.1 / 物件 / 使用者 | 建立新的物件儲存使用者。 | 無 
+|===
+必要的要求內容屬性：「顯示名稱」、「子用戶 ID 」、「組成員資格」
+
+* 索取本文範例： *
+
+....
+{
+  "display_name": "MyUserName",
+  "subtenant_id": "5e7c3af8aab46c00014ce878",
+  "sg_group_membership": [
+    "5ed5fa312c356a0001a73840"
+  ]
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed603712c356a0001a7386c",
+        "action": "create",
+        "job_summary": "Activate request is successfully submitted",
+        "created": "2020-06-02T07:44:49.647815816Z",
+        "updated": "2020-06-02T07:44:49.647815816Z",
+        "object_id": "5ed603712c356a0001a7386d",
+        "object_type": "sg_users",
+        "object_name": "MyUserName",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+
+==== 修改物件儲存使用者
+
+使用下表所列的方法來修改物件儲存使用者。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《投入》 | /v2.1 / 物件 / 使用者 / ｛ id ｝ | 修改識別 ID 的物件儲存使用者。 | 「 id 」：物件儲存使用者 ID 。 
+|===
+必要的要求內容屬性：「顯示名稱」、「子用戶 ID 」、「組成員資格」
+
+* 索取本文範例： *
+
+....
+{
+  "display_name": "MyModifiedObjectStorageUser",
+  "subtenant_id": "5e57a465896bd80001dd4961",
+  "sg_group_membership": [
+    "5e60754f9b64790001fe937b"
+  ]
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed604002c356a0001a73880",
+        "action": "update",
+        "job_summary": "Update request is successfully submitted",
+        "created": "2020-06-02T07:47:12.205889873Z",
+        "updated": "2020-06-02T07:47:12.205889873Z",
+        "object_id": "5ed603712c356a0001a7386d",
+        "object_type": "sg_users",
+        "object_name": "MyUserName",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+
+==== 將所有 S3 金鑰對應至物件儲存使用者
+
+使用下表所列的方法、將所有 S3 金鑰對應至物件儲存使用者。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 使用者 / ｛ user_id ｝ / s3keys ｝ | 為物件儲存使用者建立 S3 金鑰。 | 「 user_id （字串）」：物件儲存使用者識別碼。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5e66de2509a74c0001b895e7",
+        "display_name": "****************HNDE",
+        "subtenant_id": "5e57a465896bd80001dd4961",
+        "subtenant": "BProject",
+        "objectiam_user_id": "5e66c77809a74c0001b89598",
+        "objectiam_user": "MyNewObjectStorageUser",
+        "objectiam_user_urn": "urn:sgws:identity::09936502886898621050:user/mynewobjectstorageuser",
+        "expires": "2020-04-07T10:40:52Z"
+      }
+    ]
+....
+
+
+==== 為物件儲存使用者建立 S3 金鑰
+
+使用下列方法為物件儲存使用者建立 S3 金鑰。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 貼文 | /v2.1 / 物件 / 使用者 / ｛ user_id ｝ / s3keys ｝ | 為物件儲存使用者建立 S3 金鑰。 | 「 user_id （字串）」：物件儲存使用者識別碼。 
+|===
+必要的要求內容屬性：「 Expires 」（字串）
+
+
+NOTE: 金鑰到期日 / 時間是以 UTC 設定、必須在未來設定。
+
+* 索取本文範例： *
+
+....
+{
+  "expires": "2020-04-07T10:40:52Z"
+}
+....
+* 回應本文範例： *
+
+....
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e66de2509a74c0001b895e7",
+        "display_name": "****************HNDE",
+        "subtenant_id": "5e57a465896bd80001dd4961",
+        "subtenant": "BProject",
+        "objectiam_user_id": "5e66c77809a74c0001b89598",
+        "objectiam_user": "MyNewObjectStorageUser",
+        "objectiam_user_urn": "urn:sgws:identity::09936502886898621050:user/mynewobjectstorageuser",
+        "expires": "2020-04-07T10:40:52Z",
+        "access_key": "PL86KPEBN6XT4T7UHNDE",
+        "secret_key": "FlD/YWAM7JMr9gG8pumU8dzvcTLMzLYtUe2lNzcA"
+      }
+    ]
+  }
+}
+....
+
+
+==== 依金鑰 ID 取得物件儲存使用者的 S3 金鑰
+
+使用下表所列的方法、依金鑰 ID 取得物件儲存使用者的 S3 金鑰。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / 物件 / 使用者 / ｛ user_id ｝ / s3keys/{key_id} | 依金鑰 ID 取得 S3 金鑰。  a| 
+* 「 user_id （字串）」：物件儲存使用者 ID 。例如： 5e66c77809a74c0001b89598
+* 「 key_id （字串）」： S3 金鑰、例如： 5e66de2509a74c0001b895e7
+
+
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ecc7bb9b5d2730001f798fb",
+        "display_name": "****************XCXD",
+        "subtenant_id": "5e7c3af8aab46c00014ce878",
+        "subtenant": "MySubtenant",
+        "objectiam_user_id": "5eb2212d1cbe3b000134762e",
+        "objectiam_user": "MyUser",
+        "objectiam_user_urn": "urn:sgws:identity::96465636379595351967:user/myuser",
+        "expires": "2020-05-27T00:00:00Z"
+      }
+    ]
+  }
+}
+....
+
+
+==== 依金鑰 ID 刪除 S3 金鑰
+
+使用下表所列的方法、依金鑰 ID 刪除 S3 金鑰。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| " 刪除 " | /v2.1 / 物件 / 使用者 / ｛ user_id ｝ / s3keys/{key_id} | 依金鑰 ID 刪除 S3 金鑰。  a| 
+* 「 user_id （字串）」：物件儲存使用者 ID 。例如： 5e66c77809a74c0001b89598
+* 「 key_id （字串）」： S3 金鑰、例如： 5e66de2509a74c0001b895e7
+
+
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+No content to return for succesful execution
+....
+
+
+=== 物件儲存帳戶
+
+請使用下表所列的方法來執行下列工作：
+
+* 擷取、啟動或修改物件儲存帳戶。
+* 建立 S3 儲存區。
+
+
+|===
+| HTTP 方法 | 路徑 | 說明 
+
+
+| 《 Get 》（取得） | /v2.1 / objectstorage / 帳戶 | 擷取物件儲存帳戶。 
+
+
+| 《 Get 》（取得） | /v2.1 / objectstorage / 帳戶 / ｛ id ｝ | 依 ID 擷取物件儲存帳戶。 
+
+
+| 貼文 | /v2.1 / objectstorage / 帳戶 | 建立物件儲存帳戶。 
+
+
+| 《投入》 | /v2.1 / objectstorage / 帳戶 / ｛ id ｝ | 修改 ID 所識別的物件儲存帳戶。 
+
+
+| " 刪除 " | /v2.1 / objectstorage / 帳戶 / ｛ id ｝ | 修改 ID 所識別的物件儲存帳戶。 
+
+
+| 《 Get 》（取得） | /v2.1 / objectstorage / 桶 | 取得 S3 儲存桶。 
+
+
+| 貼文 | /v2.1 / objectstorage / 桶 | 建立 S3 儲存區。 
+|===
+
+
+==== 物件儲存帳戶屬性
+
+下表列出物件儲存帳戶屬性。
+
+|===
+| 屬性 | 類型 | 說明 
+
+
+| "id" | 字串 | 物件儲存使用者的唯一識別碼。 
+
+
+| 《 Subenter_id 》 | 字串 | 子租戶物件執行個體的識別碼。 
+
+
+| "quota _GB" | 整數 | 共用區或磁碟的大小。 
+|===
+
+
+=== 擷取所有物件儲存帳戶
+
+使用下表所列的方法擷取所有物件儲存帳戶或物件儲存帳戶子集。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / objectstorage / 帳戶 | 擷取所有物件儲存使用者。 | 《偏移量》和《極限值》。請參閱 link:seapiref_netapp_service_engine_rest_apis.html#pagination>["常見分頁"] 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例 *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 19,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 3,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5ec6119e6344d000014cdc41",
+        "name": "MyTenant - MySubtenant",
+        "subtenant": " MySubtenant",
+        "subtenant_id": "5ea8c5e083a9f80001b9d705",
+        "tenant": "E- MyTenant",
+        "tenant_id": "5d914499869caefed0f39eee",
+        "sg_account_id": "29420999312809208626",
+        "quota_gb": 100,
+        "sg_instance_name": "NSE StorageGRID Dev1",
+        "sg_instance_id": "5e3ba2840271823644cb8ab6"
+      }
+    ]
+  }
+}
+....
+
+
+==== 依 ID 擷取物件儲存帳戶
+
+使用下表所列的方法、依 ID 擷取物件儲存帳戶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / objectstorage / 帳戶 / ｛ id ｝ | 依 ID 擷取物件儲存帳戶。 | 「 id 」：物件儲存帳戶 ID 。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ec6119e6344d000014cdc41",
+        "name": "MyTenant - MySubtennant",
+        "subtenant": " MySubtennant",
+        "subtenant_id": "5ea8c5e083a9f80001b9d705",
+        "tenant": " MyTenant",
+        "tenant_id": "5d914499869caefed0f39eee",
+        "sg_account_id": "29420999312809208626",
+        "quota_gb": 100,
+        "sg_instance_name": "NSE StorageGRID Dev1",
+        "sg_instance_id": "5e3ba2840271823644cb8ab6"
+      }
+    ]
+  }
+....
+
+
+==== 啟動物件儲存帳戶
+
+使用下表所列的方法來啟動物件儲存帳戶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 貼文 | /v2.1 / objectstorage / 帳戶 | 啟動物件儲存服務。 | 無 
+|===
+必要的要求內容屬性：「 ub租 戶 ID 、 quota _GB 」
+
+* 索取本文範例： *
+
+....
+{
+  "subtenant_id": "5ecefbbef418b40001f20bd6",
+  "quota_gb": 20
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed608542c356a0001a73893",
+        "action": "create",
+        "job_summary": "Activate request for Sub Tenant MyNewSubtenant is successfully submitted",
+        "created": "2020-06-02T08:05:40.017362022Z",
+        "updated": "2020-06-02T08:05:40.017362022Z",
+        "object_id": "5ed608542c356a0001a73894",
+        "object_type": "sg_accounts",
+        "object_name": "MyTenant - MyNewSubtenant",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+
+==== 修改物件儲存帳戶
+
+使用下表所列的方法來修改物件儲存帳戶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《投入》 | /v2.1 / objectstorage / 帳戶 / ｛ id ｝ | 修改物件儲存服務（例如變更配額）。 | 「 ID （字串）」：物件儲存帳戶 ID 。 
+|===
+必要的要求內容屬性：「 name 」、「 shubenture_id 」、「 quota _GB 」
+
+* 索取本文範例： *
+
+....
+{
+  "name": "MyTenant - MyNewSubtenant",
+  "subtenant_id": "5ecefbbef418b40001f20bd6",
+  "quota_gb": 30
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed609162c356a0001a73899",
+        "action": "update",
+        "job_summary": "Update request is successfully submitted",
+        "created": "2020-06-02T08:08:54.841652098Z",
+        "updated": "2020-06-02T08:08:54.841652098Z",
+        "object_id": "5ed608542c356a0001a73894",
+        "object_type": "sg_accounts",
+        "object_name": "MyTenant - MyNewSubtenant",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....
+
+
+==== 刪除物件儲存帳戶
+
+在刪除物件儲存帳戶之前、您必須先刪除所有相關的群組、使用者和儲存區。使用下表所列的方法來刪除物件儲存帳戶。
+
+
+NOTE: 使用 S3 相容的公用程式來刪除儲存區。無法從 NetApp 服務引擎刪除貯體。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| " 刪除 " | /v2.1 / objectstorage / 帳戶 / ｛ id ｝ | 刪除物件儲存帳戶。 | 「 ID （字串）」：物件儲存帳戶 ID 。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+{
+  "name": "MyTenant - MyNewSubtenant",
+  "subtenant_id": "5ecefbbef418b40001f20bd6",
+  "quota_gb": 30
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "action": "string",
+        "object_id": "5d2fb0fb4f47df00015274e3",
+        "object_type": "string",
+        "status": "string",
+        "status_detail": "string",
+        "last_error": "string",
+        "user_id": "5d2fb0fb4f47df00015274e3",
+        "link": "string"
+      }
+    ]
+  }
+}
+....
+
+
+=== 物件儲存桶
+
+請使用下表中的 API 來建立及擷取物件儲存桶。
+
+|===
+| HTTP 方法 | 路徑 | 說明 
+
+
+| 《 Get 》（取得） | /v2.1 / objectstorage / 桶 | 擷取物件儲存桶。 
+
+
+| 貼文 | /v2.1 / objectstorage / 桶 | 建立物件儲存桶。 
+|===
+
+
+==== 物件儲存庫屬性
+
+下表列出物件儲存區庫屬性。
+
+|===
+| 屬性 | 類型 | 說明 
+
+
+| "id" | 字串 | 物件儲存使用者的唯一識別碼。 
+
+
+| 「姓名」 | 字串 | 庫位名稱。 
+
+
+| 《 Subenter_id 》 | 字串 | 庫位所屬的子租戶識別碼。 
+|===
+
+
+==== 擷取 S3 儲存區
+
+使用下表所列的方法擷取 S3 儲存區。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 《 Get 》（取得） | /v2.1 / objectstorage / 桶 | 擷取 S3 儲存區。 | 「 ub租 戶 ID 」：擁有此儲存庫的子租戶。 
+|===
+必要的要求內容屬性：「無」
+
+* 索取本文範例： *
+
+....
+none
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "creationTime": "2020-06-02T08:13:25.695Z",
+        "name": "mybucket"
+      }
+    ]
+  }
+}
+....
+
+
+==== 建立 S3 儲存區
+
+使用下表所列的方法來建立 S3 儲存區。
+
+
+NOTE: 在您建立儲存區之前、子租戶的物件儲存帳戶必須存在。
+
+|===
+| HTTP 方法 | 路徑 | 說明 | 參數 
+
+
+| 貼文 | /v2.1 / objectstorage / 桶 | 建立 S3 儲存區。 | 無 
+|===
+必要的要求內容屬性：
+
+* 「 name 」（字串）： S3 儲存區名稱（僅限大小寫或數字字元）
+* 「 ubenture_id 」（字串）： S3 儲存區所屬子租戶的 ID
+
+
+* 索取本文範例： *
+
+....
+{
+  "name": "mybucket",
+  "subtenant_id": "5ecefbbef418b40001f20bd6"
+}
+....
+* 回應本文範例： *
+
+....
+{
+  "status": {
+    "user_message": "Okay. Accepted for processing.",
+    "verbose_message": "",
+    "code": 202
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed60a232c356a0001a7389e",
+        "action": "create",
+        "job_summary": "Create request is successfully submitted",
+        "created": "2020-06-02T08:13:23.105015108Z",
+        "updated": "2020-06-02T08:13:23.105015108Z",
+        "object_id": "5ed60a232c356a0001a7389f",
+        "object_type": "sg_buckets",
+        "object_name": "mybucket",
+        "status": "pending",
+        "status_detail": "",
+        "last_error": "",
+        "user_id": "5ec626c0f038943eb46b0af1",
+        "job_tasks": null
+      }
+    ]
+  }
+}
+....

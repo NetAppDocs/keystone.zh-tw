@@ -1,0 +1,127 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_new_file_share.html 
+keywords: netapp, keystone, create, new, file, share, 
+summary: Keystone 建立新的檔案共用區 
+---
+= 建立檔案共用區
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本節說明如何直接指定共用詳細資料、以建立新的共用區。若要根據現有共享區的 Snapshot 建立新的共享區、請參閱 link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["從 Snapshot 建立共用"]。
+
+.開始之前
+* 在檔案伺服器上建立共用區。檔案伺服器必須存在且處於作業狀態、才能建立新的檔案共用區。
+* 若要建立 CIFS 或 NFS 檔案共用、必須針對個別服務啟用伺服器。對於多傳輸協定檔案共用、伺服器應同時支援 CIFS 和 NFS 服務。
+* 若要為共用區啟用非同步災難恢復選項、您必須在啟用非同步災難恢復的伺服器上建立共用區。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["災難恢復"]。
+* 若要為共用區啟用同步災難恢復、請在啟用 MetroCluster 的區域中建立共用區。
+* 您可以定義備份原則、以便在排程的基礎上擷取檔案共用的備份。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["備份"]。
+* 您可以定義 Snapshot 原則、以便在排程的基礎上擷取檔案共用的 Snapshot 快照。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["快照"]。
+
+
+.步驟
+. 請前往 * 檔案服務 > 共享區 * 。
+. 按一下「 * 建立共用 * 」。
+. 在 Create Share （建立共用）對話方塊中、選取 Create New Share （建立新共用）。
++
+image:sewebiug_image22.png["錯誤：缺少圖形影像"]
+
++
+隨即顯示 Create Share （建立共用）頁面。
+
+. 選取共用類型： NFS 、 CIFS 或多重傳輸協定。這些選項會根據伺服器支援的服務而啟用。
+. 填寫下列欄位：
++
+|===
+| 欄位 | 說明 
+
+
+| 名稱 | 輸入共用名稱。 
+
+
+| 共用路徑 | 輸入檔案共用的路徑。若為 CIFS 共用區、在共用路徑結尾新增 $ 字元將會使其成為隱藏的共用區（例如 pathtomyhiddenshare$ ）。 
+
+
+| 區域 | 選取共用所在的區域。 
+
+
+| 區域 | 選取共用區。 
+
+
+| 檔案伺服器 | 選取要裝載共用的檔案伺服器。檔案伺服器清單取決於所選的區域、區域和共用類型。 
+
+
+| 安全風格 | 選取適用於檔案共用區的安全樣式。此清單會根據選取的共用類型自動填入。 
+|===
+. 選取效能服務層級。IOPS 和處理量限制會根據所選的服務層級來顯示。
++
+
+NOTE: 選取選項以檢視該層級的效能詳細資料（以尖峰 / 預期 IOPS / 處理量為準）。選擇最符合您需求的服務層級。
+
+. 指定檔案共用區的容量。
++
+
+NOTE: 如果指定的容量將耗用的容量置於突發中（如果容量已在暴增中、則 NetApp Service Engine 會顯示警告、容量列會變更色彩。容量檢查是根據租賃中所有訂閱的總容量來執行。
+
+. 如果在基礎檔案伺服器上啟用非同步災難恢復、則會自動為新共用區啟用非同步災難恢復複寫。如果您想要將共用區排除在非同步災難恢復複寫之外、請切換「非同步災難恢復」按鈕、使其停用。
+. 如果共享區是在啟用 MetroCluster 的區域中建立、同步災難恢復按鈕會自動啟用、而且無法停用。共用區將複寫至同步災難恢復切換下方面板中顯示的區域。
+. 如果此檔案共用區需要 Snapshot ：
++
+.. 切換以啟用 Snapshot 原則並檢視 Snapshot 原則欄位。
+.. 指定何時建立 Snapshot ：
++
+*** * 每小時。 * 指定要拍攝 Snapshot 的分鐘（小時）和要保留的每小時 Snapshot 數。
+*** * 每日。 * 指定何時（小時和分鐘）拍攝 Snapshot 的每日 Snapshot 數量。如果您想要指定每天拍攝 Snapshot 的多小時、可以在以逗號分隔的清單中新增小時數值、例如 5 、 10 、 15 、 等等。
+*** * 每週。 * 指定何時（一週中的哪一天、小時和分鐘）拍攝 Snapshot 、以及每週要保留的 Snapshot 數量。
+*** * 每月。 * 指定何時（每月、小時和分鐘）拍攝 Snapshot 、以及每月要保留的 Snapshot 數量。
+
+
+
+
+. 若要啟用此檔案共用區的備份：
++
+.. 切換以啟用備份原則和備份原則欄位。
+.. 指定備份區域。
+.. 指定每種備份類型的保留數量：每日、每週及 / 或每月。
+
+
+. 對於 NFS 或多重傳輸協定共用、請指定匯出原則。您可以在共用上套用多個匯出原則。本節僅適用於 NFS 和多重傳輸協定共用。
++
+.. 新增套用規則之用戶端的 IPV4 位址（子網路遮罩以位元數表示）。
+.. 指定讀寫存取權、以及用戶端是否具有 root 存取權（超級使用者）。
+
+
+. 對於 CIFS （ SMB ）或多重傳輸協定共用、請指定用於限制使用者存取的存取控制清單（ ACL ）。本節僅適用於 CIFS 與多重傳輸協定共用。
++
+.. 根據 Active Directory （ AD ）設定、指定要新增至 ACL 的 Windows 使用者或群組。如果您指定使用者名稱、請以「 < 網域 >\ < 使用者名稱 >' 格式加入使用者的網域。預設值為「每個人」。
+.. 指定 Windows 權限。預設值為「完全控制」。如果使用者是兩個群組的一部分、則具有較高權限的群組權限會套用至使用者的存取權限。
++
+
+NOTE: 使用者或群組名稱應遵循標準 AD 格式。如果輸入的使用者或群組與 ONTAP 在效能測試上設定的使用者或使用者群組不相符、即使檔案共用作業正常、 ACL 驗證也會在 CIFS 作業期間失敗。
+
+
+
+. 如果您要新增標記（金鑰值配對）至檔案共用區、請在「標記」區段中指定標記。
+. 按一下「 * 建立 * 」。這會建立工作來建立共用區。
+
+
+.完成後
+* 僅限 CIFS 類型共用：若要讓共用區可供主機名稱使用、您的網域管理員必須以 CIFS 伺服器名稱和 IP 位址來更新 DNS 記錄。否則、只能透過 IP 位址存取共用區。例如：
++
+** 更新 DNS 記錄後、請使用主機名稱或 IP 來存取共用區：例如 file://hostname/share["\hostname\share"^] 或 file://IP/share["\ip\share"^]
+** 在沒有更新 DNS 記錄的情況下、您必須使用 IP 位址來存取共享區、例如 file://IP/share["\ip\share"^]
+
+
+* 建立共用區會以非同步工作的形式執行。您可以：
++
+** 檢查工作清單中的工作狀態。
+** 工作完成後、請檢查「共用」清單中的共享區狀態。
+
+
+

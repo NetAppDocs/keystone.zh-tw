@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_servers.html 
+keywords: netapp, keystone, view, servers, 
+summary: Keystone 檢視伺服器 
+---
+= 檢視伺服器
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+「伺服器」清單會顯示屬於所選租戶的檔案伺服器。若要檢視清單、請從功能表中選取「檔案服務」 > 「伺服器」。
+
+清單會顯示每個伺服器的簡單資訊、例如：
+
+* 伺服器名稱
+* IP 位址
+* 子租戶
+* 區域
+* 作業狀態
+* 使用中的傳輸協定（ NFS 、 CIFS ）
+* CIFS 伺服器名稱（若相關）。
++
+如需如何使用清單功能的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視"]。
+
+

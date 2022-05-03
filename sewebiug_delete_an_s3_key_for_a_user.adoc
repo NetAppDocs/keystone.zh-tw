@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_an_s3_key_for_a_user.html 
+keywords: netapp, keystone, s3, key, user, 
+summary: Keystone 刪除使用者的 S3 金鑰 
+---
+= 刪除使用者的 S3 金鑰
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法刪除使用者的 S3 金鑰。
+
+.步驟
+. 檢視 link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["使用者清單"]。
+. 請確定已選取正確的子租戶、且顯示幕會顯示使用者（非群組）。
+. 在清單中找出使用者、然後按一下該群組的金鑰圖示。
++
+如需使用清單中項目的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視動作"]。
+
+. 「管理 S3 金鑰」對話方塊隨即顯示、顯示使用者的金鑰清單。
+. 在金鑰清單中、找到要刪除的金鑰、然後按一下刪除圖示。
+. 按一下 * 確認 * 以確認刪除動作。金鑰會從使用者金鑰清單中移除。
+. 按一下「 * 關閉 * 」以關閉「管理 S3 金鑰」對話方塊。
+

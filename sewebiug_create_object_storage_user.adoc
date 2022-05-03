@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_object_storage_user.html 
+keywords: netapp, keystone, create, object, storage, user, 
+summary: Keystone 建立物件儲存使用者 
+---
+= 建立物件儲存使用者
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+由於物件儲存使用者屬於物件儲存群組、因此您必須先存在物件儲存群組、才能建立使用者。
+
+.步驟
+. 檢視 link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["使用者清單"]。
+. 請確定已選取正確的子租戶、且顯示畫面顯示使用者（非群組）。
+. 按一下「 * 建立使用者 * 」。
+. 在「建立使用者」對話方塊中：
++
+.. 輸入使用者名稱。
+.. 選取成員所屬的群組。
+
+
+. 按一下「 * 建立 * 」。這會建立工作、以使用指定的設定來建立使用者。
+
+
+Create 使用者會以非同步工作的形式執行。您可以：
+
+* 檢查工作清單中的工作狀態。
+* 工作完成後、請檢查「使用者」清單中的共用狀態。
+

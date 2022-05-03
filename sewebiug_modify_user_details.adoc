@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_user_details.html 
+keywords: netapp, keystone, modify, user, details, 
+summary: Keystone 修改使用者詳細資料 
+---
+= 修改使用者詳細資料
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用此方法修改使用者的詳細資料。您可以：
+
+* 修改使用者的名字、姓氏及顯示名稱。
+* 新增或移除使用者有權存取的租賃。
+* 修改使用者可存取之每個租戶的使用者角色。
+
+
+.步驟
+. 選擇 * 管理 > 使用者 * 。
+. 在清單中找出使用者、然後按一下「編輯」圖示。
+. 在「編輯使用者」對話方塊中、視需要進行變更。
+. 若要變更使用者在租戶中的角色、請在租戶清單中找出租戶、然後選取新角色。
+. 若要授予使用者其他租戶存取權、請按一下 * 新增租戶 * 、然後在新的輸入欄位中選取租戶及該租戶在該租戶中的角色。
+. 若要移除使用者對租賃的存取權、請在「租賃」清單中找出租賃、然後選取「刪除」圖示。
+. 按一下 * 更新 * 。
+

@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_raise_a_service_request.html 
+keywords: netapp, keystone, raise, service, request, NetApp GSSC, tenant support 
+summary: Keystone 提出服務要求 
+---
+= 提出服務要求
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+「服務要求」畫面可讓您提出新的服務要求、由您自己的支援團隊或 NetApp GSSC 處理。
+
+您可以在儀表板的 * 服務要求 * 視窗上、檢視最近的服務要求摘要、並依優先順序和建立時間排序。您也可以瀏覽至「服務要求」畫面、以搜尋並檢視環境中提出的所有服務要求詳細資料。
+
+若要建立新的服務要求、請遵循此程序。
+
+.步驟
+. 從功能表中選取 * 支援 > 服務要求 * 、然後按一下 * 新服務要求 * 。
+. 在「 New Service Request 」（新服務要求）頁面上、選取該要求的類別和優先順序、然後按一下「 * Next* 」（ * 下一步 * ）。
+. 「詳細資料」畫面上的欄位會根據您選取的類別而變更。輸入所需的詳細資料。單擊 * 下一步 * 。
+. 檢閱申請詳細資料。如果您想要修正任何內容、請使用「上一步」按鈕返回上一頁並修正詳細資料。如果所有詳細資料都正確、請按一下 * 提交 * 。
+. 系統會建立服務要求、並將其列在「服務要求」畫面上。新開啟的服務要求狀態為「 New （新）」。
+
+
+系統會傳送電子郵件給申請者、指出申請已建立。此電子郵件會傳送至已註冊給要求 NetApp 服務引擎使用者的電子郵件地址。
