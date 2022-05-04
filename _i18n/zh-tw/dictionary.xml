@@ -226,7 +226,6 @@
   <block id="6365a10673e69e63960434eee08936a3" category="paragraph">《銷售資訊》是本服務項目的一部分。 NetApp Keystone NetApp Keystone支援內部部署資本支出（ capex ）替代方案的產品組合、可讓雲端之旅更順利發展、其中包括了《支援不限彈性付費》和《支援不限彈性訂閱》服務。 NetApp Keystone NetApp Keystone NetApp Keystone利用橫跨內部部署和雲端的儲存服務、提供無縫的混合雲體驗。 NetApp Keystone如需 NetApp Keystone 更多有關資訊、請參閱 <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
   <block id="a47bcecd4f4a1f89ad4e82bca88975ab" category="inline-link-macro">Keystone Flex 訂閱</block>
   <block id="84df3063bf7c9a845b2944da17dc7ada" category="paragraph">如需 NetApp Keystone 更多有關《 Flexsion 訂閱指南 <block ref="dd62aedd4673206c815c56eddc5536f2" category="inline-link-macro-rx"></block></block>
-  <block id="ac6330b2ef35ed0beec99df3fdccc9e2" category="paragraph">Flex 訂閱是一項儲存即服務服務方案、可在內部部署系統上提供雲端體驗、並可連線至雲端、您可以依照自己的需求進行訂購。* NetApp Keystone * 《支援彈性付費》 * - NetApp Keystone 《支援彈性付費》（ Flex Post ）是一系列靈活的財務替代方案、包括傳統融資、租賃及固定 / 變動選項、以滿足客戶的現金流需求。* NetApp Keystone 《 * 》《 Flex 訂閱 * 》： NetApp Keystone 《 * 》《 * 》《 * 》《 * 》《 * 》《 Flex訂購 》》是一項隨需購買、成果型的訂閱服務、可提供內部部署的雲端體驗。</block>
   <block id="3799607edcd82b379d62cf94110a1f1a" category="paragraph"><block ref="3799607edcd82b379d62cf94110a1f1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fdba3cae37eccb96c4307e07af690784" category="section-title">彈性訂閱</block>
   <block id="60e9d00fe6da3c4a7ff384bed342bf02" category="paragraph">Flex 訂閱是一種隨需付費的訂閱型服務模式、可為偏好使用營運成本消費模式的使用者、提供無縫的混合雲體驗、以利預先支付資本支出或租賃。它可減少與管理無法預測的容量成長及處理複雜採購週期相關的障礙、讓客戶加速實現價值所需時間。彈性訂閱可讓客戶根據業務優先順序調整經濟效益與營運。</block>
@@ -3094,4 +3093,7 @@
   <block id="2f12e5ae44c9cf77ed83b5e5e83ea318" category="sidebar">管理網路</block>
   <block id="2bd05dd0cbc467a7641e108606fa1c5a" category="sidebar">NetApp 服務引擎 API 參考資料</block>
   <block id="ab4eeed97074daacb19be5e9f701fc55" category="sidebar">使用 API 建立子網路</block>
+  <block id="65b034376f8c6863d7282690b92e3bf9" category="paragraph">Flex 訂閱是一項儲存即服務服務方案、可在內部部署系統上提供雲端體驗、並可連線至雲端、您可以依照自己的需求進行訂購。</block>
+  <block id="e49cf55687c692a556892a0f614ce9bf" category="list-text">*《Flex P立即 支付*》-《Sof Flex付費》（FlexPand、彈性支付）是一系列靈活的財務替代方案、包括傳統融資、租賃及固定/變動選項、可滿足客戶的現金流需求。NetApp Keystone NetApp Keystone</block>
+  <block id="cf7ec62445091377db24ebd1c9fd2d93" category="list-text">*《Flex訂閱*》-《SewFlex訂閱》（Flex訂閱）是一項隨需付費、成果型訂閱服務、提供內部部署的雲端體驗。NetApp Keystone NetApp Keystone</block>
 </blocks>

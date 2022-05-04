@@ -17,7 +17,11 @@ summary: 歡迎使用 Keystone 文件入口網站。
 
 如需 NetApp Keystone 更多有關《 Flexsion 訂閱指南 link:https://www.netapp.com/services/subscriptions/keystone/flex-subscription["Keystone Flex 訂閱"]
 
-Flex 訂閱是一項儲存即服務服務方案、可在內部部署系統上提供雲端體驗、並可連線至雲端、您可以依照自己的需求進行訂購。* NetApp Keystone * 《支援彈性付費》 * - NetApp Keystone 《支援彈性付費》（ Flex Post ）是一系列靈活的財務替代方案、包括傳統融資、租賃及固定 / 變動選項、以滿足客戶的現金流需求。* NetApp Keystone 《 * 》《 Flex 訂閱 * 》： NetApp Keystone 《 * 》《 * 》《 * 》《 * 》《 * 》《 Flex訂購 》》是一項隨需購買、成果型的訂閱服務、可提供內部部署的雲端體驗。
+Flex 訂閱是一項儲存即服務服務方案、可在內部部署系統上提供雲端體驗、並可連線至雲端、您可以依照自己的需求進行訂購。
+
+* *《Flex P立即 支付*》-《Sof Flex付費》（FlexPand、彈性支付）是一系列靈活的財務替代方案、包括傳統融資、租賃及固定/變動選項、可滿足客戶的現金流需求。NetApp Keystone NetApp Keystone
+* *《Flex訂閱*》-《SewFlex訂閱》（Flex訂閱）是一項隨需付費、成果型訂閱服務、提供內部部署的雲端體驗。NetApp Keystone NetApp Keystone
+
 
 image:nkfsosm_image1.png["錯誤：缺少圖形影像"]
 
