@@ -33,7 +33,7 @@ summary: Keystone 服務要求
 |===
 
 
-=== 服務要求屬性
+== 服務要求屬性
 
 下表列出服務要求屬性。
 
@@ -84,7 +84,7 @@ summary: Keystone 服務要求
 |===
 
 
-=== 擷取服務要求
+== 擷取服務要求
 
 使用下表所列的方法擷取指定租戶的服務要求類別。
 
@@ -133,7 +133,7 @@ none
 ....
 
 
-=== 依 ID 擷取服務要求
+== 依 ID 擷取服務要求
 
 使用下表所列的方法、依服務要求 ID 擷取服務要求。
 
@@ -181,129 +181,34 @@ none
 ....
 
 
-=== 建立服務要求
+== 建立服務要求
 
 使用下表所列的方法來建立服務要求。
 
-|===
-| HTTP 方法 | 路徑 | 說明 | 參數 
+|=| HTTP方法|路徑|說明|參數
 
-
-| 貼文 | /v2.1 / 租戶 / ｛ 租戶 ID ｝ / 服務資源 / 類別 | 建立服務要求。 | 「租戶 ID 」：租戶識別碼。 
-|===
-必要的要求內容屬性：所需的屬性取決於服務要求的類別。下表列出要求內容屬性。
+|「POST」|「/v2.1 /租戶/｛租戶ID｝/服務資源/類別」|建立服務要求。|「租戶ID」：租戶識別碼。
 
 |===
-| 類別 | 必要 
 
 
-| 訂購 | 《說明》和《承諾》 
-
-
-| 災難恢復 | "torage_object_type" 、 "shubenter_id" 和 "shorage_object_id" 
-
-
-| 技術 | 「 ub租 戶 ID 」和「服務類型」如果「服務類型」是檔案服務或區塊儲存、則需要區域。 
-
-
-| 其他 | 區域 
+| 必要的要求內容屬性：所需的屬性取決於服務要求的類別。下表列出要求內容屬性。 
 |===
-* 索取本文範例： *
+|類別|必填
 
-....
-{
-  "subject": "string",
-  "comment": "string",
-  "category": "subscription",
-  "priority": "Normal",
-  "subscription": "A-S00003969",
-  "commitment": {
-    "service_level": "standard",
-    "new_commitment": 10
-  },
-  "zone": "au-east1-a",
-  "subtenant_id": "5d2fb0fb4f47df00015274e3",
-  "storage_object_type": "fileserver",
-  "storage_object_id": "5d2fb0fb4f47df00015274e3",
-  "service_type": "File Services"
-}
-....
-* 回應本文範例： *
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "id": "string",
-        "subject": "string",
-        "description": "string",
-        "status": "New",
-        "priority": "Normal",
-        "createdDate": "2020-05-12T03:18:25+0000",
-        "UpdatedDate": "2020-05-12T03:18:25+0000"
-      }
-    ]
-  }
-....
-
-
-=== 擷取服務要求類別
-
-下表列出指定租戶的擷取服務要求類別。
+如果「eserve_type」是檔案服務或區塊儲存設備、則需要使用區域。|其他|分區
 
 |===
-| HTTP 方法 | 路徑 | 說明 | 參數 
 
 
-| 《 Get 》（取得） | /v2.1 / 租戶 / ｛ 租戶 ID ｝ / 服務資源 / 類別 | 擷取服務要求類別。 | 「租戶 ID ：」（選用）會傳回指定租戶的服務要求。 
+| *申請本文範例：*...｛"Subject」："string"、"Comment（註釋）："string"、"category（類別）："fusion"、"priority（訂閱）："normal"、"fusion"："A-S00003969"、 「承諾」：｛「service_level」：「標準」、「new_承諾」：10｝、「區域」：「AU-East1-A」、「子租戶_id」：「5d2fb0fb4f47df00015274e3」、「Storage_object_type」：「檔案伺服器」、 「Storage_object_id」：「5d2fb0fb4f47df00015274e3」、「service_type」：「檔案服務」｝...*回應本文範例：*...｛"STATUS"：｛"user_message"："string"、"verbose_message"："string"、"code"："string"｝、"result"：｛"resove_Records"：1、"Records"：[｛"id"："string"、"Subject "："string"、"description"："string"、"STATUS"："new"、"priore" 「建立日期」：「2020-05-12T03：18：25 + 0000」、「更新日期」：「202020-05-12T03：18：25 + 0000」｝]=擷取服務要求類別下表列出指定租戶的擷取服務要求類別。 
 |===
-必要的要求內容屬性：「無」
+| HTTP方法|路徑|說明|參數
 
-* 索取本文範例： *
+|「Get」|「/v2.1 /租戶/｛租戶ID｝/服務資源/類別」|「Retrieve service requests」類別。|「租戶ID：」（選用）會傳回指定租戶的服務要求。
 
-....
-none
-....
-* 回應本文範例： *
+|===
 
-....
-{
-  "status": {
-    "user_message": "Okay. Returned 5 records.",
-    "verbose_message": "",
-    "code": 200
-  },
-  "result": {
-    "returned_records": 5,
-    "records": [
-      {
-        "key": "dr",
-        "value": "Disaster Recovery Failover"
-      },
-      {
-        "key": "technical",
-        "value": "Technical Issue"
-      },
-      {
-        "key": "other",
-        "value": "Other"
-      },
-      {
-        "key": "subscription",
-        "value": "Subscription Management"
-      },
-      {
-        "key": "backup",
-        "value": "Backup Restore"
-      }
-    ]
-  }
-}
-....
+
+| 必要的要求內容屬性：「無」*要求本文範例：*...無*回應本文範例：*...｛"STATUS"：｛"user_message"：「好。傳回5筆記錄。」、「verbose_message」：「」、「code"：200｝、「result」：｛"love_logges"：5、「Records」：[｛"key"：「DR」、「Value」：「災難恢復容錯移轉」｝、{「key」：「key」、「key」、「其他」、「訂閱值：｝、「 「備份還原」}]}... 
+|===

@@ -29,7 +29,7 @@ NOTE: 管理 Azure NetApp 帳戶需要客戶管理存取權。
 
 
 
-=== 檢視 Azure NetApp 帳戶清單
+== 檢視 Azure NetApp 帳戶清單
 
 Azure NetApp 帳戶清單會顯示登入使用者可存取之租約中所有 Azure NetApp 帳戶的清單。若要檢視清單、請從功能表中選取 * 管理 > Azure NetApp Accounts * 。
 
@@ -37,7 +37,7 @@ Azure NetApp 帳戶清單會顯示登入使用者可存取之租約中所有 Azu
 
 
 
-=== 新增 Azure NetApp 帳戶
+== 新增 Azure NetApp 帳戶
 
 本節說明如何新增 Azure NetApp 帳戶。
 
@@ -60,7 +60,7 @@ Azure NetApp 帳戶清單會顯示登入使用者可存取之租約中所有 Azu
 
 
 
-=== 修改 Azure NetApp 帳戶標記
+== 修改 Azure NetApp 帳戶標記
 
 使用此方法修改 Azure NetApp 帳戶的相關標記。
 
@@ -73,7 +73,7 @@ Azure NetApp 帳戶清單會顯示登入使用者可存取之租約中所有 Azu
 
 
 
-=== 刪除 Azure NetApp 帳戶
+== 刪除 Azure NetApp 帳戶
 
 使用此方法刪除 Azure NetApp 帳戶。
 

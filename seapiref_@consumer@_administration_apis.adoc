@@ -96,7 +96,7 @@ link:seapiref_users.html#retrieve-all-users["擷取所有使用者"]、 link:sea
 |===
 
 
-=== 重設使用者密碼
+== 重設使用者密碼
 
 使用下表所列的方法重設使用者密碼。
 
@@ -154,7 +154,7 @@ link:seapiref_users.html#retrieve-all-users["擷取所有使用者"]、 link:sea
 ....
 
 
-=== 重新整理驗證權杖
+== 重新整理驗證權杖
 
 使用下表所列的方法來重新整理驗證權杖。
 
@@ -214,7 +214,7 @@ none
 ....
 
 
-=== 登入
+== 登入
 
 請使用下表所列的方法登入。
 

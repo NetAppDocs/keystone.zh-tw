@@ -317,7 +317,6 @@
   <block id="8c4191676661fab67275af3b28085da7" category="list-text">合作夥伴管理員可以在現有訂閱到期時建立另一個訂閱、或是在現有訂閱不再有效的未來日期建立另一個訂閱。新訂閱的開始日期必須大於或等於目前的結束日期。</block>
   <block id="ff138ca03bebc3f223aa7473c49093cc" category="summary">NetApp 服務引擎 REST API</block>
   <block id="f85fe16835da940dc0eded602be1d88a" category="doc">NetApp 服務引擎 REST API</block>
-  <block id="cbb81506a7fe3ef03f7a89c76c52131a" category="section-title">分頁</block>
   <block id="4bb8f28d1ae5f4c793395a1ce16ebd50" category="paragraph">許多 API 呼叫會傳回大量記錄。可以指定「偏移」和「限制」值來限制記錄數量：</block>
   <block id="2c9821eb0bfa9053dd0b371fa82738f0" category="list-text">* 限制 * 要傳回的記錄數。</block>
   <block id="75100d42069de12445ab076dab1a5044" category="list-text">* 偏移。 * 傳回第一筆記錄之前要跳過的記錄數。例如、偏移一筆會跳過第一筆記錄、並從兩筆開始傳回記錄。</block>
@@ -414,8 +413,6 @@
   <block id="00c6a27075fa437da3bdccfb4614844b" category="paragraph">如需如何使用清單功能的詳細資訊、請參閱 <block ref="06c69cf03ada5a3283b333d7ac5a7d25" category="inline-link-macro-rx"></block>。</block>
   <block id="410c98fcb0c5c3d90c0e8a60a9dcc645" category="summary">Keystone Flex 訂閱效能</block>
   <block id="10288ddd3c9dd46deaa222ee129df3fb" category="doc">美國公民支援（ USCS ）</block>
-  <block id="b705fe2f9502ab5e1421d02eae05ad9f" category="paragraph">透過 NetApp 全球服務與支援中心（ GSSC ）、支援美國公民支援（ USCS ）服務（ Flex訂購 ）、持續監控及支援。 NetApp Keystone</block>
-  <block id="437e64ea2377702ad2881edf8040c7c0" category="paragraph">GSSC 是一個分散各地的團隊、負責服務各種 NetApp 客戶。USCS 彈性訂閱方案可確保 Flex 訂閱服務的監控與支援、由位於美國的美國公民提供。此外還提供現場支援與疑難排解（必要時可維護系統）。</block>
   <block id="7373680aa88b367bc7b0be53010ec82c" category="summary">Keystone 使用物件儲存概述</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">總覽</block>
   <block id="a57a35a8efe969d50a1f98ce9971fc96" category="paragraph">物件儲存需要訂閱物件儲存服務。當物件儲存服務可作為訂閱的一部分使用時、必須先初始化儲存設備、才能使用。</block>
@@ -526,9 +523,7 @@
   <block id="36e8c53798d70dd276ec873bd9daedea" category="paragraph">若要為主要磁碟區啟用非同步災難恢復複寫、必須：</block>
   <block id="20a7636d7d202a8ca2df19231e59b397" category="list-text">設定磁碟區所在的檔案伺服器或區塊存放區、以支援災難恢復。</block>
   <block id="11616f8eb46b74c6bff078f57cc68eb5" category="list-text">啟用或停用檔案共用區或磁碟的災難恢復複寫。根據預設、如果已設定災難恢復、則會啟用共用區和磁碟來進行災難恢復複寫。</block>
-  <block id="1a616d944b2a6237298adf4b4e0db510" category="section-title">設定檔案伺服器或區塊存放區以支援非同步災難恢復</block>
   <block id="15c4b752abce956fbbf106b341d841ee" category="paragraph">在建立檔案伺服器或區塊存放區時或稍後日期啟用非同步災難恢復。啟用之後、就無法停用災難恢復、也無法變更災難恢復區域。災難恢復排程會指定資料複寫到災難恢復位置的頻率（每小時、每小時四次或每天）。</block>
-  <block id="1e53e767469d41ddc55c1ff94e72e9a6" category="section-title">在檔案共用區或磁碟上啟用非同步災難恢復</block>
   <block id="ec9c28ece16dda721c388c1826025c31" category="paragraph">只有在父檔案伺服器或區塊存放區第一次設定為非同步災難恢復時、才能將檔案共用區或磁碟設定為非同步災難恢復複寫。根據預設、如果在父實體中啟用複寫、則會在父實體所在的檔案共用區或磁碟中啟用複寫。您可以停用該共用區 / 磁碟上的災難恢復、排除特定共用區或磁碟的複寫。您可以在這些共用 / 磁碟上的啟用和停用複寫之間切換。</block>
   <block id="7a0a70d776cf86d3de0837b534ab29ef" category="list-text">刪除主要檔案伺服器或區塊存放區將會刪除所有災難恢復複寫複本。</block>
   <block id="8ca9cd050d34dab0c72a2ab896f3423c" category="list-text">每個檔案伺服器或區塊存放區只能設定一個災難恢復區域。</block>
@@ -1088,35 +1083,20 @@
   <block id="10bc620b6bb0f1ce4ea88e07efee73a6" category="summary">服務供應詳細資料</block>
   <block id="997afc95a691698524a6c0b1a47c998b" category="doc">彈性訂閱服務優惠詳細資料</block>
   <block id="dcfcd456039c89795733b344b389f008" category="paragraph">下列問題可解答您對於 NetApp Keystone 《恆時資訊訂閱》服務產品的常見問題。</block>
-  <block id="56b1544f87c08dd0e8c7c59b1d1e1cdd" category="section-title">最低承諾容量是多少？</block>
   <block id="00e98aacc231867731d4db2a6b86250d" category="paragraph">針對一個或多個服務層、每個站台提交的最小 NetApp Keystone 容量為 100 TiB （ Flex訂購 ）。</block>
-  <block id="ebea9f7028f7d76c3f0dd5d1dfbf8d6b" category="section-title">彈性訂閱協議的一般期限為何？</block>
   <block id="d83aac3c55590e08db3e10f99075aa77" category="paragraph">彈性訂購方案提供 12 、 24 及 36 個月的期限。</block>
-  <block id="9772d2c3eb163e82ac0b2a6db26279a1" category="section-title">如何存取儲存設備？</block>
   <block id="6d1d3be3b468abe5f06f8fe18df9ecbb" category="paragraph">在 NetApp 營運（標準）模式中、儲存控制器（ ONTAP 系統管理程式或系統管理存取權）由 NetApp 擁有及管理。您只能透過 NetApp 服務引擎 UI 和 API 來監控及管理儲存設備。在客戶管理（或精簡）部署中、 NetApp 服務引擎 UI 和 API 主要用於計費功能、您可以存取儲存控制器、例如 Active IQ Unified Manager ：功能不受限的功能、例如功能不受限的功能、 ONTAP 也可以直接存取 ONTAP 功能不受限的叢集。</block>
-  <block id="25cf226a42f4322a9f3ba3c14009c01c" category="section-title">如何管理服務？</block>
   <block id="6999dbc7d78a26010127d5443d27a0bd" category="paragraph">NetApp Service Engine 是協調與管理工具、可讓您用來配置儲存設備、並取得服務使用量的報告。</block>
-  <block id="dfa5d25da0b83cc41c788254af95eee0" category="section-title">如何增加訂閱的承諾容量？</block>
   <block id="70be4f90cd164170af78a484759eb66c" category="paragraph">您可以透過 NetApp 服務引擎管理工具或 NetApp Keystone 其支援中心經理提交容量新增申請。</block>
-  <block id="2efbf1fbbce8fe7a7f1e6316c7c9296d" category="section-title">增加容量是否會延長期限？</block>
   <block id="81ffcf182e9bafd1ef112dadd81c3f06" category="paragraph">所有新增項目均為現有期間的共同期限、但申請必須在訂閱的最後 90 天內提出、在此情況下、期限必須延長至少 12 個月。</block>
-  <block id="f43c2a8621b1179e1cec61cb621cead2" category="section-title">新的訂閱是否有彈性、可隨新的一年一度續訂？</block>
   <block id="353851e3be472d2e7deedffb8c84e9cd" category="paragraph">是的、新的訂閱可以有新的條款與任何現有的訂閱分開。</block>
-  <block id="f19b3e7365ec5d1a0a7a9b5c59224f13" category="section-title">租戶訂閱條款是否可延伸至合作夥伴的訂閱期限以外？</block>
   <block id="74bf4d2ceefbc7590499b5c325cfea92" category="paragraph">租戶訂閱可延伸至合作夥伴目前的 Flex 訂閱期限之外。建立訂閱時、以及使用量報告中、都會顯示警告。</block>
-  <block id="fc491079d497d14569148eb853cbd243" category="section-title">我可以在同 ONTAP 一個叢集上混合多個訂閱嗎？</block>
   <block id="3d96ed4e7cf96c207eb55360531e63d1" category="paragraph">否、每個叢集都會指派給特定的訂閱。</block>
-  <block id="dcc217f9748618baebad99aab47addfd" category="section-title">誰負責監控和營運？</block>
   <block id="7078b31ae5be77a7e25eb2d03d3bdadb" category="paragraph">對於 NetApp 營運的服務、 NetApp 負責遠端監控基礎架構、以便根據議定的期望提供服務。</block>
   <block id="faced2ebacb2b268fcaefb1ff2dfd6bc" category="paragraph">對於合作夥伴營運的服務、合作夥伴負責遠端監控基礎架構、以便根據議定的期望提供服務。</block>
   <block id="7d9cf83822ab7d2c72f16da8a358e341" category="paragraph">對於客戶營運的服務、客戶負責監控基礎架構、並向 NetApp 提出任何問題。</block>
-  <block id="a313cb4f572f282feb16774be9de7982" category="section-title">如果我提早終止服務、會發生什麼情況？</block>
   <block id="a31f3e7467e53150995af65a049395c5" category="paragraph">最低服務承諾為 12 個月。如果您提早取消服務、則必須事先支付剩餘價值。</block>
-  <block id="dcf112dc318b9420122f0a53fe21ed45" category="section-title">在初始期限完成後、是否有機會轉換成購買產品？</block>
-  <block id="7dbf31d33cf112c633b37c1ad90088c4" category="paragraph">不可以此優惠不包含轉換為購買的選項。此外、先前購買的 NetApp 產品不在本方案範圍之內。</block>
-  <block id="0b5846399f2e6b14b7748017e567a036" category="section-title">我可以申請特定的軟體版本嗎？</block>
   <block id="84243f6b8d465b834e36cf58cd48fed9" category="paragraph">不可以整個客戶群的軟體版本均已標準化。 NetApp Keystone</block>
-  <block id="df1a5214600b52b2e71397e2ebdde540" category="section-title">是否會收到軟體升級通知？</block>
   <block id="73e02951afd28d2508077afaf5bc798f" category="paragraph">是的。所有的維護 / 升級活動都會在 NetApp Keystone 雙方同意的時間與客戶溝通、並由「更新成功經理」安排。</block>
   <block id="2b1eac122dc9fcff6b6ff126ea055f08" category="summary">Keystone 建立物件儲存群組</block>
   <block id="02cdea300670fae8df4e5787f5a48a55" category="paragraph">使用此方法建立新的物件儲存群組。</block>
@@ -1422,21 +1402,8 @@
   <block id="fecb9dccd78c98c8a04ddd9aac28b3af" category="list-text">「 id 」：服務要求 ID 例如： SRQ0035952014</block>
   <block id="f64d86ad0a77d0b90407860c2cf4c433" category="section-title">建立服務要求</block>
   <block id="482aeb27cec2ee6093ee574763c7a9ec" category="paragraph">使用下表所列的方法來建立服務要求。</block>
-  <block id="a57f88e039b309218996266b80792e58" category="cell">「租戶 ID 」：租戶識別碼。</block>
   <block id="7f8a0fb4fe85ad8af0c7990fb7d44557" category="paragraph">必要的要求內容屬性：所需的屬性取決於服務要求的類別。下表列出要求內容屬性。</block>
-  <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">類別</block>
-  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">必要</block>
-  <block id="787ad0b7a17de4ad6b1711bbf8d79fcb" category="cell">訂購</block>
-  <block id="102da3147e28a4669677fece4454c61f" category="cell">《說明》和《承諾》</block>
-  <block id="f92d949ea1f5479f6dd45574e5f59f28" category="cell">"torage_object_type" 、 "shubenter_id" 和 "shorage_object_id"</block>
-  <block id="ad1ec60c9e1f10f6a9f5d9f2c5254bc6" category="cell">技術</block>
-  <block id="1efcb45ce32fab1dd54282a048a8f6e3" category="cell">「 ub租 戶 ID 」和「服務類型」如果「服務類型」是檔案服務或區塊儲存、則需要區域。</block>
-  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="cell">其他</block>
   <block id="b3ff996fe5c77610359114835baf9b38" category="cell">區域</block>
-  <block id="ac10508ad70f95b289ff520585169501" category="section-title">擷取服務要求類別</block>
-  <block id="a6a3bee28fe66348826c742871e5920e" category="paragraph">下表列出指定租戶的擷取服務要求類別。</block>
-  <block id="ef64390758ed006361a142422376a39e" category="cell">擷取服務要求類別。</block>
-  <block id="ea56ca71a57b3800165f4d81ba320151" category="cell">「租戶 ID ：」（選用）會傳回指定租戶的服務要求。</block>
   <block id="0290647af91d44acea2aec1cd74b1349" category="summary">Keystone 刪除檔案共用</block>
   <block id="1d22224e4a08ccd427e8cfe0f1a76643" category="doc">刪除檔案共用區</block>
   <block id="f77517a5b18bb663b3eec0d7d299d926" category="paragraph">本節說明如何刪除檔案共用區。</block>
@@ -1617,50 +1584,10 @@
   <block id="f9452e95d52ebd12efeebe564007d35d" category="summary">訂購 NetApp Keystone</block>
   <block id="dd476ad29752995a24a718ac007daee1" category="doc">Flex訂購 常見問題集 NetApp Keystone</block>
   <block id="17fdf54028714053b0bba12405eaecd1" category="paragraph">下列問題可解答您對於 NetApp Keystone 《支援不規則》訂閱服務的常見問題。</block>
-  <block id="73f7ecfd22f46b0ca864812944c99f09" category="section-title">什麼是 NetApp Keystone 作爲簽署的一部分提供的？</block>
-  <block id="1771982509e3d9209f34ffd1b4eaca53" category="paragraph">支援以訂購為基礎的服務項目、適用於區塊、檔案及物件資料服務、可部署於內部部署、並可由 NetApp 、合作夥伴或客戶操作。 NetApp Keystone</block>
-  <block id="e61939fcc36e3f0f256adf22e9816969" category="section-title">在 Flex 訂閱中提供哪些儲存服務？</block>
   <block id="9dc46e9b8e8e3325a5f950ba6b189e61" category="inline-link-macro">效能服務層級</block>
-  <block id="61813b3866df19ca76d72405fbac5ce9" category="paragraph">如需相關資訊、請參閱 <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
-  <block id="e6df68e8257fbec40d2e98c80413136d" category="section-title">支援哪些附加服務？</block>
-  <block id="4d38b0e1221211e8162a34c72f8413bc" category="paragraph">進階資料保護（備份與災難恢復）和混合雲分層 FabricPool 搭配使用介紹功能、是附加服務、可額外付費選擇。</block>
-  <block id="f6629ad264273c8be348e79ee1afafa8" category="section-title">NetApp 保證該服務具備哪些服務層級？</block>
-  <block id="8a6dfd42d0ac82ba8881e2297f593099" category="paragraph">在 NetApp 營運的案例中 NetApp Keystone 、針對已配置的儲存設備及每個服務層級的延遲、提供 EIOS/TiB 保證。</block>
-  <block id="78581b95ff4d4425c41531494bda5211" category="section-title">Flex 訂閱對應的目標為何？</block>
-  <block id="9b4fc2969b2c90d6baa93f8dfa36f11f" category="paragraph">Flex 訂閱對應至單一站台或單一資料中心、可由不同的效能服務層級組成。</block>
-  <block id="c0264d66e7928c21d3476b4e798b01a0" category="section-title">極端分層和優質分層效能等級有哪些優點？</block>
-  <block id="0dad49754b7ea8c51c7759c604e3c2c6" category="paragraph">分層功能可在極致分層和優異分層效能層級中啟用、讓您減少儲存設備佔用空間及相關成本。NetApp 假設 25% 的資料很熱、而其餘 75% 的資料則較少使用或冷卻、並將其移至冷儲存設備。此外、您也可以查看使用量報告、瞭解存取資料的頻率、並根據資訊啟用分層服務。</block>
-  <block id="d420a7af1be236a5e734a1e6bba0de03" category="section-title">合作夥伴是否能向客戶銷售比向 NetApp 購買更多的容量？</block>
-  <block id="f0bc270e3ef04141bcac07684ae4ad66" category="paragraph">租戶訂閱不受合作夥伴所購買容量的限制。合作夥伴可以向客戶銷售比從 NetApp 購買更多的容量。超過購買容量的容量稱為超額訂閱。</block>
-  <block id="717c88bad9af17098aa1fefdc98396d4" category="section-title">是否提供 API 來整合客戶工具？</block>
   <block id="19dac31ef92aadf5c033c9154e144b27" category="inline-link-macro">Keystone Flex 訂閱 API 指南</block>
-  <block id="fc81ff8e28e1fadad7cbd4cb4634b04d" category="paragraph">是的、 RESTful API 可整合至您自己的應用程式。請瀏覽至 * support&gt; API Documentation * 以查看 Flex 訂閱服務的 API 文件。如需詳細資訊、請參閱 <block ref="5b59c49596915ff0a388a418bca92047" category="inline-link-macro-rx"></block>。</block>
-  <block id="3484a1dcf9558d2b5b6189781e2c93e7" category="section-title">什麼是突發容量？</block>
-  <block id="abf5618d5e1333eab13c92ceaf73a55e" category="paragraph">使用量最多可增加或減少 20% 、超過承諾容量。突發容量使用量是每日測量、僅在使用時計費。例如、如果提交的容量為 100 TiB 、則最多可增加 120 TiB 。</block>
-  <block id="e4aac680b428772c98f7620e086f5e26" category="section-title">使用「連拍」是否需要額外付費？</block>
-  <block id="38c09cc92a132f967b3e77b300543718" category="paragraph">高達 20% 的已提交容量的突發容量使用量會以與已提交容量相同的費率計費、超過 20% 已提交容量的任何使用量則會以 50% 的費率計費。</block>
-  <block id="93870a2fd753901b099d02a82da998b3" category="section-title">突發容量有何優點？</block>
-  <block id="a0e46e49bc163a72d6692ed9996ad212" category="paragraph">突發容量可讓您靈活地隨需使用儲存設備、而不需長期投入。</block>
-  <block id="a85ccd845093f8e54e28ce49e499da29" category="section-title">如何將突發容量分配給租戶？</block>
-  <block id="c70d5dbeae72932fc6b8fa6039bf2fba" category="paragraph">「連拍容量」會分配給合作夥伴、由合作夥伴根據需求進一步將其分配給客戶。</block>
-  <block id="e3761ebb5f81a7baf1e8a2c2538ef616" category="section-title">我可以在哪裡看到已承諾及突發容量的使用量？</block>
-  <block id="afdd26404ad02349bc9cb62d7ef0a0cc" category="paragraph">NetApp 服務引擎內建儀表板、可根據已認可的容量來報告已用容量。</block>
-  <block id="ad965f43328354ec9b015570fd24e980" category="section-title">如果我在已提交的容量使用量中達到某個百分比、是否會有任何通知？</block>
-  <block id="e7260442255a0f97105d66c3dad4baff" category="paragraph">是的、管理工具會透過 NetApp 服務引擎儀表板提供容量使用通知。</block>
-  <block id="b56873db48bfa7b3fc1ab1181361d247" category="section-title">如何檢視 Flex 訂閱使用量？</block>
-  <block id="20db5ef7e42351b012d51ce4a23bc9f4" category="paragraph">NetApp Service Engine 提供儀表板檢視、其中包含所有訂閱服務的相關資訊、以及使用量。如需 NetApp 服務引擎的詳細資訊、請參閱 <block ref="8d35461a50e9d2cb480a76a035c5e522" category="inline-link-macro-rx"></block>。</block>
-  <block id="95ff4da1ee3d8daa27d594115a065c14" category="section-title">我要如何回報服務的任何問題？</block>
-  <block id="c92cb788a14d61abb2a7bb5b63881591" category="paragraph">支援支援可透過下列各種管道取得： NetApp Keystone</block>
   <block id="f65085dc4bb69a27d3e266d2c5504a2b" category="list-text">支援電子郵件： mailto ： keystone.services@netapp.com[keystone.services@netapp.com^]</block>
   <block id="d0a96adfc74a1b7215d05e43eb9ac7eb" category="list-text">提報電子郵件： mailto ： keystone.escalations@netapp.com[keystone.escalations@netapp.com^]</block>
-  <block id="dd9afe0490efda8b120f93740675d9bf" category="section-title">我可以訂購新的儲存服務嗎？</block>
-  <block id="4ff5ee2c15890050cb37f8ed6f48173d" category="paragraph">是的、您可以從 NetApp 服務引擎入口網站申請新的儲存服務或擴充至儲存服務。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。</block>
-  <block id="6fd2ab1c8a57e25b6112773aa471db47" category="section-title">是否能立即增加儲存承諾？</block>
-  <block id="76e83a78381ac0ab92f7e59cafae5aa8" category="paragraph">視所要求的容量量而定、系統會判斷容量是否已部署、或是需要運送和安裝額外設備。</block>
-  <block id="b53836a887bdf3d20315059a945b66b5" category="section-title">工作負載可以在不同層級之間移動嗎？</block>
-  <block id="76f557c5004947c00c69ed100542e48d" category="paragraph">是的、只要使用者已訂閱工作負載移至的層級、即可在不同層級之間移動工作負載。不過、我們不建議從較高層移至較低層、因為這可能會導致效能降低。只要編輯檔案共用並變更服務層級設定、即可完成此程序。</block>
-  <block id="787085c4f3beb4117a673b422a348e5f" category="section-title">預設安裝的是哪個軟體版本（例如 ONTAP 、功能不均）？</block>
-  <block id="34e1c8f90cd0f76f40f57cd1bf1d557e" category="paragraph">視訂閱的服務層而定（例如 ONTAP 、使用檔案和區塊服務的功能進行支援、 SANtricity 使用功能區塊的功能進行支援、 StorageGRID 以及使用物件的功能）、支援團隊會安裝最新的穩定版本、而不會發生安全性或功能問題。</block>
   <block id="eb47920f375e65c94fc36335aede0f2d" category="paragraph">支援以預先定義的效能等級提供容量的 Flex訂購 （ Flex 訂購） NetApp Keystone 。</block>
   <block id="418852be623b3dd4f2d4b388a8087e02" category="paragraph">每個效能服務層級都是由其 I/O 密度所定義、亦即效能（每秒輸入 / 輸出作業次數 [IOP] ）和已使用儲存設備（儲存資料的 TiB ）的比率、亦即 IOPS/TiB 。</block>
   <block id="cfac68d8ffc92c1c9c46b9d5150bd845" category="paragraph">由 Flex 訂閱服務管理的每個 Volume 均與效能服務層級相關聯。所有的 I/O 作業和所有在個別磁碟區上使用的儲存設備、都會納入磁碟區的 I/O 密度計算中。</block>
@@ -1937,23 +1864,16 @@
   <block id="ac7d21b63f88f561c798cfcfabd678f4" category="summary">NetApp 服務引擎 / 自助服務存取入口網站</block>
   <block id="fb7268175d0ac71e5fdf71ab277aca4b" category="doc">NetApp 服務引擎 / 自助服務存取入口網站</block>
   <block id="4836fbf45f5520deb90da1ffc3cc5d3a" category="paragraph">下列常見問題集適用於 NetApp 服務引擎。</block>
-  <block id="bfb968021aa3c15a51565cbc5a1befba" category="section-title">什麼是 NetApp 服務引擎？</block>
   <block id="5e16440750c287c18b8d2735b4e7dce2" category="paragraph">NetApp Service Engine 是 NetApp 營運模式中的自助服務入口網站、可讓您根據 NetApp Keystone 您的《支援 NetApp 訂閱服務」登入及配置儲存設備。此工具也會針對訂閱提供使用量層級的報告、並啟動任何服務要求或訂閱變更。</block>
-  <block id="3ced580d0f966cf9a9e85c8ba102cf71" category="section-title">客戶營運模式需要 NetApp 服務引擎？</block>
   <block id="a1eb2f9d0213b4b83bd94c3a7846c5fd" category="paragraph">在客戶營運模式中、需要 NetApp 服務引擎。它提供使用量詳細資料的基本報告、並必須收集和報告帳單資訊。</block>
-  <block id="2830e1b8fd96958c68b6b537df47ade8" category="section-title">NetApp 服務引擎安裝於何處？</block>
   <block id="f187b98f99dd84c9bafea152f790cf76" category="paragraph">在 NetApp 營運的模式中、 NetApp 服務引擎會安裝在 NetApp 提供的運算資源上。在客戶操作的模式中、 NetApp 服務引擎安裝在客戶提供的運算資源上。</block>
-  <block id="daf4c58bd86834d6dddba936e6ecc6c0" category="section-title">誰可以登入 NetApp 服務引擎？</block>
   <block id="2aab810ea61ea2be6fd50a111f7ed7b3" category="paragraph">使用者可透過 NetApp SSO 或 NetApp 服務引擎中設定的本機使用者進行驗證。</block>
-  <block id="093ddb2f473e37b6da40f0e7e913a53d" category="section-title">如何控制存取？</block>
   <block id="2a1113e11190f4c58504b1a6ac688c29" category="paragraph">NetApp 服務引擎提供角色型存取控制（ RBAC ）、每位使用者都可與角色建立關聯、以定義他們可以執行哪些動作。RBAC 指派是由客戶使用 NetApp 服務引擎來完成。</block>
-  <block id="d4dac52f2011c2c86664208849ba30b2" category="section-title">提供哪些存取控制？</block>
   <block id="7a023009399c5dc5b7b99e87871f89a2" category="paragraph">提供下列存取控制：</block>
   <block id="f7c7e4f4bf22f20e3672c098d35dd711" category="list-text">* 合作夥伴管理員 * 合作夥伴一方的系統管理員、擁有建立及管理租戶、管理租戶訂閱、檢視使用報告及管理儲存設備技術層面的權限。</block>
   <block id="2f2e521c25a605c65d92478142c6765e" category="list-text">* 客戶 / 租戶管理 * 客戶方的管理人員、擁有權限可要求變更訂閱內容、建立新使用者和子租戶、以及建立及檢視檔案共用、磁碟和儲存區。</block>
   <block id="ecb8c2ec72825e47633f4d596f3042a4" category="list-text">* NetApp 管理員（讀取） * NetApp 管理員、可存取 Web 入口網站的所有元件、並可檢視所有詳細資料、例如 NetApp Keystone 所有的「更新訂閱」、合作夥伴與租戶訂閱、以及儲存設備。不過、此使用者沒有建立、編輯或刪除的權限。</block>
   <block id="bd2427f414d04cdbc0b99f1914d92f72" category="list-text">* NetApp 管理員 * 此使用者擁有完整存取權限、可在 NetApp Service Engine 入口網站執行所有功能、以管理 NetApp Keystone 《支援時局》訂閱、以及合作夥伴與租戶管理的所有活動。</block>
-  <block id="ff73f07d33b95ca8cfc1150265940594" category="section-title">我可以在哪裡查看使用量的帳單？</block>
   <block id="91c4b877df1393baf62833e39a8a1140" category="paragraph">您可以在儀表板上的 * 每月費用 * 小工具中、檢視過去三個月訂閱的每月總費用。您可以按一下小工具、或瀏覽至 * 管理 * &gt; * 帳單 * 來檢視詳細的帳單資訊。</block>
   <block id="6ce37fe261f5abd0a83f35e454eec575" category="summary">Keystone 新增使用者</block>
   <block id="1dab057ddc4cf188939abb2ad8167642" category="doc">新增使用者</block>
@@ -2206,13 +2126,10 @@
   <block id="560da9d680f7592a9fd4dc57688710e5" category="list-text">若要授予使用者其他租戶存取權、請按一下 * 新增租戶 * 、然後在新的輸入欄位中選取租戶及該租戶在該租戶中的角色。</block>
   <block id="40e31965143342f756d5d254e77a2687" category="list-text">若要移除使用者對租賃的存取權、請在「租賃」清單中找出租賃、然後選取「刪除」圖示。</block>
   <block id="e926c4b1e2cbc184aaebed3300b65528" category="summary">概述 NetApp Keystone</block>
-  <block id="20ad3368f1c0111bba151423b888352a" category="doc">常見問題集 NetApp Keystone</block>
   <block id="f7182ba3d28df04fc9e3174e93f4e48f" category="paragraph">下列問題可回答您經常提出 NetApp Keystone 的有關解決方法的問題。</block>
-  <block id="895b14af35ea6854d4009fe0ca2d99a9" category="section-title">什麼是 NetApp Keystone 功能？</block>
   <block id="3771874bf7c86306e773082a180804e6" category="paragraph">包含內部部署資本支出（ capex ）替代方案的產品組合、包含了《恆科靈活支付》（ Flex Pay ）和《恆科彈性訂閱》（ Flex 訂閱） NetApp Keystone NetApp Keystone NetApp Keystone 。</block>
   <block id="dad1dbc2c04df177fc1751f2fe38a796" category="list-text">* 彈性付款： * 一種付款解決方案組合、包括傳統融資、租賃及固定 / 變動選項、可滿足客戶的現金流需求。</block>
   <block id="c2710cd486d9b2ff77e0f74a5cee084f" category="list-text">* 彈性訂閱： * 隨成長付費訂閱型服務、透過成果型服務選項（ NetApp 營運）、在內部環境中提供雲端般的體驗。如需詳細資訊、請參閱 <block ref="0db14f220bcc161ea430c9d9c2a995b1" category="inline-link-macro-rx"></block>。</block>
-  <block id="4180ab7c8af931cea237f1fc98665e51" category="section-title">此功能如何讓客戶受益？ NetApp Keystone</block>
   <block id="495428b6203b94e86f7bb39ebd14943f" category="paragraph">這個橋樑連接了資本支出和混合雲策略的支柱、提供敏捷度、財務靈活度及降低財務風險、協助客戶滿足現金流和業務需求。 NetApp Keystone</block>
   <block id="92924bd6e7a05a6c5f4784c329571449" category="paragraph">此產品組合提供一系列靈活的付款解決方案、包括傳統融資、租賃、以及固定 / 可變選項、適合注重現金的客戶、以及彈性訂閱。 NetApp Keystone</block>
   <block id="3bf24c0eb67771c3c758536741dd1ecb" category="list-text">* 彈性付款（財務靈活度、付款解決方案）： *</block>
@@ -2228,11 +2145,8 @@
   <block id="f3e17e2700838fbe03291dba4993cb5b" category="list-text">從一般儲存工作（移轉、技術更新、升級等）重新分配 IT 資源</block>
   <block id="d42a5439b90649db32832c09d880e732" category="list-text">將工作負載移轉至雲端之前的短期解決方案</block>
   <block id="8a0c55f43c16d42ccdb61d2fc1a0b26e" category="list-text">將工作負載從雲端移回內部部署</block>
-  <block id="22d8bac7bce19700db0c242175fbbb36" category="section-title">什麼是 Flex 訂閱？</block>
   <block id="50132e06ede63dd88766d29a3458614d" category="paragraph">彈性訂閱是一種全新、靈活的內部部署訂購型採購模式。它可讓客戶消除管理資源的障礙、並完成冗長的採購週期、進而加速實現價值。彈性訂閱可讓客戶根據業務優先順序調整經濟效益。如需詳細資訊、請參閱 <block ref="e54def7567bc3788d2fec2fa9a5026d4" category="inline-link-macro-rx"></block>。</block>
-  <block id="c4ffc4661f0bd5f3fd3eabc25603722a" category="section-title">內部部署是什麼意思？</block>
   <block id="d3b10007d7035a7c568a3955a37eed8b" category="paragraph">內部部署是指客戶擁有的資料中心、或是主機代管機構中客戶擁有的空間。客戶負責空間、電力和冷卻。</block>
-  <block id="ad146d70889d9752ab9ecf771d643988" category="section-title">彈性訂閱服務有哪些優點？</block>
   <block id="5af1ebb17edd2710a7d69e1d2bd260d5" category="paragraph">彈性訂閱服務的部分優點包括：</block>
   <block id="6fbd5ba12eeaf6cdc7cb2be883e1855d" category="list-text">如需詳細資訊、請參閱 <block ref="074845093102bf29a3fca45f5b6d3cea" category="inline-link-macro-rx"></block>。</block>
   <block id="a569539ebc048051428ba08b3174903c" category="summary">NetApp 服務引擎的新功能</block>
@@ -2404,16 +2318,11 @@
   <block id="713f90c3b39f5ec302eea94ea370dfb5" category="summary">營運模式</block>
   <block id="50b8fe65928589d1dc9240987fbba099" category="doc">營運模式與責任</block>
   <block id="d668e987609ce56cd4cdff0a933bd047" category="paragraph">Flex 訂閱提供三種操作模式。這些常見問題集與這些營運模式有關。</block>
-  <block id="e79cecc02786a6187c528cdd9910d44e" category="section-title">有哪些不同的營運模式、以及哪些人負責主要活動？</block>
   <block id="f1dae87d14ba76423e263dc9a79acdd7" category="paragraph">下表概述客戶可選擇的三種營運模式： NetApp 營運模式、合作夥伴營運模式及客戶營運模式。</block>
-  <block id="7372576bac1b28ddc28d31e41ea7e09b" category="section-title">什麼是 NetApp 營運模式？</block>
   <block id="518a259308e0c3fe0d2f9d4c06253b58" category="paragraph">此營運模式可讓客戶根據所選的效能層級和儲存服務類型、訂閱所提供的服務、並以額外成本選擇 NetApp 營運的選項。NetApp 定義架構與產品、安裝於客戶內部、 NetApp 則使用我們的儲存與 IT 資源來管理日常基礎架構管理作業。可用的儲存服務類型包括檔案、區塊（ iSCSI ）和物件。也支援 GCP 和 AWS 的支援。 Cloud Volumes Service</block>
   <block id="5a5aa994cefd2447961b51fe606e923c" category="paragraph">NetApp 也會視情況建立及管理合作夥伴、租戶、並管理訂閱內容。</block>
-  <block id="2d44c8845591ca1e84d35e7b40f93933" category="section-title">什麼是合作夥伴營運模式？</block>
   <block id="dda2dbbc5f337b2b9d4c5e2d4e3a7a96" category="paragraph">合作夥伴或服務供應商的營運模式與 NetApp 營運模式類似、但合作夥伴則是為其終端客戶營運服務。在此模式中、合作夥伴是參照的合約方。租戶是服務供應商的客戶、與 NetApp 並無計費關係。他們負責管理自己的租戶和客戶。租戶支援要求會先由服務供應商進行分類、然後再提交給 NetApp 。</block>
-  <block id="3423629b31ab53a941eb4e5227bbb13d" category="section-title">什麼是客戶營運模式？</block>
   <block id="e420ca3aff97026d69088f19643d4222" category="paragraph">此營運模式可讓客戶根據所選的效能層級和儲存服務類型、訂閱所提供的服務。NetApp 定義架構和產品、並安裝在客戶內部、讓客戶能夠使用儲存設備和 IT 資源來管理基礎架構。可用的儲存服務類型包括檔案、區塊（ iSCSI ）和物件。在此模式中、客戶參照合約方、這可以是終端使用者或合作夥伴。</block>
-  <block id="a5448f9e69fe79711ffadab7fc45e6f8" category="section-title">設備由誰擁有？</block>
   <block id="d786327190524a9c90e4131ef647a939" category="paragraph">在這三種營運模式中、 NetApp 擁有安裝在客戶所在地的所有硬體與軟體的所有權。</block>
   <block id="9323b199943b25916933b70d7d4a959e" category="summary">Keystone 檢視使用者清單</block>
   <block id="06204c70013b6772425bf92fc4ea4091" category="doc">檢視使用者清單</block>
@@ -3096,4 +3005,74 @@
   <block id="65b034376f8c6863d7282690b92e3bf9" category="paragraph">Flex 訂閱是一項儲存即服務服務方案、可在內部部署系統上提供雲端體驗、並可連線至雲端、您可以依照自己的需求進行訂購。</block>
   <block id="e49cf55687c692a556892a0f614ce9bf" category="list-text">*《Flex P立即 支付*》-《Sof Flex付費》（FlexPand、彈性支付）是一系列靈活的財務替代方案、包括傳統融資、租賃及固定/變動選項、可滿足客戶的現金流需求。NetApp Keystone NetApp Keystone</block>
   <block id="cf7ec62445091377db24ebd1c9fd2d93" category="list-text">*《Flex訂閱*》-《SewFlex訂閱》（Flex訂閱）是一項隨需付費、成果型訂閱服務、提供內部部署的雲端體驗。NetApp Keystone NetApp Keystone</block>
+  <block id="dbfc4f71a4b957c42860a7892c3f69ce" category="doc">常見問題集（FAQ）NetApp Keystone</block>
+  <block id="f6c9f270161fc54b8171600d1892aca1" category="paragraph">* NetApp Keystone 什麼是呢？*</block>
+  <block id="06c96924e7d69a8367e454a26634c43f" category="paragraph">*此功能如何讓我的客戶受益？NetApp Keystone *</block>
+  <block id="14f844051d2834775cfe8fc636854af6" category="paragraph">*什麼是Flex訂閱？*</block>
+  <block id="5aed86d713fb69dbe024ac9088076e73" category="paragraph">*內部部署是什麼意思？*</block>
+  <block id="a75a7cee34b949b2845063d48f4f6ce7" category="paragraph">*彈性訂閱服務有哪些優點？*</block>
+  <block id="a3bbf620adc7e7bcc0d6001db0d7e174" category="paragraph">* NetApp Keystone 什麼是作爲《支援》的一部分提供？* NetApp Keystone 《支援》（Flex訂閱）是一項以訂購為基礎的服務項目、適用於區塊、檔案及物件資料服務、可部署於內部部署、並可由NetApp、合作夥伴或客戶營運。</block>
+  <block id="7f3c8f66eb2c4902c4723ee68d1dd702" category="paragraph">*哪些儲存服務優惠是Flex訂閱的一部分？*如需相關資訊、請參閱 <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
+  <block id="78d9a5281ccb539856a1f4dd20094aea" category="paragraph">*支援哪些附加服務？*進階資料保護（備份與災難恢復）和混合雲分層FabricPool 搭配使用支援功能、是可額外付費選擇的附加服務。</block>
+  <block id="f51aca773a35af7c6804c9de4ec05591" category="paragraph">*在NetApp營運的案例中NetApp Keystone 、NetApp保證提供哪些服務層級？*在每個服務層級的儲存設備上、NetApp可保證IOPS / TiB的供應及延遲。</block>
+  <block id="22fbbcf2456a5d7f160b510c7b3af3ae" category="paragraph">Flex訂閱對應什麼？* Flex訂閱對應到單一站台或單一資料中心、可由不同的效能服務層級組成。</block>
+  <block id="649571bfc7e1b8f98d07b3d829506d93" category="paragraph">*極致分層和優質分層效能等級有哪些優點？*分層是在極致分層和優質分層效能層級中啟用的、可讓您減少儲存設備佔用空間和相關成本。NetApp 假設 25% 的資料很熱、而其餘 75% 的資料則較少使用或冷卻、並將其移至冷儲存設備。此外、您也可以查看使用量報告、瞭解存取資料的頻率、並根據資訊啟用分層服務。</block>
+  <block id="d6df6eff28ac44af1e13e275b0228621" category="paragraph">*合作夥伴是否可以向客戶銷售比從NetApp購買更多的容量？*租戶訂閱不受合作夥伴購買容量的限制。合作夥伴可以向客戶銷售比從 NetApp 購買更多的容量。超過購買容量的容量稱為超額訂閱。</block>
+  <block id="1ed1cac8cc85c7270eaad5bcd4a6157f" category="paragraph">*是否提供API來整合客戶工具？*是的、RESTful API可整合至您自己的應用程式。請瀏覽至 * support&gt; API Documentation * 以查看 Flex 訂閱服務的 API 文件。如需詳細資訊、請參閱 <block ref="5b59c49596915ff0a388a418bca92047" category="inline-link-macro-rx"></block>。</block>
+  <block id="c54f3024ff23dcfc42681979d3398492" category="paragraph">*什麼是突發容量？*您可以將使用量增加或減少、最高可達承諾容量的20%。突發容量使用量是每日測量、僅在使用時計費。例如、如果提交的容量為 100 TiB 、則最多可增加 120 TiB 。</block>
+  <block id="b97f95dce25dbfc957db05f02efd82ea" category="paragraph">*使用突發負載是否需要付費？*高達20%的已提交容量的突發容量使用量、其收費率與已提交容量相同、超過20%已提交容量的任何使用量、均以50%的保費收費。</block>
+  <block id="a8ea445913e860dbecd22f3fee610a90" category="paragraph">*突發容量有何優點？*突發容量可讓您靈活地隨需使用儲存設備、而不需要長期投入。</block>
+  <block id="52f1a573da07f1d12b2d222128c410e1" category="paragraph">*如何將突發容量分配給租戶？*將突發容量分配給合作夥伴、由合作夥伴根據需求進一步將容量分配給客戶。</block>
+  <block id="921cd7d2a595c1ff2d4f7183d236e5da" category="paragraph">*我可以在哪裡看到已認可和突發容量使用量？* NetApp服務引擎內建儀表板、可根據已認可的容量來報告已用容量。</block>
+  <block id="3b7f70a118579af4a1763cf34abef2a7" category="paragraph">*如果我在已確認的容量使用量中達到某個百分比、是否會有任何通知？*是、管理工具會透過NetApp服務引擎儀表板提供容量使用通知。</block>
+  <block id="4419434a1b65d14caa10786114db3112" category="paragraph">* 如何檢視 Flex 訂閱使用量？ * NetApp 服務引擎提供儀表板檢視、其中包含所有訂閱服務的相關資訊、以及使用量。如需 NetApp 服務引擎的詳細資訊、請參閱 <block ref="8d35461a50e9d2cb480a76a035c5e522" category="inline-link-macro-rx"></block>。</block>
+  <block id="5a3115449a2b3065d5bb7484cfe4f999" category="paragraph">* 我要如何回報服務的任何問題？ NetApp Keystone * 可透過下列各種管道取得支援：</block>
+  <block id="00b8e318a80a143ca212b4f3b0cb449f" category="paragraph">* 我可以訂購新的儲存服務嗎？ * 是的、您可以從 NetApp 服務引擎入口網站申請新的儲存服務或擴充至儲存服務。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。</block>
+  <block id="eff136c1ba2e8a2d6e4b14ddd6a80383" category="paragraph">* 是否立即增加可用的儲存承諾？ * 視要求的容量而定、系統會判斷容量是否已部署、或是需要額外的設備才能出貨和安裝。</block>
+  <block id="f71fb6dbf8a02dfaed157786a5d1337e" category="paragraph">* 工作負載是否可以在層級之間移動？ * 是的、只要使用者已訂閱工作負載移至的層級、即可在層級之間移動工作負載。不過、我們不建議從較高層移至較低層、因為這可能會導致效能降低。只要編輯檔案共用並變更服務層級設定、即可完成此程序。</block>
+  <block id="0d5e545b2de42575e5208d3abb79f68c" category="paragraph">* 哪些軟體版本 ONTAP （例如、支援）是預設安裝的？ * 視訂閱的服務層而定（例如 ONTAP 、使用檔案和區塊服務的版本、 SANtricity 使用物件的版本、以及 StorageGRID 使用物件的版本）、支援團隊會安裝最新的穩定版本、而不會發生安全性或功能問題。</block>
+  <block id="7ae9036783fb54e0a52aedfa26814f6b" category="paragraph">*有哪些不同的營運模式、以及誰負責主要活動？*</block>
+  <block id="f2ac98a13f280a4eeb27bb4780175f5e" category="paragraph">*什麼是NetApp營運模式？*</block>
+  <block id="7dd4b2b13e8a8a109244cccfafe4b5a5" category="paragraph">*什麼是合作夥伴營運模式？*</block>
+  <block id="39154db86ad669a527d87dd05e1655c5" category="paragraph">*什麼是客戶營運模式？*</block>
+  <block id="7eb973e02baa4e25734e8bed944c060a" category="paragraph">*設備由誰擁有？*</block>
+  <block id="3b4d5a194534074e4e26b153c90a2ef6" category="doc">美國公民支援（USCS）</block>
+  <block id="90770185e7f0d93f4befd67871a81092" category="paragraph">美國公民支援（USCS）是NetApp Keystone 針對各種訂閱的附加產品。您有權從美國獲得持續基礎概念服務的交付與支援美國公民土壤。</block>
+  <block id="0298010e49da89b748a96d3dd60c3579" category="paragraph">請閱讀下列各節、瞭解您的訂閱內容受此附加服務約束、並依據NetApp Keystone 《銷售協議》條款提供。註腳：免責聲明1[此處說明的服務與產品受完整執行的Keystone協議約束、限制及管轄。]</block>
+  <block id="616e342ef98270057c5d3a2f3e3e7338" category="section-title">NetApp全球服務支援中心監控</block>
+  <block id="c779911684ebe3ceed4035306e2997c3" category="paragraph">NetApp全球服務與支援中心（GSSC）可監控您產品和訂閱服務的健全狀況、提供遠端支援、並與Keystone Success Manager合作。所有監控相關Keystone訂購訂單相關產品的人員、均為美國公民土壤。</block>
+  <block id="b47b3a710484adb2c8cfacd64043b550" category="section-title">Keystone成功管理程式</block>
+  <block id="42f709e8a5be1c018041912b530ca640" category="paragraph">Keystone Success Manager是美國美國公民土壤。他們的責任請在NetApp Keystone 您的《不確定協議》中說明。</block>
+  <block id="e8483ac20b1990d2362dd45e18cfb1d2" category="section-title">部署活動</block>
+  <block id="221d560cb3a4127ba5fc624a195a7f29" category="paragraph">如適用、現場與遠端部署與安裝活動均由美國政府執行美國公民土壤。註腳：免責聲明[適當人員是否可用於現場活動、取決於Keystone系統部署所在的地理位置。]</block>
+  <block id="cedba9b370f4f8fb7584b8a96576dbce" category="paragraph">必要的現場疑難排解與支援活動、均由美國政府執行美國公民土壤。註腳：免責聲明[]</block>
+  <block id="d5711d7ae3d6e6f47fa957a95d3142aa" category="paragraph">*最小承諾容量是多少？*</block>
+  <block id="fd71b73700b422e3b4675c81159656ef" category="paragraph">*彈性訂閱協議的一般期限為何？*</block>
+  <block id="09d09e7b7afd8ded500977e3cee6326f" category="paragraph">*如何存取儲存設備？*</block>
+  <block id="9fa797e742e7be6391aced52fdf5093a" category="paragraph">*如何管理服務？*</block>
+  <block id="f240946a05316b452971a7e9095ac4a2" category="paragraph">*如何增加訂閱的承諾容量？*</block>
+  <block id="5d82a19ac986be3e28747ff2634e505b" category="paragraph">*增加容量是否會延長期限？*</block>
+  <block id="b966cade5691b18bf62755c195447e05" category="paragraph">*新的訂閱是否具有彈性、可隨新的一年一度續訂？*</block>
+  <block id="58308e954617b52ff118d3299ec8f228" category="paragraph">*租戶訂閱條款是否可延伸至合作夥伴的訂閱期限之外？*</block>
+  <block id="74fc177e4bef1cdf2bea4ccdadd13631" category="paragraph">*我可以在同ONTAP 一個支援叢集上混合多個訂閱嗎？*</block>
+  <block id="419ac205a5a84ff5f314afba4f5edb27" category="paragraph">*監控與營運的對象是誰？*</block>
+  <block id="393da119bc3b207bcea2f02315c388ac" category="paragraph">*如果我提早終止服務、會發生什麼事？*</block>
+  <block id="b387af4e718e4b5565ce87f74234f50f" category="paragraph">*是否有機會在初始期限結束後轉換成購買項目？*不可以此優惠不包含轉換為購買的選項。此外、先前購買的 NetApp 產品不在本方案範圍之內。</block>
+  <block id="a16dc1f5755db55741d2ae801d6aa73d" category="paragraph">*我可以申請特定的軟體版本嗎？*</block>
+  <block id="ee62bd671134498c82c2878422e9f59a" category="paragraph">*是否會收到軟體升級的通知？*</block>
+  <block id="4b27d8b1b37284b9da0b4213e4e6675d" category="paragraph">|=| HTTP方法|路徑|說明|參數</block>
+  <block id="9104a21e58f1a69b57c6b2ae89602908" category="paragraph">|「POST」|「/v2.1 /租戶/｛租戶ID｝/服務資源/類別」|建立服務要求。|「租戶ID」：租戶識別碼。</block>
+  <block id="58e00570185a83ad51f69b7079961f6b" category="paragraph">|類別|必填</block>
+  <block id="4ef290f7b3c58a4e717e6cc36148b17f" category="paragraph">如果「eserve_type」是檔案服務或區塊儲存設備、則需要使用區域。|其他|分區</block>
+  <block id="0725399a92712a8b8a9b398144b43a68" category="cell">*申請本文範例：*...｛"Subject」："string"、"Comment（註釋）："string"、"category（類別）："fusion"、"priority（訂閱）："normal"、"fusion"："A-S00003969"、 「承諾」：｛「service_level」：「標準」、「new_承諾」：10｝、「區域」：「AU-East1-A」、「子租戶_id」：「5d2fb0fb4f47df00015274e3」、「Storage_object_type」：「檔案伺服器」、 「Storage_object_id」：「5d2fb0fb4f47df00015274e3」、「service_type」：「檔案服務」｝...*回應本文範例：*...｛"STATUS"：｛"user_message"："string"、"verbose_message"："string"、"code"："string"｝、"result"：｛"resove_Records"：1、"Records"：[｛"id"："string"、"Subject "："string"、"description"："string"、"STATUS"："new"、"priore" 「建立日期」：「2020-05-12T03：18：25 + 0000」、「更新日期」：「202020-05-12T03：18：25 + 0000」｝]=擷取服務要求類別下表列出指定租戶的擷取服務要求類別。</block>
+  <block id="b235a9ee30b02d07ff714bb1542b9b1d" category="paragraph">| HTTP方法|路徑|說明|參數</block>
+  <block id="3cfc9b45a25da8c56ea24ecc26ed6f54" category="paragraph">|「Get」|「/v2.1 /租戶/｛租戶ID｝/服務資源/類別」|「Retrieve service requests」類別。|「租戶ID：」（選用）會傳回指定租戶的服務要求。</block>
+  <block id="c31fc18f14b317fa271c222c8662ff0b" category="cell">必要的要求內容屬性：「無」*要求本文範例：*...無*回應本文範例：*...｛"STATUS"：｛"user_message"：「好。傳回5筆記錄。」、「verbose_message」：「」、「code"：200｝、「result」：｛"love_logges"：5、「Records」：[｛"key"：「DR」、「Value」：「災難恢復容錯移轉」｝、{「key」：「key」、「key」、「其他」、「訂閱值：｝、「 「備份還原」}]}...</block>
+  <block id="8615a49d222eeb50c22f60e749d36d5e" category="paragraph">什麼是NetApp服務引擎？*</block>
+  <block id="a5e1a7f3557344aca20fdd047ee9cace" category="paragraph">*客戶營運模式需要NetApp服務引擎？*</block>
+  <block id="46eed4ec681c7ae2f6418744e02e8ba8" category="paragraph">* NetApp服務引擎安裝在何處？*</block>
+  <block id="170e5a414316e2259d6b42a282c77c45" category="paragraph">*誰可以登入NetApp服務引擎？*</block>
+  <block id="109d8311a672ab956bbde63f671b0b7c" category="paragraph">*如何控制存取？*</block>
+  <block id="bfc9a9f184efe2a5063de0904d04a09f" category="paragraph">*有哪些存取控制可用？*</block>
+  <block id="dc621b6e8c29275d1ab76120be6c1392" category="paragraph">*我可以在哪裡看到使用量的帳單？*</block>
 </blocks>

@@ -64,4 +64,4 @@ NOTE: 租戶和子租戶的不二帳戶應已設定為 GCP 。 Cloud Volumes Ser
 
 觀看下列影片、瞭解如何透過 Cloud Volumes Service 下列功能在 GCP 上建立 Volume ：
 
-video::Crq5a1zi1Vg[youtube, width=750,height=400]
+video::Crq5a1zi1Vg[youtube,width=750,height=400]

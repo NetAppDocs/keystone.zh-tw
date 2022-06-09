@@ -33,7 +33,7 @@ summary: Keystone StorageGRID 執行個體
 |===
 
 
-=== 執行個體屬性 StorageGRID
+== 執行個體屬性 StorageGRID
 
 下表列出 StorageGRID 了一些不執行個體屬性。
 
@@ -69,7 +69,7 @@ summary: Keystone StorageGRID 執行個體
 |===
 
 
-=== 擷 StorageGRID 取實體執行個體
+== 擷 StorageGRID 取實體執行個體
 
 使用下表所列的方法來擷取 StorageGRID 列舉的實例。
 
@@ -114,7 +114,7 @@ none
 ....
 
 
-=== 根據 ID 擷取 StorageGRID 實體執行個體
+== 根據 ID 擷取 StorageGRID 實體執行個體
 
 請使用下表所列的方法、 StorageGRID 依 ID 擷取不檢索。
 
@@ -159,7 +159,7 @@ none
 ....
 
 
-=== 根據 ID 建立 StorageGRID 一個實例
+== 根據 ID 建立 StorageGRID 一個實例
 
 使用下表所列的方法、 StorageGRID 根據 ID 建立一個實例。
 
@@ -217,7 +217,7 @@ none
 ....
 
 
-=== 根據 ID 修改 StorageGRID 執行個體
+== 根據 ID 修改 StorageGRID 執行個體
 
 使用下表所列的方法、 StorageGRID 依 ID 修改一個實例。
 

@@ -36,7 +36,7 @@ summary:
 |===
 
 
-=== 叢集屬性 ONTAP
+== 叢集屬性 ONTAP
 
 下表列出 ONTAP 了叢集的功能特性。
 
@@ -157,7 +157,7 @@ For example:
 |===
 
 
-=== 擷取所有 ONTAP 的叢集
+== 擷取所有 ONTAP 的叢集
 
 使用下列方法擷取所有 ONTAP 的叢集或 ONTAP 部分的叢集。
 
@@ -302,7 +302,7 @@ none
 ....
 
 
-=== 依 ID 擷取 ONTAP 叢集
+== 依 ID 擷取 ONTAP 叢集
 
 請使用下列方法 ONTAP 、依 ID 擷取各個叢集。
 
@@ -376,7 +376,7 @@ none
 ....
 
 
-=== 建立 ONTAP 叢集
+== 建立 ONTAP 叢集
 
 使用下表中的 API 建立 ONTAP 一個不只是一個的叢集。
 
@@ -493,7 +493,7 @@ none
 ....
 
 
-=== 修改 ONTAP 叢集
+== 修改 ONTAP 叢集
 
 使用下列方法來修改 ONTAP 叢集。
 
@@ -603,7 +603,7 @@ none
 ....
 
 
-=== 刪除 ONTAP 一個叢集
+== 刪除 ONTAP 一個叢集
 
 使用下表所列的方法刪除 ONTAP 一個叢集。
 

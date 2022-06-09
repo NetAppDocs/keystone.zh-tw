@@ -29,7 +29,7 @@ NOTE: 管理 Azure Volume 需要客戶管理存取權。
 
 
 
-=== 檢視 Azure Volume 清單
+== 檢視 Azure Volume 清單
 
 Azure Volumes 清單會顯示指定子租戶和位置的 Azure Volume Pool 清單。若要檢視清單、請從功能表中選取 * 檔案服務 > Azure Volumes * 。
 
@@ -37,7 +37,7 @@ Azure Volumes 清單會顯示指定子租戶和位置的 Azure Volume Pool 清�
 
 
 
-=== 新增 Azure Volume
+== 新增 Azure Volume
 
 本節說明如何新增 Azure Volume 。
 
@@ -62,7 +62,7 @@ Azure Volumes 清單會顯示指定子租戶和位置的 Azure Volume Pool 清�
 
 
 
-=== 修改 Azure Volume 詳細資料
+== 修改 Azure Volume 詳細資料
 
 使用此方法修改 Azure Volume 的詳細資料。您可以修改檔案路徑和配額、以及新增或移除標記。
 
@@ -75,7 +75,7 @@ Azure Volumes 清單會顯示指定子租戶和位置的 Azure Volume Pool 清�
 
 
 
-=== 刪除 Azure Volume
+== 刪除 Azure Volume
 
 使用此方法刪除 Azure Volume 。
 
