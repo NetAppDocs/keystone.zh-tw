@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/seapiref_subtenants.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_subtenants.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_subtenants.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_subtenants.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_subtenants.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/seapiref_subtenants.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_subtenants.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_subtenants.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/seapiref_subtenants.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_subtenants.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_subtenants.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_subtenants.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/seapiref_subtenants.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_subtenants.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-tw/keystone/index.html">
         <div class="na-navbar-padding"> FlexFlex 訂閱 NetApp Keystone</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 05:32:32 +0000">05/03/2022</time>
+    <time datetime="2022-06-09 10:22:18 +0000">06/09/2022</time>
     
   
 
@@ -1450,8 +1442,9 @@
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="子租戶屬性">子租戶屬性</h3>
+<div class="sect1">
+<h2 id="子租戶屬性">子租戶屬性</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>下表列出子租戶屬性。</p>
 </div>
@@ -1492,8 +1485,10 @@
 </tbody>
 </table>
 </div>
-<div class="sect2">
-<h3 id="擷取所有子租戶">擷取所有子租戶</h3>
+</div>
+<div class="sect1">
+<h2 id="擷取所有子租戶">擷取所有子租戶</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表所列的方法擷取所有子租戶或所有子租戶的子集。指定「租戶 ID 」只會傳回屬於該租戶的子租戶。</p>
 </div>
@@ -1580,8 +1575,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="依-id-擷取子租戶">依 ID 擷取子租戶</h3>
+</div>
+<div class="sect1">
+<h2 id="依-id-擷取子租戶">依 ID 擷取子租戶</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下列方法依 ID 擷取子租戶。</p>
 </div>
@@ -1656,8 +1653,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="建立子租戶">建立子租戶</h3>
+</div>
+<div class="sect1">
+<h2 id="建立子租戶">建立子租戶</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表所列的方法來建立子租戶。</p>
 </div>
@@ -1736,8 +1735,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="依-id-修改子租戶">依 ID 修改子租戶</h3>
+</div>
+<div class="sect1">
+<h2 id="依-id-修改子租戶">依 ID 修改子租戶</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表所列的方法、依 ID 修改子租戶。</p>
 </div>
@@ -1814,8 +1815,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="依-id-刪除子租戶">依 ID 刪除子租戶</h3>
+</div>
+<div class="sect1">
+<h2 id="依-id-刪除子租戶">依 ID 刪除子租戶</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表所列的方法、依 ID 刪除子租戶。</p>
 </div>
@@ -1871,6 +1874,7 @@
 </div>
 </div>
 </div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -1890,16 +1894,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
@@ -2017,4 +2021,5 @@
     </script>
     <script src='/zh-tw/keystone/js/www-ntap.js'></script>
     <script src='/zh-tw/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/keystone/js/sidebar.js'></script>
   </body></html>

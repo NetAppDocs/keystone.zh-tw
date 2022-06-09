@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-tw/keystone/index.html">
         <div class="na-navbar-padding"> FlexFlex 訂閱 NetApp Keystone</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 05:32:32 +0000">05/03/2022</time>
+    <time datetime="2022-06-09 10:22:18 +0000">06/09/2022</time>
     
   
 
@@ -1449,8 +1441,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="承諾耗用及突發容量以及過度使用量">承諾、耗用及突發容量、以及過度使用量</h3>
+<div class="sect1">
+<h2 id="承諾耗用及突發容量以及過度使用量">承諾、耗用及突發容量、以及過度使用量</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>消耗容量是指已分配多少容量（但不一定要使用）。承諾容量是指訂閱中承諾的容量；無論使用多少容量、訂閱者都會以固定費率計入已提交的容量。</p>
 </div>
@@ -1475,7 +1468,6 @@
 </tr>
 </table>
 </div>
-</div>
 <div class="sect2">
 <h3 id="突發使用通知">突發使用通知</h3>
 <div class="paragraph">
@@ -1494,8 +1486,9 @@
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="建議的變更會導致使用突發容量時發出通知">建議的變更會導致使用突發容量時發出通知</h4>
+</div>
+<div class="sect2">
+<h3 id="建議的變更會導致使用突發容量時發出通知">建議的變更會導致使用突發容量時發出通知</h3>
 <div class="paragraph">
 <p>此圖顯示當建議的資源配置變更會導致訂閱量暴增時、顯示通知的範例。您可以選擇繼續知道訂閱內容將會突發、或選擇不繼續執行此動作。</p>
 </div>
@@ -1575,8 +1568,8 @@
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="訂閱量暴增時發出通知">訂閱量暴增時發出通知</h4>
+<div class="sect2">
+<h3 id="訂閱量暴增時發出通知">訂閱量暴增時發出通知</h3>
 <div class="paragraph">
 <p>當訂閱量暴增時、會顯示下列通知橫幅。通知會顯示給客戶管理員以供租賃、直到通知獲得確認為止。</p>
 </div>
@@ -1585,8 +1578,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="資料保護">資料保護</h3>
+</div>
+<div class="sect1">
+<h2 id="資料保護">資料保護</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>DP 是指支援資料備份的方法、以及必要時恢復資料的能力。</p>
 </div>
@@ -1606,8 +1601,8 @@
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="快照">快照</h4>
+<div class="sect2">
+<h3 id="快照">快照</h3>
 <div class="paragraph">
 <p>快照是資料的時間點複本。快照可以複製成新磁碟、或以相同或類似的功能共用。</p>
 </div>
@@ -1627,8 +1622,8 @@
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="備份">備份</h4>
+<div class="sect2">
+<h3 id="備份">備份</h3>
 <div class="paragraph">
 <p>備份是指複製項目、複寫項目、並將複本儲存在原始區域以外的區域、該區域已啟用個別的傳輸協定（僅適用於區塊儲存）、且未啟用 MetroCluster 。NetApp Service Engine 可在檔案與區塊儲存設備上提供備份（訂閱時需要 DP 服務）。共享區 / 磁碟的備份會儲存在訂閱時成本最低的效能層（即標準）備份區域中。</p>
 </div>
@@ -1681,8 +1676,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="災難恢復">災難恢復</h3>
+</div>
+<div class="sect1">
+<h2 id="災難恢復">災難恢復</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>災難恢復是指在發生災難時、能夠恢復至正常作業。</p>
 </div>
@@ -1701,8 +1698,8 @@
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="災難恢復非同步">災難恢復：非同步</h4>
+<div class="sect2">
+<h3 id="災難恢復非同步">災難恢復：非同步</h3>
 <div class="paragraph">
 <p>NetApp 服務引擎可提供下列功能、以支援非同步災難恢復：</p>
 </div>
@@ -1735,14 +1732,9 @@
 </li>
 </ul>
 </div>
-<div class="sect4">
-<h5 id="設定檔案伺服器或區塊存放區以支援非同步災難恢復">設定檔案伺服器或區塊存放區以支援非同步災難恢復</h5>
 <div class="paragraph">
 <p>在建立檔案伺服器或區塊存放區時或稍後日期啟用非同步災難恢復。啟用之後、就無法停用災難恢復、也無法變更災難恢復區域。災難恢復排程會指定資料複寫到災難恢復位置的頻率（每小時、每小時四次或每天）。</p>
 </div>
-</div>
-<div class="sect4">
-<h5 id="在檔案共用區或磁碟上啟用非同步災難恢復">在檔案共用區或磁碟上啟用非同步災難恢復</h5>
 <div class="paragraph">
 <p>只有在父檔案伺服器或區塊存放區第一次設定為非同步災難恢復時、才能將檔案共用區或磁碟設定為非同步災難恢復複寫。根據預設、如果在父實體中啟用複寫、則會在父實體所在的檔案共用區或磁碟中啟用複寫。您可以停用該共用區 / 磁碟上的災難恢復、排除特定共用區或磁碟的複寫。您可以在這些共用 / 磁碟上的啟用和停用複寫之間切換。</p>
 </div>
@@ -1763,9 +1755,8 @@
 </ul>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="災難恢復同步">災難恢復—同步</h4>
+<div class="sect2">
+<h3 id="災難恢復同步">災難恢復—同步</h3>
 <div class="paragraph">
 <p>而在位於不同位置或故障網域的兩個不同區域之間、可同步複寫資料和組態的 DP 功能。 MetroCluster萬一某站台發生災難、系統管理員可以從存續站台提供資料。</p>
 </div>
@@ -1790,15 +1781,15 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="資料保護耗用容量和費用">資料保護、耗用容量和費用</h3>
+</div>
+<div class="sect1">
+<h2 id="資料保護耗用容量和費用">資料保護、耗用容量和費用</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>本節的數字說明如何計算 DP 費用。</p>
 </div>
-<div class="sect3">
-<h4 id="災難恢復-2">災難恢復</h4>
-<div class="sect4">
-<h5 id="非同步災難恢復">非同步災難恢復</h5>
+<div class="sect2">
+<h3 id="非同步災難恢復">非同步災難恢復</h3>
 <div class="paragraph">
 <p>在非同步災難恢復中、使用量和成本由下列費用組成：</p>
 </div>
@@ -1819,8 +1810,8 @@
 <p><span class="image"><img src="./media/sewebiug_image4.png" alt="錯誤：缺少圖形影像"></span></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="同步災難恢復">同步災難恢復</h5>
+<div class="sect2">
+<h3 id="同步災難恢復">同步災難恢復</h3>
 <div class="paragraph">
 <p>在同步災難恢復中、使用量和成本由下列費用組成：</p>
 </div>
@@ -1828,9 +1819,8 @@
 <p><span class="image"><img src="./media/sewebiug_image5.png" alt="錯誤：缺少圖形影像"></span></p>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="備份-2">備份</h4>
+<div class="sect2">
+<h3 id="備份-2">備份</h3>
 <div class="paragraph">
 <p>在備份中、使用量和成本由下列費用組成：</p>
 </div>
@@ -1849,6 +1839,7 @@
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/sewebiug_image6.png" alt="錯誤：缺少圖形影像"></span></p>
+</div>
 </div>
 </div>
 </div>
@@ -1871,16 +1862,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
@@ -1998,4 +1989,5 @@
     </script>
     <script src='/zh-tw/keystone/js/www-ntap.js'></script>
     <script src='/zh-tw/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/keystone/js/sidebar.js'></script>
   </body></html>

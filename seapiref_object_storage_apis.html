@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_object_storage_apis.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_object_storage_apis.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-tw/keystone/index.html">
         <div class="na-navbar-padding"> FlexFlex 訂閱 NetApp Keystone</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 05:32:32 +0000">05/03/2022</time>
+    <time datetime="2022-06-09 10:22:18 +0000">06/09/2022</time>
     
   
 
@@ -1428,8 +1420,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="物件儲存群組">物件儲存群組</h3>
+<div class="sect1">
+<h2 id="物件儲存群組">物件儲存群組</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用下表所列的方法擷取、建立或修改物件儲存群組。</p>
 </div>
@@ -1474,8 +1467,8 @@
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="物件儲存群組屬性">物件儲存群組屬性</h4>
+<div class="sect2">
+<h3 id="物件儲存群組屬性">物件儲存群組屬性</h3>
 <div class="paragraph">
 <p>下表列出物件儲存屬性。</p>
 </div>
@@ -1545,7 +1538,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="擷取物件儲存群組">擷取物件儲存群組</h3>
@@ -1636,8 +1628,9 @@
     ]</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="依-id-擷取物件儲存群組">依 ID 擷取物件儲存群組</h4>
+</div>
+<div class="sect2">
+<h3 id="依-id-擷取物件儲存群組">依 ID 擷取物件儲存群組</h3>
 <div class="paragraph">
 <p>使用下表所列的方法、依 ID 擷取物件儲存群組。</p>
 </div>
@@ -1722,8 +1715,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="建立物件儲存群組">建立物件儲存群組</h4>
+<div class="sect2">
+<h3 id="建立物件儲存群組">建立物件儲存群組</h3>
 <div class="paragraph">
 <p>使用下列方法建立物件儲存群組。</p>
 </div>
@@ -1817,8 +1810,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="修改物件儲存群組">修改物件儲存群組</h4>
+<div class="sect2">
+<h3 id="修改物件儲存群組">修改物件儲存群組</h3>
 <div class="paragraph">
 <p>使用下表所列的方法來修改物件儲存群組。</p>
 </div>
@@ -1918,8 +1911,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="依-id-刪除物件儲存群組">依 ID 刪除物件儲存群組</h4>
+<div class="sect2">
+<h3 id="依-id-刪除物件儲存群組">依 ID 刪除物件儲存群組</h3>
 <div class="paragraph">
 <p>使用下表所列的方法、依 ID 刪除物件儲存群組。</p>
 </div>
@@ -2005,8 +1998,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="物件儲存使用者">物件儲存使用者</h3>
+</div>
+<div class="sect1">
+<h2 id="物件儲存使用者">物件儲存使用者</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>請使用下表所列的方法來執行下列工作：</p>
 </div>
@@ -2081,8 +2076,8 @@
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="物件儲存使用者屬性">物件儲存使用者屬性</h4>
+<div class="sect2">
+<h3 id="物件儲存使用者屬性">物件儲存使用者屬性</h3>
 <div class="paragraph">
 <p>下表列出物件儲存使用者屬性。</p>
 </div>
@@ -2142,7 +2137,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="擷取物件儲存使用者">擷取物件儲存使用者</h3>
@@ -2228,8 +2222,9 @@
 }</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="依-id-擷取物件儲存使用者">依 ID 擷取物件儲存使用者</h4>
+</div>
+<div class="sect2">
+<h3 id="依-id-擷取物件儲存使用者">依 ID 擷取物件儲存使用者</h3>
 <div class="paragraph">
 <p>使用下表所列的方法、依 ID 擷取物件儲存設備使用量。</p>
 </div>
@@ -2308,8 +2303,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="建立物件儲存使用者">建立物件儲存使用者</h4>
+<div class="sect2">
+<h3 id="建立物件儲存使用者">建立物件儲存使用者</h3>
 <div class="paragraph">
 <p>使用下表所列的方法來建立物件儲存使用者。</p>
 </div>
@@ -2397,8 +2392,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="修改物件儲存使用者">修改物件儲存使用者</h4>
+<div class="sect2">
+<h3 id="修改物件儲存使用者">修改物件儲存使用者</h3>
 <div class="paragraph">
 <p>使用下表所列的方法來修改物件儲存使用者。</p>
 </div>
@@ -2486,8 +2481,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="將所有-s3-金鑰對應至物件儲存使用者">將所有 S3 金鑰對應至物件儲存使用者</h4>
+<div class="sect2">
+<h3 id="將所有-s3-金鑰對應至物件儲存使用者">將所有 S3 金鑰對應至物件儲存使用者</h3>
 <div class="paragraph">
 <p>使用下表所列的方法、將所有 S3 金鑰對應至物件儲存使用者。</p>
 </div>
@@ -2562,8 +2557,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="為物件儲存使用者建立-s3-金鑰">為物件儲存使用者建立 S3 金鑰</h4>
+<div class="sect2">
+<h3 id="為物件儲存使用者建立-s3-金鑰">為物件儲存使用者建立 S3 金鑰</h3>
 <div class="paragraph">
 <p>使用下列方法為物件儲存使用者建立 S3 金鑰。</p>
 </div>
@@ -2655,8 +2650,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="依金鑰-id-取得物件儲存使用者的-s3-金鑰">依金鑰 ID 取得物件儲存使用者的 S3 金鑰</h4>
+<div class="sect2">
+<h3 id="依金鑰-id-取得物件儲存使用者的-s3-金鑰">依金鑰 ID 取得物件儲存使用者的 S3 金鑰</h3>
 <div class="paragraph">
 <p>使用下表所列的方法、依金鑰 ID 取得物件儲存使用者的 S3 金鑰。</p>
 </div>
@@ -2742,8 +2737,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="依金鑰-id-刪除-s3-金鑰">依金鑰 ID 刪除 S3 金鑰</h4>
+<div class="sect2">
+<h3 id="依金鑰-id-刪除-s3-金鑰">依金鑰 ID 刪除 S3 金鑰</h3>
 <div class="paragraph">
 <p>使用下表所列的方法、依金鑰 ID 刪除 S3 金鑰。</p>
 </div>
@@ -2809,8 +2804,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="物件儲存帳戶">物件儲存帳戶</h3>
+</div>
+<div class="sect1">
+<h2 id="物件儲存帳戶">物件儲存帳戶</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>請使用下表所列的方法來執行下列工作：</p>
 </div>
@@ -2875,8 +2872,8 @@
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="物件儲存帳戶屬性">物件儲存帳戶屬性</h4>
+<div class="sect2">
+<h3 id="物件儲存帳戶屬性">物件儲存帳戶屬性</h3>
 <div class="paragraph">
 <p>下表列出物件儲存帳戶屬性。</p>
 </div>
@@ -2911,7 +2908,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="擷取所有物件儲存帳戶">擷取所有物件儲存帳戶</h3>
@@ -2997,8 +2993,9 @@
 }</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="依-id-擷取物件儲存帳戶">依 ID 擷取物件儲存帳戶</h4>
+</div>
+<div class="sect2">
+<h3 id="依-id-擷取物件儲存帳戶">依 ID 擷取物件儲存帳戶</h3>
 <div class="paragraph">
 <p>使用下表所列的方法、依 ID 擷取物件儲存帳戶。</p>
 </div>
@@ -3076,8 +3073,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="啟動物件儲存帳戶">啟動物件儲存帳戶</h4>
+<div class="sect2">
+<h3 id="啟動物件儲存帳戶">啟動物件儲存帳戶</h3>
 <div class="paragraph">
 <p>使用下表所列的方法來啟動物件儲存帳戶。</p>
 </div>
@@ -3162,8 +3159,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="修改物件儲存帳戶">修改物件儲存帳戶</h4>
+<div class="sect2">
+<h3 id="修改物件儲存帳戶">修改物件儲存帳戶</h3>
 <div class="paragraph">
 <p>使用下表所列的方法來修改物件儲存帳戶。</p>
 </div>
@@ -3249,8 +3246,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="刪除物件儲存帳戶">刪除物件儲存帳戶</h4>
+<div class="sect2">
+<h3 id="刪除物件儲存帳戶">刪除物件儲存帳戶</h3>
 <div class="paragraph">
 <p>在刪除物件儲存帳戶之前、您必須先刪除所有相關的群組、使用者和儲存區。使用下表所列的方法來刪除物件儲存帳戶。</p>
 </div>
@@ -3345,8 +3342,10 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="物件儲存桶">物件儲存桶</h3>
+</div>
+<div class="sect1">
+<h2 id="物件儲存桶">物件儲存桶</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>請使用下表中的 API 來建立及擷取物件儲存桶。</p>
 </div>
@@ -3376,8 +3375,8 @@
 </tr>
 </tbody>
 </table>
-<div class="sect3">
-<h4 id="物件儲存庫屬性">物件儲存庫屬性</h4>
+<div class="sect2">
+<h3 id="物件儲存庫屬性">物件儲存庫屬性</h3>
 <div class="paragraph">
 <p>下表列出物件儲存區庫屬性。</p>
 </div>
@@ -3413,8 +3412,8 @@
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="擷取-s3-儲存區">擷取 S3 儲存區</h4>
+<div class="sect2">
+<h3 id="擷取-s3-儲存區">擷取 S3 儲存區</h3>
 <div class="paragraph">
 <p>使用下表所列的方法擷取 S3 儲存區。</p>
 </div>
@@ -3485,8 +3484,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="建立-s3-儲存區">建立 S3 儲存區</h4>
+<div class="sect2">
+<h3 id="建立-s3-儲存區">建立 S3 儲存區</h3>
 <div class="paragraph">
 <p>使用下表所列的方法來建立 S3 儲存區。</p>
 </div>
@@ -3590,6 +3589,7 @@
 </div>
 </div>
 </div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -3609,16 +3609,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
@@ -3736,4 +3736,5 @@
     </script>
     <script src='/zh-tw/keystone/js/www-ntap.js'></script>
     <script src='/zh-tw/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/keystone/js/sidebar.js'></script>
   </body></html>

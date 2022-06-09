@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/sewebiug_managing_azure_capacity_pools.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_managing_azure_capacity_pools.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_managing_azure_capacity_pools.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_managing_azure_capacity_pools.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_azure_capacity_pools.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/sewebiug_managing_azure_capacity_pools.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_managing_azure_capacity_pools.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_managing_azure_capacity_pools.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/sewebiug_managing_azure_capacity_pools.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_managing_azure_capacity_pools.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_managing_azure_capacity_pools.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_managing_azure_capacity_pools.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/sewebiug_managing_azure_capacity_pools.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_managing_azure_capacity_pools.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-tw/keystone/index.html">
         <div class="na-navbar-padding"> FlexFlex 訂閱 NetApp Keystone</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 05:32:32 +0000">05/03/2022</time>
+    <time datetime="2022-06-09 10:22:18 +0000">06/09/2022</time>
     
   
 
@@ -1440,8 +1432,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="檢視-azure-容量資源池清單">檢視 Azure 容量資源池清單</h3>
+<div class="sect1">
+<h2 id="檢視-azure-容量資源池清單">檢視 Azure 容量資源池清單</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Azure 容量資源池清單會顯示指定子租戶和位置的容量資源池清單。若要檢視清單、請從功能表中選取 * 檔案服務 &gt; Azure 容量 Pools* 。</p>
 </div>
@@ -1449,8 +1442,10 @@
 <p>清單會顯示每個 Azure 容量集區的簡單資訊。每個 Azure 容量資源池旁的行動圖示可讓您修改或刪除 Azure 容量資源池。</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="新增-azure-容量資源池">新增 Azure 容量資源池</h3>
+</div>
+<div class="sect1">
+<h2 id="新增-azure-容量資源池">新增 Azure 容量資源池</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>本節說明如何新增 Azure 容量資源池。</p>
 </div>
@@ -1497,8 +1492,10 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="修改-azure-容量資源池詳細資料">修改 Azure 容量資源池詳細資料</h3>
+</div>
+<div class="sect1">
+<h2 id="修改-azure-容量資源池詳細資料">修改 Azure 容量資源池詳細資料</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用此方法修改 Azure 容量資源池的詳細資料。您可以修改資源池大小的服務層級、也可以新增或移除標記。</p>
 </div>
@@ -1520,8 +1517,10 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="刪除-azure-容量資源池">刪除 Azure 容量資源池</h3>
+</div>
+<div class="sect1">
+<h2 id="刪除-azure-容量資源池">刪除 Azure 容量資源池</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>使用此方法可刪除 Azure 容量資源池。</p>
 </div>
@@ -1543,6 +1542,7 @@
 </ol>
 </div>
 </div>
+</div>
 
     </article>
     <!-- Page Container -->
@@ -1562,16 +1562,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
@@ -1689,4 +1689,5 @@
     </script>
     <script src='/zh-tw/keystone/js/www-ntap.js'></script>
     <script src='/zh-tw/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/keystone/js/sidebar.js'></script>
   </body></html>

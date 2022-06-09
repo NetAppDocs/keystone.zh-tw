@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">繁體中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">繁體中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/zh-tw/keystone/index.html">
         <div class="na-navbar-padding"> FlexFlex 訂閱 NetApp Keystone</div>
       </a>
@@ -1395,22 +1387,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 05:32:32 +0000">05/03/2022</time>
+    <time datetime="2022-06-09 10:22:18 +0000">06/09/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>Flex 訂閱提供三種操作模式。這些常見問題集與這些營運模式有關。</p>
 </div>
+<div class="paragraph">
+<p><strong>有哪些不同的營運模式、以及誰負責主要活動？</strong></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="有哪些不同的營運模式以及哪些人負責主要活動">有哪些不同的營運模式、以及哪些人負責主要活動？</h3>
 <div class="paragraph">
 <p>下表概述客戶可選擇的三種營運模式： NetApp 營運模式、合作夥伴營運模式及客戶營運模式。</p>
 </div>
@@ -1532,33 +1521,32 @@
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><strong>什麼是NetApp營運模式？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="什麼是-netapp-營運模式">什麼是 NetApp 營運模式？</h3>
 <div class="paragraph">
 <p>此營運模式可讓客戶根據所選的效能層級和儲存服務類型、訂閱所提供的服務、並以額外成本選擇 NetApp 營運的選項。NetApp 定義架構與產品、安裝於客戶內部、 NetApp 則使用我們的儲存與 IT 資源來管理日常基礎架構管理作業。可用的儲存服務類型包括檔案、區塊（ iSCSI ）和物件。也支援 GCP 和 AWS 的支援。 Cloud Volumes Service</p>
 </div>
 <div class="paragraph">
 <p>NetApp 也會視情況建立及管理合作夥伴、租戶、並管理訂閱內容。</p>
 </div>
+<div class="paragraph">
+<p><strong>什麼是合作夥伴營運模式？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="什麼是合作夥伴營運模式">什麼是合作夥伴營運模式？</h3>
 <div class="paragraph">
 <p>合作夥伴或服務供應商的營運模式與 NetApp 營運模式類似、但合作夥伴則是為其終端客戶營運服務。在此模式中、合作夥伴是參照的合約方。租戶是服務供應商的客戶、與 NetApp 並無計費關係。他們負責管理自己的租戶和客戶。租戶支援要求會先由服務供應商進行分類、然後再提交給 NetApp 。</p>
 </div>
+<div class="paragraph">
+<p><strong>什麼是客戶營運模式？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="什麼是客戶營運模式">什麼是客戶營運模式？</h3>
 <div class="paragraph">
 <p>此營運模式可讓客戶根據所選的效能層級和儲存服務類型、訂閱所提供的服務。NetApp 定義架構和產品、並安裝在客戶內部、讓客戶能夠使用儲存設備和 IT 資源來管理基礎架構。可用的儲存服務類型包括檔案、區塊（ iSCSI ）和物件。在此模式中、客戶參照合約方、這可以是終端使用者或合作夥伴。</p>
 </div>
+<div class="paragraph">
+<p><strong>設備由誰擁有？</strong></p>
 </div>
-<div class="sect2">
-<h3 id="設備由誰擁有">設備由誰擁有？</h3>
 <div class="paragraph">
 <p>在這三種營運模式中、 NetApp 擁有安裝在客戶所在地的所有硬體與軟體的所有權。</p>
-</div>
 </div>
 
     </article>
@@ -1579,16 +1567,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
@@ -1706,4 +1694,5 @@
     </script>
     <script src='/zh-tw/keystone/js/www-ntap.js'></script>
     <script src='/zh-tw/keystone/js/tabbed-blocks.js'></script>
+    <script src='/zh-tw/keystone/js/sidebar.js'></script>
   </body></html>
