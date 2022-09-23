@@ -14,15 +14,20 @@ summary: Keystone 入門概述
 
 
 [role="lead"]
-本節說明如何使用 NetApp 服務引擎入口網站開始使用。其中包括：
+本節說明如何使用 NetApp 服務引擎入口網站開始使用。
 
-* 登入 NetApp Service Engine 網路介面：
+
+NOTE: 當您瀏覽NetApp服務引擎入口網站時、您會看到部分資訊（例如您所在的地區和區域）會根據支援團隊所設定的訂閱設定自動填入。
+
+若要在此入口網站開始您的活動：
+
+* 登入NetApp Service Engine網路介面。
 +
 ** 以使用者名稱和密碼登入
-** 使用 NetApp SSO 登入
-** 登出 NetApp Service Engine 網路介面
+** 請使用NetApp SSO登入以取得相關資訊、請參閱 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html["登入 NetApp Service Engine 網路介面"]
 
 
-* 選取租戶
-* NetApp Service Engine 網路介面總覽
+* 選取租戶。儀表板隨即顯示。如需相關資訊、請參閱 link:sewebiug_dashboard.html["檢視 Flex 訂閱儀表板"]
 
+
+如需NetApp Service Engine網路介面總覽、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html["NetApp Service Engine 網路介面總覽"]

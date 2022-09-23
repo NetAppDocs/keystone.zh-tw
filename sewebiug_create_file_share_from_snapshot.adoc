@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_create_file_share_from_snapshot.html 
-keywords: netapp, keystone, create, file share, Snapshot 
-summary: 從 Snapshot 建立檔案共用區 
+keywords: netapp, keystone, create, file share, snapshot 
+summary: 從快照建立檔案共用區 
 ---
-= 從 Snapshot 建立檔案共用區
+= 從快照建立檔案共用區
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: 從 Snapshot 建立檔案共用區
 
 
 [role="lead"]
-您可以從現有的 Snapshot 建立新的檔案共用區。從 Snapshot 複製的新檔案共用具有與建立 Snapshot 的檔案共用相同的屬性。
+您可以從現有的快照建立新的檔案共用區。從快照複製的新檔案共用具有與建立快照的檔案共用相同的屬性。
 
 .步驟
 . 從左側導覽窗格中選取 * 檔案服務 * 、然後選取 * 共享 * 。
-. 按一下「 * 建立共用 * 」、然後選取「 * 從 Snapshot 複製 * 」。「 * 選取共用 * 」畫面會顯示租戶的所有檔案共用。您可以依區域、區域和子租戶篩選檔案共用。您可以選取任何處於作業狀態的檔案共用區。
-. 選取您要的檔案共用旁的核取方塊、然後按一下 * 下一步 * 。「選擇 Snapshot 」畫面會顯示檔案共用的所有 Snapshot 。
+. 按一下「 * 建立共用 * 」、然後選取「 * 從 Snapshot 複製 * 」。或者、如果您知道要用於複製的快照所在的共享區、可以找到該檔案共用區、然後按一下其旁邊的複製按鈕。共用區應處於作業狀態。如需物件狀態的相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["物件狀態"]。「從Snapshot建立共用」畫面會顯示租戶的所有檔案共用。您可以依區域、區域和子租戶篩選檔案共用。您可以選取任何處於作業狀態的檔案共用區。
+. 選取您要的檔案共用旁的核取方塊、然後按一下 * 下一步 * 。隨即顯示檔案共用的快照。
 +
 
-NOTE: 對於所選的檔案共用、如果 SnapCenter 您在 NetApp 服務引擎以外的環境中建立了一些 Snapshot 快照、您可以找到這些 Snapshot 已匯入並列出供您選擇。您可以選取這些匯入的 Snapshot 、然後從它們複製新的檔案共用。
+NOTE: 對於所選的檔案共用、如果SnapCenter 您在NetApp服務引擎以外的支援環境中建立了一些快照、您可以找到這些快照已匯入並列出供您選擇。您可以選取這些匯入的快照、然後複製其中的新檔案共用。
 
 +
-您可以搜尋特定的 Snapshot 或選取排程類型來篩選 Snapshot 。
+您可以搜尋特定的快照、或選取排程類型來篩選快照。
 
-. 選中要從中克隆的 Snapshot 旁邊的複選框，然後單擊 * Next* （下一步 * ）。新的檔案共用區會繼承所選 Snapshot 的內容。
-. 新增 * 名稱 * 和 * 共用路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。
+. 選中要從中克隆的快照旁邊的複選框，然後單擊* Next*（下一步*）。新的檔案共用區會繼承所選快照的內容。
+. 新增 * 名稱 * 和 * 共用路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。選擇最符合您需求的服務層級。
 
 
 .完成後
@@ -40,7 +40,7 @@ NOTE: 對於所選的檔案共用、如果 SnapCenter 您在 NetApp 服務引擎
 
 * * Create Share* 以非同步工作的形式執行。您可以：
 +
-** 檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
+** 檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
 ** 工作完成後、請檢查「 * 共享區 * 」清單中的共享區狀態。
 
 

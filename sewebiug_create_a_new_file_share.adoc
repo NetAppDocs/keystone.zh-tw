@@ -14,7 +14,7 @@ summary: Keystone 建立新的檔案共用區
 
 
 [role="lead"]
-本節說明如何直接指定共用詳細資料、以建立新的共用區。若要根據現有共享區的 Snapshot 建立新的共享區、請參閱 link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["從 Snapshot 建立共用"]。
+本節說明如何直接指定共用詳細資料、以建立新的共用區。若要根據現有共用區的快照建立新的共用區、請參閱 link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["從Snapshot建立共用"]。
 
 .開始之前
 * 在檔案伺服器上建立共用區。檔案伺服器必須存在且處於作業狀態、才能建立新的檔案共用區。
@@ -22,7 +22,7 @@ summary: Keystone 建立新的檔案共用區
 * 若要為共用區啟用非同步災難恢復選項、您必須在啟用非同步災難恢復的伺服器上建立共用區。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["災難恢復"]。
 * 若要為共用區啟用同步災難恢復、請在啟用 MetroCluster 的區域中建立共用區。
 * 您可以定義備份原則、以便在排程的基礎上擷取檔案共用的備份。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["備份"]。
-* 您可以定義 Snapshot 原則、以便在排程的基礎上擷取檔案共用的 Snapshot 快照。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["快照"]。
+* 您可以定義快照原則、以便在排程的基礎上擷取檔案共用的快照。如需詳細資訊、請參閱 link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["快照"]。
 
 
 .步驟
@@ -59,10 +59,10 @@ image:sewebiug_image22.png["錯誤：缺少圖形影像"]
 
 | 安全風格 | 選取適用於檔案共用區的安全樣式。此清單會根據選取的共用類型自動填入。 
 |===
-. 選取效能服務層級。IOPS 和處理量限制會根據所選的服務層級來顯示。
+. 選取服務層級。IOPS 和處理量限制會根據所選的服務層級來顯示。
 +
 
-NOTE: 選取選項以檢視該層級的效能詳細資料（以尖峰 / 預期 IOPS / 處理量為準）。選擇最符合您需求的服務層級。
+NOTE: 選取選項以檢視該服務層級的效能詳細資料（尖峰/預期IOPS /處理量）。選擇最符合您需求的服務層級。
 
 . 指定檔案共用區的容量。
 +
@@ -71,15 +71,15 @@ NOTE: 如果指定的容量將耗用的容量置於突發中（如果容量已�
 
 . 如果在基礎檔案伺服器上啟用非同步災難恢復、則會自動為新共用區啟用非同步災難恢復複寫。如果您想要將共用區排除在非同步災難恢復複寫之外、請切換「非同步災難恢復」按鈕、使其停用。
 . 如果共享區是在啟用 MetroCluster 的區域中建立、同步災難恢復按鈕會自動啟用、而且無法停用。共用區將複寫至同步災難恢復切換下方面板中顯示的區域。
-. 如果此檔案共用區需要 Snapshot ：
+. 如果此檔案共用區需要快照：
 +
 .. 切換以啟用 Snapshot 原則並檢視 Snapshot 原則欄位。
-.. 指定何時建立 Snapshot ：
+.. 指定何時建立快照：
 +
-*** * 每小時。 * 指定要拍攝 Snapshot 的分鐘（小時）和要保留的每小時 Snapshot 數。
-*** * 每日。 * 指定何時（小時和分鐘）拍攝 Snapshot 的每日 Snapshot 數量。如果您想要指定每天拍攝 Snapshot 的多小時、可以在以逗號分隔的清單中新增小時數值、例如 5 、 10 、 15 、 等等。
-*** * 每週。 * 指定何時（一週中的哪一天、小時和分鐘）拍攝 Snapshot 、以及每週要保留的 Snapshot 數量。
-*** * 每月。 * 指定何時（每月、小時和分鐘）拍攝 Snapshot 、以及每月要保留的 Snapshot 數量。
+*** *每小時*。*指定要拍攝快照的分鐘數（小時）、以及要保留的每小時快照數。
+*** *每日。*指定何時（小時和分鐘）拍攝快照、以記錄要保留的每日快照數量。如果您想要指定每天拍攝快照的多小時時間、可以在以逗號分隔的清單中新增小時數值、例如5、10、15、 等等。
+*** *每週。*指定何時（一週中的哪一天、小時和分鐘）拍攝快照、以及每週要保留的快照數量。
+*** *每月。*指定何時（每月、小時和分鐘）拍攝快照、以及每月要保留的快照數量。
 
 
 
@@ -88,7 +88,7 @@ NOTE: 如果指定的容量將耗用的容量置於突發中（如果容量已�
 +
 .. 切換以啟用備份原則和備份原則欄位。
 .. 指定備份區域。
-.. 指定每種備份類型的保留數量：每日、每週及 / 或每月。
+.. 指定每種備份類型的保留數量：每日、每週及 / 或每月。如需詳細資訊、請參閱 link:sewebiug_back_up_file_shares_and_disks.html["備份檔案共用和磁碟"]。
 
 
 . 對於 NFS 或多重傳輸協定共用、請指定匯出原則。您可以在共用上套用多個匯出原則。本節僅適用於 NFS 和多重傳輸協定共用。
@@ -120,7 +120,7 @@ NOTE: 使用者或群組名稱應遵循標準 AD 格式。如果輸入的使用�
 
 * 建立共用區會以非同步工作的形式執行。您可以：
 +
-** 檢查工作清單中的工作狀態。
+** 檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
 ** 工作完成後、請檢查「共用」清單中的共享區狀態。
 
 

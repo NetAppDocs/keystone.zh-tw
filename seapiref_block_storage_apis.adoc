@@ -121,7 +121,7 @@ NOTE: 刪除區塊存放區之前、您應該先刪除所有對應的磁碟。
  a| 
 /v2.1 / 磁碟機
 | 您可以建立磁碟。新增要求實體中的值、以建立具有指定參數的磁碟、例如子租戶 ID 、區域、名稱、磁碟路徑、快照原則、 備份原則和標記。  a| 
-「 ubenter_id 」：子租戶的 ID 。「區域」：區域名稱。名稱：磁碟的名稱。「磁碟路徑」：磁碟路徑。「傳輸協定」：用於區塊裝置存取的儲存傳輸協定。「 OS_type 」：主機作業系統的類型。「 hostgroup 對應」：主機群組對應。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「 ize_GB 」：磁碟大小（以 GB 為單位）。
+「 ubenter_id 」：子租戶的 ID 。「區域」：區域名稱。名稱：磁碟的名稱。「磁碟路徑」：磁碟路徑。「傳輸協定」：用於區塊裝置存取的儲存傳輸協定。「 OS_type 」：主機作業系統的類型。「 hostgroup 對應」：主機群組對應。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「ize_GB」：磁碟大小（單位為gibs）。
 
 
 

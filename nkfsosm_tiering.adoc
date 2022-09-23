@@ -30,3 +30,5 @@ NetApp 訂閱服務包含分層功能、可識別較少使用的資料、並將�
 * 啟用和停用分層服務層級上的磁碟區備份。
 * 針對分層服務層級的磁碟區啟用及停用災難恢復。
 
+
+如需帳單資訊、請參閱 link:nkfsosm_kfs_billing.html#billing-for-fabricpool-usage["不需付費即可使用FabricPool"]。

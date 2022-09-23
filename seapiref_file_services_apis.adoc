@@ -125,7 +125,7 @@ summary: Keystone 檔案服務 API
  a| 
 /`v2.1 / 檔案資源 '
 | 您可以建立檔案共用區。新增要求本文中的值、以建立具有指定參數的檔案共用區、例如 ID 、名稱、快照原則、傳輸協定、 檔案伺服器 IP 和標記。  a| 
-「名稱」：檔案共用區的名稱。「 hare 路徑」：檔案共用區的路徑。「 fileserver_id 」：檔案伺服器的 ID 。「 ize_GB 」：檔案共用區大小（以 GB 為單位）。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「傳輸協定」：用來存取檔案共用區（ NFS 、 CIFS 或多傳輸協定）的傳輸協定。「 ecurity_style 」：安全風格（ Unix 或 NTFS ）。「匯出原則」：檔案共用區的匯出原則。
+「名稱」：檔案共用區的名稱。「 hare 路徑」：檔案共用區的路徑。「 fileserver_id 」：檔案伺服器的 ID 。「ize_GB」：位於Gibs的檔案共用大小。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「傳輸協定」：用來存取檔案共用區（ NFS 、 CIFS 或多傳輸協定）的傳輸協定。「 ecurity_style 」：安全風格（ Unix 或 NTFS ）。「匯出原則」：檔案共用區的匯出原則。
 
 
 
@@ -152,7 +152,7 @@ summary: Keystone 檔案服務 API
  a| 
 /`v2.1 / 檔案資源 / ｛ id ｝ '
 | 您可以根據檔案共用的 ID 來修改任何檔案共用。在要求本文中新增檔案伺服器的 ID 和您要修改的值、例如名稱、傳輸協定、快照原則、備份原則和標記。  a| 
-「 id 」：檔案共用區的 ID 。「名稱」：檔案共用區的名稱。「 ize_GB 」：檔案共用區大小（以 GB 為單位）。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「傳輸協定」：用來存取檔案共用區（ NFS 、 CIFS 或多傳輸協定）的傳輸協定。「匯出原則」：檔案共用區的匯出原則。
+「 id 」：檔案共用區的 ID 。「名稱」：檔案共用區的名稱。「ize_GB」：位於Gibs的檔案共用大小。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「傳輸協定」：用來存取檔案共用區（ NFS 、 CIFS 或多傳輸協定）的傳輸協定。「匯出原則」：檔案共用區的匯出原則。
 
 
 

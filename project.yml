@@ -18,7 +18,7 @@ sidebar:
       entries:
       - title: 服務容量定義
         url: "/nkfsosm_keystone_service_capacity_definitions.html"
-      - title: 效能服務層級
+      - title: 效能服務層級或服務層級
         url: "/nkfsosm_performance.html"
       - title: 服務層級指標與定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
@@ -166,19 +166,19 @@ sidebar:
           url: "/sewebiug_modify_the_subscribed_service_details.html"
         - title: 刪除訂閱的服務
           url: "/sewebiug_delete_a_subscribed_service.html"
-      - title: 管理 Azure NetApp Files
+      - title: 管理Azure NetApp Files
         entries:
-        - title: 管理 Azure NetApp 帳戶
+        - title: 管理Azure NetApp帳戶
           url: "/sewebiug_managing_azure_netapp_accounts.html"
-        - title: 管理 Azure 容量資源池
+        - title: 管理Azure容量資源池
           url: "/sewebiug_managing_azure_capacity_pools.html"
-        - title: 管理 Azure Volume
+        - title: 管理Azure Volume
           url: "/sewebiug_managing_azure_volumes.html"
-      - title: 管理 Cloud Volumes Service 適用於 Google Cloud Platform 的功能
+      - title: 管理Cloud Volumes Service 適用於Google Cloud Platform的功能
         url: "/sewebiug_managing_gcp_cvs.html"
     - title: 檢視報告
       url: "/sewebiug_working_with_reports.html"
-    - title: 使用備份
+    - title: 備份您的磁碟區
       url: "/sewebiug_back_up_file_shares_and_disks.html"
     - title: 管理訂閱
       url: "/sewebiug_managing_subscriptions.html"

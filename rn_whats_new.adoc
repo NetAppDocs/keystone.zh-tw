@@ -16,24 +16,7 @@ summary: NetApp 服務引擎的新功能
 [role="lead"]
 版本說明會告知 NetApp Keystone 您有關推出的全新功能與增強功能、包括更新於《支援更新訂閱》（ Flex 訂購）服務、以及已知的限制與修正。
 
-
-
-== 查看 Cloud Volumes ONTAP 您的不二使用情形與帳單（ 2021 年 12 月 5 日）
-
-如果您是 NetApp Keystone 某位支援不限彈性訂閱（ Flex 訂閱）的客戶、而且也有 Cloud Volumes ONTAP 訂閱功能、您可以使用 Flex 訂閱來為 Cloud Volumes ONTAP 您的使用率充電、並檢視帳單和使用詳細資料。Cloud Manager 現在可以探索您的 Flex 訂閱帳戶、並在 Cloud Manager 介面上顯示詳細資料。按一下「 * 所有服務 > 數位錢包 > Keystone Flex 訂閱 * 」索引標籤、即可執行下列活動：
-
-* 檢視歡迎畫面、您可在此要求 Flex 訂閱管理員將 Cloud Manager 使用者 ID 與您的 Flex 訂閱使用者 ID 建立關聯、進而存取 * Keystone Flex 訂閱 * 索引標籤。
-* 檢視內部部署系統和 Cloud Volumes ONTAP 內部部署系統上已訂閱服務的已承諾和已用容量使用量資料。
-* 檢視與 Cloud Manager 帳戶相關的 Flex 訂閱詳細資料。顯示詳細資料、例如已提交、已用及突發容量。
-* 將 Cloud Volumes ONTAP 您的帳戶連結至您的 Flex 訂閱 ID 、以建立帳戶與帳單和容量使用報告的關聯。
-* 申請增加或減少已提交的 Flex 訂閱服務容量。
-* 檢視並使用連結的 Flex 訂閱 ID 作為收費方法、以計費 Cloud Volumes ONTAP 使用費（僅限連結 ID ）。
-
-
-如需詳細資訊、請參閱 Cloud Manager 文件中的下列連結：link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex 訂閱"]
-link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions["管理 Keystone Flex 訂閱"]
-
-｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ 不同版本的 NetApp 服務引擎已推出下列功能、以支援 NetApp Keystone 透過《支援使用效益管理訂閱》（ Flex 訂閱）提供的增強功能：
+不同版本的NetApp Service Engine已引進下列功能、以支援NetApp Keystone 透過《支援使用者支援》（Flex訂閱）提供的增強功能：
 
 
 
@@ -112,7 +95,7 @@ NetApp 服務引擎現在支援服務供應商管理多租戶環境。您可以�
 
 === 分層
 
-現在、支援的功能包括運用 NetApp 技術的分層功能。 NetApp Keystone FabricPool它可識別較不常用的資料、並將其分層至由 NetApp 擁有、部署及管理的內部部署冷儲存設備。您可以訂閱極致分層或優質分層的效能等級、以選擇分層。
+現在、支援的功能包括運用 NetApp 技術的分層功能。 NetApp Keystone FabricPool它可識別較不常用的資料、並將其分層至由 NetApp 擁有、部署及管理的內部部署冷儲存設備。您可以訂閱極致分層或優質分層服務層級、以選擇分層。
 
 下列 API 已經過修改、納入新分層服務層級的新屬性值：
 
@@ -123,7 +106,7 @@ NetApp 服務引擎現在支援服務供應商管理多租戶環境。您可以�
 如需詳細資訊、請參閱下列連結：
 
 * link:nkfsosm_tiering.html["分層"]
-* link:nkfsosm_performance.html["效能服務層級"]
+* link:nkfsosm_performance.html["服務層級"]
 
 
 ｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝

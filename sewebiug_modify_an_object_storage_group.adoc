@@ -17,13 +17,13 @@ summary: Keystone 修改物件儲存群組
 使用此方法可修改物件儲存群組的詳細資料、例如群組名稱和 S3 原則。
 
 .步驟
-. 檢視 link:sewebiug_view_host_groups.html#view-host-groups["群組清單"]。
-. 請確定已選取正確的子租戶、且顯示幕顯示群組（非使用者）。
-. 在清單中找出群組、然後按一下該群組的「編輯」圖示。
+. 檢視物件儲存群組 link:sewebiug_view_the_object_storage_group_and_users.html["檢視物件儲存群組和使用者"]。
+. 請確定已選取正確的子租戶、且您已按一下*群組*索引標籤。
+. 在清單中找出群組、然後按一下該群組的編輯圖示。
 +
-如需使用清單中項目的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視動作"]。
+如需使用清單中項目的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["清單檢視動作"]。
 
-. 在「編輯群組」對話方塊中、輸入使用者名稱。
-. 選取套用至修改後群組的 S3 原則。
-. 按一下「 * 建立 * 」。這會建立工作、以指定的設定修改群組。
+. 在*編輯群組*對話方塊中、修改適用於群組的S3原則。如需S3原則的相關資訊、請參閱 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["在原則中指定權限"]。
+. 您可以視需要新增其他原則聲明。
+. 按一下 * 更新 * 。這會建立工作、以指定的設定修改群組。如需追蹤工作的相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
 

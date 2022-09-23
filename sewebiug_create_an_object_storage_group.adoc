@@ -14,15 +14,15 @@ summary: Keystone 建立物件儲存群組
 
 
 [role="lead"]
-使用此方法建立新的物件儲存群組。
+使用此方法建立物件儲存群組。
 
 .步驟
-. 檢視 link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["使用者清單"]。
-. 請確定已選取正確的子租戶、且顯示幕顯示群組（非使用者）。
+. 從*物件儲存設備>使用者管理>群組*檢視物件儲存群組清單。
+. 請確定已選取正確的子租戶、且您已按一下*群組*索引標籤。
 . 按一下 * 建立群組 * 。
 . 在「建立群組」對話方塊中、輸入群組名稱。
-. 從清單中選取 S3 原則。
+. 從清單中選取 S3 原則。如需S3原則的相關資訊、請參閱 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["在原則中指定權限"]。
 . 按一下「 * 建立 * 」。這會建立工作、以指定的設定建立群組。
 
 
-建立物件儲存群組會以非同步工作的形式執行。您可以在工作清單中檢查工作狀態。如需追蹤工作的相關資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
+建立物件儲存群組會以非同步工作的形式執行。您可以在工作清單中檢查工作狀態。如需追蹤工作的相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。

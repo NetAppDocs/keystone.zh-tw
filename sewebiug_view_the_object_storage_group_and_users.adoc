@@ -17,14 +17,14 @@ summary: Keystone 檢視物件儲存群組和使用者
 使用者管理清單會顯示指定子租戶的物件儲存使用者和群組。
 
 .步驟
-. 從功能表中、選取「物件儲存」 > 「使用者」。
+. 從功能表中選取*物件儲存設備>使用者管理*。
 . 如有需要、請使用子租戶下拉式功能表選取其他子租戶。
-. 使用「使用者與群組」連結、在使用者與群組之間切換顯示。
+. 使用「*使用者*」和「*群組*」索引標籤、在使用者和群組之間切換顯示。
 +
 ** 使用者清單會顯示為所選子租戶定義的物件儲存使用者。對於每個使用者、它會顯示其名稱及其所屬的物件儲存群組。
-** 群組清單會顯示為所選子租戶定義的物件儲存群組。每個群組都會顯示群組名稱和 S3 原則。
+** 群組清單會顯示為所選子租戶定義的物件儲存群組。它會顯示指派給該群組的群組名稱和S3原則。如需有關資源庫群組和S3原則的資訊、請參閱 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#access-policy-overview["儲存庫和群組存取原則"]。
 +
-如需如何使用清單功能的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視"]。
+如需如何使用清單功能的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["清單檢視動作"]。
 
 
 

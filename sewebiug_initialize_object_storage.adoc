@@ -29,5 +29,5 @@ image:sewebiug_image31.png["錯誤：缺少圖形影像"]
 +
 image:sewebiug_image32.png["錯誤：缺少圖形影像"]
 
-. 檢查工作清單、確定物件儲存設備已成功初始化。
+. 檢查工作清單、確定物件儲存設備已成功初始化。如需相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["工作與工作狀態指標"]。
 

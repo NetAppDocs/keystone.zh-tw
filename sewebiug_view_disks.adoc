@@ -18,9 +18,9 @@ summary: Keystone 檢視磁碟
 
 這些磁碟已是您現有環境的一部分、屬於 NetApp 服務引擎中設定的儲存 VM 、也可在此畫面上檢視、並作為 NetApp Keystone 您的《支援 NetApp 訂閱（ Flex 訂閱）》服務的一部分進行管理。在 NetApp 服務引擎以外配置的磁碟會定期匯入、並以適當的狀態代碼列在此頁面上。
 
-如果匯入的磁碟符合 NetApp 服務引擎的可接受標準、也就是如果磁碟運作所需的所有參數都可用、就會以「運作」狀態匯入、並可透過 NetApp 服務引擎直接管理。不過、某些磁碟可能與 NetApp Service Engine 上現有磁碟的標準不同。匯入後、這些磁碟會分類為「已匯入」或「非標準」狀態。如需瞭解磁碟狀態及其運作步驟、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["物件狀態"]
+如果匯入的磁碟符合 NetApp 服務引擎的可接受標準、也就是如果磁碟運作所需的所有參數都可用、就會以「運作」狀態匯入、並可透過 NetApp 服務引擎直接管理。不過、某些磁碟可能與 NetApp Service Engine 上現有磁碟的標準不同。匯入後、這些磁碟會分類為「已匯入」或「非標準」狀態。如需瞭解磁碟狀態及其運作步驟、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["物件狀態"]
 
-在「磁碟」清單中、檢視簡單資訊。如需如何使用清單功能的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["清單檢視"]。
+在「磁碟」清單中、檢視簡單資訊。如需如何使用清單功能的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["清單檢視動作"]。
 
 * 磁碟名稱
 * 磁碟路徑

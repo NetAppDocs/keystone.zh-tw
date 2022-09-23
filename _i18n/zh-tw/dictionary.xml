@@ -7,10 +7,8 @@
   <block id="e957a37a6e61397d0ad1dd752eeac432" category="inline-link-macro">庫存箱清單</block>
   <block id="1409d624fa12d109a857c057bbad2db7" category="list-text">檢視 <block ref="0288897c3c1427493cce55288f39ec55" category="inline-link-macro-rx"></block> 然後選取要在其下建立儲存貯體的子租戶。</block>
   <block id="f4687ab7882a3c0d42adf57ea9baa699" category="list-text">按一下 * 建立 Bucket * 。</block>
-  <block id="d51f9a464ac0235324fddb6aa9d49d8d" category="list-text">在 Create Bucket （創建桶）對話框中，輸入新桶的名稱，然後單擊 * Create* （創建 * ）。這會建立工作來建立儲存庫。</block>
   <block id="85e8b5230d715e00d950ec38ae7e93fa" category="paragraph">建立儲存區會以非同步工作的形式執行。您可以：</block>
   <block id="672993dd6c7cdd1424762e0e618fd823" category="list-text">檢查工作清單中的工作狀態。</block>
-  <block id="5877dc247e1490bb848817ef9d900198" category="list-text">工作完成後、請檢查伺服器在「桶」清單中的狀態。</block>
   <block id="e6f2a897b8e9d28b6dee2cf5e0e0c8c4" category="summary">NetApp 服務引擎 API 總覽</block>
   <block id="b99af433089d6eac2ab059da7125827a" category="doc">NetApp 服務引擎 API 總覽</block>
   <block id="68d48bf5b925a9713a64e48661dad4ea" category="paragraph">NetApp Service Engine 提供一組 API 、透過 REST 風格的 Web 服務介面、管理支援儲存系統上的儲存資源、以利任何協力廠商整合。API 涵蓋 GUI 所支援的所有功能。NetApp 提供 API 文件、但客戶有責任將其整合至應用程式中。</block>
@@ -230,7 +228,6 @@
   <block id="fdba3cae37eccb96c4307e07af690784" category="section-title">彈性訂閱</block>
   <block id="60e9d00fe6da3c4a7ff384bed342bf02" category="paragraph">Flex 訂閱是一種隨需付費的訂閱型服務模式、可為偏好使用營運成本消費模式的使用者、提供無縫的混合雲體驗、以利預先支付資本支出或租賃。它可減少與管理無法預測的容量成長及處理複雜採購週期相關的障礙、讓客戶加速實現價值所需時間。彈性訂閱可讓客戶根據業務優先順序調整經濟效益與營運。</block>
   <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="af401326a6f27af7fc3bb2ff21b788dc" category="paragraph">Flex 訂閱是一項訂閱型服務、可針對可部署於內部部署的區塊、檔案及物件資料類型、提供預先定義的效能服務層級儲存容量、並可由 NetApp 、合作夥伴或客戶操作。除了 Flex 訂閱所提供的基礎服務之外、您也可以額外付費選擇附加服務。下圖說明這些服務。</block>
   <block id="173cfa01f909dadb1cc7bb7d43b24a2e" category="list-text">* Data Protection Basic * 服務提供 NetApp SnapMirror 和 NetApp SnapVault 的功能、並具有預設設定。</block>
   <block id="1ca92842b9f8718a33770baa49c236e6" category="list-text">* 資料保護進階 * 利用 NetApp MetroCluster 的支援功能、提供符合 RPO 的 SLA 服務。</block>
   <block id="02573cfb14818a9b260f4e31c28e893e" category="admonition">Flex 訂閱使用 SnapVault 支援功能來執行備份作業、而 SnapMirror 則可用於災難恢復、以遠端複寫資料；不會自動容錯移轉及還原應用程式。</block>
@@ -245,15 +242,7 @@
   <block id="722f683c00fc1f7fe8eb43eecdbf09f8" category="list-text">確保內部部署的資料安全無虞</block>
   <block id="1a8f20342523eaa8f9195dffa647161c" category="list-text">可適當控制法規遵循、效能及安全性</block>
   <block id="a0a35eef0076381c8b78bfe2cdbed28b" category="paragraph"><block ref="a0a35eef0076381c8b78bfe2cdbed28b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ee966310f09723c05298f5d7d7aa6f27" category="summary">從 Snapshot 建立檔案共用區</block>
-  <block id="298c17df37c9568ee5167ba1ad189316" category="paragraph">您可以從現有的 Snapshot 建立新的檔案共用區。從 Snapshot 複製的新檔案共用具有與建立 Snapshot 的檔案共用相同的屬性。</block>
   <block id="ba791218e3e41923099db15abe057c18" category="list-text">從左側導覽窗格中選取 * 檔案服務 * 、然後選取 * 共享 * 。</block>
-  <block id="176bb6beb0437ca5de2e3106aa55ebc5" category="list-text">按一下「 * 建立共用 * 」、然後選取「 * 從 Snapshot 複製 * 」。「 * 選取共用 * 」畫面會顯示租戶的所有檔案共用。您可以依區域、區域和子租戶篩選檔案共用。您可以選取任何處於作業狀態的檔案共用區。</block>
-  <block id="ca7f98cdc8f658e2b3a6a84f43fdc689" category="list-text">選取您要的檔案共用旁的核取方塊、然後按一下 * 下一步 * 。「選擇 Snapshot 」畫面會顯示檔案共用的所有 Snapshot 。</block>
-  <block id="48f97c1b6230094e74163fccfef5de16" category="admonition">對於所選的檔案共用、如果 SnapCenter 您在 NetApp 服務引擎以外的環境中建立了一些 Snapshot 快照、您可以找到這些 Snapshot 已匯入並列出供您選擇。您可以選取這些匯入的 Snapshot 、然後從它們複製新的檔案共用。</block>
-  <block id="fcf40d84ad9d1429bb30cf5904e5ac09" category="paragraph">您可以搜尋特定的 Snapshot 或選取排程類型來篩選 Snapshot 。</block>
-  <block id="e63a7810ce3ddcb554adeae7407cc780" category="list-text">選中要從中克隆的 Snapshot 旁邊的複選框，然後單擊 * Next* （下一步 * ）。新的檔案共用區會繼承所選 Snapshot 的內容。</block>
-  <block id="28e56d37d84600977d376fe03d5a6a37" category="list-text">新增 * 名稱 * 和 * 共用路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">完成後</block>
   <block id="3f715514a2bfe764cac754c65809be90" category="list-text">僅限 CIFS 類型共用：若要讓共用區可供主機名稱使用、您的網域管理員應使用 CIFS 伺服器名稱和 IP 位址來更新 DNS 記錄。否則、只能透過 IP 位址存取共用區。例如：</block>
   <block id="81e66a6a07c55ae34d0633cec26d4dde" category="inline-link">\hostname\share</block>
@@ -266,9 +255,6 @@
   <block id="44b0b983528d36c638cfe11e34569844" category="summary">Keystone 建立物件儲存使用者</block>
   <block id="086935e12a9a16e561e3fea09863edd0" category="doc">建立物件儲存使用者</block>
   <block id="45b69bc024321d8e2b973c0b31b40920" category="paragraph">由於物件儲存使用者屬於物件儲存群組、因此您必須先存在物件儲存群組、才能建立使用者。</block>
-  <block id="31541cb47a7ea77a3d3486866a7bebd0" category="inline-link-macro">使用者清單</block>
-  <block id="3456598fa73e444341dca0376245fd90" category="list-text">檢視 <block ref="95ffca3db6dbf1ebc06d650a9462964d" category="inline-link-macro-rx"></block>。</block>
-  <block id="8b0e47b79c0418d88095a1bd47b09045" category="list-text">請確定已選取正確的子租戶、且顯示畫面顯示使用者（非群組）。</block>
   <block id="075f5eb00ee459d6f7ae019a39e8ca62" category="list-text">按一下「 * 建立使用者 * 」。</block>
   <block id="24b9b702c72fbc7ba1dbdbcfb8373087" category="list-text">在「建立使用者」對話方塊中：</block>
   <block id="404f3963d6ea203e96f06d29dd536fd1" category="list-text">輸入使用者名稱。</block>
@@ -333,7 +319,6 @@
   <block id="e5eb15ca632df1aa494f209b327dbe7e" category="list-text">按一下 * 初始化物件儲存 * 。</block>
   <block id="535ff16d54c5fa7c75ddf6959f11a9a9" category="list-text">在「初始化物件儲存設備」對話方塊中、選取物件儲存設備的配額、然後按一下「 * 建立 * 」。</block>
   <block id="7415f0fe2358bf6330318eca757e1ac6" category="paragraph"><block ref="7415f0fe2358bf6330318eca757e1ac6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7f14db3d656154c43331a7cd4850539f" category="list-text">檢查工作清單、確定物件儲存設備已成功初始化。</block>
   <block id="b6727396faa1e4cf255c182ddc668fb9" category="summary">已修正NetApp服務引擎的問題</block>
   <block id="33659bd1c7f876bf4e9d181ffeebe959" category="doc">已修正NetApp服務引擎的問題</block>
   <block id="08742bb18ffa6199e545bb58248ee780" category="paragraph">先前版本的NetApp Service Engine已修正下列問題、讓您成功使用NetApp Keystone 您的《支援更新訂閱》服務。</block>
@@ -405,12 +390,8 @@
   <block id="fb88eb4b5d99673e45056732b275679a" category="summary">Keystone 檢視物件儲存群組和使用者</block>
   <block id="5cdc9a60703b33501782736bc59bfe55" category="doc">檢視物件儲存群組和使用者</block>
   <block id="542a28267baf12d46a137a45d18b4519" category="paragraph">使用者管理清單會顯示指定子租戶的物件儲存使用者和群組。</block>
-  <block id="c5e91367085fa78087bf64a79eae911f" category="list-text">從功能表中、選取「物件儲存」 &gt; 「使用者」。</block>
   <block id="4ad2f99cb9ccf769a0360a1814848446" category="list-text">如有需要、請使用子租戶下拉式功能表選取其他子租戶。</block>
-  <block id="c9427511a341644c98eed4fb4ae8f7cd" category="list-text">使用「使用者與群組」連結、在使用者與群組之間切換顯示。</block>
   <block id="ec5c3a103a46dd15df21ddc7b99bb845" category="list-text">使用者清單會顯示為所選子租戶定義的物件儲存使用者。對於每個使用者、它會顯示其名稱及其所屬的物件儲存群組。</block>
-  <block id="cea8e9449f5b2e5d5a5107b0c8a83b62" category="list-text">群組清單會顯示為所選子租戶定義的物件儲存群組。每個群組都會顯示群組名稱和 S3 原則。</block>
-  <block id="00c6a27075fa437da3bdccfb4614844b" category="paragraph">如需如何使用清單功能的詳細資訊、請參閱 <block ref="06c69cf03ada5a3283b333d7ac5a7d25" category="inline-link-macro-rx"></block>。</block>
   <block id="410c98fcb0c5c3d90c0e8a60a9dcc645" category="summary">Keystone Flex 訂閱效能</block>
   <block id="10288ddd3c9dd46deaa222ee129df3fb" category="doc">美國公民支援（ USCS ）</block>
   <block id="7373680aa88b367bc7b0be53010ec82c" category="summary">Keystone 使用物件儲存概述</block>
@@ -429,11 +410,8 @@
   <block id="4c81f84de3c6cf1b71adecb694feb770" category="doc">彈性訂閱服務條款與說明</block>
   <block id="1cbddcf2fa8e22cb8595706c00cc4371" category="list-text">可訂購至少一年且最多三年的 FlexFlex 訂閱（ Flex 訂購） NetApp Keystone 。在初始期限之後、服務將每年續約一次。容量可以以最小 1 TiB 的增量遞增。</block>
   <block id="9597eb938e2fba159aa254b3a95e6efb" category="list-text">每個站台最小容量為 100 TiB 、每個站台可有一個或多個叢集、以符合最低容量需求。在合作夥伴營運模式中、我們會針對客戶、每個站台及各個服務層級、建立具有彈性最低需求的訂閱。</block>
-  <block id="f38f3f039ea7e782f292fcc9c833f8cc" category="list-text">100 TiB 容量可以是單一效能層級、也可以是多個層級的組合。</block>
   <block id="be9709b8de891bed2cb58977708e499e" category="list-text">租戶訂閱僅限於合作夥伴訂閱的服務層級。</block>
   <block id="87f73c8129d1f6a0026c085c19c37ee7" category="list-text">每個站台都有 20% 的突發容量可供使用；任何突發流量使用量只會在該計費期間計費。如果您需要超過 20% 的額外連絡要求、請聯絡支援部門。</block>
-  <block id="a47a3cb7ad9378252f33837be77823db" category="list-text">承諾的容量或效能等級在合約期間不得變更。</block>
-  <block id="decb099f0e323bfbd0236b90e0df7d20" category="list-text">允許在期限內增加容量或變更為較高的效能層級、但不允許從較高的效能層級移至較低的層級。</block>
   <block id="958d7b0fc729753fa46342b2a5b0fdb4" category="list-text">在期限的最後 90 天內、任何變更要求都要求客戶將服務續約至少一年。</block>
   <block id="94910016d172e289cf35b3ba94a0baca" category="summary">Keystone 計費帳戶、訂閱、服務和效能</block>
   <block id="c5d81ec5d37a3848501137d05786d0f5" category="doc">帳單帳戶、訂閱、服務和效能</block>
@@ -443,11 +421,7 @@
   <block id="e5ffa1b880c390251d23b9f6bd7fac33" category="list-text">具有承諾持續時間及訂閱結束日期</block>
   <block id="b7dac4bd150873027089e5da94dbb39b" category="list-text">可以有與訂閱相關的附加元件</block>
   <block id="4257e9a525e46c507a044e5bef7b9faf" category="admonition">如果多個資料中心需要儲存設備、則每個資料中心都需要個別訂購、並有個別的承諾。</block>
-  <block id="08a21cd55803f5b6473a2c747d526cb8" category="paragraph">儲存服務是指訂閱已認可的儲存容量、並具有相關的效能層級。NetApp Service Engine 提供極致、極致分層、頂級、頂級分層和標準效能等級的檔案與區塊儲存、以及物件式儲存設備、而且都是以物件效能服務層級提供。</block>
-  <block id="be2261d9090fb30195c21bab3e7d9953" category="paragraph">極致分層和優質分層效能層級可讓您監控冷資料或非使用中資料、並將其分層存放至低成本的物件儲存層、藉此減少儲存佔用空間及相關成本。分層原則設為自動、預設會將 31 天的資料保留為非使用中階層。您可以將此時間段修改為 3 至 61 天內的任意天數。</block>
-  <block id="9cf4355a313433b8691e455b16ef9e32" category="paragraph">建立檔案和區塊儲存項目時、會與效能層級建立關聯。隨著需求改變、可以在效能服務層級之間移動工作負載。極致、極致分層、優質、優質分層和標準效能等級、提供不同等級的 I/O 效能（ IOPS ）和處理量（ Mbps ）、讓儲存設備能夠根據需求量身打造。</block>
   <block id="2f5cb25349bfe5b9ac831c6e30173baf" category="inline-link-macro">承諾、耗用及突發容量、以及過度使用量</block>
-  <block id="06d3c5b245fcae60bf6c02dc814606be" category="paragraph">服務最多可在特定時間點內使用突發流量、並以個別的收費率（如訂閱所定義）監控和計費。如需容量與使用量的詳細資訊、請參閱 <block ref="30977b5dca5f56c115e7191316bc5fd6" category="inline-link-macro-rx"></block>。同時也提供支援備份與災難恢復的 DP 服務。</block>
   <block id="856fad7ebe17053b7a8c9466800f549c" category="paragraph">消耗容量是指已分配多少容量（但不一定要使用）。承諾容量是指訂閱中承諾的容量；無論使用多少容量、訂閱者都會以固定費率計入已提交的容量。</block>
   <block id="3f42cabcd42e4941eeae70d0ad6b0b72" category="paragraph">突發容量是指超過已分配容量的容量。</block>
   <block id="3478e1baf80f84db91e5e49ee1836fc8" category="paragraph">突發容量 = 耗用容量–已認可容量</block>
@@ -471,13 +445,10 @@
   <block id="fe1f710a2a8ad596f7ed976cce5e12b2" category="cell">將共享區 / 磁碟移至新的服務層級。</block>
   <block id="72a0e9096fa69af48a2a89b61f82e73b" category="cell">在啟用災難恢復的檔案伺服器 / 區塊存放區上建立或調整共用 / 磁碟的大小。</block>
   <block id="a3e479169f3a33c0a8cbe36a49a5a9af" category="list-text">超越區域中服務層級的承諾</block>
-  <block id="450931d2ede3ac1f9ca9debbcdcbdcfb" category="list-text">超越對區域中 DP 的承諾</block>
   <block id="44c6dc0f17d551a7939e21b1cae7cdad" category="cell">透過自動建立的目的地共用 / 磁碟、超越目的地區域中服務層級的承諾。</block>
   <block id="ae91278918611796d90350de77ba6bf8" category="cell">在啟用災難恢復的檔案伺服器 / 區塊存放區上、將共用 / 磁碟移至新的服務層級。</block>
-  <block id="883bcc42821c6ecf891b920094325b5f" category="list-text">超越對區域中 DP 的承諾。</block>
   <block id="ce53260637dcdf46a9025506c4b75e08" category="cell">超出重新部署目的地共用 / 磁碟在目的地區域中服務層級的承諾。</block>
   <block id="aad7c68b64cd22c6fb7f4f39424c7954" category="cell">在共享區 / 磁碟上啟用備份。</block>
-  <block id="2123e42a9693489cbce5f2a4e164a970" category="cell">超越 DP 的承諾。</block>
   <block id="f66c10666ec7a209e50413842654d153" category="cell">建立新的物件存放區租戶。</block>
   <block id="8cd126f4a3ceea68c85347acd2602379" category="cell">物件容量的承諾可能會超出。</block>
   <block id="863fe0485f6bdfc1ecd58974c17dae1a" category="cell">增加物件存放區租戶的配額</block>
@@ -485,17 +456,12 @@
   <block id="1b712656cedc4113b2801424d1cecf25" category="paragraph">當訂閱量暴增時、會顯示下列通知橫幅。通知會顯示給客戶管理員以供租賃、直到通知獲得確認為止。</block>
   <block id="0575d4bb3c4b0c2953b19ef95b31165d" category="paragraph"><block ref="0575d4bb3c4b0c2953b19ef95b31165d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="section-title">資料保護</block>
-  <block id="c9cb02687fd3e9aa6ad70b5322fa0cef" category="paragraph">DP 是指支援資料備份的方法、以及必要時恢復資料的能力。</block>
-  <block id="1c4821714a843572d056ec5e0a443622" category="paragraph">NetApp 服務引擎 DP 功能包括：</block>
   <block id="6182b191e8f1d440f3420e614c1126de" category="list-text">磁碟與共用的快照</block>
-  <block id="183a92d8cf33f246d23be23aeeffac34" category="list-text">備份磁碟與共用（訂閱時需要 DP 服務）</block>
-  <block id="cf3ec92d0dace2d4d0b5e001ec5ff615" category="list-text">磁碟與共享區的災難恢復（需訂購 DP 或 DP 進階服務）</block>
   <block id="9147e5e61a7b9260dec09f3a6eb3e5be" category="section-title">快照</block>
   <block id="9da2c8abea07b0620e54283b38639463" category="paragraph">快照是資料的時間點複本。快照可以複製成新磁碟、或以相同或類似的功能共用。</block>
   <block id="f33624f85a3d1c3ca52b90526dd92c7d" category="paragraph">快照可依快照原則所定義的排程、以特定方式建立或自動建立。Snapshot 原則可決定何時擷取快照、以及快照保留多久。</block>
   <block id="fc58f05528054519f34ed4e02b3efc04" category="admonition">快照會影響服務的耗用容量。</block>
   <block id="1414cdc093d39dd56d0b0d20049e17fc" category="section-title">備份</block>
-  <block id="debe60e3142beb5a48bce69dbd381739" category="paragraph">備份是指複製項目、複寫項目、並將複本儲存在原始區域以外的區域、該區域已啟用個別的傳輸協定（僅適用於區塊儲存）、且未啟用 MetroCluster 。NetApp Service Engine 可在檔案與區塊儲存設備上提供備份（訂閱時需要 DP 服務）。共享區 / 磁碟的備份會儲存在訂閱時成本最低的效能層（即標準）備份區域中。</block>
   <block id="2678f5be6e4ec5134a32df3dd7aaae4f" category="paragraph">您可以在建立新的共用 / 磁碟時設定備份、或是稍後新增至現有的共用 / 磁碟。</block>
   <block id="fcbd19b726fdd6160dfe2ab43f285a55" category="paragraph">* 附註： *</block>
   <block id="065428ecbfeb33b7e84daf0f1735a248" category="list-text">備份會在固定時間進行、約為 0 ： 00 UTC 。</block>
@@ -508,7 +474,6 @@
   <block id="afa84c30fdc11f91b0e97598a8ccfbc4" category="list-text">無法在僅包含一個區域的 NetApp Service Engine 執行個體中設定磁碟或共用的備份。</block>
   <block id="2875abbdb2d668a780cc0352c55e39a4" category="list-text">刪除主要共用區或磁碟將會刪除所有相關的備份。</block>
   <block id="8c93c12fbb65af8cdbba54fc85b4fe38" category="inline-link-macro">資料保護、耗用容量及費用</block>
-  <block id="eaa3525bd4873929810239b6b6579d61" category="list-text">備份會導致總使用容量。此外、備份也會以 DP 訂閱率產生成本。另請參閱 <block ref="a47ae4dd88f3e58d3633165415728570" category="inline-link-macro-rx"></block>。</block>
   <block id="ec2892d9024d3fb4dfc6f3974b4a6a72" category="list-text">從備份還原：提出服務要求、從備份還原共用區或磁碟。</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">災難恢復</block>
   <block id="9c1a55444ca246b7668ef51e2b161113" category="paragraph">災難恢復是指在發生災難時、能夠恢復至正常作業。</block>
@@ -518,7 +483,6 @@
   <block id="c7551cca2e64e9d70e0bd1aa35fa17a7" category="paragraph">NetApp 服務引擎可提供下列功能、以支援非同步災難恢復：</block>
   <block id="f1e5f779aa56bce965c10a7ab6c63203" category="list-text">非同步地將主要磁碟區複寫到災難恢復區域</block>
   <block id="4d95b210be32cb590432dd9478dabbab" category="list-text">容錯移轉 / 容錯回復（僅限服務要求提供）</block>
-  <block id="f25e8e8e07af86cf895d64ae365151a9" category="paragraph">非同步災難恢復可在檔案和區塊儲存設備上使用、而且訂閱時需要 DP 服務。</block>
   <block id="66c3ed260f83767ec6cb5bea7063940a" category="paragraph">災難恢復區域必須是 NetApp 服務引擎中與建立主要 Volume 所在區域不同的區域、 MetroCluster 如果來源區域 MetroCluster 啟用了「功能性」、則不應是非功能性合作夥伴。共享區 / 磁碟的災難恢復複本會儲存在災難恢復區域中、其效能層與原始共用區 / 磁碟相同。</block>
   <block id="36e8c53798d70dd276ec873bd9daedea" category="paragraph">若要為主要磁碟區啟用非同步災難恢復複寫、必須：</block>
   <block id="20a7636d7d202a8ca2df19231e59b397" category="list-text">設定磁碟區所在的檔案伺服器或區塊存放區、以支援災難恢復。</block>
@@ -527,23 +491,17 @@
   <block id="ec9c28ece16dda721c388c1826025c31" category="paragraph">只有在父檔案伺服器或區塊存放區第一次設定為非同步災難恢復時、才能將檔案共用區或磁碟設定為非同步災難恢復複寫。根據預設、如果在父實體中啟用複寫、則會在父實體所在的檔案共用區或磁碟中啟用複寫。您可以停用該共用區 / 磁碟上的災難恢復、排除特定共用區或磁碟的複寫。您可以在這些共用 / 磁碟上的啟用和停用複寫之間切換。</block>
   <block id="7a0a70d776cf86d3de0837b534ab29ef" category="list-text">刪除主要檔案伺服器或區塊存放區將會刪除所有災難恢復複寫複本。</block>
   <block id="8ca9cd050d34dab0c72a2ab896f3423c" category="list-text">每個檔案伺服器或區塊存放區只能設定一個災難恢復區域。</block>
-  <block id="fd600e7efca7d2dff0ee5eed9fff79f2" category="list-text">災難恢復複本會增加總使用容量。此外、災難恢復也會以災難恢復訂閱率產生成本。另請參閱 <block ref="a47ae4dd88f3e58d3633165415728570" category="inline-link-macro-rx"></block>。</block>
   <block id="faac058c9a360482eb6ebec5ed13d6ac" category="section-title">災難恢復—同步</block>
-  <block id="0a1a184f28bf44d79ecc75faa9c1cb2c" category="paragraph">而在位於不同位置或故障網域的兩個不同區域之間、可同步複寫資料和組態的 DP 功能。 MetroCluster萬一某站台發生災難、系統管理員可以從存續站台提供資料。</block>
   <block id="b5792f100bb2741e8b6c946a4e03d7e2" category="paragraph">NetApp Service Engine 託管網站設定 MetroCluster 為使用支援以下列方式支援檔案與區塊儲存的同步災難恢復。</block>
   <block id="6b81548a0abeb8aeab129cbacd82f233" category="list-text">區域可設定為支援同步災難恢復。</block>
   <block id="67d407f7c42c73135169843a2f02b552" category="list-text">在這些區域中建立的磁碟 / 共用會同步複寫到災難恢復區域。</block>
-  <block id="7bc83e7cc314b9d8518366556ff2092c" category="list-text">同步災難恢復會以同步災難恢復訂閱率產生成本。另請參閱 <block ref="a47ae4dd88f3e58d3633165415728570" category="inline-link-macro-rx"></block>。</block>
   <block id="c452aedb9429b97988724fc22e9d9bcd" category="section-title">資料保護、耗用容量和費用</block>
-  <block id="26028acff38ab9249fca65149aa2c55d" category="paragraph">本節的數字說明如何計算 DP 費用。</block>
   <block id="80ecb9ec32a0f1994e07ed41ba4bc1a8" category="section-title">非同步災難恢復</block>
   <block id="cb3ed381ced081f05218db21a6c1fd94" category="paragraph">在非同步災難恢復中、使用量和成本由下列費用組成：</block>
   <block id="e4be9a6b2af2d6372fc95f51f34a5801" category="list-text">原始磁碟區容量會依其所在的效能層級收費。</block>
   <block id="5ad04b2520e7e6c8e4d216fd98dad6d5" category="list-text">災難恢復複本在目的地或災難恢復區域的同一效能層收費（災難恢復複本儲存在同一層）。</block>
-  <block id="702c277579ece12c537572a6487c249e" category="list-text">DP 服務費用（用於原始 Volume 的容量）。</block>
   <block id="6539af4a2e779040f3761a5b75e22ff6" category="paragraph"><block ref="6539af4a2e779040f3761a5b75e22ff6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21557b177d1579d7482cba2913668884" category="section-title">同步災難恢復</block>
-  <block id="b2419fdabc287dc270408b44d65a3ce2" category="paragraph">在同步災難恢復中、使用量和成本由下列費用組成：</block>
   <block id="52b8c8170d83686335cf95f055d3f0da" category="paragraph"><block ref="52b8c8170d83686335cf95f055d3f0da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3500ba09d0538297440ca620c9dd46bf" category="section-title">備份</block>
   <block id="bf5d0983486b43f2fbc013a6b7ca87ea" category="paragraph">在備份中、使用量和成本由下列費用組成：</block>
@@ -551,35 +509,15 @@
   <block id="3f84db7e8a661a85dd96cd6b2f4e3a07" category="paragraph"><block ref="3f84db7e8a661a85dd96cd6b2f4e3a07" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c0791c8f17636d874aea16efd7e8ed2" category="summary">建立、修改及刪除備份或從備份還原</block>
   <block id="e6fc5d742fb314760c15319f57c10b66" category="doc">備份檔案共用和磁碟</block>
-  <block id="d5c88c8ef49bc3b4d7c15ca9db22ae64" category="paragraph">您可以檢視及管理環境中所建立之磁碟區（檔案共用區和磁碟）的 Snapshot （備份或還原點）、以遠端維護多個主要檔案共用和磁碟複本。</block>
-  <block id="0566cb15388c158a45e9ab74db9ba190" category="paragraph">不同區域的複寫檔案共用和磁碟會儲存在每個叢集上的專用備份儲存 VM （儲存虛擬機器、也稱為 SVM ）上。可在 ONTAP 不同區域的兩個獨立的叢集之間執行備份。NetApp 服務引擎支援的標準備份原則包括：</block>
   <block id="b1876aaaefa6fe06edb228974b736742" category="list-text">特別的</block>
   <block id="c512b685438f41daa7386329a3b8f8d3" category="list-text">每日</block>
   <block id="6c25e6a6da95b3d583c6ec4c3f82ed4d" category="list-text">每週</block>
   <block id="9030e39f00132d583da4122532e509e9" category="list-text">每月</block>
-  <block id="ecd242fda0569865c9d53baff518ff03" category="paragraph">如果您的磁碟區未遵循 NetApp 服務引擎支援的標準備份原則、您可以 <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> 解決此問題的 * 非標準磁碟區 * 類別。</block>
-  <block id="71a894272ba63934076edbd1c77cb3fa" category="admonition">可隨時手動透過 GUI 或使用 API 執行 Adhoc （非排程）備份。</block>
-  <block id="51e7bf9a9bfe9a10e2140a304406dc5c" category="paragraph">您可以在「 * 備份 * 」頁面上檢視為檔案共用和磁碟所建立的 Snapshot 清單。備份會根據選取的租戶顯示。</block>
-  <block id="3b831f55c9143f1b5cb37a93b8ee1673" category="section-title">建立備份物件</block>
   <block id="6db39557a4b297506ad4d09c194d4428" category="inline-link-macro">建立檔案共用區</block>
   <block id="0bf2cdd911508e029b083d29f0a5b1b0" category="inline-link-macro">建立磁碟</block>
-  <block id="4685c96d6b54e31343b4fb5af5e02168" category="paragraph">您可以在需要時定義備份原則、為磁碟區建立 Snapshot <block ref="40dd92abaf00c3696d356c13faf65e59" category="inline-link-macro-rx"></block> 或 <block ref="aa2514445a50daa0bcd2961b6eeeb4ba" category="inline-link-macro-rx"></block>。</block>
   <block id="4a301354fd3e67146b05bf4c0213a524" category="list-text">啟用 * 備份原則 * 。</block>
   <block id="2d79d0946ebf423bdce47cdbcbe3289a" category="list-text">指定備份區域、以及每月、每日、每週及 / 或每月進行的備份數量。</block>
-  <block id="39aaf9a09816c44ef7d09bc9b29f445f" category="admonition">您也可以編輯現有檔案共用區或磁碟的備份原則、來建立或排程備份。</block>
-  <block id="7d416d1610b5140f26de7d96470e40b5" category="section-title">修改備份物件</block>
   <block id="ff725475ecd544efd6edeb0a29f3b051" category="paragraph">對於檔案共用區或磁碟的選定備份物件、您可以停用備份、或將備份物件從其來源分離、使其成為孤立備份。此作業會中斷 SnapMirror 與來源的關係。您也可以修改每月、每日、每週和 / 或每月進行的備份數量。</block>
-  <block id="69e33f9b42f29bd2e15a2898a4d79204" category="list-text">在清單中找出備份、然後按一下該物件列末端的編輯圖示。</block>
-  <block id="62100a7829b290eb9c850900c9e4c6b1" category="list-text">視需要變更備份來源和每種備份類型的數量。您可以將備份來源變更為 * 無（孤立） * 、藉此中斷 SnapMirror 與來源磁碟區的關係。即使刪除來源磁碟區、備份仍會保留為孤立備份、以供還原。備份物件的狀態會變更、來源磁碟區的狀態（孤立或刪除）會附加到同一個清單上的來源磁碟區名稱。如需物件狀態的相關資訊、請參閱 <block ref="07db4fd703f5abbcf7e28d1aea64d264" category="inline-link-macro-rx"></block></block>
-  <block id="d9bce07771139a773dfd41742dae2265" category="list-text">按一下「 * 完成 * 」。Snapshot 即會修改。如果您中斷了與來源的 SnapMirror 關係、也就是孤立備份物件、則「 * 備份 * 」索引標籤中的來源名稱會顯示為「已刪除」。</block>
-  <block id="5967285923bb13f8722f1f497d2d87df" category="admonition">您也可以停用磁碟區的 * 備份原則 * 、中斷 SnapMirror 與來源磁碟區的關係。</block>
-  <block id="de76a034b02382ba26fa8b0ca87455ea" category="section-title">刪除備份物件</block>
-  <block id="47457818aefd9dd3aaad6bb829410345" category="paragraph">刪除未使用的備份磁碟區以增加儲存空間。</block>
-  <block id="2c9f13eb11fd01cba126537eb24184e9" category="list-text">在清單中找出備份、然後按一下該物件列末端的刪除圖示。</block>
-  <block id="17805b2e8dbc3769268ce84ac4ebaf2a" category="list-text">在「 * 確認刪除 * 」對話方塊中、輸入備份名稱（來源 Volume 名稱）以確認您要刪除備份物件。</block>
-  <block id="6a6dba4059cbfb6c365ea27c4766405e" category="admonition">刪除備份時、會刪除備份的所有恢復點。此外、即使您刪除主要檔案共用區或磁碟、備份仍會保留為孤立備份、並保留所有還原點。若要刪除刪除來源的備份磁碟區和還原點、您應該從 * 備份 * 索引標籤中明確刪除備份物件。</block>
-  <block id="cc246bead7d06808781c69caf49f5a06" category="section-title">備份還原</block>
-  <block id="7d0a77154a85974a52d444bfe7585f91" category="paragraph">您可以 <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> 從特定的還原點還原檔案共用區或磁碟。</block>
   <block id="1c028b83c509706e33189a511d88161c" category="list-text">從左側導覽窗格中選取 * support* 、然後選取 * Service Requests * 。</block>
   <block id="558e74572a55dd0584a34d57d1931cb2" category="list-text">按一下「 * 新服務要求 * 」。</block>
   <block id="4e5f2e10189244198cf8c389b7a45599" category="list-text">選擇 * 備份還原 * 作為服務要求的類別。</block>
@@ -591,7 +529,6 @@
   <block id="b16b9ef52e6b1a201cdcba5b837adb92" category="paragraph">身為多租戶環境中的服務供應商管理員、您可以透過 NetApp Service Engine Web UI 執行資源配置、報告、帳單及管理擁有自己訂閱的客戶。您可以執行下列功能：</block>
   <block id="fa5f81fd8a440d0b18d8557e443b5223" category="list-text">檢視已訂閱及已配置的儲存設備、做為其彈性訂閱服務的一部分。</block>
   <block id="9da712668a551d8e5fdbd73337cd80e9" category="admonition">作為服務項目、您可以向客戶銷售比向 NetApp 購買更多容量（超額訂閱）。租戶訂閱可延伸至目前的 Flex 訂閱期間以外、但在訂閱建立時間和儀表板 / 報告中會顯示警告。</block>
-  <block id="deda34113a7d7ce4c37163eeb99d80f2" category="list-text">建立、檢視、修改及刪除區域、區域、 租戶、子租戶和使用者。</block>
   <block id="2befb03c928f132c86b633802db5294b" category="list-text">管理及託管 Flex 訂閱服務中的多個租戶：建立及管理租戶訂閱、以及檢視您自己的 Flex 訂閱詳細資料。</block>
   <block id="a47825ecf819dc90fda84d0c3b11b153" category="admonition">租戶訂閱可以根據對應的區域和 Keystone Flex 訂閱來建立。系統會根據 Flex 訂閱的訂閱容量所提供的服務層級來建立這些服務層級。</block>
   <block id="cde8354acfa3ed018e57ee58a3437455" category="list-text">建立檔案伺服器或區塊儲存區、並初始化區塊、檔案和物件儲存區、因為您知道為租戶配置每種儲存類型的網路需求。</block>
@@ -603,15 +540,9 @@
   <block id="9f47971c2f904282c6112c7fae666665" category="section-title">您可以做為客戶 / 租戶管理員執行的活動</block>
   <block id="c5345358b99b46f0a70b33dbe9576e81" category="paragraph">身為租戶管理員、您有權檢視自己租戶的訂閱詳細資料、並為您的子租戶執行管理工作。您可以執行下列動作：</block>
   <block id="ac88fcccfde285ecb59b73859bcec157" category="list-text">檢視租戶訂閱服務中已訂閱及已配置的儲存設備。</block>
-  <block id="ff765d3ff80f356ea55032314e29568e" category="list-text">在租戶訂閱服務中管理及託管多個子租戶和使用者。</block>
-  <block id="4a1c9085c04469de8b32328241d6f65d" category="list-text">檢視您的區域、區域、租戶和子網路。</block>
-  <block id="6e6abd2dbfbfbba739327cec43772d66" category="list-text">檢視檔案伺服器並建立檔案共用區、磁碟區和儲存區。</block>
-  <block id="f67da1c38596a28ef3abe3fed17d089a" category="list-text">為租戶和子租戶建立報告、以便僅檢視訂閱或為租戶和子租戶配置的儲存設備使用量資料。</block>
-  <block id="857a3fc93421e14268be55190cd9a8c8" category="list-text">在服務供應商的服務要求工具中提出及更新服務要求。</block>
   <block id="4079122a50a5a352183468bbaa01d8dd" category="admonition">如需額外訂閱、您可以使用服務要求工具。</block>
   <block id="7fdb44c4efca9cb2f8ad3b4db2328a89" category="summary">Keystone 備份 API</block>
   <block id="160dacdfe2b74f89864f2e85eafc1976" category="doc">備份 API</block>
-  <block id="0d7d4c02eb916025bec65984e23e01bf" category="paragraph">您可以使用備份 API 來檢視及管理環境中磁碟區（檔案共用區和磁碟）的 Snapshot （備份或還原點）。</block>
   <block id="c1701943a17b1ee8e93a0e7b65be74ed" category="cell">HTTP Verb</block>
   <block id="12865c5ea5d94aa38e67eb09afedf322" category="cell">必要參數 / 要求本文</block>
   <block id="5da935d2552edc90c56bdb2e23aa859f" category="paragraph">/v2.1 / 備份</block>
@@ -639,12 +570,6 @@
   <block id="388342d6d3429bc104039c1fe69fb5dc" category="summary">Keystone 修改物件儲存使用者</block>
   <block id="84d651d6e5fbe9874ed3ff576f2836d1" category="doc">修改物件儲存使用者</block>
   <block id="d77f9ec7a91a670f3a5f8ac78f412f66" category="paragraph">使用此方法可修改物件儲存使用者的詳細資料、例如使用者名稱及指派給他們的群組。</block>
-  <block id="f393d3f07d1733e88adb26884aa4c665" category="list-text">請確定已選取正確的子租戶、且顯示幕會顯示使用者（非群組）。</block>
-  <block id="fc39ceb014f53dd561c76f22c7f3aa15" category="list-text">在清單中找出使用者、然後按一下該群組的「 Edit （編輯）」圖示。</block>
-  <block id="2b6bed1ab5dc023d121deb7372f2a629" category="paragraph">如需使用清單中項目的詳細資訊、請參閱 <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>。</block>
-  <block id="ac42e3f82a32b7287b8ad6e42ffd4657" category="list-text">在「編輯使用者」對話方塊中：</block>
-  <block id="914419765826daef952f5e99d9010aae" category="list-text">選取使用者所屬的物件儲存群組。</block>
-  <block id="da814ae2cb3467d18b1937b19fa38f10" category="list-text">按一下 * 更新 * 。這會建立工作、以使用指定的設定來建立使用者。</block>
   <block id="7bc1dc2ee0a07d10009260b53f57f2d3" category="summary">Keystone 服務容量定義</block>
   <block id="fa9e0f651927f60e0ba9028d7f29ad6e" category="doc">彈性訂閱服務容量定義</block>
   <block id="9a09adadd7780fa46f83fa4c80476f50" category="paragraph">《 Flex訂購 》（ Flex 訂購）服務容量包括： NetApp Keystone</block>
@@ -652,9 +577,7 @@
   <block id="bd1984523f235f050c7a687cbdffee96" category="paragraph">這是客戶放入 Flex 訂購基礎架構的資料。所有 Flex 訂閱容量均指邏輯容量。例如、如果一個 1 TiB 檔案儲存在 Flex 訂閱基礎架構上、則必須購買至少 1 個 TiB 容量。</block>
   <block id="4ac938291a74f21a35352afb886d2d88" category="section-title">承諾容量</block>
   <block id="03cd8c6bf7fa9b89369c8da2bc2063e7" category="paragraph">每月在期限內計費的最低邏輯容量：</block>
-  <block id="daec5abe68eb172b15758085f16c740e" category="list-text">容量是針對每個效能層級所承諾。</block>
   <block id="65bdbd8437ca88c89824e2ddc621f54c" category="list-text">承諾容量在期限內無法減少。</block>
-  <block id="8ff64aaef80695cc5c145b3bef4a236f" category="list-text">在期限內、您可以新增承諾的容量和額外的效能等級。</block>
   <block id="326cde132ee3d2c6dbda5e81887d37fd" category="section-title">已認可容量的變更</block>
   <block id="e80564e6a1386159e71203ed98662fc4" category="paragraph">在訂閱期間、您可以變更已提交的容量。不過、有些先決條件是：</block>
   <block id="f5d9b6b00fd78d80af103a392bba7c30" category="list-text">提交的容量無法減少</block>
@@ -668,7 +591,6 @@
   <block id="aec1005ee7c9c20d1a1b0df3290a5c34" category="list-text">高達 20% 的突發容量會以與已認可容量相同的速率充電。</block>
   <block id="e895579d02072ebda659dbda14a17726" category="list-text">超過 20% 的突發容量會以高費率收費。如有任何額外的連絡要求超過 20% 、請聯絡支援部門。</block>
   <block id="94c94961a24325da0518d106d0d1d12a" category="section-title">已用 / 已配置的容量</block>
-  <block id="c7c21d5830d05e2332e2cd7f088bc8f2" category="paragraph">耗用容量是指服務目前使用的儲存設備 TiB 容量。Flex 訂閱服務會將特定效能服務層級上所有磁碟區的已配置大小總和（而非所使用的邏輯或實體容量）視為該效能服務層級的已用容量。這包括：</block>
   <block id="6fc8b176a9bd3f331984e2de9b5dbfab" category="list-text">透過建立、修改、刪除或潛在的磁碟區自動成長來配置的容量。</block>
   <block id="202ac47fdd80de7d80018d24cb661fc9" category="list-text">Snapshot 複本與複製。</block>
   <block id="b33c6009150f806349f79306b0821192" category="admonition">儲存在已配置容量內的資料量、或是實際寫入磁碟的資料量、都不會納入考量。</block>
@@ -696,8 +618,6 @@
   <block id="4b894cf74c19de19660a5ffeee9a97ec" category="paragraph">採用 Equinix 技術的 Flex 訂購與標準 Flex 訂閱方案不變。</block>
   <block id="bc54a58207fd4d61b1d1879b8e83baf5" category="paragraph">除了標準的 Flex 訂閱服務、您還需要選擇 Equinix 資料中心來裝載您的 Flex 訂閱設備。</block>
   <block id="a69d668d73ed9ea0922a525be4e0f1c3" category="summary">Keystone 入門概述</block>
-  <block id="1711f3f349e27f79baf2679e426c7ef7" category="paragraph">本節說明如何使用 NetApp 服務引擎入口網站開始使用。其中包括：</block>
-  <block id="be6e8736db2969895574ed3566dd6819" category="list-text">登入 NetApp Service Engine 網路介面：</block>
   <block id="a852a6f32185c74dee9f0d17c66ba1fa" category="list-text">以使用者名稱和密碼登入</block>
   <block id="f6650b0d4b1f443020073cc3a6d83ffa" category="list-text">使用 NetApp SSO 登入</block>
   <block id="7c0cdb04ca0433fb412448041178d19f" category="list-text">選取租戶</block>
@@ -1036,7 +956,6 @@
   <block id="e1b769719ccb6a19b5da0f54a9ce124a" category="list-text">備份還原</block>
   <block id="baaf26c3cc1634b64f550cbbc10d58ed" category="list-text">災難恢復容錯移轉</block>
   <block id="9aa339d0e01af256fa5c2221f6d6ed40" category="list-text">NetApp 服務引擎的技術問題</block>
-  <block id="96741ccff49069dd65f1235b247e5107" category="list-text">本節不涵蓋的任何其他問題說明：</block>
   <block id="8f20189d8110c58d44fe31826425eaa8" category="list-text">如何提出服務要求</block>
   <block id="92200f42614e072053fb6e35af60b4bc" category="list-text">如何追蹤服務要求</block>
   <block id="f52d6921b11e9d5d206f0e75471ff677" category="list-text">服務要求程序</block>
@@ -1069,14 +988,12 @@
   <block id="6553abd67741ef5838fc0023aaf3615f" category="cell">您可以擷取特定檔案共用區的詳細資料。擷取檔案共用的詳細資料、例如 ID 、名稱、快照原則、傳輸協定、檔案伺服器 IP 、 和標記、以輸入的 ID 為基礎。</block>
   <block id="2a5ff174f20666e38177f30bbbf52df9" category="paragraph">「 id 」：檔案共用區的 ID 。</block>
   <block id="a43e7f2866500fb09988a026b172c003" category="cell">您可以建立檔案共用區。新增要求本文中的值、以建立具有指定參數的檔案共用區、例如 ID 、名稱、快照原則、傳輸協定、 檔案伺服器 IP 和標記。</block>
-  <block id="5a77eaffb26a87d168aa5d6e60d62640" category="paragraph">「名稱」：檔案共用區的名稱。「 hare 路徑」：檔案共用區的路徑。「 fileserver_id 」：檔案伺服器的 ID 。「 ize_GB 」：檔案共用區大小（以 GB 為單位）。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「傳輸協定」：用來存取檔案共用區（ NFS 、 CIFS 或多傳輸協定）的傳輸協定。「 ecurity_style 」：安全風格（ Unix 或 NTFS ）。「匯出原則」：檔案共用區的匯出原則。</block>
   <block id="6b4589dd1f673dd20c554e4629271cfc" category="paragraph">/v2.1 / 檔案資源 / ｛ id ｝ / ' 「快照 / ｛ name ｝ 」</block>
   <block id="0ab985e0989bbd29c8c64750d5a37f3e" category="cell">您可以建立檔案共用區的快照。</block>
   <block id="a5f0604810f259d4335f82cc9c98f684" category="paragraph">「 id 」：檔案共用區的 ID 。「名稱」：快照的名稱。</block>
   <block id="fbf2f6a6616c79d6acebb10e89e8d366" category="paragraph">/v2.1 / 檔案資源 / ｛ id ｝ / ' 標記 '</block>
   <block id="d06a73ba1fe59938f19091d068d767bf" category="cell">您可以建立或取代檔案共用的標記。在要求本文中、以「 key:value 配對」格式新增檔案共用的 ID 和標記值。</block>
   <block id="e228717fed12c512ebc56920046732e5" category="cell">您可以根據檔案共用的 ID 來修改任何檔案共用。在要求本文中新增檔案伺服器的 ID 和您要修改的值、例如名稱、傳輸協定、快照原則、備份原則和標記。</block>
-  <block id="2cc0cccb3249750330e90729ba60e5c3" category="paragraph">「 id 」：檔案共用區的 ID 。「名稱」：檔案共用區的名稱。「 ize_GB 」：檔案共用區大小（以 GB 為單位）。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「傳輸協定」：用來存取檔案共用區（ NFS 、 CIFS 或多傳輸協定）的傳輸協定。「匯出原則」：檔案共用區的匯出原則。</block>
   <block id="05c4332128a79c0d23538f5a46334433" category="cell">您可以依其 ID 刪除任何檔案共用。</block>
   <block id="11685ea3b6cc30adb6eae859895cca3c" category="cell">您可以依照檔案共用區的 ID 和快照名稱來刪除檔案共用區的任何快照。</block>
   <block id="0bb5849ddc549d6d9a0166d3663f0d1e" category="admonition">如果是 CIFS 共用、在共用路徑結尾加上「 $ 」字元、就會使其成為隱藏的共用區、例如「 pathtomyhiddenshare$ 」。</block>
@@ -1099,13 +1016,9 @@
   <block id="84243f6b8d465b834e36cf58cd48fed9" category="paragraph">不可以整個客戶群的軟體版本均已標準化。 NetApp Keystone</block>
   <block id="73e02951afd28d2508077afaf5bc798f" category="paragraph">是的。所有的維護 / 升級活動都會在 NetApp Keystone 雙方同意的時間與客戶溝通、並由「更新成功經理」安排。</block>
   <block id="2b1eac122dc9fcff6b6ff126ea055f08" category="summary">Keystone 建立物件儲存群組</block>
-  <block id="02cdea300670fae8df4e5787f5a48a55" category="paragraph">使用此方法建立新的物件儲存群組。</block>
-  <block id="a2903997a8345ed7638b30722c8f985d" category="list-text">請確定已選取正確的子租戶、且顯示幕顯示群組（非使用者）。</block>
   <block id="5f42b8d2367f44e7e55a3119fd3efca6" category="list-text">按一下 * 建立群組 * 。</block>
   <block id="5dbc4cf9626a1f4328c17b6a4b0da0c0" category="list-text">在「建立群組」對話方塊中、輸入群組名稱。</block>
-  <block id="b7550b952e401430e6631ab63cf05bf6" category="list-text">從清單中選取 S3 原則。</block>
   <block id="d7a5226827a61d632eecd4b9dc607e3d" category="list-text">按一下「 * 建立 * 」。這會建立工作、以指定的設定建立群組。</block>
-  <block id="4f61923a7d0d0fa7d7ecaabb1d92de2e" category="paragraph">建立物件儲存群組會以非同步工作的形式執行。您可以在工作清單中檢查工作狀態。如需追蹤工作的相關資訊、請參閱 <block ref="745d0848b61028851eb2c98800bc0654" category="inline-link-macro-rx"></block>。</block>
   <block id="bbf5c00a5a74c975684f1ea9625170dc" category="summary">NetApp 服務引擎的已知問題</block>
   <block id="df2d7d810d56e2ac1424497ce621a5b4" category="doc">NetApp 服務引擎的已知問題</block>
   <block id="f1e15aa54b6335c950ebc7c78df7f652" category="paragraph">NetApp 服務引擎報告了下列已知問題。您在配置或使用儲存設備做為 Flex 訂閱的一部分時、可能會遇到這些問題。</block>
@@ -1138,7 +1051,6 @@
   <block id="c07c08a8bb12ddacd97c50e289cfeabb" category="paragraph">建立訂閱後、在圖表上回報已提交的容量時、會延遲 15 分鐘。</block>
   <block id="d56ad7d41c9c131e7177635c575214ef" category="paragraph">建立租戶訂閱、並立即檢查報告圖表（在建立訂閱後 15 分鐘內）時、未正確報告已提交的容量。</block>
   <block id="d5ef5fd8e9c00193aa18dda53d77e710" category="paragraph">在訂閱建立後至少 15 分鐘、請檢查報告圖表。</block>
-  <block id="c158748a3e69a9b1c13a961e778ec66b" category="paragraph">效能服務層級的變更不會移動磁碟區</block>
   <block id="1783b0f8371d7661f74ab43e7076b5ef" category="paragraph">如果同一個叢集中的兩個不同集合體用於兩個服務層級、將磁碟區上的服務層級變更為另一個、則不會將磁碟區移至其他集合體。只會套用調適性QoS原則。</block>
   <block id="44d15e01a306125fbc9b5a504261f2c3" category="paragraph">建立FCP SVM需要iSCSI啟動</block>
   <block id="452ff3a7d441b2a105350eaeb7f00609" category="paragraph">若要建立儲存虛擬機器（SVM）並啟用其FCP支援、則需要啟動iSCSI介面。</block>
@@ -1165,20 +1077,15 @@
   <block id="91430119e6b1998db13f32fe128e8bd4" category="list-text">增加訂閱容量</block>
   <block id="6be4feac711de31165af4cba34fada5b" category="list-text">新增服務至訂閱（指派服務層級和容量）</block>
   <block id="a975aeaab71bf656692c74b3c7391bbd" category="paragraph">支援團隊會收到並處理服務要求。</block>
-  <block id="c05b09e138b5f629cc27da81326e9155" category="paragraph">您也可以在個別的索引標籤中檢視及管理您訂閱的資料保護和進階保護服務。</block>
   <block id="ee64fc5e899de234b52c1e6be0a42580" category="paragraph">您可以增加任何已訂閱服務層級的已認可容量、以符合成長需求。</block>
   <block id="c3cc09e5904ef1c41a8e4b96fe492b7f" category="list-text">從下拉式功能表中選取您要增加容量的訂閱。</block>
   <block id="e3cfe0459ce74221e44ecd1ac548921c" category="list-text">按一下 * 「增加容量」 * 以取得所需的服務層級。</block>
   <block id="abc5d91daecea5085ef3a04be9b83130" category="list-text">指定所需的容量（以 TiB 為單位）。</block>
   <block id="2e6983625c407f999b0f355ada28466d" category="section-title">新增服務至訂閱</block>
   <block id="0eacfbc5d97cfe501e800487423aac77" category="paragraph">您可以將服務新增至訂閱。新增服務包括指派服務層級給您的訂閱、以及指定相同服務層級的容量。</block>
-  <block id="fba0091d689bfc70b9d5477adedbc602" category="paragraph">訂閱可能只有每個效能層級的其中一個、例如、如果您的訂閱已包含極致版和標準版服務、您可以新增優質或區塊服務。</block>
   <block id="30dde0ec345e8f4d767c6af115c09edd" category="list-text">按一下「 * 新增服務 * 」。</block>
-  <block id="ac10c01d8b5d36ab848b3fb8f29f13a8" category="list-text">從下拉式功能表中選取您要新增的訂閱服務、然後新增您要提交至服務層級的容量（以 TiB 為單位）。</block>
-  <block id="0858d2f14514c46b802b407a319301df" category="admonition">如果您訂閱極致分層或優質分層、您可以編輯任何現有訂閱的效能等級、並選擇啟用分層的效能等級。您也可以選擇從啟用分層的效能層級移至非分層效能層級。</block>
   <block id="aaf3d59b93a3de488a15d1c870971b31" category="section-title">管理租戶訂閱</block>
   <block id="5710181962e9a5023838cb235a7438db" category="paragraph">如果您是合作夥伴管理員、可以從 * 訂購 * &gt; * 租戶訂閱 * 建立、檢視及更新租戶訂閱。如果您是租戶管理員、則只能檢視訂閱內容。</block>
-  <block id="2fc4feadf65c10bb39cb2dca1d6dfec9" category="section-title">建立租戶訂閱</block>
   <block id="e7c16a52c380efb3cac5c1704324c800" category="paragraph">您可以為租戶建立新的訂閱。</block>
   <block id="b37aaef99a7196944d09738c9ab3a35e" category="list-text">按一下「 * 新訂閱 * 」。</block>
   <block id="b854139f5ea445b74d2995db156891ed" category="list-text">指定地區、區域、訂閱期限、費率計畫及其他詳細資料。租戶訂閱會根據選取的區域指派給 Keystone 訂閱。這是因為每個 Keystone 訂閱都繫結至一個區域。</block>
@@ -1233,12 +1140,7 @@
   <block id="756ce271705621a55d77f25f42835876" category="paragraph">使用此方法為使用者建立 S3 金鑰。</block>
   <block id="bc00c96c9325eeb46956d01d7a76e163" category="paragraph">請確定您在建立金鑰之後立即擷取金鑰。建立關鍵詳細資料後、無法再擷取。</block>
   <block id="97f1a61a826425fa5b14bcf28e62e443" category="list-text">在清單中找出使用者、然後按一下該群組的金鑰圖示。</block>
-  <block id="fbe07702643f38615e8de7c0d9072e70" category="list-text">「管理 S3 金鑰」對話方塊隨即顯示、顯示使用者的金鑰清單。</block>
   <block id="8758e23e7960e73e6ab424225ab3813c" category="list-text">如果使用者沒有現有的金鑰、請按一下「 * 建立 S3 金鑰 * 」以檢視欄位以建立金鑰。</block>
-  <block id="b2c8572e8e1a1bface03661007849304" category="list-text">如果希望金鑰過期、請指定到期日和到期時間（以 UTC 為單位）。否則、請保留這些欄位的預設值。</block>
-  <block id="c501f05b9df7a562d8df47267a702966" category="list-text">若要建立金鑰、請按一下核取標記。「 S3 金鑰詳細資料」對話方塊隨即顯示、顯示存取金鑰和秘密金鑰。</block>
-  <block id="2565ea5925b3317ad199e25b57b45e88" category="list-text">複製存取和秘密金鑰、準備向使用者告知詳細資料。</block>
-  <block id="52bba6b924927dcc0b9f160653963951" category="paragraph">在關閉「 S3 金鑰詳細資料」對話方塊之前、請務必先擷取重要詳細資料。關閉後、關鍵詳細資料將會被隱藏、您將無法擷取。</block>
   <block id="00a06b08857b60c805bcaf007a9ddc9c" category="list-text">按一下 * 關閉 * 。</block>
   <block id="edea9398bafcc918142f79d91b628f61" category="list-text">再按一下「 * 關閉 * 」以關閉「管理 S3 金鑰」對話方塊。</block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">客戶可在 Active IQ 《關於 Keystone 的資訊</block>
@@ -1448,22 +1350,15 @@
   <block id="86d596e8967d088b834c8d852be2f7ae" category="summary">Keystone 會建立檔案共用的 Adhoc 快照</block>
   <block id="79ddfbea235d8c6f69bef6a1289c1f02" category="doc">建立檔案共用區的 adocad 快照</block>
   <block id="2d3535fbad26c9ea70e83c687280c51c" category="paragraph">本節說明如何建立檔案共用區的 adocad 快照。</block>
-  <block id="54e69480488d6c587a033693a5ffa656" category="list-text">在清單中找到該共用、然後按一下該共用的 Snapshot 圖示。（如需使用清單中項目的詳細資訊、請參閱 <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>。</block>
   <block id="6a556e6c635602587fe7f06e8d4026b7" category="list-text">在 Create Snapshot （創建快照）對話框中，輸入快照的名稱，然後單擊 * Create* （創建 * ）。</block>
-  <block id="dedf8dac5069ba657b1a7832116edb8d" category="paragraph">快照可能需要幾分鐘的時間才能使用。</block>
-  <block id="fe3173f25be041d3c6b308be02a46d9c" category="paragraph">儀表板提供 NetApp Keystone 您的各種資訊儲存訂閱的快速綜覽。它會顯示已使用容量、根據使用量計費、以及最近警示和服務要求的相關資訊。</block>
   <block id="f9ed75da3555257ca938c77e189c07a4" category="paragraph">儀表板會在下列小工具中顯示重要資訊、您可以按一下這些小工具進行深入分析：</block>
-  <block id="af0bb0722f05fcc5cad936bc276df6a9" category="list-text">* 容量使用率： * 顯示您訂閱服務的容量使用率、例如 Keystone Flex 訂閱、 Keystone Flex 公用程式和 Cloud Services 。將滑鼠游標移到橫條圖上、會顯示所使用容量的中斷。您可以檢視已認可和已用容量、以及突發容量、並識別是否需要為訂閱新增更多容量。按一下長條圖、即可在新的快顯視窗中檢視您訂閱服務的所有訂閱內容。按一下此快顯視窗上的訂閱圖表、即可查看每個服務層級所使用容量的分段。您也可以檢視附加服務的使用容量、例如資料保護和進階保護（若適用）。</block>
   <block id="6248db19c2de1402d7d089733e1d2bc8" category="inline-link-macro">檢視帳單</block>
-  <block id="33c8c200b16895b7c3c094f7a7212c8e" category="list-text">* 每月費用（帳單）： * 顯示您所有訂閱的每月總費用。您可以檢視過去三個月的帳單詳細資料。將游標移到圖表上方時、您可以根據您的承諾和突發使用量、檢視費用的分段。如果您有多個訂閱訂閱訂閱某項訂閱服務、按一下某個月的長條圖、訂閱清單就會顯示在「帳單」畫面上。如需帳單的詳細資訊、請參閱 <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
   <block id="2ae145e579555cbdc76abe246b780993" category="inline-link-macro">建立及管理警示</block>
   <block id="fb994140e833b58c3ba599dee0fa679b" category="list-text">* 警示： * 顯示最近的警示摘要、例如狀態、訊息及建立時間。如需警示的詳細資訊、請參閱 <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block>。</block>
   <block id="c0def6fc0af1233163f1454da45f3c7d" category="list-text">* 服務要求： * 顯示最近的服務要求摘要、依優先順序及建立時間排序。如需服務要求的詳細資訊、請參閱 <block ref="afc02109994a487037ec15ea835679fe" category="inline-link-macro-rx"></block>。</block>
   <block id="ad4d1829005dd03f7cf9ab881abe5ea6" category="section-title">多租戶服務供應商的儀表板檢視</block>
   <block id="fa88a38bcd21fdecbef74c2036b327e0" category="paragraph">如果您是多租戶環境中的合作夥伴管理員、儀表板會提供 NetApp Keystone 所有訂閱服務的宏觀概覽、以供支援。容量使用率和帳單詳細資料的小工具資料、除其他外、代表您與 NetApp 的訂閱和帳單關係。</block>
-  <block id="f177e1a19970ff5e25307154c24a4391" category="paragraph">您也可以從右上角選取特定租戶、以檢視每個租戶的容量使用率。容量使用率小工具中的資料代表所選租戶的資料使用量、而所有其他小工具中的資料則維持不變、代表您的儲存訂閱。</block>
   <block id="089e685563941e94026d37cb86934aed" category="section-title">多租戶的儀表板檢視</block>
-  <block id="130df011efb540e36544c1adf704710b" category="paragraph">如果您是多租戶環境中的租戶管理員、可以檢視您租戶的容量使用率、最近的警示和服務要求、然後按一下小工具以取得更多詳細資料。請聯絡您的服務供應商以取得帳單詳細資料。</block>
   <block id="5fd02b27b33851cac519bb7aab9ea702" category="summary">Keystone 選取租戶</block>
   <block id="43639e8f38adc48b4a422a080cb873c2" category="paragraph">使用 NetApp 服務引擎網路介面時、您所看到的任何資料、以及您執行的任何活動、都會與所選租戶有關。您可以在畫面頂端檢視租戶、如下所示。</block>
   <block id="3dfcfbfe54ce542f048931777f79fd53" category="paragraph"><block ref="3dfcfbfe54ce542f048931777f79fd53" category="inline-image-macro-rx" type="image"></block></block>
@@ -1584,15 +1479,9 @@
   <block id="f9452e95d52ebd12efeebe564007d35d" category="summary">訂購 NetApp Keystone</block>
   <block id="dd476ad29752995a24a718ac007daee1" category="doc">Flex訂購 常見問題集 NetApp Keystone</block>
   <block id="17fdf54028714053b0bba12405eaecd1" category="paragraph">下列問題可解答您對於 NetApp Keystone 《支援不規則》訂閱服務的常見問題。</block>
-  <block id="9dc46e9b8e8e3325a5f950ba6b189e61" category="inline-link-macro">效能服務層級</block>
   <block id="19dac31ef92aadf5c033c9154e144b27" category="inline-link-macro">Keystone Flex 訂閱 API 指南</block>
   <block id="f65085dc4bb69a27d3e266d2c5504a2b" category="list-text">支援電子郵件： mailto ： keystone.services@netapp.com[keystone.services@netapp.com^]</block>
   <block id="d0a96adfc74a1b7215d05e43eb9ac7eb" category="list-text">提報電子郵件： mailto ： keystone.escalations@netapp.com[keystone.escalations@netapp.com^]</block>
-  <block id="eb47920f375e65c94fc36335aede0f2d" category="paragraph">支援以預先定義的效能等級提供容量的 Flex訂購 （ Flex 訂購） NetApp Keystone 。</block>
-  <block id="418852be623b3dd4f2d4b388a8087e02" category="paragraph">每個效能服務層級都是由其 I/O 密度所定義、亦即效能（每秒輸入 / 輸出作業次數 [IOP] ）和已使用儲存設備（儲存資料的 TiB ）的比率、亦即 IOPS/TiB 。</block>
-  <block id="cfac68d8ffc92c1c9c46b9d5150bd845" category="paragraph">由 Flex 訂閱服務管理的每個 Volume 均與效能服務層級相關聯。所有的 I/O 作業和所有在個別磁碟區上使用的儲存設備、都會納入磁碟區的 I/O 密度計算中。</block>
-  <block id="a47468120853c1eae9253fff2798d8d6" category="paragraph">下表定義效能服務層級。</block>
-  <block id="ae14ae08bc11163da49596ed847fb224" category="section-title">不同儲存類型的效能服務層級</block>
   <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">此處列出檔案、區塊和物件儲存設備的服務層級。</block>
   <block id="89c3a4001bb90f26ff84b68cb534b8ee" category="paragraph">報告磁碟區層級的 I/O 密度計算、以顯示上週的尖峰 I/O 密度。尖峰效能取決於每小時的時間間隔。每個磁碟區的 I/O 密度報告會每月產生一次、以衡量各服務層級的遵循程度。</block>
   <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">檔案服務</block>
@@ -1627,7 +1516,6 @@
   <block id="6b2c7dcd56a1cb15a3943cec9cbc288a" category="cell">15 TiB^2^</block>
   <block id="2d46634ee64919ed31d1417b57f21934" category="cell">25 TiB^2^</block>
   <block id="7d7a1cbef5663cabe63cfb0d8ca01cb8" category="cell">50 TiB^2^</block>
-  <block id="b7a050dc1a51cdc992245ce9afb75060" category="admonition">針對 NetApp 直接商機、結合任何檔案共用和區塊效能服務層級、最短一年及最小 100TiB 容量。^2^ 針對通路商機所選的每個服務層、最低一年期限和最低指定容量。</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="section-title">區塊儲存</block>
   <block id="8e634bafd4732f9f05a35ceb5ed54902" category="paragraph">* 支援的傳輸協定 * ： FC 與 iSCSI</block>
   <block id="2f569257101cf136a49d983584bfc44f" category="cell">高效能運算</block>
@@ -1639,7 +1527,6 @@
   <block id="f369b2981da1e28bb1901ae50eeb877a" category="cell">低於 0.5 毫秒</block>
   <block id="bf9224ad67754b6fee4e952851b35d3e" category="cell">100 TiB^3^</block>
   <block id="2378ad2afb80cd0122c6f07757ca1321" category="cell">300 TiB^3^</block>
-  <block id="377805c2057aec33fb79fbe701c063df" category="admonition">針對 NetApp 直接商機、結合任何檔案共用和區塊效能服務層級、最短一年及最小 100TiB 容量。^2^ 針對通路商機所選的每個服務層最低一年期限和最低指定容量。^3^ 針對任一商機類型所選取的每個服務層最低一年期限和最低指定容量。</block>
   <block id="670aaecb1a526fbed439dad3ec353a96" category="section-title">物件儲存</block>
   <block id="58d801506333ab644845942779162cbc" category="paragraph">* 支援的傳輸協定 * ： S3</block>
   <block id="497031794414a552435f90151ac3b54b" category="cell">物件</block>
@@ -1709,18 +1596,9 @@
   <block id="65900113ed528b8b8e988ed7f8d72f87" category="cell">此要求正在等待超出支援控制範圍的活動、可能需要一段時間才能處理要求。</block>
   <block id="8c6ed17d43fdff1098f07504d08b6db2" category="cell">要求已關閉。</block>
   <block id="49160028ef392112eb613b320b874fc3" category="paragraph">您可以查看 NetApp 服務引擎中的狀態（如下所述）來追蹤服務要求的狀態、也可以追蹤在流程中傳送的自動化電子郵件中的狀態。</block>
-  <block id="a73b4517730ef9538f237813708636a8" category="list-text">從功能表中、選取 Support （支援） &gt; Service Requests （服務要求）。隨即顯示服務要求清單。</block>
-  <block id="1032ee9fabd8a51e5f49e446bb1860ff" category="paragraph"><block ref="1032ee9fabd8a51e5f49e446bb1860ff" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b419d3866799d65a9cf771b17314178b" category="list-text">在清單中找出服務要求、然後在「 Status （狀態）」欄中檢視狀態。</block>
-  <block id="d1db2690de0f7a48e902196864ba0b74" category="paragraph"><block ref="d1db2690de0f7a48e902196864ba0b74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0f02e73a070b7c5e6af49819a14c1e59" category="summary">Keystone 建立檔案伺服器</block>
   <block id="e216e6dd4e8417c59cdf8365347a68ff" category="paragraph">檔案伺服器屬於子租戶、並在區域內建立。建立伺服器時、您可以選擇：</block>
-  <block id="e984e5913268f172f36d79f463f29b8c" category="list-text">為伺服器啟用災難恢復 DP 。如需 NetApp Service Engine 中災難恢復運作方式的詳細資訊、請參閱 <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block>。</block>
-  <block id="12d9a773a71368993af0d815cc5a2ba1" category="list-text">將其設定為啟用 CIFS 。若為採用 CIFS 的伺服器：</block>
-  <block id="11bb5a6fe1e3cd04469851a2d7678816" category="list-text">您必須提供 Active Directory 使用者名稱、 Active Directory 密碼、網域、 DNS 伺服器、伺服器名稱、以及 也可以選擇 Active Directory 組織單位（ OU ）。</block>
-  <block id="150819dca91da413528afcd39b49621b" category="list-text">Active Directory 認證（ Active Directory 使用者名稱和 Active Directory 密碼）必須是擁有權限的使用者、才能將電腦加入 Active Directory 網域。</block>
   <block id="e68501fa155e429cf0f38075317a449f" category="list-text">當 Active Directory OU 結構為階層式時（如下圖所示）、請指定從最低層到最高層的 OU 。在此範例中、若要指定墨爾本 OU 、請將「 CIFs_ou 」設為「 CIFs_ou 」：「 Ou=Meltne, ou=CIFS 」</block>
-  <block id="c7e0d953db804fc2899c3d7dfab9e722" category="paragraph"><block ref="c7e0d953db804fc2899c3d7dfab9e722" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e9e4f5bb9f23ff700d3462b74db45279" category="paragraph">請確定您有下列項目來建立伺服器：</block>
   <block id="e01ce08e5a41461d2ba70018f1d1e042" category="list-text">主控伺服器的子租戶。</block>
   <block id="4c9f71833f1da304590e2f64c06fffd0" category="list-text">伺服器所屬的區域和區域。</block>
@@ -1744,20 +1622,15 @@
   <block id="f7f5c2465be89b32822fda34d2b011f5" category="paragraph">NFS 預設為啟用。此時會顯示使用中的 NFS 傳輸協定。</block>
   <block id="3531a26da3366b2d9e60057bc8026a03" category="paragraph">如果要建立啟用 CIFS 的檔案伺服器：</block>
   <block id="5c9c8ade0522fb2422d8abaecc5ea72e" category="list-text">切換啟用 CIFS 的按鈕以檢視 CIFS 相關欄位。</block>
-  <block id="dc66e07633b34e9822d7c22f2ceeee31" category="list-text">填寫 Active Directory 使用者名稱、 Active Directory 密碼、網域、 DNS 伺服器、伺服器名稱及 也可以選擇 Active Directory 組織單位。Active Directory 認證必須是擁有權限的使用者、才能將電腦加入 Active Directory 網域。</block>
   <block id="815ae3393960323ac85621ce7288df21" category="list-text">若要在此檔案伺服器上啟用非同步災難恢復 DP ：</block>
   <block id="8542611fe231680a87334496bb812803" category="list-text">切換「非同步災難恢復」按鈕以啟用。</block>
   <block id="5daf3adc6ff4148e511c6f6e0b5b9e68" category="list-text">選取災難恢復區域和區域。</block>
   <block id="2765dd9ad922f803cc154a2d62e5e768" category="list-text">選取災難恢復複寫排程。</block>
-  <block id="534cad85076ec858423a2807a24f1331" category="list-text">如果啟用同步災難恢復 DP 、同步災難恢復切換就會啟用且無法停用。</block>
   <block id="6d2083b0fad7c68e1983451837672427" category="list-text">按一下「 * 建立 * 」。這會建立工作來建立伺服器。</block>
-  <block id="5dde7b4f25d75b0885591b0a8e8c39b4" category="paragraph">建立伺服器會以非同步工作的形式執行。您可以：</block>
-  <block id="d7a669d10b2d6780ac266c7cd02c54e7" category="list-text">工作完成後、請檢查伺服器清單中的伺服器狀態。</block>
   <block id="9acc902d21500513ac0509fb07109ca2" category="summary">建立及刪除子網路</block>
   <block id="5ab6c625ae9e9658d23c23fa36eed108" category="doc">定義租戶和子租戶的網路組態</block>
   <block id="a0c08319cd36a9682e2dbdbcc3c9230d" category="paragraph">服務供應商或合作夥伴管理員可以根據租戶的訂閱區域來定義網路組態、並將 VLAN 指派給每個網路組態。他們也可以建立子網路、讓每個 VLAN 都屬於同一個區域和租戶、並將其指派給該租戶下的子租戶。</block>
   <block id="2a65beb9c728aafed55f0b839d38fe86" category="paragraph">需要預先設定的租戶網路才能建立子網路。當子租戶或終端客戶配置檔案伺服器或區塊存放區時、必須使用子網路。檔案和區塊儲存 VM 歸 NetApp Service Engine 的子租戶所有、而 ONTAP 它們則歸 NetApp 的 IPspaces 所有。當您在子租戶層級定義網路邊界時、 NetApp Service Engine 中的子租戶會對應 ONTAP 至該區域的單一支援區 IPspace 。如此可避免風險、並確保兩個不同的子租戶不會選擇相同的 VLAN ID 、最終會在相同的 IPspace 中結束。</block>
-  <block id="10cbcb2bc0ee488720578114eb2cb967" category="list-text">每個區域中可以建立多個子網路。對於租戶所在的每個區域、都有一個已分配的 VLAN 清單。對於所有可用的 VLAN 、都可以建立對應的子網路。子網路與 VLAN 之間有一對一對應關係。不過、區域和子網路之間有許多對應關係。</block>
   <block id="29a6f95d7ccf31d10c80b92995feff38" category="list-text">一個租戶可以有多個子網路、一個區域下的每個可用 VLAN 各有一個子網路。它們會顯示在每個區域的單一網路組態下。</block>
   <block id="bd3e7d93da4d11861fe61e2fa8a8c953" category="list-text">每個子網路只能有一個 VLAN 。每個網路組態都會顯示可用的 VLAN 清單。</block>
   <block id="c9fa2709091032a8f669a7e5fb105dce" category="list-text">只能為子租戶建立一個區域和 VLAN 組合子網路。</block>
@@ -1766,11 +1639,8 @@
   <block id="600a2d3036bcf278466c97ee59040321" category="paragraph">身為合作夥伴管理員、您可以為每個租戶建立網路組態。可設定且唯一的 VLAN 集區可根據租戶需求分配給每個租戶。刪除租戶時、會將與其相關的 VLAN 釋出回租戶 VLAN 集區。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
   <block id="1c951839f5b6577f61ffdb81ad0c2966" category="list-text">確保已建立租戶</block>
-  <block id="032f5fcccb2540660554e2617fbc9fae" category="list-text">您應該知道區域、 VLAN 和連接埠置換組態</block>
   <block id="b5a62af61e90de7477c2962a4417b10e" category="list-text">從 * 管理 * &gt; * 租戶 * 中、選取所需租戶。</block>
   <block id="25d77a4ca80d7a827240817660e76ac2" category="list-text">按一下網路圖示。「網路」畫面會顯示租戶的網路組態清單。</block>
-  <block id="e93884a4e7d6e8e34281d245be17c08d" category="list-text">按一下「 * 建立網路 * 」。如果適用、請指定區域、 VLAN 和連接埠置換。</block>
-  <block id="b56571833d818c4b4d441e2916560296" category="admonition">連接埠置換是由支援團隊在區域組態期間設定的。如果未指定連接埠置換、則網路會使用預設連接埠、並在 IP 空間中為該租戶建立新的 VLAN 。</block>
   <block id="7d9d276673347af6329e003d710a723c" category="list-text">按一下「 * 建立 * 」。「網路」畫面會列出租戶的新網路組態。</block>
   <block id="90314b034f8ee25ea72aa4f182bad043" category="paragraph">如果已建立區域的網路組態、您只能將新的 VLAN 指派給網路組態。按一下「 * + * 」圖示、然後新增 VLAN 和連接埠置換詳細資料。按一下 * 更新 * 。</block>
   <block id="d307682904302d385f9673a8d96b0d7a" category="section-title">為子租戶建立子網路</block>
@@ -1797,7 +1667,6 @@
   <block id="8c880fe54cae171fa97132f8c5e82297" category="section-title">散熱</block>
   <block id="e49c1cb86b679c35d94b37728ee6dfb6" category="paragraph">NetApp 可根據最終組態和需求、提供散熱需求規格（一般 BTU 、最大 BTU ）。</block>
   <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">網路</block>
-  <block id="033aea8feb96b593bcfe0d568fd5782b" category="paragraph">根據客戶需求和使用的儲存控制器、 NetApp 可在客戶現場提供 10 GB 、 40 GB 和 100 GB 的連線能力。</block>
   <block id="8769d35d5981adce65e2968f1fafd3e4" category="paragraph">NetApp 僅為 NetApp 提供的 Flex 訂購基礎架構裝置提供所需的收發器。您應提供客戶裝置所需的收發器、並將纜線連接至 NetApp 提供的 Flex 訂購基礎架構裝置。</block>
   <block id="72f4fe9bbff8808b20b8a75cd91e0383" category="summary">Keystone 使用者</block>
   <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="doc">使用者</block>
@@ -1887,20 +1756,14 @@
   <block id="4f966fff2ee03a9add543d2c3ad93f09" category="admonition">您可以根據使用者的角色指派權限給使用者、例如 NetApp 管理員、具有唯讀權限的 NetApp 管理員、合作夥伴管理員或租戶管理員。根據您的角色、您可以檢視環境中不同使用者的角色、並將角色指派給新建立或現有的使用者。</block>
   <block id="c16176687b732decaa9613dca5703caf" category="list-text">若要新增其他租賃、請按一下 * 新增租賃 * 以顯示新的輸入欄位、然後選取該租賃中的租戶及使用者角色。</block>
   <block id="e8f221d15eb31d00b8a988529a3e2527" category="summary">Keystone 提出服務要求</block>
-  <block id="711953faa9bb8cc628e913011d0e5b33" category="paragraph">「服務要求」畫面可讓您提出新的服務要求、由您自己的支援團隊或 NetApp GSSC 處理。</block>
-  <block id="0db330634d2013b5c1d235072b61db84" category="paragraph">您可以在儀表板的 * 服務要求 * 視窗上、檢視最近的服務要求摘要、並依優先順序和建立時間排序。您也可以瀏覽至「服務要求」畫面、以搜尋並檢視環境中提出的所有服務要求詳細資料。</block>
   <block id="51eb35cbb4e3a4cefea470dcb9610124" category="paragraph">若要建立新的服務要求、請遵循此程序。</block>
   <block id="9187ea14b0030339be001019f5b66e57" category="list-text">從功能表中選取 * 支援 &gt; 服務要求 * 、然後按一下 * 新服務要求 * 。</block>
-  <block id="f2dcdabaded22e13ec16edb510458300" category="list-text">在「 New Service Request 」（新服務要求）頁面上、選取該要求的類別和優先順序、然後按一下「 * Next* 」（ * 下一步 * ）。</block>
-  <block id="1bacea68b531028513d23df48579f200" category="list-text">「詳細資料」畫面上的欄位會根據您選取的類別而變更。輸入所需的詳細資料。單擊 * 下一步 * 。</block>
   <block id="721b8bc2578cf4a3290ff3e1ae267444" category="list-text">檢閱申請詳細資料。如果您想要修正任何內容、請使用「上一步」按鈕返回上一頁並修正詳細資料。如果所有詳細資料都正確、請按一下 * 提交 * 。</block>
   <block id="563d16503074b1783f0c64fc34fa990c" category="list-text">系統會建立服務要求、並將其列在「服務要求」畫面上。新開啟的服務要求狀態為「 New （新）」。</block>
   <block id="385907468665e91a15044c37c13e9d76" category="paragraph">系統會傳送電子郵件給申請者、指出申請已建立。此電子郵件會傳送至已註冊給要求 NetApp 服務引擎使用者的電子郵件地址。</block>
   <block id="60ba520f9d8839190b47177b0e5527c8" category="summary">Keystone 刪除物件儲存群組</block>
   <block id="4691d8c9f3b0d7214fca2297c340dedc" category="doc">刪除物件儲存群組</block>
   <block id="92f47837b80964ea23a98afa644af878" category="paragraph">使用此方法可刪除物件儲存群組。</block>
-  <block id="4014df0eabbcdafeeaa6af15088473c1" category="inline-link-macro">群組清單</block>
-  <block id="bcfec66a7b5deed3e3d648bf9acced29" category="list-text">檢視 <block ref="ed64871e766a21bfbb9d1bd09d4d5a26" category="inline-link-macro-rx"></block>。</block>
   <block id="45545c2b846c151b6838b1e51a45e19a" category="list-text">在清單中找出群組、然後按一下該群組的刪除圖示。</block>
   <block id="6dd6917c8e34f161475893bacabd2f53" category="list-text">若要確認刪除動作、請按一下 * 確認 * 。物件儲存群組即會從清單中移除。</block>
   <block id="9a4f480d8a363d2e1a887848ac25f500" category="summary">Keystone 使用檔案服務總覽</block>
@@ -1984,8 +1847,6 @@
   <block id="f748cdecc7002e854af01b7f1d36ebb1" category="paragraph">Flex訂購 （ Flex 訂購）資料保護服務可備份您的資料、並可視需要恢復資料。 NetApp Keystone可用的資料保護服務包括：</block>
   <block id="7da490627b0929eb399424269ef46d7f" category="list-text">備份磁碟與共用（訂閱時需要資料保護服務）</block>
   <block id="b0609401d759c5156292bcededa3ee06" category="list-text">磁碟與共享區的災難恢復（訂閱時需要資料保護服務）</block>
-  <block id="e54199d839aec4367252780290236e17" category="admonition">備份與災難恢復服務可作為附加服務使用、而 Snapshot 則可作為基本儲存服務的一部分使用。</block>
-  <block id="f8f0d91ade238084163c368750f7e560" category="cell">單一區域快照（作為基本儲存服務的一部分提供）</block>
   <block id="53b8c0793d8e01e805f7baa48301f0cb" category="cell">多區域備份（資料保護附加元件）</block>
   <block id="096f97b9f45eb7df5614230380360723" category="cell">多區域災難恢復（資料保護附加元件）</block>
   <block id="f9468c81b3d59ac0030570c4f58e95f1" category="cell">使用案例</block>
@@ -1994,7 +1855,6 @@
   <block id="85e4dd429192e345faa9e2c70c1916f6" category="cell">利用恢復時間目標、降低基礎架構遺失或故障所導致的主磁碟區資料完全遺失風險</block>
   <block id="51359e8b51c63b87d50cb1bab73380e2" category="cell">原則</block>
   <block id="4c2814b8dac284c19012ca2d1822b5b3" category="cell">每小時、每日、每週和每月</block>
-  <block id="1c9afea4ef71092614eba4f4a54ff7f8" category="cell">根據每小時、每日、每週和每月 Snapshot 保留的備份數</block>
   <block id="8a1e150d4dfb13fe97a51f4e6116b23b" category="cell">1 小時、 4 小時及每日</block>
   <block id="99571eecaa5c5d622bb0d1f855752d5f" category="cell">拓撲</block>
   <block id="425853ef2dd1e19d65e025514191b39e" category="cell">僅限來源</block>
@@ -2064,9 +1924,7 @@
   <block id="bf733d8a933c1601697f364223fc7ecb" category="cell">存取</block>
   <block id="cd179e66f0cac36f71df9d05a926dd0d" category="cell">合作夥伴管理員 / 帳戶擁有者</block>
   <block id="c2e2fce3a995f59900d7afbbe58683f5" category="inline-link-macro">此連結</block>
-  <block id="9137eb08618eaa70f67d25c92564f6ee" category="cell">可執行管理租戶及其訂閱的所有工作。如需詳細資訊、請參閱 <block ref="e2cb732c8d5ec3f0b630f3b0e66fd3db" category="inline-link-macro-rx"></block>。</block>
   <block id="8c932f4b25b6b6a60a35564fa075f3d3" category="cell">客戶 / 租戶管理員</block>
-  <block id="ec58dc667cdf001ad2eee1740a681056" category="cell">客戶或租戶管理員可以執行與管理子租戶相關的所有行動。如需詳細資訊、請參閱 <block ref="e2cb732c8d5ec3f0b630f3b0e66fd3db" category="inline-link-macro-rx"></block>。</block>
   <block id="062e892cc19c04dde512b97ac8c0daa2" category="cell">NetApp 管理員（讀取）</block>
   <block id="2eca39b4683fcf76619ce1d4a93bf9ee" category="cell">所有元件的唯讀存取權。</block>
   <block id="150de5f6f748e3153b4c658113417651" category="cell">NetApp 管理員</block>
@@ -2075,14 +1933,11 @@
   <block id="2bb4cbf1256e8a6a37285f059766e415" category="list-text">您的 NetApp Service Engine 網路介面使用者名稱和密碼</block>
   <block id="c63762405cc3abcb62a695f3a23339b0" category="list-text">NetApp 服務引擎入口網站的 URL</block>
   <block id="488469c0d75135f7c78adae8a72c1e8a" category="list-text">網頁瀏覽器</block>
-  <block id="e2e473f1846afad5c889437c379e6dc0" category="list-text">在網頁瀏覽器中、前往 NetApp 服務引擎入口網站的 URL 。隨即顯示登入頁面。</block>
   <block id="f8262bc7f71fe7cc6293c9b6dddedfc6" category="list-text">選取 * 本機使用者登入 * 。</block>
-  <block id="5770e2e433e3acedf1bbe15badd701a8" category="list-text">在「登入 NetApp Keystone 到資訊區」頁面上、輸入您的使用者名稱和密碼、然後按一下「 * 登入 * 」。</block>
   <block id="6c5a8015b36b917a66218b675eea92c2" category="inline-link-macro">NetApp 服務引擎 Web 介面總覽</block>
   <block id="2e6df03be779eb981ba140f1f8b1e783" category="list-text">成功登入後、 NetApp Service Engine 網路介面會載入、並在儀表板開啟。如需 GUI 總覽、請參閱 <block ref="2f9b8af2c7d5dd961826f7a81f97b9de" category="inline-link-macro-rx"></block>。</block>
   <block id="4c7f66e3f198b33e7bcbe1797fbd60f8" category="admonition">如果登入成功、但看不到儀表板、請洽詢 NetApp 服務引擎入口網站管理員、確認您的 NetApp 服務引擎入口網站帳戶已獲指派正確的角色。</block>
   <block id="f4aa92e74e4f074569a506d6a8fff8df" category="paragraph">若要使用 NetApp SSO 登入、您需要：</block>
-  <block id="80f50d39fceb948a9e3d572982868795" category="list-text">NetApp SSO 帳戶。您可以在 NetApp 支援網站申請帳戶、從登入畫面選取 * 建立 NetApp SSO 帳戶 * 、然後依照後續步驟進行。</block>
   <block id="dbafe9c960cbba19c353325bc02bcab4" category="list-text">NetApp 服務引擎入口網站的 URL 。</block>
   <block id="17aceb7e9c24a70688626b92436e14f0" category="list-text">網頁瀏覽器。</block>
   <block id="9fc5f7aaf9e92662c4bcaccbd7573128" category="list-text">選擇 NetApp SSO 。</block>
@@ -2092,12 +1947,6 @@
   <block id="2f67801bbc64ccc68a6a7e45990d9f24" category="paragraph"><block ref="2f67801bbc64ccc68a6a7e45990d9f24" category="inline-image-macro-rx" type="image"></block></block>
   <block id="976f723930b9c253badf5a8e50c023b1" category="summary">Keystone 修改物件儲存群組</block>
   <block id="1ca4a67c83c613046d26b191b0d3d48e" category="paragraph">使用此方法可修改物件儲存群組的詳細資料、例如群組名稱和 S3 原則。</block>
-  <block id="a3619c46f80c117c82d9b8f5ce15c791" category="inline-link-macro">群組清單</block>
-  <block id="0fc473ae179e938ced45ce5884836388" category="list-text">檢視 <block ref="af85d4ed6b92cbdb096c6e017a65dffc" category="inline-link-macro-rx"></block>。</block>
-  <block id="9ac2bdd1605743485b172df6bc2094b6" category="list-text">在清單中找出群組、然後按一下該群組的「編輯」圖示。</block>
-  <block id="0b980fcb28f3b186400e7da565e6c22e" category="list-text">在「編輯群組」對話方塊中、輸入使用者名稱。</block>
-  <block id="b4dbcd371a0fc39b2fd294d848a43305" category="list-text">選取套用至修改後群組的 S3 原則。</block>
-  <block id="a42e49df2998084772a70af48af44ee7" category="list-text">按一下「 * 建立 * 」。這會建立工作、以指定的設定修改群組。</block>
   <block id="a597fcc752926830c3e3aec481c0b755" category="summary">Keystone 管理子租戶</block>
   <block id="88d1aa7a34ab02fff2690d2338ac4a65" category="doc">管理租戶和租戶</block>
   <block id="2125e8d6093cd73490e417b762ef2aa9" category="paragraph">您可以使用 NetApp 服務引擎來檢視及管理租戶和租戶。初始租賃是由 NetApp 支援服務供應商 / 合作夥伴和租戶所建立。區域、區域和訂閱已由支援部門設定、當您根據租賃建立租戶和子租戶時、就可以使用。</block>
@@ -2152,18 +2001,6 @@
   <block id="a569539ebc048051428ba08b3174903c" category="summary">NetApp 服務引擎的新功能</block>
   <block id="1754f916c701cd7759c35b6738e4fbc0" category="doc">此版本 NetApp Keystone 的《更新資訊》訂閱服務有哪些新功能</block>
   <block id="53a68c6a8d27bd5b379a7dc2368c5756" category="paragraph">版本說明會告知 NetApp Keystone 您有關推出的全新功能與增強功能、包括更新於《支援更新訂閱》（ Flex 訂購）服務、以及已知的限制與修正。</block>
-  <block id="5c333f255c8b8fe478018b592064ef12" category="section-title">查看 Cloud Volumes ONTAP 您的不二使用情形與帳單（ 2021 年 12 月 5 日）</block>
-  <block id="c3e11b13166205f01b3a91c292ed2ef8" category="paragraph">如果您是 NetApp Keystone 某位支援不限彈性訂閱（ Flex 訂閱）的客戶、而且也有 Cloud Volumes ONTAP 訂閱功能、您可以使用 Flex 訂閱來為 Cloud Volumes ONTAP 您的使用率充電、並檢視帳單和使用詳細資料。Cloud Manager 現在可以探索您的 Flex 訂閱帳戶、並在 Cloud Manager 介面上顯示詳細資料。按一下「 * 所有服務 &gt; 數位錢包 &gt; Keystone Flex 訂閱 * 」索引標籤、即可執行下列活動：</block>
-  <block id="5238fb622db8670699adbf5b482678e6" category="list-text">檢視歡迎畫面、您可在此要求 Flex 訂閱管理員將 Cloud Manager 使用者 ID 與您的 Flex 訂閱使用者 ID 建立關聯、進而存取 * Keystone Flex 訂閱 * 索引標籤。</block>
-  <block id="c1a093259dea21d070b755503e96dcdf" category="list-text">檢視內部部署系統和 Cloud Volumes ONTAP 內部部署系統上已訂閱服務的已承諾和已用容量使用量資料。</block>
-  <block id="85d3d7bdabae93d4846321bc050d6645" category="list-text">檢視與 Cloud Manager 帳戶相關的 Flex 訂閱詳細資料。顯示詳細資料、例如已提交、已用及突發容量。</block>
-  <block id="1fe79890d855ed34bd46612c12db6061" category="list-text">將 Cloud Volumes ONTAP 您的帳戶連結至您的 Flex 訂閱 ID 、以建立帳戶與帳單和容量使用報告的關聯。</block>
-  <block id="88f141f3566ea09da3443b01f7f089fb" category="list-text">申請增加或減少已提交的 Flex 訂閱服務容量。</block>
-  <block id="b20b42d4f6cb65fa8e788ec44f8341a5" category="list-text">檢視並使用連結的 Flex 訂閱 ID 作為收費方法、以計費 Cloud Volumes ONTAP 使用費（僅限連結 ID ）。</block>
-  <block id="46172ce69f0d69dc6b2a28ea9573950b" category="inline-link-macro">管理 Keystone Flex 訂閱</block>
-  <block id="dd8bfc39d1b97c46fd88e0e7b3533909" category="paragraph">如需詳細資訊、請參閱 Cloud Manager 文件中的下列連結：<block ref="4f790696e8e1be6ca66a4737e5e654e6" category="inline-link-macro-rx"></block>
-<block ref="1e99115c1a8b1bdb052bb8f16835e10f" category="inline-link-macro-rx"></block></block>
-  <block id="3be9d287dfe7e07ebfb53a3c94eb47ad" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝ 不同版本的 NetApp 服務引擎已推出下列功能、以支援 NetApp Keystone 透過《支援使用效益管理訂閱》（ Flex 訂閱）提供的增強功能：</block>
   <block id="cd7a86fe2c68638edfc590d0348e2ac6" category="section-title">NetApp Service Engine 2.2 中介紹的功能</block>
   <block id="d10191cc409a22b097fadfc82b9dc423" category="paragraph">此版本的新功能包括全新的儀表板、適用於新的小工具、包括帳單、容量使用率、服務要求和警示。此版本也包含新的帳單和警示管理畫面、以及將訂閱的服務功能表重新命名為 Cloud Services 。</block>
   <block id="7e65194cd4a857baedc63512c62ee99a" category="section-title">增強的儀表板檢視</block>
@@ -2202,12 +2039,10 @@
   <block id="c25ec10f452d7554efb64ee2fcb1fe87" category="inline-link-macro">定義租戶和子租戶的網路</block>
   <block id="a5e64bd5bd172a87e39299de9ee21453" category="list-text"><block ref="a5e64bd5bd172a87e39299de9ee21453" category="inline-link-macro-rx"></block></block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="section-title">分層</block>
-  <block id="7b4219ec32695bc3518befa372ddf006" category="paragraph">現在、支援的功能包括運用 NetApp 技術的分層功能。 NetApp Keystone FabricPool它可識別較不常用的資料、並將其分層至由 NetApp 擁有、部署及管理的內部部署冷儲存設備。您可以訂閱極致分層或優質分層的效能等級、以選擇分層。</block>
   <block id="e63549c96b8e55ee68565f5ba8a07e7e" category="paragraph">下列 API 已經過修改、納入新分層服務層級的新屬性值：</block>
   <block id="798a6e7cd9ee58fef9fc3e96d8f6dd38" category="list-text">區塊儲存區 API</block>
   <block id="c99a33ad99ce532b267aaef154dd9886" category="paragraph">如需詳細資訊、請參閱下列連結：</block>
   <block id="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="list-text"><block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block></block>
-  <block id="eb5228f75c5e56b970f5ae0448055097" category="list-text"><block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
   <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</block>
   <block id="44f95b8178b2bd2c0cde2f2b9c0f84c8" category="section-title">NetApp Service Engine 2.0.1 中介紹的功能</block>
   <block id="6100897489646888867118f23efef503" category="paragraph">此版本的新功能包括：</block>
@@ -2280,7 +2115,6 @@
   <block id="3404cce75db90acf6a9d52860721a139" category="list-text">叢集 ONTAP</block>
   <block id="0484b3e3db1923f8acd57d1771b4aed2" category="summary">Keystone 使用區塊儲存概述</block>
   <block id="419f5b4c51dcda57b81c0469b42f2d77" category="paragraph">在區塊儲存系統中、資料儲存設備會以獨特的識別碼分成個別的區塊。NetApp 服務引擎將區塊資料儲存區塊稱為區塊儲存區、個別區塊則稱為磁碟區。</block>
-  <block id="0bdccece87086c3f1c43e2fd37690da4" category="paragraph">區塊存放區屬於子租戶、並在區域內指定（每個子租戶每個區域一個區塊存放區）。區塊存放區具有網路屬性（例如 IP 位址和 VLAN ID ）、可用來透過 iSCSI 或 FC 傳輸協定存取磁碟。災難恢復 DP 可在區塊存放區上啟用。如需詳細資訊、請參閱 <block ref="6e5280ca70b076218fdf37590a8a3024" category="inline-link-macro-rx"></block>。</block>
   <block id="ef27cbc1a350cce9a4d240653da0e2b7" category="paragraph">區塊存放區必須先初始化、才能使用。如果區塊儲存設備可用且尚未初始化、則可在建立磁碟程序的一部分、在區塊儲存區上建立第一個磁碟之前先初始化該儲存設備。</block>
   <block id="da2ebd3b1e3cc5c86919f4c7745c7a12" category="paragraph">磁碟是在區塊存放區上建立。磁碟具有許多可設定的屬性、包括容量和相關的服務層級。DP 選項、例如 <block ref="c1f0dcbbcbcd1f1c8ac788893304a8d4" category="inline-link-macro-rx"></block> 和 <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block> 可為磁碟啟用。</block>
   <block id="65a380203c718692478c22a00b908ddc" category="paragraph">磁碟存取是透過主機群組來控制。主機群組由啟動器節點名稱組成；您可以將一或多個主機群組對應至磁碟、以定義哪些啟動器可以存取磁碟。</block>
@@ -2346,8 +2180,6 @@
   <block id="86e73338f3df8ab014a2c65ecee4d4dc" category="list-text">在清單中找出雲端服務、然後按一下「編輯」圖示。</block>
   <block id="b89124ba309cdf3df8d74a737109270c" category="list-text">在「更新雲端服務」對話方塊中、視需要進行任何變更。</block>
   <block id="e69a67ee29567c85d079a5da92e0021d" category="summary">Keystone 修改磁碟</block>
-  <block id="99e386b08e85bd69bd5c2cf4790ac52c" category="paragraph">您可以變更磁碟名稱、主機群組對應、效能服務層級、容量和快照原則。使用此方法、您可以將磁碟移至不同的服務層級（若有）。</block>
-  <block id="01e4e789a3c7b5698552e1195e37cb41" category="paragraph">磁碟必須處於作業狀態。如需瞭解 Volume 狀態及其運作步驟、請參閱 <block ref="7e36d1153c26a010b4cff09ad58116d3" category="inline-link-macro-rx"></block> 和 <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
   <block id="896d052512c0fb4562720e6f8b2e04aa" category="list-text">在清單中找到磁碟、然後按一下該磁碟的「 Edit （編輯）」圖示。（如需使用清單中項目的詳細資訊、請參閱 <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>）。</block>
   <block id="282dc5a10162766e4fcb566b2af92759" category="list-text">視需要進行任何變更；請參閱 <block ref="57fea650aa9c9b401ce352b97a62b02e" category="inline-link-macro-rx"></block> 以取得欄位說明。</block>
   <block id="c193250886a64f4f8dceac2b04f3ce3d" category="list-text">按一下「 * 完成 * 」。這會建立工作來修改磁碟。</block>
@@ -2355,8 +2187,6 @@
   <block id="60ffa5c0c142a0a13a718dde4c3cac0a" category="list-text">工作完成後、請檢查磁碟清單中的磁碟狀態。</block>
   <block id="319e2ff190f60a2826707dd7b65bdf7a" category="summary">Keystone 建立新磁碟</block>
   <block id="17db5f18ccda229fb1c66baa28fccd34" category="doc">建立磁碟</block>
-  <block id="687af5982d08a7c3bbb5baa7612e8f13" category="inline-link-macro">從 Snapshot 建立磁碟</block>
-  <block id="077ee42303f6bb5bb96991de1b5b9fad" category="paragraph">本節說明如何直接指定磁碟詳細資料來建立新磁碟。如需如何根據現有磁碟的 Snapshot 建立磁碟的指示、請參閱 <block ref="0b82bb23ff49e855b2c1ce8c6215b692" category="inline-link-macro-rx"></block>。</block>
   <block id="4029563d115fc8cba882b6f5387ef1ba" category="list-text">如果區塊儲存設備可供使用但尚未初始化、系統會要求您先初始化、然後才能建立磁碟。若要初始化區塊存放區、您需要：</block>
   <block id="03eb09ec7f9c134351b949c733a1f40e" category="list-text">區塊存放區的子網路。如果您不熟悉網路環境、請洽詢 IT 部門以瞭解相關價值。</block>
   <block id="f9e6f649ef21158df70ecc853fd68bd6" category="list-text">要使用的傳輸協定。根據預設、區塊存放區已啟用 iSCSI 服務。請確定已建立子網路、以初始化指定區域中子租戶的區塊儲存服務（ iSCSI ）。如果基礎架構允許、您可以選擇啟用 FCP 服務。</block>
@@ -2395,16 +2225,8 @@
   <block id="b0b2613591528cfef1de3fdc62285cfa" category="list-text">如有需要、請在「標記」區段中、將標記（金鑰值配對）新增至主機群組。</block>
   <block id="55fb90be7af95d28805d429c84ecc199" category="list-text">按一下「 * 建立 * 」。系統會建立主機群組、並在成功建立時顯示訊息。</block>
   <block id="8c582e58c8d97b2f6658020de8670bab" category="list-text">若要將新建立的主機群組對應至磁碟、請前往主機群組欄位並加以選取。</block>
-  <block id="301784d4479810d4586f7f92217f2257" category="list-text">選取效能服務層級。</block>
-  <block id="26283967e0fd58211a1eb8c29428deaf" category="paragraph">選取選項以檢視該層級的效能詳細資料（以尖峰 / 預期 IOPS / 處理量為準）。選擇最符合您需求的服務層級。</block>
   <block id="bce62eb79cb10fb9baef267642ccfc57" category="list-text">指定磁碟的容量。</block>
-  <block id="92d490fc486171d6e13645bd9d17b47e" category="list-text">如果此磁碟需要 Snapshot ：</block>
   <block id="12b0a93c73c00533ffa73dbcd3d3430c" category="list-text">切換以啟用 Snapshot Policy （快照原則）以檢視 Snapshot Policy （快照原則）欄位。</block>
-  <block id="de4ec7b31f42984d9a5754398d02c83d" category="list-text">指定何時建立 Snapshot ：</block>
-  <block id="2e062d22d42c88e627af25ea8d94eac0" category="list-text">* 每小時。 * 指定要執行 Snapshot （檢查）的分鐘（小時）和要保留的每小時 Snapshot 數。</block>
-  <block id="a7ec1a713ff43e60cf9c6f1d3018e119" category="list-text">* 每日。 * 指定何時（小時和分鐘）執行 Snapshot （檢查）、以及保留的每小時 Snapshot 數。如果您想要指定每天拍攝 Snapshot 的多小時、可以在以逗號分隔的清單中新增小時數值、例如 5 、 10 、 15 、 等等。</block>
-  <block id="8869ba772e4211eb6517d3e10fe40f17" category="list-text">* 每週。 * 指定何時（一週中的哪一天、小時和分鐘）執行 Snapshot （檢查）、以及每週 Snapshot 保留的數量。</block>
-  <block id="029bb8985aba6d2cfd51d70b7434adbf" category="list-text">* 每月。 * 指定何時（每月、小時和分鐘）拍攝 Snapshot 、以及每月要保留的快照數量。</block>
   <block id="c0aef1a6358da165458e5272e89dfca3" category="list-text">如果在基礎區塊存放區上啟用非同步災難恢復、則會自動為新磁碟啟用非同步災難恢復複寫。如果您想要將磁碟排除在非同步災難恢復複製之外、請切換「非同步災難恢復」切換、以便停用非同步災難恢復。</block>
   <block id="f9a2c2bfc2b9e37f5e6b7c9a065465a0" category="list-text">如果磁碟是在啟用 MetroCluster 的區域中建立、則同步災難恢復按鈕會啟用且無法停用。磁碟將複寫至「同步災難恢復」面板中顯示的區域。</block>
   <block id="ece9fdd3547a42c2a334a7c6d26bf7e0" category="list-text">若要啟用此磁碟的備份：</block>
@@ -2417,18 +2239,12 @@
   <block id="b7cd4ce52333c49bf2ebe2e81d7443af" category="summary">Keystone 檢視儲存區</block>
   <block id="d83d0c54783ef948cc85a1a9d70fff8d" category="doc">檢視儲存庫</block>
   <block id="dabc991a3e5b3e5e1b1dd7c66b4f6af4" category="paragraph">「庫位」清單會顯示所選子租戶的現有庫位。</block>
-  <block id="da3f8669f6a7639d621bf42e3afe1870" category="list-text">若要檢視清單、請從功能表中選取「物件儲存」 &gt; 「儲存區」。</block>
   <block id="f558e5e5755f7a5de96e9cfc5b309d21" category="paragraph">顯示每個儲存桶的簡單資訊、例如：</block>
-  <block id="1218caa99c5210e89e89f6c92b0512c2" category="list-text">建立日期</block>
-  <block id="c64518704ce0c0d5501a45763f464276" category="list-text">使用量</block>
   <block id="30ae80a1161063653836f6dae6c58e38" category="summary">Keystone 會建立磁碟的 adocad 快照</block>
   <block id="d2bb0b688299d8e8ffd5a27eda65d5e6" category="paragraph">本節說明如何建立磁碟的 adocad 快照。</block>
-  <block id="ff1672cea74e04083898fc607ea0cb03" category="list-text">在清單中找出磁碟、然後按一下該磁碟的 Snapshot （快照）圖示。（如需使用清單中項目的詳細資訊、請參閱 <block ref="52762e1c21e70b201ce4b2db09bd46e5" category="inline-link-macro-rx"></block>）。</block>
   <block id="25cad0e222a2727c5f173dc7c86c6430" category="list-text">在 Create Snapshot （創建快照）對話框中，輸入快照的名稱，然後單擊 * Create* （創建 * ）。</block>
-  <block id="2a9c6c6899ce9c4042a26caaa3889f7d" category="paragraph">快照可能需要幾分鐘時間才能使用。</block>
   <block id="29109dc5270edc08f080a36766a2a630" category="summary">Keystone 檢視主機群組</block>
   <block id="dde43dbd895f6357fc850b7fd654a02b" category="doc">使用主機群組</block>
-  <block id="53fbfda0d450075d52315d5b09703b67" category="paragraph">定義主機群組以決定對磁碟的存取權。根據指派給主機群組的啟動器節點、決定該主機群組的存取權。</block>
   <block id="5dca961b46ad55d205100890b5504f59" category="paragraph">若要檢視主機群組清單、請從功能表中選取 * 區塊儲存 &gt; 主機群組 * 。</block>
   <block id="ccec1abead73b2972415f53f2a7e3bca" category="paragraph">清單會顯示已定義的主機群組。</block>
   <block id="22c28418ce1936d5c8773cb7eaf1c3f6" category="paragraph">您可以在此頁面建立新的主機群組、修改主機群組、以及刪除主機群組。</block>
@@ -2455,16 +2271,13 @@
   <block id="4a44747284a03067a779d6829b89da44" category="paragraph">建立主機群組之後、即可對應至磁碟。</block>
   <block id="9c21ac327685a7e70007e98ca4d2b6b2" category="section-title">修改主機群組</block>
   <block id="ddc45784b4bb27c03822de8233e6bba6" category="paragraph">您可以修改主機群組以新增、移除或修改啟動器。</block>
-  <block id="31e19de4adfcebc4a8c169d682d69ce5" category="paragraph">修改主機群組將會修改對應至主機群組之每個磁碟的存取權。</block>
   <block id="cf3afc691c0a1c77742fc1e7e5f84baa" category="paragraph">您無法修改啟動器的別名。若要變更別名、請從群組中刪除啟動器、然後重新建立。</block>
   <block id="9a07d76c5a0e3de82b33a4552c10bc5e" category="list-text">檢視 <block ref="0bea521eb505cc9bf0a2550f72dbd49b" category="inline-link-macro-rx"></block> 清單。</block>
-  <block id="db438cb7b7df971147aae48cc5c75ca8" category="list-text">在清單中找出主機群組、然後按一下該主機群組的「 Edit （編輯）」圖示。</block>
   <block id="b5410d49b64d7ea9b7432f7346a9c7e2" category="paragraph">若要修改現有的啟動器、請在清單中找到啟動器、編輯啟動器值、然後按一下 * 更新 * 。</block>
   <block id="8aa913bec80964fddab40e3a30dcd8c2" category="paragraph">若要新增啟動器：</block>
   <block id="17d7b34ed5d8708d1132f26fae669e3e" category="list-text">按一下 * 「 Add Initiator （新增啟動器）</block>
   <block id="8dc544295e04832e8030c9000dfdeb19" category="list-text">指定別名和啟動器。</block>
   <block id="659d86385594d523ba5ca7ae093d898f" category="paragraph">若要從主機群組中移除啟動器、請在清單中找出啟動器、然後按一下刪除圖示。</block>
-  <block id="e13a15252a4dbf9779c44afe477e3343" category="list-text">按一下「 * 完成 * 」。</block>
   <block id="a0ad6ce41a7333a8b0d6195da1224c12" category="section-title">刪除主機群組</block>
   <block id="f5b3f163b6170e5ad89ef366f4ad4c0b" category="paragraph">如果沒有對應到主機群組的磁碟、您可以刪除主機群組。</block>
   <block id="5cc2d514b461a0eadcfb670035ebc2a4" category="list-text">在清單中找出主機群組、然後按一下該主機群組的刪除圖示。</block>
@@ -2472,15 +2285,12 @@
   <block id="1fd286a0ef9ebb70f89e840d54118b15" category="summary">Keystone 刪除使用者的 S3 金鑰</block>
   <block id="22cf807410cd29dbc5790af789ade748" category="doc">刪除使用者的 S3 金鑰</block>
   <block id="6cb2b7a45d5e350ef2b0599809b3902d" category="paragraph">使用此方法刪除使用者的 S3 金鑰。</block>
-  <block id="c30e88d8e89259b1b711afc39b92ba11" category="list-text">「管理 S3 金鑰」對話方塊隨即顯示、顯示使用者的金鑰清單。</block>
-  <block id="7e06bfa3351dc0e3532ff0559e3d2f6f" category="list-text">在金鑰清單中、找到要刪除的金鑰、然後按一下刪除圖示。</block>
   <block id="b0b8f434f881cc6dfaa079ff5f5e1b6c" category="list-text">按一下 * 確認 * 以確認刪除動作。金鑰會從使用者金鑰清單中移除。</block>
   <block id="5b3aa46fae7e757fa7c3f917136a37d6" category="list-text">按一下「 * 關閉 * 」以關閉「管理 S3 金鑰」對話方塊。</block>
   <block id="acf566108a460561f2857ef8ed06b067" category="summary">Keystone 刪除檔案伺服器</block>
   <block id="7e0851cd4cd9c451bb0e47c589d02708" category="doc">刪除檔案伺服器</block>
   <block id="539fdef2008e77ec30c5ba67e24c0d47" category="paragraph">* 注意： * 刪除檔案伺服器也會刪除下列項目：</block>
   <block id="0d473de4bb96fdf7268455666d7bea45" category="list-text">與檔案伺服器相關的所有備份</block>
-  <block id="281806ce4924bea38be89ac1665eb75e" category="list-text">所有與檔案伺服器相關的災難恢復複寫複本您無法復原刪除伺服器。</block>
   <block id="61d40c665ae573f703cc5b8ff71bdb71" category="paragraph">若要刪除檔案伺服器、您必須先刪除伺服器上存在的所有共用。</block>
   <block id="237162731c983eecb08371828e9bcc72" category="list-text">在清單中找到伺服器、然後按一下該伺服器的刪除圖示。（如需使用清單中項目的詳細資訊、請參閱 <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>）。</block>
   <block id="cf45d1acb577d2ba76a7b238642d602e" category="list-text">在「確認刪除」對話方塊中、輸入檔案伺服器名稱以確認您要刪除檔案伺服器。</block>
@@ -2584,8 +2394,6 @@
   <block id="51ef2e6beabfb88e0de5dcbc8aa4640a" category="summary">Keystone 檢視磁碟</block>
   <block id="9d58782328bf029c4e013523d481162d" category="paragraph">磁碟清單會顯示屬於所選租戶的磁碟。若要檢視清單、請從功能表中選取 * 區塊儲存 &gt; 磁碟 * 。</block>
   <block id="8c180861c0e670fead0665dd33764c3d" category="paragraph">這些磁碟已是您現有環境的一部分、屬於 NetApp 服務引擎中設定的儲存 VM 、也可在此畫面上檢視、並作為 NetApp Keystone 您的《支援 NetApp 訂閱（ Flex 訂閱）》服務的一部分進行管理。在 NetApp 服務引擎以外配置的磁碟會定期匯入、並以適當的狀態代碼列在此頁面上。</block>
-  <block id="999bcf1c94889915b315debc991b8d7b" category="paragraph">如果匯入的磁碟符合 NetApp 服務引擎的可接受標準、也就是如果磁碟運作所需的所有參數都可用、就會以「運作」狀態匯入、並可透過 NetApp 服務引擎直接管理。不過、某些磁碟可能與 NetApp Service Engine 上現有磁碟的標準不同。匯入後、這些磁碟會分類為「已匯入」或「非標準」狀態。如需瞭解磁碟狀態及其運作步驟、請參閱 <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
-  <block id="88860339fbef1254b1a14f5bd1d1c340" category="paragraph">在「磁碟」清單中、檢視簡單資訊。如需如何使用清單功能的詳細資訊、請參閱 <block ref="06c69cf03ada5a3283b333d7ac5a7d25" category="inline-link-macro-rx"></block>。</block>
   <block id="fa3fe91daa4ed2920f22f461a9aebefa" category="list-text">磁碟名稱</block>
   <block id="25961c60eb320541411905573dd71445" category="list-text">磁碟路徑</block>
   <block id="f308e6ca453d47a2876df6eae740d8f8" category="list-text">磁碟大小</block>
@@ -2593,14 +2401,11 @@
   <block id="bf3dff81c000ab57c567843386c4732c" category="list-text">磁碟所屬的子租戶</block>
   <block id="44d5faa138b24a487838640f4ecbdf43" category="list-text">磁碟所在的區域</block>
   <block id="c77b594e66d073f4be45258af2ebdba0" category="summary">Keystone 建立新的檔案共用區</block>
-  <block id="fbbefb1be1017a424ca4e62e9df7439e" category="inline-link-macro">從 Snapshot 建立共用</block>
-  <block id="c55457198f00338e13690d82fa0d33ff" category="paragraph">本節說明如何直接指定共用詳細資料、以建立新的共用區。若要根據現有共享區的 Snapshot 建立新的共享區、請參閱 <block ref="341a263447364b521767ca6e7573b4ed" category="inline-link-macro-rx"></block>。</block>
   <block id="8db4df87e08b019579007500bb9fc300" category="list-text">在檔案伺服器上建立共用區。檔案伺服器必須存在且處於作業狀態、才能建立新的檔案共用區。</block>
   <block id="1f196547bfaef7212e9c0eec75312d52" category="list-text">若要建立 CIFS 或 NFS 檔案共用、必須針對個別服務啟用伺服器。對於多傳輸協定檔案共用、伺服器應同時支援 CIFS 和 NFS 服務。</block>
   <block id="c54f0aba27df50e49cee2c735072e426" category="list-text">若要為共用區啟用非同步災難恢復選項、您必須在啟用非同步災難恢復的伺服器上建立共用區。如需詳細資訊、請參閱 <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block>。</block>
   <block id="8ab0e8562b63a657a012a4fa511b0df6" category="list-text">若要為共用區啟用同步災難恢復、請在啟用 MetroCluster 的區域中建立共用區。</block>
   <block id="3ec53411254d84e584db2fb5cfff0b48" category="list-text">您可以定義備份原則、以便在排程的基礎上擷取檔案共用的備份。如需詳細資訊、請參閱 <block ref="e05dcb26181a31e8f290bf1deef1bc37" category="inline-link-macro-rx"></block>。</block>
-  <block id="668d6071a5f02cf4d7b03c66d38f4a05" category="list-text">您可以定義 Snapshot 原則、以便在排程的基礎上擷取檔案共用的 Snapshot 快照。如需詳細資訊、請參閱 <block ref="c1f0dcbbcbcd1f1c8ac788893304a8d4" category="inline-link-macro-rx"></block>。</block>
   <block id="f5455c2377de48bae6f16c3cc467fe70" category="list-text">請前往 * 檔案服務 &gt; 共享區 * 。</block>
   <block id="362e43d35380d580dc47a4a47d51688a" category="list-text">按一下「 * 建立共用 * 」。</block>
   <block id="bac686712716c2a8121433c1b980d4ee" category="list-text">在 Create Share （建立共用）對話方塊中、選取 Create New Share （建立新共用）。</block>
@@ -2616,17 +2421,11 @@
   <block id="f71f0959ca52eded5cc31e5cb2006d26" category="cell">選取要裝載共用的檔案伺服器。檔案伺服器清單取決於所選的區域、區域和共用類型。</block>
   <block id="5d4eed453fc4bdbbfcfb8af4661c2dbf" category="cell">安全風格</block>
   <block id="78c84da81749ed8f001b3e31e04db2d4" category="cell">選取適用於檔案共用區的安全樣式。此清單會根據選取的共用類型自動填入。</block>
-  <block id="2af3493dc2490ea3d6815ee5c4af30aa" category="list-text">選取效能服務層級。IOPS 和處理量限制會根據所選的服務層級來顯示。</block>
   <block id="fc01918fedc280f220912ded5e2cb9a7" category="list-text">指定檔案共用區的容量。</block>
   <block id="4f7d25c5c6d4aeddd18d27531841ed6e" category="admonition">如果指定的容量將耗用的容量置於突發中（如果容量已在暴增中、則 NetApp Service Engine 會顯示警告、容量列會變更色彩。容量檢查是根據租賃中所有訂閱的總容量來執行。</block>
   <block id="85c067abe14bc508f25275e8cac45dc4" category="list-text">如果在基礎檔案伺服器上啟用非同步災難恢復、則會自動為新共用區啟用非同步災難恢復複寫。如果您想要將共用區排除在非同步災難恢復複寫之外、請切換「非同步災難恢復」按鈕、使其停用。</block>
   <block id="b0e1384398cc0b8b2fe3f7a337590175" category="list-text">如果共享區是在啟用 MetroCluster 的區域中建立、同步災難恢復按鈕會自動啟用、而且無法停用。共用區將複寫至同步災難恢復切換下方面板中顯示的區域。</block>
-  <block id="7296e3c59136a2e6d4e8e99fd3d9cf71" category="list-text">如果此檔案共用區需要 Snapshot ：</block>
   <block id="78936de5655136ed5b9ad23a83445da3" category="list-text">切換以啟用 Snapshot 原則並檢視 Snapshot 原則欄位。</block>
-  <block id="1594e7a9a81a227b2bf872284b7db32e" category="list-text">* 每小時。 * 指定要拍攝 Snapshot 的分鐘（小時）和要保留的每小時 Snapshot 數。</block>
-  <block id="5f701f76b8d7811867dae7dbda94263c" category="list-text">* 每日。 * 指定何時（小時和分鐘）拍攝 Snapshot 的每日 Snapshot 數量。如果您想要指定每天拍攝 Snapshot 的多小時、可以在以逗號分隔的清單中新增小時數值、例如 5 、 10 、 15 、 等等。</block>
-  <block id="9bb02efe527bdf18d56f0ea68b04d2a0" category="list-text">* 每週。 * 指定何時（一週中的哪一天、小時和分鐘）拍攝 Snapshot 、以及每週要保留的 Snapshot 數量。</block>
-  <block id="676f69d4302c54af0e7704d2a1682283" category="list-text">* 每月。 * 指定何時（每月、小時和分鐘）拍攝 Snapshot 、以及每月要保留的 Snapshot 數量。</block>
   <block id="0f36bc4447a054a6ee3db1baecb08d20" category="list-text">若要啟用此檔案共用區的備份：</block>
   <block id="d2b9e5c0ec7d83306b5bbc78b92956b2" category="list-text">切換以啟用備份原則和備份原則欄位。</block>
   <block id="da5fd02549a58b6b0f60b0929792eafa" category="list-text">對於 NFS 或多重傳輸協定共用、請指定匯出原則。您可以在共用上套用多個匯出原則。本節僅適用於 NFS 和多重傳輸協定共用。</block>
@@ -2657,7 +2456,6 @@
   <block id="9e202767c699b7d57f29d8b3accf6986" category="paragraph">承諾容量是指各方（ NetApp / 合作夥伴和客戶）在單一訂閱中議定的各種服務容量。此容量會在每份 Flex 訂閱訂單上註明、並會依實際使用量計費。</block>
   <block id="5fbe036f95448b0530984b414281a72c" category="paragraph">NetApp 是 Flex 訂閱服務部署的一部分、持續監控及衡量服務使用量。系統每五分鐘會產生一筆使用量記錄、詳述目前的訂閱耗用容量。這些記錄會在計費期間內彙總、以產生發票和使用報告。</block>
   <block id="8a73a45becb1972a998dc8490856f730" category="section-title">根據尖峰使用量進行計費</block>
-  <block id="a18664da3cba5476325ba94c20fa3bc5" category="paragraph">當耗用容量大於指定效能服務層級的已認可容量時、系統會記錄突發消耗、並據此套用費用。產生的每個使用記錄都會執行此程序。因此、「暴增使用量」反映出您的過度使用容量在承諾容量之外的數量和使用期限。</block>
   <block id="dfd0252d57910ac70c5c31013436bba6" category="section-title">帳單排程</block>
   <block id="95fcf55819b9f32cb4e634458cebf99f" category="paragraph">彈性訂閱服務每月和每年計費一次。</block>
   <block id="4984e08f464a2069cf4e4d2bc61ffe7e" category="paragraph">發票每月寄出一次。在下一個月內、系統會寄送一張發票給您提供服務的月份。例如、您在一月份使用的服務發票會在二月初寄送。此發票包含已確認容量的費用、以及任何突發使用量（若適用）。</block>
@@ -2668,7 +2466,6 @@
   <block id="0e3a3dc0c3eeb16df240b7eafc4a840c" category="paragraph">如果將磁碟區複製到 ONTAP 支援區中、並將其用於備份及還原資料、您可以繼續使用複本、而無需支付任何額外費用。然而、貴企業長期用於任何其他用途的複製磁碟區則需支付費用。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
   <block id="9ecca21c579121ef7bd72dc9d12e518a" category="list-text">在建立複製磁碟區的前 24 小時內、不會考慮使用複製磁碟區；在此期間不會產生任何費用。</block>
-  <block id="5972bac7ea2a43507764cae1c13256a0" category="list-text">如果未將新資料寫入磁碟區、則不考慮使用具有「標準與價值效能服務」層級的複製磁碟區。例如、在備份或還原使用案例中、從複製磁碟區備份或還原資料不會變更複製磁碟區本身的資料、也不會將其視為使用量。</block>
   <block id="cded8c4b6c98886d10fcb9c2503ce0a4" category="section-title">帳單 MetroCluster for 本</block>
   <block id="bbfb635eb9c4f9ded36f5d58bec8cb65" category="paragraph">進階資料保護功能使用 NetApp MetroCluster 功能、在兩個實體分隔的叢集之間鏡射資料。在鏡射式集合體上 MetroCluster 、資料會在每個叢集上寫入兩次。彈性訂閱服務的消費費用會獨立於每一方、因此會產生兩個相同的消費記錄。如果您透過 ONTAP VMware System Manager （系統管理程式）或 Active IQ Unified Manager VMware （ Unified Manager ）監控叢集、您可能會發現這些工具所報告的使用量與 Flex 訂閱量之間有差異。System Manager 和 Unified Manager 不會在鏡射（遠端）叢集上報告磁碟區、因此會報告一半的使用量度量、而 Flex 訂閱服務會報告一半的使用量。</block>
   <block id="334e2bb51a2bf6027b7173d5c357308a" category="paragraph">例如：站台 A 和站台 B 是 MetroCluster 以整套組態設定。當使用者在站台 A 中建立 10TB 的磁碟區時、站台 B 會建立相同的 10TB 磁碟區Flex 訂閱可區分各磁碟區、並在每個站台額外記錄 10TB 的使用量、總容量增加 20TB 。System Manager 和 Unified Manager 報告在站台 A 中建立 10TB 磁碟區</block>
@@ -2676,16 +2473,13 @@
   <block id="480da42f59e7a8b523d40d52ba830cb8" category="paragraph">有時 ONTAP 、當搬移 Volume 時、會由現象開發出暫用（ TMP ） Volume 。這些暫存磁碟區的壽命很短、而且不會測量這些磁碟區的使用量以供計費。</block>
   <block id="f3fd1171857d8ea7abb7920fd1fd0c55" category="section-title">計費和調適性 QoS 原則</block>
   <block id="bff19ffadab3b2c0f2336fe90bfd9be9" category="inline-link-macro">透過 QoS 總覽來保證處理量</block>
-  <block id="425e38b195744df5f5136ad925efc16b" category="paragraph">彈性訂閱會根據效能服務層級來衡量使用量。每個效能服務層級都與特定的調適性服務品質（ QoS ）原則相關聯。在部署期間、您將會收到訂閱的 Flex 訂閱服務每個 QoS 原則的詳細資料。在儲存管理作業期間、請確保您的磁碟區已根據訂閱的效能服務層級指派適當的 QoS 原則、以避免發生非預期的計費。如需 ONTAP 更多有關 QoS 原則的資訊、請參閱 <block ref="7f8846f19a6367d0efc82511d70933cd" category="inline-link-macro-rx"></block>。</block>
   <block id="18b8a063bbf57f20dcdbb6f12a9dc0e9" category="section-title">SnapMirror 目的地收費</block>
-  <block id="73b8b41eb9fb2753d0aa2c1ae6b36a05" category="paragraph">SnapMirror 目的地 Volume 的定價受來源上指派之效能服務層級（服務層級）的 QoS 原則所規範。但是、如果來源沒有相關聯的 QoS 原則、則會根據可用的最低服務層級來計費目的地。</block>
   <block id="4bda389d4364c3a5f8e0002b0f1d48a6" category="section-title">FlexGroups 計費</block>
   <block id="13a0b5a0cf8933d6ff04c50c4b84bac9" category="paragraph">FlexGroups 是根據 FlexGroup 功能隨需調整的 QoS 原則來收費的。不考慮其成員的 QoS 原則。</block>
   <block id="c73be2f2aaeb82cecf852c49f3ea4cce" category="section-title">LUN 計費</block>
   <block id="05741b4ec38077cef83606c70f08f335" category="paragraph">對於 LUN 、通常會遵循與 QoS 原則所管理的磁碟區相同的計費模式。如果在 LUN 上設定個別的 QoS 原則、則：</block>
   <block id="cb1713b138a78b69b1922aa45131c2df" category="list-text">LUN 的大小會根據該 LUN 的相關服務層級來計算、以供使用。</block>
   <block id="a0426b9dc757c80060e1b3657daf68d2" category="list-text">磁碟區中剩餘空間（如果有）會根據在磁碟區上設定之服務層級的 QoS 原則來收費。</block>
-  <block id="1eba80d57d3138b5dae3b976f061f9d9" category="section-title">系統和根磁碟區</block>
   <block id="076ac590232b28791043054102a0cc92" category="paragraph">系統和根磁碟區會在 Flex 訂閱服務的整體監控中受到監控、但不會計入或計費。這些磁碟區的使用量可免除計費。</block>
   <block id="203fef1952cfe950b24a1aadbcddf128" category="summary">Keystone 檢視雲端服務清單</block>
   <block id="f9b400812a92a105de5e6e834b6fee73" category="paragraph">Cloud Services 清單會顯示所選租戶中所有雲端服務的清單。</block>
@@ -2694,9 +2488,6 @@
   <block id="20f6417872058a1c3c3d444dc165b5fa" category="paragraph">每個雲端服務旁的行動圖示可讓您修改或刪除雲端服務。</block>
   <block id="84f6d3a5def8d6fdb2e670f351bd97ac" category="summary">Keystone 修改檔案共用區</block>
   <block id="96d7785fd8b4fc6102aa2bba06ea552b" category="doc">修改檔案共用區</block>
-  <block id="c037be27281bba056da9ad07524116b5" category="paragraph">您可以變更共用名稱、共用類型（ CIFS 、 NFS 、多重傳輸協定）、服務層級、容量、 Snapshot 原則、匯出原則、存取控制清單（ ACL ）和標記。</block>
-  <block id="ddbae29bcf08223262b9cceabb558475" category="admonition">使用此方法、您可以將共用區移至不同的效能層級（若有）。只有在伺服器支援各自的服務時、才能變更共用類型。</block>
-  <block id="88e111944c1de058d51c02261793ca82" category="paragraph">檔案共用區必須處於作業狀態。如需瞭解 Volume 狀態及其運作步驟、請參閱 <block ref="7e36d1153c26a010b4cff09ad58116d3" category="inline-link-macro-rx"></block> 和 <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
   <block id="e16c520bd846a3572e0833e4e518e67e" category="list-text">在清單中找到該共用、然後按一下該共用的「編輯」圖示。（如需使用清單中項目的詳細資訊、請參閱 <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>）。</block>
   <block id="f670925f1b9ec90df9b7d8183ab1f485" category="inline-link-macro">建立新的檔案共用區</block>
   <block id="ed9bd2b11a3aa1b6606fba232016385c" category="list-text">視需要進行任何變更；如需欄位說明、請參閱 <block ref="871a83cf50bbe93686b627abbb041e6d" category="inline-link-macro-rx"></block>。</block>
@@ -2719,16 +2510,7 @@
   <block id="58a63b8f702f92fd3245851e54a6c44c" category="admonition">如果您的任何訂閱都是每年開立帳單、發票會反映按比例計算的金額、而非實際的每月發票金額。</block>
   <block id="2b09ac5055682c23d8ba4e6a14e9f967" category="paragraph">您可以依月份排序表格中的資料、並檢視任何特定月份的所有儲存訂閱清單。</block>
   <block id="9688bae6343916e20e0218a59bd2f60d" category="list-text">從功能表中選取 * 管理 * &gt; * 帳單 * 。</block>
-  <block id="817f3b83b5cf8d6998d86253d328cfa8" category="admonition">您也可以按一下儀表板上 * 每月費用 * 小工具右上角的箭頭、或是在小工具中代表一個月的任何列、以檢視「帳單」頁面。系統會顯示您所選月份的所有訂閱內容。</block>
-  <block id="8e694bf2e1747edf7543b2e2df0bf434" category="list-text">您也可以將游標停留在代表一個月的長條上、以檢視其他詳細資料。</block>
   <block id="2f5581d8cc6f970e6c70eac91215546f" category="list-text">選取表格中所列的任何月份。表中會顯示您本月的所有訂閱內容、以及相關的帳單。費用會根據承諾的容量和突發使用量來分攤。</block>
-  <block id="ef0522dbdfebbf40eb2bbb6aebac15a7" category="paragraph">您可以從現有的 Snapshot 建立新磁碟。從 Snapshot 複製的新磁碟、其內容與建立 Snapshot 的磁碟相同。</block>
-  <block id="b1d9bdfae5e81a400d591b576d306e8f" category="list-text">從左側導覽窗格中選取 * 區塊儲存 * 、然後選取 * 磁碟 * 。</block>
-  <block id="2f12441ff316d66608b4d14651896775" category="list-text">單擊 * Create Disk* （創建磁碟 * ）並選擇 * Clone from snapshot （從快照複製） *「 * 選取磁碟 * 」畫面會顯示租戶的所有磁碟。您可以依區域、區域和子租戶篩選磁碟。您可以選取任何處於作業狀態的磁碟。</block>
-  <block id="b4e4dcc9b726072edd64a96c8a6316e4" category="list-text">選取您要的磁碟旁的核取方塊、然後按一下「 * 下一步 * 」。此時將顯示 * Select Snapshot* （選擇快照）屏幕，其中包含該磁碟的所有快照。</block>
-  <block id="f67663048995223b5a3bca2d0bebbd78" category="admonition">對於選取的磁碟、如果 SnapCenter 您在 NetApp 服務引擎以外的環境中建立了一些 Snapshot 快照、您可以找到這些 Snapshot 已匯入並列出供您選擇。您可以選取這些匯入的快照、然後從這些快照中複製新磁碟。</block>
-  <block id="eff181ad32ffb8fd98ba1eae2af717a7" category="list-text">選中要從中克隆的 Snapshot 旁邊的複選框，然後單擊 * Next* （下一步 * ）。新磁碟會繼承所選 Snapshot 的內容。</block>
-  <block id="617236079547eaf12e48c916ee3a5716" category="list-text">新增 * 名稱 * 和 * 磁碟路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。</block>
   <block id="bbef23cf84481110210f99b7dca9a92d" category="paragraph">* Create Disk* 是以非同步工作的形式執行。您可以：</block>
   <block id="c136dd75ef4d76c2f5a6206073c84661" category="list-text">工作完成後、請檢查「 * 磁碟 * 」清單中的磁碟狀態。</block>
   <block id="57c38af73404a7e13785e8f986b2da22" category="paragraph">警示是指自動觸發或手動建立的訊息、用於分享環境中重要事件的相關資訊。</block>
@@ -2836,7 +2618,6 @@
   <block id="d1bd1fc145b2dd4e9c7d502087eff667" category="cell">您可以擷取特定磁碟的詳細資料。擷取磁碟的詳細資料、例如區塊存放區 ID 、名稱、磁碟路徑、傳輸協定、快照原則、 和標記、以輸入的 ID 為基礎。</block>
   <block id="8363e9db6337aec458fad0542f86be76" category="paragraph">「 id 」：磁碟的 ID 。</block>
   <block id="0f3a3f9d00d1528c6a81cdbd42537a5c" category="cell">您可以建立磁碟。新增要求實體中的值、以建立具有指定參數的磁碟、例如子租戶 ID 、區域、名稱、磁碟路徑、快照原則、 備份原則和標記。</block>
-  <block id="7be3b7a364383933a0a625f4986f488a" category="paragraph">「 ubenter_id 」：子租戶的 ID 。「區域」：區域名稱。名稱：磁碟的名稱。「磁碟路徑」：磁碟路徑。「傳輸協定」：用於區塊裝置存取的儲存傳輸協定。「 OS_type 」：主機作業系統的類型。「 hostgroup 對應」：主機群組對應。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「 ize_GB 」：磁碟大小（以 GB 為單位）。</block>
   <block id="318b0905a90c6a1cffb69d4449588db7" category="paragraph">/v2.1 / 磁碟 /{id}/' 「 napshot/{name} 」</block>
   <block id="ba3707d372f97ea71dc77216e4e0bd18" category="cell">您可以建立磁碟的快照。</block>
   <block id="ab0c5afc4b03b0877a98f18cc5ef2120" category="paragraph">「 id 」：磁碟的 ID 。「名稱」：快照的名稱。</block>
@@ -2926,7 +2707,6 @@
   <block id="fc889be2a57a8d8f42c838632382c8b2" category="summary">Keystone 使用報告</block>
   <block id="dafbc590b12f062c36c2aa85f50af973" category="paragraph">您可以針對 NetApp Keystone 使用情形及租戶使用情況、建立容量與效能報告。</block>
   <block id="3c00f75ae9df654587444dd48c9c9d28" category="section-title">Keystone 訂閱容量使用量報告</block>
-  <block id="1bce7866d6006486b8f977f92d42847f" category="paragraph">Keystone 訂閱的容量使用量頁面會顯示訂閱一段時間內每個儲存服務的容量使用量。身為 NetApp 管理員、您可以在訂閱中檢視所有租戶和合作夥伴的容量使用報告。身為合作夥伴管理員、您可以檢視 Flex 訂閱使用量的容量報告。使用此頁面上的圖形報告、可在個別索引標籤中檢視所有儲存服務的趨勢使用量、以及附加資料保護服務。當服務處於連拍狀態時、橫幅會顯示目前計費週期所使用的連拍容量。</block>
   <block id="c28e93c47e98f33d0df99a351e91e439" category="paragraph"><block ref="c28e93c47e98f33d0df99a351e91e439" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8849b0da5f9fe49a159d88dedd6ae5f" category="paragraph">若要檢視 Keystone 訂閱的容量使用量頁面、請從功能表中選取 * 報告 &gt; 基礎概念使用 * 。</block>
   <block id="d416faf28a81196ca783d5d5f9c31560" category="paragraph">若要檢視服務的容量使用量、請執行下列步驟：</block>
@@ -2936,10 +2716,8 @@
   <block id="4b57217fab908dfebf6397733f6990c6" category="section-title">租戶訂閱容量使用量報告</block>
   <block id="b0358e653dab977a4aa369b80b762b4b" category="paragraph">「租戶訂閱的容量使用量」頁面會顯示每個租戶在 Flex 訂閱中訂閱儲存服務的容量使用量。此頁面可供 NetApp 、合作夥伴及租戶或客戶管理員檢視特定租戶的容量使用報告。</block>
   <block id="aa4266103f12e434c37accf81a420528" category="admonition">對於租戶管理員、此頁面會顯示為「容量使用量」。</block>
-  <block id="3f033a8bc97ed9eee168ee38abee2a91" category="paragraph">使用此頁面上的圖形報告、即可在個別索引標籤中檢視所有儲存服務及附加服務（例如資料保護）的趨勢使用量。當服務處於連拍狀態時、橫幅會顯示目前計費週期所使用的連拍容量。</block>
   <block id="f7d6b7e1da577f9887233efcc83582a0" category="paragraph">若要檢視「租戶訂閱的容量使用量」頁面、請從功能表中選取 * 報告 &gt; 租戶使用量 / 容量使用量 * 。</block>
   <block id="2239c3f13d7bb4ae01394edf50e45043" category="paragraph">若要檢視租戶的容量使用量、請執行下列步驟：</block>
-  <block id="bf757393ee48aa789339cee47e4d2d22" category="list-text">從「訂閱」下拉式清單中選取包含服務的訂閱編號。</block>
   <block id="c15dff73fc7e8c310ca40df5c628bb0e" category="list-text">您可以選擇個別的索引標籤、來檢視基礎服務層級或資料保護服務的容量使用量。此頁面預設會顯示服務層級檢視。</block>
   <block id="78cf0cc097f5e4cd99607d42852c01e6" category="section-title">效能報告</block>
   <block id="b307d074fbc113dff53e96b4a59b17a0" category="paragraph">「 Performance （效能）」頁面（如下圖所示）會顯示個別磁碟或共用區效能的相關資訊。它會顯示三種效能評量方法的相關資訊：</block>
@@ -2960,7 +2738,6 @@
   <block id="2cc86b2232035ca76bdff5455e3131d7" category="sidebar">FlexFlex 訂閱 NetApp Keystone</block>
   <block id="d5d344bd3a97832ad0170ec3175aa230" category="sidebar">服務條款與說明</block>
   <block id="a872a8a274ed3a6109fbbf9f9123e4af" category="sidebar">服務容量定義</block>
-  <block id="145b79de40b1feea046331090ababb5a" category="sidebar">效能服務層級</block>
   <block id="780c462e85ba4399a5d42e88f69a15ca" category="sidebar">帳單</block>
   <block id="e0860a8634b1f9ca0dc00aba7d58c748" category="sidebar">不可退回的磁碟</block>
   <block id="0e0fe605239796a7018441e65fa28979" category="sidebar">美國公民支援</block>
@@ -2986,14 +2763,10 @@
   <block id="cf073e83f3900e4116bf15fa47e252a1" category="sidebar">從快照建立磁碟</block>
   <block id="9aa8ff5deefebf063dcc15ad6c56e6f2" category="sidebar">使用物件儲存設備</block>
   <block id="9fb2c96c2b07eeb85651af0dd0232553" category="sidebar">管理雲端服務</block>
-  <block id="60961ff996ca5668ec37fbe666117adc" category="sidebar">管理雲端服務</block>
   <block id="1c4ff4148966375bdb9755ebc24f8cf9" category="sidebar">檢視已訂閱服務的清單</block>
   <block id="107e5a722744b136c2b64b3b9f34ba3d" category="sidebar">新增訂閱的服務</block>
   <block id="4c449a34cd08a335e390682a36b43ce9" category="sidebar">修改訂閱的服務詳細資料</block>
   <block id="bc32a38186dae6ec37fbc645cf6beafc" category="sidebar">刪除訂閱的服務</block>
-  <block id="1783e449724614e360999417e8b10901" category="sidebar">管理 Azure NetApp Files</block>
-  <block id="17bcffb3afe645d6c1ca30ac89fadb75" category="sidebar">管理 Cloud Volumes Service 適用於 Google Cloud Platform 的功能</block>
-  <block id="2b3328083f206d967cbcd7831dc1e1b2" category="sidebar">使用備份</block>
   <block id="392f879ce1556a027a681fc630ec5e9b" category="sidebar">管理訂閱</block>
   <block id="ed001245cece01e549906767ccb61caf" category="sidebar">管理服務要求</block>
   <block id="1b4fcfaacbd0ae3e24bc82f8d7a82211" category="sidebar">管理使用者</block>
@@ -3012,11 +2785,8 @@
   <block id="5aed86d713fb69dbe024ac9088076e73" category="paragraph">*內部部署是什麼意思？*</block>
   <block id="a75a7cee34b949b2845063d48f4f6ce7" category="paragraph">*彈性訂閱服務有哪些優點？*</block>
   <block id="a3bbf620adc7e7bcc0d6001db0d7e174" category="paragraph">* NetApp Keystone 什麼是作爲《支援》的一部分提供？* NetApp Keystone 《支援》（Flex訂閱）是一項以訂購為基礎的服務項目、適用於區塊、檔案及物件資料服務、可部署於內部部署、並可由NetApp、合作夥伴或客戶營運。</block>
-  <block id="7f3c8f66eb2c4902c4723ee68d1dd702" category="paragraph">*哪些儲存服務優惠是Flex訂閱的一部分？*如需相關資訊、請參閱 <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
   <block id="78d9a5281ccb539856a1f4dd20094aea" category="paragraph">*支援哪些附加服務？*進階資料保護（備份與災難恢復）和混合雲分層FabricPool 搭配使用支援功能、是可額外付費選擇的附加服務。</block>
   <block id="f51aca773a35af7c6804c9de4ec05591" category="paragraph">*在NetApp營運的案例中NetApp Keystone 、NetApp保證提供哪些服務層級？*在每個服務層級的儲存設備上、NetApp可保證IOPS / TiB的供應及延遲。</block>
-  <block id="22fbbcf2456a5d7f160b510c7b3af3ae" category="paragraph">Flex訂閱對應什麼？* Flex訂閱對應到單一站台或單一資料中心、可由不同的效能服務層級組成。</block>
-  <block id="649571bfc7e1b8f98d07b3d829506d93" category="paragraph">*極致分層和優質分層效能等級有哪些優點？*分層是在極致分層和優質分層效能層級中啟用的、可讓您減少儲存設備佔用空間和相關成本。NetApp 假設 25% 的資料很熱、而其餘 75% 的資料則較少使用或冷卻、並將其移至冷儲存設備。此外、您也可以查看使用量報告、瞭解存取資料的頻率、並根據資訊啟用分層服務。</block>
   <block id="d6df6eff28ac44af1e13e275b0228621" category="paragraph">*合作夥伴是否可以向客戶銷售比從NetApp購買更多的容量？*租戶訂閱不受合作夥伴購買容量的限制。合作夥伴可以向客戶銷售比從 NetApp 購買更多的容量。超過購買容量的容量稱為超額訂閱。</block>
   <block id="1ed1cac8cc85c7270eaad5bcd4a6157f" category="paragraph">*是否提供API來整合客戶工具？*是的、RESTful API可整合至您自己的應用程式。請瀏覽至 * support&gt; API Documentation * 以查看 Flex 訂閱服務的 API 文件。如需詳細資訊、請參閱 <block ref="5b59c49596915ff0a388a418bca92047" category="inline-link-macro-rx"></block>。</block>
   <block id="c54f3024ff23dcfc42681979d3398492" category="paragraph">*什麼是突發容量？*您可以將使用量增加或減少、最高可達承諾容量的20%。突發容量使用量是每日測量、僅在使用時計費。例如、如果提交的容量為 100 TiB 、則最多可增加 120 TiB 。</block>
@@ -3075,4 +2845,289 @@
   <block id="109d8311a672ab956bbde63f671b0b7c" category="paragraph">*如何控制存取？*</block>
   <block id="bfc9a9f184efe2a5063de0904d04a09f" category="paragraph">*有哪些存取控制可用？*</block>
   <block id="dc621b6e8c29275d1ab76120be6c1392" category="paragraph">*我可以在哪裡看到使用量的帳單？*</block>
+  <block id="0580b428b8b89191dd146196120083eb" category="paragraph">*訂閱是否可以與其他訂閱者共同訂閱？*</block>
+  <block id="e3cfe7f33d12e36089266e1a92e5b364" category="paragraph">否、訂閱條款彼此獨立。</block>
+  <block id="b3784fbd5fbd14cdb7c0951f67184db5" category="paragraph">*我可以將備份儲存設備新增至現有的訂閱嗎？*</block>
+  <block id="290bc1780871dbb1423d35daee26da77" category="paragraph">在備份使用案例中、您可以將現有或新服務層級的容量新增至現有訂閱、包括標準或價值服務層級。這不會改變現有訂閱的期限。不過有一點要注意的是、如果您想要在訂閱期限的最後90天（即訂閱結束前的最後90天）內新增容量、您也必須將訂閱續約至少一年。</block>
+  <block id="6c53919ff0d940777e3a5355a7d94094" category="list-text">檢查工作清單、確定物件儲存設備已成功初始化。如需相關資訊、請參閱 <block ref="08ab40cd728ae5bfe16832c715077c4e" category="inline-link-macro-rx"></block>。</block>
+  <block id="ddde080f14140ee00decb283845220d5" category="cell">可執行管理租戶及其訂閱的所有工作。如需詳細資訊、請參閱 <block ref="f78e6cb66cb6a39b449a96220ff74114" category="inline-link-macro-rx"></block>。</block>
+  <block id="3d3808a406e801b1d588b2675afa860f" category="cell">客戶或租戶管理員可以執行與管理子租戶相關的所有行動。如需詳細資訊、請參閱 <block ref="1aa83b769be8d8ae51e2893f933a4da8" category="inline-link-macro-rx"></block>。</block>
+  <block id="7c6a71a785177471946c9cdbe943b35c" category="list-text">在網頁瀏覽器中、前往 NetApp 服務引擎入口網站的 URL 。隨即顯示登入頁面。</block>
+  <block id="2ba717ee51760eb50cf2395fafc0ec65" category="list-text">在「登入NetApp服務引擎」頁面上、輸入您的使用者名稱和密碼、然後按一下*登入*。</block>
+  <block id="c794cc715ac13b65252e49ee2c678436" category="list-text">NetApp SSO 帳戶。您可以從NetApp 支援網站 登入畫面選擇* Create NetApp SSO Account（建立NetApp SSO帳戶）*、然後依照後續步驟、在該畫面申請帳戶。</block>
+  <block id="198851d87f26efc044266d58b4977aaf" category="doc">檢視物件儲存群組和使用者</block>
+  <block id="6aa4e60518dba90fc318768cced14553" category="list-text">從功能表中選取*物件儲存設備&gt;使用者管理*。</block>
+  <block id="6508d92d59e4349d8fb5ee10e84881e9" category="list-text">使用「*使用者*」和「*群組*」索引標籤、在使用者和群組之間切換顯示。</block>
+  <block id="4cc0ba636011fd91df08096a9dbb52a5" category="inline-link">儲存庫和群組存取原則</block>
+  <block id="13caf6a32ef96ae50bfe8ec41166c57e" category="list-text">群組清單會顯示為所選子租戶定義的物件儲存群組。它會顯示指派給該群組的群組名稱和S3原則。如需有關資源庫群組和S3原則的資訊、請參閱<block ref="f533a5b48cc3e6b5ffb9cab6aaa82eb6" category="inline-link-rx"></block>。</block>
+  <block id="3f2328096477e3b7d81c6ef9f54f1066" category="paragraph">如需如何使用清單功能的詳細資訊、請參閱 <block ref="a61f12a3491d544119bfe19d47b5cc08" category="inline-link-macro-rx"></block>。</block>
+  <block id="2a44f87120793370292710522b0a27c5" category="paragraph">本節說明如何使用 NetApp 服務引擎入口網站開始使用。</block>
+  <block id="9febd0fa5fe3a71523d678a7c8e9f1fa" category="admonition">當您瀏覽NetApp服務引擎入口網站時、您會看到部分資訊（例如您所在的地區和區域）會根據支援團隊所設定的訂閱設定自動填入。</block>
+  <block id="a73d4f90a085724bdd6b33749a15aa50" category="paragraph">若要在此入口網站開始您的活動：</block>
+  <block id="a2f9e46ef6c1070478e1ea801a01acd3" category="list-text">登入NetApp Service Engine網路介面。</block>
+  <block id="346afb1f775b2be7f65cdd131cfda084" category="list-text">請使用NetApp SSO登入以取得相關資訊、請參閱 <block ref="b856bcfd75b6dd0d7852d724d68f7736" category="inline-link-macro-rx"></block></block>
+  <block id="ac541006b40d84d41cec02f38a235dcd" category="list-text">選取租戶。儀表板隨即顯示。如需相關資訊、請參閱 <block ref="51b99950f96aebac50d3a68ee27b3fbd" category="inline-link-macro-rx"></block></block>
+  <block id="b57c5857df27cc64fb5d595da8ffd751" category="paragraph">如需NetApp Service Engine網路介面總覽、請參閱 <block ref="df293938f0aee0093b3fd1ecb520ab05" category="inline-link-macro-rx"></block></block>
+  <block id="5aa8679ac0f16a7378830768b91def26" category="paragraph">服務要求可讓您向GSSC團隊提出問題、以便他們解決此問題並更新狀態以供您檢視。</block>
+  <block id="a3ac7cbbd83b225effe71bfc671bb929" category="admonition">只有當您是合作夥伴管理員時、才能檢視*支援&gt;服務要求*功能表。身為合作夥伴管理員、您也可以在儀表板上檢視針對所選租戶提出的服務要求清單。如果您是租戶管理員、則無法向NetApp支援部門提出服務要求。</block>
+  <block id="571440db77639ab1a914f3efb7b861d7" category="paragraph">工作流程已完成 <block ref="2adeebff5cc76037744cec149db1546d" category="inline-link-macro-rx"></block></block>
+  <block id="df058b919beee8b3a9aafbec290b866b" category="list-text">非標準磁碟區：匯入至Flex訂閱的磁碟區、與NetApp Service Engine上現有磁碟和檔案共用的標準相同。匯入之後、這些磁碟和檔案共用會分類為「非標準」狀態。您提出服務要求、要求將其狀態變更為標準狀態。</block>
+  <block id="9111918b9255f26f010ab636c932d79e" category="list-text">此清單未涵蓋的任何其他問題。</block>
+  <block id="a1dad3427fe66a2d356b0c33c504ca73" category="paragraph">本節中的其他主題將討論：</block>
+  <block id="6997369c1687522b4cf15d694195da1a" category="paragraph">您可以從現有的快照建立新磁碟。從快照複製的新磁碟、其內容與建立快照的磁碟相同。</block>
+  <block id="54c83990c66d60d258fd9cb32e4039b4" category="list-text">從左側導覽窗格中選取 * 區塊儲存 * 、然後選取 * 磁碟 * 。此時會顯示您所租用的現有磁碟清單。</block>
+  <block id="d96b1a215cb40bb0345ebc1f2fefd85a" category="list-text">單擊 * Create Disk* （創建磁碟 * ）並選擇 * Clone from snapshot （從快照複製） *或者、如果您知道要用於複製的快照磁碟、可以找到該磁碟、然後按一下該磁碟旁的複本按鈕。磁碟應處於作業狀態。「從Snapshot建立磁碟」畫面會顯示租戶的所有磁碟。您可以依區域、區域和子租戶篩選磁碟。您可以選取任何處於作業狀態的磁碟。如需物件狀態的相關資訊、請參閱 <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block></block>
+  <block id="718d316e4bc27e41e86d5a5f4d304fcf" category="list-text">選取您要的磁碟旁的核取方塊、然後按一下「 * 下一步 * 」。隨即顯示磁碟的快照。</block>
+  <block id="68535e6b95a2979d96018ca3546b4c22" category="admonition">對於選取的磁碟、如果SnapCenter 您在NetApp服務引擎以外的支援環境中建立了一些快照、您可以找到這些快照已匯入並列出供您選擇。您可以選取這些匯入的快照、然後從這些快照中複製新磁碟。</block>
+  <block id="9ea16edd58eb3cafa6943e33e379e216" category="paragraph">您可以搜尋特定的快照、或選取排程類型來篩選快照。</block>
+  <block id="52066d0bc9eb52184e32fa7c6c69e724" category="list-text">選中要從中克隆的快照旁邊的複選框，然後單擊* Next*（下一步*）。新磁碟會繼承所選快照的內容。</block>
+  <block id="92a71a4bf4aa16eefa65788bc19074aa" category="list-text">新增 * 名稱 * 和 * 磁碟路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。選擇最符合您需求的服務層級。完成後</block>
+  <block id="e185a2e8bb4bff12715c93a0f9152abe" category="list-text">檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 <block ref="368a1d704bdc9ee6ea14e4516dfa810f" category="inline-link-macro-rx"></block>。</block>
+  <block id="6d334cd2f8ad0d4bee6be8b87c161536" category="list-text">檢視物件儲存使用者 <block ref="66c6e9c4626cdbf640f3b53d94f25c63" category="inline-link-macro-rx"></block>。</block>
+  <block id="5b24f621d2c5529d9de19c530d25386b" category="list-text">請確定已選取正確的子租戶、且您已按一下「*使用者*」索引標籤。</block>
+  <block id="1f2d6525ebb9e69db041e713ef033586" category="list-text">在清單中找出使用者、然後按一下該群組的按鍵圖示。</block>
+  <block id="dbaaeab9e672655870ffc9fa5fe7c16b" category="paragraph">如需使用清單中項目的詳細資訊、請參閱 <block ref="a61f12a3491d544119bfe19d47b5cc08" category="inline-link-macro-rx"></block>。</block>
+  <block id="aae29fa4a7f13bf64ce22af144320e87" category="inline-link">在原則中指定權限</block>
+  <block id="e67466de05712e6490e8c93350f439a6" category="list-text">「*管理S3金鑰*」對話方塊會顯示使用者的金鑰清單。如需金鑰的相關資訊、請參閱<block ref="ddaba7313b89f71a659e8f4e1bc37488" category="inline-link-rx"></block>。</block>
+  <block id="cf90034bfcfb8992786af14eecbd3c95" category="list-text">如果希望金鑰過期、請指定到期日和到期時間（以 UTC 為單位）。否則、請保留這些欄位中的預設值。</block>
+  <block id="4f13e742af97bf988fd1adca65dd1d25" category="list-text">若要建立金鑰、請按一下核取標記。此時會顯示「* S3金鑰詳細資料*」對話方塊、其中顯示存取金鑰和秘密金鑰。</block>
+  <block id="90d30d6521db2d29ace6dc1ca28b2e75" category="list-text">同時複製存取和秘密金鑰、以準備向使用者提供詳細資料。</block>
+  <block id="1512fa78a4c53f4c222d02fd68b146db" category="paragraph">在關閉「* S3金鑰詳細資料*」對話方塊之前、請務必先擷取重要詳細資料。關閉後、關鍵詳細資料將會被隱藏、您將無法擷取。</block>
+  <block id="07151bee06dd2a6f6efe8c0eb20ff928" category="paragraph">您可以變更共用名稱、服務層級、容量、快照原則、匯出原則、 存取控制清單（ACL）、以及檔案共用區中的標記。</block>
+  <block id="f13936079d5f64cabefb8136cb14c59b" category="admonition">使用此方法、您可以將共享區移至不同的服務層級（如果有）。只有在伺服器支援各自的服務時、才能變更共用類型。</block>
+  <block id="4cdb5fa02cd86a05dcaaadd741f350e9" category="paragraph">檔案共用區必須處於作業狀態。如需瞭解 Volume 狀態及其運作步驟、請參閱 <block ref="329f996c576e28aa296dc49edeef71e7" category="inline-link-macro-rx"></block> 和 <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block></block>
+  <block id="1e7ae5f230c349b0d37c2d28c0a630db" category="paragraph">定義主機群組以決定對磁碟的存取權。根據指派給主機群組的啟動器節點、決定該主機群組的存取權。您可以在建立主機群組時新增啟動器。</block>
+  <block id="8bf4a89637b88a17fe1be4dad5d23488" category="list-title">請注意以下幾點：</block>
+  <block id="e9a8384b76847e02ea9eb3b15adef6a3" category="list-text">如果主機群組無法運作、且這些群組的編輯筆圖示已停用、則無法編輯主機群組。</block>
+  <block id="a2ee4c0694efba6ff14aeb624652be2c" category="list-text">修改主機群組將會修改對應至主機群組之每個磁碟的存取權。</block>
+  <block id="4cdf7c93c5637cf0b21b1501834ae244" category="list-text">在清單中找到主機群組、捲動到該列的結尾、然後按一下該主機群組的「Edit（編輯）」圖示（筆圖示）。</block>
+  <block id="479ae5edaaa0e0e7f7d443dc597b3725" category="paragraph">本節說明如何直接指定磁碟詳細資料來建立新磁碟。如需如何根據現有磁碟的快照建立磁碟的指示、請參閱 <block ref="471ead9e8cc0845a2e4733e8474d4381" category="inline-link-macro-rx"></block>。</block>
+  <block id="aaa2a456d2b0ee8dcbe6d54b5aab09e4" category="list-text">選取服務層級。</block>
+  <block id="1921ba34bad67de8b98dfa58a43918f6" category="admonition">選取選項以檢視該服務層級的效能詳細資料（尖峰/預期IOPS /處理量）。選擇最符合您需求的服務層級。</block>
+  <block id="01622ea2e6ecb3044a5fdad11a37f1b4" category="list-text">如果此磁碟需要快照：</block>
+  <block id="dc1e6744caa2433ba20c278ccfbdbf55" category="list-text">指定何時建立快照：</block>
+  <block id="1e135408ec7679181f1480da0599625d" category="list-text">*每小時*。*指定要執行快照（檢查）的分鐘數（小時）、以及要保留的每小時快照數。</block>
+  <block id="0e8c706929d26eb18be3333e7ae59ac3" category="list-text">*每日。*指定何時（小時和分鐘）執行快照（檢查）、以及保留的每小時快照數。如果您想要指定每天拍攝快照的多小時時間、可以在以逗號分隔的清單中新增小時數值、例如5、10、15、 等等。</block>
+  <block id="8348032cd6c2680262fc058d2d5c1750" category="list-text">*每週。*指定何時（一週中的某天、小時和分鐘）執行快照（檢查）、以及每週要保留的快照數量。</block>
+  <block id="4ba44c9003dbfdedd8cd9f0e06bd0348" category="list-text">*每月。*指定何時（每月、小時和分鐘）拍攝快照、以及每月要保留的快照數量。</block>
+  <block id="4f71c5f044ccf460d84a38a185b21a3c" category="list-text">建立、檢視、修改及刪除租戶、子租戶、 和使用者。</block>
+  <block id="e060dc507e49d9a3bbf820fbe0cb9750" category="list-text">檢視您訂閱的區域和區域。</block>
+  <block id="c4812789be6d5627f9548ff1c7268308" category="list-text">管理及編輯租戶以供租戶使用。</block>
+  <block id="7335ff2753081014130e7efe5d476c51" category="list-text">檢視您的區域、區域、子租戶和子網路。</block>
+  <block id="3d0ede0ece7757fecf8ee6f1f189455e" category="list-text">檢視服務供應商所建立的檔案伺服器。</block>
+  <block id="75772ee1d3a1f0a0d4023186a1d42e03" category="list-text">建立檔案共用區、磁碟區和儲存區、然後指派服務層級給它們。</block>
+  <block id="1da19e564e6234025d33274e4bf6c86b" category="list-text">從*「報告」&gt;「容量使用率」*檢視租戶和子租戶的報告、以僅檢視訂閱或為租戶和子租戶配置之儲存設備的使用量資料。</block>
+  <block id="b21bcdcc70e3486ce61f6918359621f8" category="list-text">從*「報告」&gt;「效能」*檢視租戶與租戶的報告、以檢視每項訂閱服務與附加服務（資料保護與進階保護）的租約效能與服務法規遵循。</block>
+  <block id="57589106be28b5324e344c02a84d1248" category="paragraph">使用此方法建立物件儲存群組。</block>
+  <block id="15bc76902d4ca575cfcf09624b0909c2" category="list-text">從*物件儲存設備&gt;使用者管理&gt;群組*檢視物件儲存群組清單。</block>
+  <block id="96c8050f0d67c893c12d725cb29189a2" category="list-text">請確定已選取正確的子租戶、且您已按一下*群組*索引標籤。</block>
+  <block id="6ce1785e716d1589932993264df00b43" category="list-text">從清單中選取 S3 原則。如需S3原則的相關資訊、請參閱<block ref="ddaba7313b89f71a659e8f4e1bc37488" category="inline-link-rx"></block>。</block>
+  <block id="0011a2b07dda9a0bc5d1b0499e8b32a1" category="paragraph">建立物件儲存群組會以非同步工作的形式執行。您可以在工作清單中檢查工作狀態。如需追蹤工作的相關資訊、請參閱 <block ref="368a1d704bdc9ee6ea14e4516dfa810f" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfe04b78797bd9efb6487f2a8657d1db" category="inline-link-macro">進階資料保護與資料保護</block>
+  <block id="dab3fbed1879168b2120dd56536c82d9" category="paragraph">您也可以在個別的索引標籤中檢視及管理您訂閱的資料保護和進階保護服務。如需相關資訊、請參閱 <block ref="780f711d9cc4c3b144e390eecf4e3c67" category="inline-link-macro-rx"></block>。</block>
+  <block id="4362040aa34f946652e2e1fb49db6949" category="list-text">按一下「*確認*」。您會返回「管理基礎概念訂閱」頁面。</block>
+  <block id="ac3f30c2dd04ee7f322762e41b9c4763" category="list-text">按一下*提交變更*。已針對GSSC建立服務要求、以增加容量。您可以依訊息中顯示的SR號碼來檢視及追蹤服務要求的進度。如需追蹤的資訊、請參閱 <block ref="eef536a2ee52c93166224b1795fd5131" category="inline-link-macro-rx"></block>。</block>
+  <block id="df39bcd55472727f7512b52cbe91d5e3" category="paragraph">每個訂閱都可以擁有每個服務層級的其中一個。例如、如果您的訂閱已包含極致版和標準版服務、您可以新增優質或區塊服務。</block>
+  <block id="3eebf754a44e99e90b260214e9d9a4b5" category="list-text">從下拉式功能表中選取您要新增至訂閱的服務層級。</block>
+  <block id="0453382f4b59ee23ceca1d42c95549ef" category="list-text">從下拉式功能表中選取您要訂閱的服務層級、例如「極致分層」、然後新增您要承諾服務層級的容量（以TiB為單位）。</block>
+  <block id="9776fe3a80b7f01727450395190af9bb" category="list-text">按一下「 * 確認 * 」。您將返回「管理基礎概念訂閱」頁面。</block>
+  <block id="42fee1961981b5ce385c2172e14d8b54" category="list-text">按一下*提交變更*。已針對GSSC建立服務要求、將服務層級指派給您的訂閱。您可以依訊息中顯示的SR號碼來檢視及追蹤服務要求的進度。</block>
+  <block id="8c4a7396f24674af1573b6084b8158de" category="paragraph">如需追蹤的資訊、請參閱 <block ref="eef536a2ee52c93166224b1795fd5131" category="inline-link-macro-rx"></block>。</block>
+  <block id="0ebbe4efe4592b11787a98f0bb0187fc" category="section-title">建立及編輯租戶訂閱</block>
+  <block id="15d78575deb28d3f42b0ca34112d14b0" category="paragraph">如果您是合作夥伴管理員、可以編輯租戶訂閱。您可以新增新的服務層級至訂閱、並編輯已新增服務層級的容量。若要新增服務層級、請遵循下列步驟：</block>
+  <block id="9d113f3ad4ea7a6b30a46d774ea6b737" category="list-text">按一下「+」圖示、選取您要編輯的訂閱。</block>
+  <block id="6c2729ddddb76bd7239ab56c6f96a835" category="list-text">在「*新增服務層級至訂閱*」頁面上、選取新的服務層級並新增所需的容量。如果已新增服務層級、您就無法新增或刪除它。</block>
+  <block id="99e60a4d8fd85ae9b160fc4b8b7a095e" category="paragraph">您也可以按一下訂閱的標記圖示來新增標記。</block>
+  <block id="68903242eda85f8b0d6f53a88ed92aef" category="paragraph">若要將訂閱的容量編輯為已指派給訂閱的服務層級、請遵循下列步驟：</block>
+  <block id="5b32ddeff6d4935621c3e0953e798be4" category="list-text">按一下「v」圖示、然後展開您要編輯的訂閱。隨即顯示該訂閱中的服務層級。</block>
+  <block id="6d3ff32582752608287312830d4659fb" category="list-text">按一下個別的編輯筆圖示、選取您要編輯的服務層級。</block>
+  <block id="979434ec7a1a3f5e4fcecd9592c9e0e8" category="list-text">透過增加或減少Tibs的容量來變更費率計畫。</block>
+  <block id="9450f6b7991a26a9d5985688fdac77da" category="paragraph">服務層級的變更不會移動磁碟區</block>
+  <block id="87fd5dd33eacc16921f80dba26992fa6" category="list-text">瀏覽至*物件儲存&gt;使用者管理&gt;使用者*。</block>
+  <block id="7dc8da1a6ebae4afb4e48fb1d615289b" category="list-text">檢查工作清單中的工作狀態。如需相關資訊、請參閱 <block ref="08ab40cd728ae5bfe16832c715077c4e" category="inline-link-macro-rx"></block>。</block>
+  <block id="dbf96a989bd6eca2938c302f48c35ed2" category="list-text">檢視物件儲存群組 <block ref="66c6e9c4626cdbf640f3b53d94f25c63" category="inline-link-macro-rx"></block>。</block>
+  <block id="c154608c9f8ffdbfa792be4ac72ad31e" category="list-text">在清單中找出群組、然後按一下該群組的編輯圖示。</block>
+  <block id="7b8976587358fc91a72592b5e7270f4d" category="list-text">在*編輯群組*對話方塊中、修改適用於群組的S3原則。如需S3原則的相關資訊、請參閱<block ref="ddaba7313b89f71a659e8f4e1bc37488" category="inline-link-rx"></block>。</block>
+  <block id="6410d38a9298f59a077c000aa024bfb0" category="list-text">您可以視需要新增其他原則聲明。</block>
+  <block id="4d4415939431a14b856ee445db13105b" category="list-text">按一下 * 更新 * 。這會建立工作、以指定的設定修改群組。如需追蹤工作的相關資訊、請參閱 <block ref="368a1d704bdc9ee6ea14e4516dfa810f" category="inline-link-macro-rx"></block>。</block>
+  <block id="7ecbe334528b181155de20af95026880" category="list-text">100 TiB容量可以是單一服務層級、也可以是層級的組合。</block>
+  <block id="2a825026966e8ca57394766cdfe5eee4" category="list-text">承諾的容量或服務層級在合約期間不得變更。</block>
+  <block id="20e593670f6809902551ba2c79907117" category="list-text">允許在期限內增加容量或變更為較高的服務層級、但不允許從較高的服務層級移至較低的層級。</block>
+  <block id="0704c116940f03a6b019dbeb4c62c8e7" category="paragraph">根據客戶要求和使用的儲存控制器、NetApp可在客戶現場提供10 Gib、40 Gib和100 Gib連線能力。</block>
+  <block id="c3000abac8572261622b53e9847c718e" category="list-text">在清單中找到共用區、然後按一下該共用區的快照圖示。（如需使用清單中項目的詳細資訊、請參閱 <block ref="4a0d19ebe9aa0f2533119e3056a7b078" category="inline-link-macro-rx"></block>。</block>
+  <block id="aeab146e7622ea8540b2746c27388efe" category="inline-link-macro">從快照建立檔案共用區</block>
+  <block id="d715ed6766b6043e15747ab29d60f44d" category="paragraph">快照可能需要幾分鐘的時間才能使用。如果可用、您可以透過複製此快照來建立另一個共用區。如需相關資訊、請參閱 <block ref="c364c802e134689126f9fbe7204037eb" category="inline-link-macro-rx"></block>。</block>
+  <block id="81d516a0b57ebe1f3cbb112b80f3c329" category="paragraph">您可以變更磁碟名稱、主機群組對應、服務層級、容量和快照原則。使用此方法、您可以將磁碟移至不同的服務層級（若有）。</block>
+  <block id="b953c318e559be9015759e524882d7d3" category="paragraph">磁碟必須處於作業狀態。如需瞭解 Volume 狀態及其運作步驟、請參閱 <block ref="329f996c576e28aa296dc49edeef71e7" category="inline-link-macro-rx"></block> 和 <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block></block>
+  <block id="8e053e7cbeb985eeb3b0bf942766c360" category="paragraph">您可以定義備份原則、在環境中建立磁碟區（檔案共用區和磁碟）的備份、並從遠端維護多個主要磁碟區複本。</block>
+  <block id="5a0871e27c73823e6a234a5e781a2736" category="admonition">當您建立或編輯磁碟區的備份原則時、系統會自動建立備份。您無法從NetApp服務引擎介面建立備份。您可以使用備份API來建立及管理磁碟區的備份。</block>
+  <block id="7e307b338560ffdc24bff161d1c49b0e" category="inline-link-macro">備份API</block>
+  <block id="e4ec49125165d99f15399e555902da9d" category="paragraph">如需相關資訊、請參閱 <block ref="5c5c623bc6c74764de3d52df952bfa79" category="inline-link-macro-rx"></block></block>
+  <block id="bca276363610c0bffe5c57ea00642f65" category="paragraph">您可以透過NetApp SnapMirror技術來備份來源磁碟區、此技術可與您的Flex訂閱搭配使用。如需相關資訊、請參閱 <block ref="c7da18b22eff9eb9642a66b86be34489" category="inline-link-macro-rx"></block>。</block>
+  <block id="6bcd57380cee14b76c728521f156a2e2" category="paragraph">當您建立或編輯Volume時、會定義其備份排程。備份會依照預定的時間間隔進行、並儲存在目的地系統中。為了讓備份正常運作、SnapMirror關係應與目的地環境建立。不同區域的複寫檔案共用和磁碟會儲存在每個叢集上的專用備份儲存 VM （儲存虛擬機器、也稱為 SVM ）上。可在 ONTAP 不同區域的兩個獨立的叢集之間執行備份。</block>
+  <block id="13bdfe1817da9faec749493a15270cee" category="paragraph">NetApp 服務引擎支援的標準備份原則包括：</block>
+  <block id="80f4a01cfa25bd0b6cfaa17ab79a347b" category="paragraph">對於在後端建立的備份、您的磁碟區應處於「運作」狀態。如需物件狀態的詳細資訊、請參閱運作（如需備份的來源物件）。 <block ref="f657019918c506bf557a3b998908ab12" category="inline-link-macro-rx"></block>。</block>
+  <block id="7b57fdd289de9abf72b0b0d91b9cfc64" category="paragraph">如果您的磁碟區未遵循 NetApp 服務引擎支援的標準備份原則、您可以 <block ref="820a42e890838f30485ca3dc6fc5d4bc" category="inline-link-macro-rx"></block> 解決此問題的 * 非標準磁碟區 * 類別。</block>
+  <block id="800033f6a6a4cd07b1f3dd3855871f01" category="paragraph">您可以在*備份*頁面上檢視為檔案共用和磁碟建立的備份清單。備份會根據選取的租戶顯示。</block>
+  <block id="9b547d6d564a3c524ba7de9cb76e1787" category="section-title">編輯備份原則或排程</block>
+  <block id="29b0fb2638796dbe9b65622e6e2766d3" category="paragraph">當您建立或編輯檔案共用和磁碟時、可以定義其備份原則。備份會根據您指定的原則在後端進行。如需相關資訊、請參閱： <block ref="e96ed8ae76725ff94791bdd06014c2c0" category="inline-link-macro-rx"></block> 或 <block ref="fa6fbe260d0612efac963dd809cbae12" category="inline-link-macro-rx"></block>。</block>
+  <block id="80e7dba60f9c97bf6b38e934937c96bd" category="admonition">您也可以編輯現有檔案共用區或磁碟的備份原則、來排程備份。</block>
+  <block id="770aa50ac5112e366e80ac5fa6f27bfc" category="section-title">修改或中斷備份來源的連線</block>
+  <block id="37f98854031deb060affba1f810ad3df" category="list-text">在左側導覽窗格中、按一下*備份*。您可以查看為環境中的所有物件所建立的備份清單。</block>
+  <block id="9d239cad785350e30c5400a957e7f775" category="list-text">在清單中找到備份（依磁碟區名稱搜尋）、然後按一下列結尾的編輯圖示。</block>
+  <block id="302d6b176bf15f658ee95cbabb641331" category="list-text">視需要變更備份來源和每種備份類型的數量。您可以將備份來源變更為 * 無（孤立） * 、藉此中斷 SnapMirror 與來源磁碟區的關係。即使刪除來源磁碟區、備份仍會保留為孤立備份、以供還原。備份物件的狀態會變更、來源磁碟區的狀態（孤立或刪除）會附加到同一個清單上的來源磁碟區名稱。如需物件狀態的相關資訊、請參閱 <block ref="259bb3e032661eb6f9c7234bd1ac43c6" category="inline-link-macro-rx"></block></block>
+  <block id="0120794f55d7a30bc06113805912c310" category="list-text">按一下「 * 完成 * 」。快照已修改。如果您中斷了與來源的 SnapMirror 關係、也就是孤立備份物件、則「 * 備份 * 」索引標籤中的來源名稱會顯示為「已刪除」。</block>
+  <block id="dbbc25d21704e91182cec2239bac0267" category="admonition">您也可以從Create Share/Edit Share（建立共用/編輯共用）和Create Disk/Edit Disk（建立磁碟/編輯磁碟）畫面停用磁碟區的* Backup Policy*、藉此中斷SnapMirror與來源磁碟區的關係。</block>
+  <block id="2840e9bb75234be6d8d9f8e55463ddf7" category="section-title">要求備份與還原支援</block>
+  <block id="80cfb5bc639d5c76a137cc98c4e6c357" category="paragraph">您可以 <block ref="820a42e890838f30485ca3dc6fc5d4bc" category="inline-link-macro-rx"></block> 從特定的還原點還原檔案共用區或磁碟。</block>
+  <block id="750bcedb8daf15ce7ed1219baa69fa67" category="section-title">移除備份物件</block>
+  <block id="5003aa09f688688be86d017679dc812b" category="paragraph">刪除未使用的備份磁碟區會增加儲存空間。若要刪除已刪除來源的備份磁碟區和還原點、您應該使用備份API。</block>
+  <block id="f8e801910d08eb6a2c3d7670a260db9b" category="admonition">刪除備份時、會刪除備份的所有恢復點。此外、即使您刪除主要檔案共用區或磁碟、備份仍會保留為孤立備份、並保留所有還原點。</block>
+  <block id="89e1d0986f1c10da01bcfc55a3823668" category="paragraph">「服務要求」畫面可讓您以合作夥伴管理員的身分、針對您或租戶的訂閱提出新的服務要求、並將其提交給您自己的支援團隊或NetApp GSSC。</block>
+  <block id="4877919c887d65caa45cf7b4bd8108e5" category="paragraph">身為合作夥伴管理員、您可以在儀表板上的*服務要求*小工具上、檢視租戶最近的服務要求摘要（依優先順序和建立時間排序）。您也可以瀏覽至「服務要求」畫面、以搜尋並檢視環境中提出的所有服務要求詳細資料。</block>
+  <block id="67119bf1f5852126beab2d4bb0c6af4e" category="list-text">在「 New Service Request 」（新服務要求）頁面上、選取該要求的類別和優先順序、然後按一下「 * Next* 」（ * 下一步 * ）。畫面會顯示*詳細資料*畫面。</block>
+  <block id="62d6b0a7b34dc7c5fb09c6f99d4dcbef" category="admonition">「詳細資料」畫面上的欄位會根據您選取的類別而變更。在此畫面中、您需要輸入所選服務要求類別的相關詳細資料。</block>
+  <block id="77a90a232896a2082107960e5109e526" category="list-text">輸入所需的詳細資料。單擊 * 下一步 * 。</block>
+  <block id="f4d415a146854d849bb99a675a8294fd" category="paragraph">「 ubenter_id 」：子租戶的 ID 。「區域」：區域名稱。名稱：磁碟的名稱。「磁碟路徑」：磁碟路徑。「傳輸協定」：用於區塊裝置存取的儲存傳輸協定。「 OS_type 」：主機作業系統的類型。「 hostgroup 對應」：主機群組對應。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「ize_GB」：磁碟大小（單位為gibs）。</block>
+  <block id="f0a98503f7025814de673358cbfc2ebc" category="inline-link-macro">不需付費即可使用FabricPool</block>
+  <block id="ea5f2a3107ef6a292b858bed2431fd2d" category="paragraph">如需帳單資訊、請參閱 <block ref="6bfa617ca63af4eb1b55b6cf1d8469f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="168c963ebe528df2d070c44e9d3bf469" category="paragraph">區塊存放區屬於子租戶、並在區域內指定（每個子租戶每個區域一個區塊存放區）。區塊存放區具有網路屬性（例如 IP 位址和 VLAN ID ）、可用來透過 iSCSI 或 FC 傳輸協定存取磁碟。災難恢復 DP 可在區塊存放區上啟用。如需詳細資訊、請參閱 <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block>。</block>
+  <block id="b79aba71b8fc051b32b93009c3e95741" category="paragraph">您可以從現有的快照建立新的檔案共用區。從快照複製的新檔案共用具有與建立快照的檔案共用相同的屬性。</block>
+  <block id="c5c80478bcac2d6949a65b6378900387" category="list-text">按一下「 * 建立共用 * 」、然後選取「 * 從 Snapshot 複製 * 」。或者、如果您知道要用於複製的快照所在的共享區、可以找到該檔案共用區、然後按一下其旁邊的複製按鈕。共用區應處於作業狀態。如需物件狀態的相關資訊、請參閱 <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block>。「從Snapshot建立共用」畫面會顯示租戶的所有檔案共用。您可以依區域、區域和子租戶篩選檔案共用。您可以選取任何處於作業狀態的檔案共用區。</block>
+  <block id="4211f65b2983c573058450f592fcb1ae" category="list-text">選取您要的檔案共用旁的核取方塊、然後按一下 * 下一步 * 。隨即顯示檔案共用的快照。</block>
+  <block id="201a10b44105a7f46600bd19700a5b0b" category="admonition">對於所選的檔案共用、如果SnapCenter 您在NetApp服務引擎以外的支援環境中建立了一些快照、您可以找到這些快照已匯入並列出供您選擇。您可以選取這些匯入的快照、然後複製其中的新檔案共用。</block>
+  <block id="675fcd36774818dbea836dc02cf4d0d6" category="list-text">選中要從中克隆的快照旁邊的複選框，然後單擊* Next*（下一步*）。新的檔案共用區會繼承所選快照的內容。</block>
+  <block id="278530798aa56115669d57d1e3fa9073" category="list-text">新增 * 名稱 * 和 * 共用路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。選擇最符合您需求的服務層級。</block>
+  <block id="775c0cf773e692f5b5aff6da7ff3a805" category="paragraph">支援以預先定義的服務層級或效能服務層級提供容量的Flex訂購（Flex訂購）NetApp Keystone 。</block>
+  <block id="fda90827f7dc62058d02279d98e89377" category="paragraph">每個服務層級（服務層級）都是由其I/O密度所定義、亦即效能（每秒輸入/輸出作業次數[IOP]）和已用儲存設備（儲存資料的TiB）的比率、亦即IOPS/TiB。</block>
+  <block id="7cb1e7ec7bd37f6e4d6191d590b40dfe" category="paragraph">由Flex訂閱服務管理的每個Volume均與服務層級相關聯。所有的 I/O 作業和所有在個別磁碟區上使用的儲存設備、都會納入磁碟區的 I/O 密度計算中。</block>
+  <block id="c369a24416627121068456b8b8aad586" category="paragraph">下表定義服務層級。</block>
+  <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">不同儲存類型的服務層級</block>
+  <block id="18cf673c6b162cc27313691486836fca" category="admonition">最短一年期限和最小100TiB容量、適用於任何檔案共用和區塊服務層級的NetApp直接商機組合。^2^ 針對通路商機所選的每個服務層、最低一年期限和最低指定容量。</block>
+  <block id="c3010f4da438652aab9b42654d086f8d" category="admonition">最短一年期限和最小100TiB容量、適用於任何檔案共用和區塊服務層級的NetApp直接商機組合。^2^ 針對通路商機所選的每個服務層最低一年期限和最低指定容量。^3^ 針對任一商機類型所選取的每個服務層最低一年期限和最低指定容量。</block>
+  <block id="abafef4130ed8938c3153ad43e1ac52e" category="paragraph">您可以從NetApp服務引擎使用者介面的多個畫面、將服務層級指派給您的訂閱。如需詳細資訊、請參閱：</block>
+  <block id="1e40687eaf73dde4f163672091e3ee28" category="paragraph">**** <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
+  <block id="39cd3f32af1f6142ceceefd9378ef437" category="list-text">所有與檔案伺服器相關的災難恢復複寫複本。您無法復原刪除伺服器。</block>
+  <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">當耗用容量大於指定服務層級的已認可容量時、系統會記錄突發消耗、並據此套用費用。產生的每個使用記錄都會執行此程序。因此、「暴增使用量」反映出您的過度使用容量在承諾容量之外的數量和使用期限。</block>
+  <block id="e0450cba6f565299b1277f655c94fa25" category="paragraph">在訂閱啟動的前60天內、您累積的任何暴增使用量都會記錄下來、但不會在您的Flex訂閱發票上扣除。此寬限期可讓您將儲存設備設定成適當的調適性服務品質（AQO）設定、以便適當監控及計費。正確設定儲存設備時、您可以避免發生任何非預期的暴增費用。在60天的初始寬限期之後累積的任何突發使用量、都會在下一張發票上支付。此寬限期不會影響您現有訂閱的任何修改或續約。</block>
+  <block id="17165dfb97a3399066f5846aed0c4af9" category="list-text">如果未將新資料寫入磁碟區、則不考慮使用標準和價值服務層級的複製磁碟區。例如、在備份或還原使用案例中、從複製磁碟區備份或還原資料不會變更複製磁碟區本身的資料、也不會將其視為使用量。</block>
+  <block id="acb570f757ab2e0dcfc93bbc6bebff34" category="paragraph">彈性訂閱會根據服務層級來衡量使用量。每個服務層級都與特定的調適性服務品質（QoS）原則相關聯。在部署期間、您將會收到訂閱的 Flex 訂閱服務每個 QoS 原則的詳細資料。在儲存管理作業期間、請確定您的磁碟區已根據訂閱的服務層級指派適當的QoS原則、以避免發生非預期的計費。如需 ONTAP 更多有關 QoS 原則的資訊、請參閱 <block ref="7f8846f19a6367d0efc82511d70933cd" category="inline-link-macro-rx"></block>。</block>
+  <block id="822d70344d224e2e68e8dcf4ec044c3c" category="paragraph">SnapMirror目的地Volume的定價受來源所指派服務層級的QoS原則所規範。但是、如果來源沒有相關聯的 QoS 原則、則會根據可用的最低服務層級來計費目的地。</block>
+  <block id="cde520829ff4c329d0a877769052c136" category="paragraph">如果資料是從Keystone系統分層到ONTAP 不只是單純儲存服務（S3）物件儲存或NetApp StorageGRID 支援、則熱層（Keystone系統）的耗用容量將會減少分層的資料量、進而影響計費結果。無論ONTAP 您的需求StorageGRID 是由Keystone訂閱涵蓋的不只是S3儲存設備或是一套系統。</block>
+  <block id="eb71f31c80be60d1b83c15a9023c5aa0" category="paragraph">若要將資料分層至任何第三方物件儲存設備、請聯絡Keystone成功管理程式。</block>
+  <block id="742eeba5dde6c1c0f5b7c867d0ee4115" category="paragraph">如需FabricPool 有關使用資訊技術進行Keystone訂閱的資訊、請參閱 <block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block>。</block>
+  <block id="49e55f1469134d874d5c920897870fab" category="section-title">系統與根磁碟區的收費</block>
+  <block id="6a1836144168f39941f392b695d13d99" category="paragraph"><block ref="6a1836144168f39941f392b695d13d99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd5fb265e740e897efd97ec6db65e09f" category="paragraph">身為合作夥伴管理員、您可以查看所選子租戶的每月帳單細分。</block>
+  <block id="7405166a7ce32802615fd74dd60f9ac4" category="admonition">您也可以按一下儀表板上*截至日期成本*小工具右上角的箭頭、或是在小工具中代表一個月的任何長條、以檢視「帳單」頁面。系統會顯示您所選月份的所有訂閱內容。</block>
+  <block id="37c88707e5f04d4dd1d96b217e3b8f6b" category="list-text">您也可以將游標停留在代表月份的橫條圖上、以檢視其他詳細資料。</block>
+  <block id="cf20fa9ddb17ee6e867a13f6b12fb817" category="paragraph">如需帳單的詳細資訊、請參閱 <block ref="d823bdbe3ab2a5d92501c2ec4317d1f7" category="inline-link-macro-rx"></block></block>
+  <block id="5d42f6e307c32ba43678d41bfad8cc97" category="paragraph">儀表板提供 NetApp Keystone 您的各種資訊儲存訂閱的快速綜覽。它會顯示已使用容量、根據使用量計費、最近警示和服務要求的相關資訊。</block>
+  <block id="e7c1f62e5048c2f9f6ff272552cf9c88" category="list-text">* 容量使用率： * 顯示您訂閱服務的容量使用率、例如 Keystone Flex 訂閱、 Keystone Flex 公用程式和 Cloud Services 。按一下長條圖、即可前往每個服務層級的中斷使用率圖表。您可以檢視每個服務層級和附加服務（例如資料保護和進階保護）的未使用、耗用和突發使用量。它可協助您識別是否需要為訂閱新增更多容量、或是選擇不同的服務層級。</block>
+  <block id="c36cfca401a5add27dc780e9de983e41" category="list-text">*至今成本（計費）：*此區段是根據您的合作夥伴管理員權限而提供。它會顯示您所有訂閱的每月總費用。您可以檢視過去四個月的帳單詳細資料。將游標移到圖表上方時、您可以根據您的承諾和突發使用量、檢視費用的分段。如果您有多個訂閱訂閱訂閱某項訂閱服務、按一下某個月的長條圖、訂閱清單就會顯示在「帳單」畫面上。如需帳單的詳細資訊、請參閱 <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>。</block>
+  <block id="2edc01fa0cababe83981ffabed4438a7" category="paragraph">您也可以從右上角選取特定租戶、以檢視每個租戶的容量使用率。容量使用率和警示Widget中的資料代表所選租戶的資料使用量和警示訊息組態、而其他小工具中的資料則維持不變、代表您的儲存訂閱。</block>
+  <block id="8f7b38b24a6641d05d91c2c1fec9bc26" category="paragraph">如果您是多租戶環境中的租戶管理員、可以檢視為環境設定的容量使用率和警示。按一下小工具以取得更多詳細資料。請聯絡您的服務供應商以取得帳單詳細資料。</block>
+  <block id="5e4631059cd88370a28a74ba7f45c7b3" category="list-text">容量會投入每個服務層級。</block>
+  <block id="c6eb79bc54b68ec5e0cc19ef77aaf577" category="list-text">在期限內、可新增已認可的容量和額外的服務層級。</block>
+  <block id="b7a31258533a3cf2b2f2fb992f0bfbe9" category="paragraph">耗用容量是指服務目前使用的儲存設備 TiB 容量。Flex訂閱服務會將特定服務層級上所有磁碟區的已配置大小總和（而非所使用的邏輯或實體容量）視為該服務層級的已用容量。這包括：</block>
+  <block id="6c4042dc443dec08ae243ea5ea442891" category="list-text">每個區域中可以建立多個子網路。對於租戶所在的每個區域、都有一個已分配的 VLAN 清單。對於所有可用的 VLAN 、都可以建立對應的子網路。子網路與 VLAN 之間有一對一對應關係。不過、子網路和區域之間有許多對應關係。</block>
+  <block id="e08a3b25a34118efdefa3a1edaa6eccf" category="list-text">您應該知道區域、VLAN、子網路CIDR和連接埠置換組態</block>
+  <block id="0b59742ede85b3ac1476e79dfe9d7ffd" category="list-text">按一下「 * 建立網路 * 」。如果適用、請指定區域、 VLAN 和連接埠置換。如果已定義連接埠置換、請從下拉式清單中選取指派的連接埠。對於該租戶的所有網路連線、會使用此連接埠、而非預設連接埠。</block>
+  <block id="b8e827c0152493781825b242975d6c40" category="admonition">連接埠置換是由支援團隊在區域組態期間設定的。如果未指定連接埠置換、則網路會使用預設連接埠、並為該租戶建立新的VLAN。</block>
+  <block id="2bdef957e1a7465023d8192c1e686bb3" category="list-text">從功能表中選取*支援&gt;服務要求*。清單會根據預設的優先順序「緊急」進行篩選。</block>
+  <block id="845fffd2b8888545a9ed124886ea1e8c" category="list-text">選取所需的優先順序和狀態、以檢視服務要求清單。</block>
+  <block id="5a589d66c965f9372a354d1f3cdb0432" category="list-text">在清單中找出服務要求、然後在「狀態」欄中檢視狀態。</block>
+  <block id="02906cdb13370b573b988475d53d8ee0" category="list-text">在「建立庫位」對話方塊中、輸入新庫位和區域的名稱。</block>
+  <block id="027731e3845ffc59d88ab7606bd72e51" category="list-text">按一下「 * 建立 * 」。這會建立工作來建立儲存庫。</block>
+  <block id="35596c7bfb8bc52ad55a54a01f5ceec3" category="list-text">工作完成後、請檢查伺服器在「桶」清單中的狀態。如需相關資訊、請參閱 <block ref="08ab40cd728ae5bfe16832c715077c4e" category="inline-link-macro-rx"></block>。</block>
+  <block id="dc944b7331a18309c1a114300ebc3a09" category="inline-link-macro">從Snapshot建立共用</block>
+  <block id="d146e107531d3fc15b267b7b455173b6" category="paragraph">本節說明如何直接指定共用詳細資料、以建立新的共用區。若要根據現有共用區的快照建立新的共用區、請參閱 <block ref="b28ea6b79b2f3efaa9ec1026e9ce8a3d" category="inline-link-macro-rx"></block>。</block>
+  <block id="1f8f57002aec566571816a8c7bcc858f" category="list-text">您可以定義快照原則、以便在排程的基礎上擷取檔案共用的快照。如需詳細資訊、請參閱 <block ref="c1f0dcbbcbcd1f1c8ac788893304a8d4" category="inline-link-macro-rx"></block>。</block>
+  <block id="73bba8e3924209258078797f0bd65b15" category="list-text">選取服務層級。IOPS 和處理量限制會根據所選的服務層級來顯示。</block>
+  <block id="9bfca2b22950588e2cdfd85ab9d055c9" category="list-text">如果此檔案共用區需要快照：</block>
+  <block id="e80987beb08eb0b73f203d10e530112d" category="list-text">*每小時*。*指定要拍攝快照的分鐘數（小時）、以及要保留的每小時快照數。</block>
+  <block id="074901aa9935464121eb60ac62753ef6" category="list-text">*每日。*指定何時（小時和分鐘）拍攝快照、以記錄要保留的每日快照數量。如果您想要指定每天拍攝快照的多小時時間、可以在以逗號分隔的清單中新增小時數值、例如5、10、15、 等等。</block>
+  <block id="acffcba1bb1e8a0e9284e49f01f8eea9" category="list-text">*每週。*指定何時（一週中的哪一天、小時和分鐘）拍攝快照、以及每週要保留的快照數量。</block>
+  <block id="f304fa4708995eb0a05a06fefd0fd77b" category="list-text">指定每種備份類型的保留數量：每日、每週及 / 或每月。如需詳細資訊、請參閱 <block ref="73271519b35549db6517dd8a6d50b58e" category="inline-link-macro-rx"></block>。</block>
+  <block id="e498a9e1d785f741cd1e139a1013de8d" category="list-text">在清單中找出磁碟、然後按一下該磁碟的快照圖示。（如需使用清單中項目的詳細資訊、請參閱 <block ref="52762e1c21e70b201ce4b2db09bd46e5" category="inline-link-macro-rx"></block>）。</block>
+  <block id="faca791a72cc10c7d158748b3fc36324" category="paragraph">快照可能需要幾分鐘時間才能使用。如果可用、您可以透過複製此快照來建立另一個磁碟。如需相關資訊、請參閱 <block ref="a027f217b2a6dd3ee53451144340339e" category="inline-link-macro-rx"></block>。</block>
+  <block id="7c19f0fb885d470df120f8153802763b" category="paragraph">不同版本的NetApp Service Engine已引進下列功能、以支援NetApp Keystone 透過《支援使用者支援》（Flex訂閱）提供的增強功能：</block>
+  <block id="67dcfbb1b00e382a9abd2aebd9355c84" category="paragraph">現在、支援的功能包括運用 NetApp 技術的分層功能。 NetApp Keystone FabricPool它可識別較不常用的資料、並將其分層至由 NetApp 擁有、部署及管理的內部部署冷儲存設備。您可以訂閱極致分層或優質分層服務層級、以選擇分層。</block>
+  <block id="f1367cc0a2a732000842d078d27637d4" category="inline-link-macro">服務層級</block>
+  <block id="d02be4f3728f97b85c9e1ba3a5e00b9b" category="list-text"><block ref="d02be4f3728f97b85c9e1ba3a5e00b9b" category="inline-link-macro-rx"></block></block>
+  <block id="72b8adb2d65763d0d016194a98746bbb" category="paragraph">如果匯入的磁碟符合 NetApp 服務引擎的可接受標準、也就是如果磁碟運作所需的所有參數都可用、就會以「運作」狀態匯入、並可透過 NetApp 服務引擎直接管理。不過、某些磁碟可能與 NetApp Service Engine 上現有磁碟的標準不同。匯入後、這些磁碟會分類為「已匯入」或「非標準」狀態。如需瞭解磁碟狀態及其運作步驟、請參閱 <block ref="5e32ddb0b2ee6eb1a1baab0807d7f57d" category="inline-link-macro-rx"></block></block>
+  <block id="2d93581e06fa8876780c8fd43fd26464" category="paragraph">在「磁碟」清單中、檢視簡單資訊。如需如何使用清單功能的詳細資訊、請參閱 <block ref="a61f12a3491d544119bfe19d47b5cc08" category="inline-link-macro-rx"></block>。</block>
+  <block id="4d8fcfa50b8d3dc31f0726a686a3de75" category="paragraph">您可以使用備份API來檢視及管理環境中磁碟區（檔案共用和磁碟）的備份或還原點。</block>
+  <block id="19dbc698af02f300022c166b89892888" category="paragraph">「名稱」：檔案共用區的名稱。「 hare 路徑」：檔案共用區的路徑。「 fileserver_id 」：檔案伺服器的 ID 。「ize_GB」：位於Gibs的檔案共用大小。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「傳輸協定」：用來存取檔案共用區（ NFS 、 CIFS 或多傳輸協定）的傳輸協定。「 ecurity_style 」：安全風格（ Unix 或 NTFS ）。「匯出原則」：檔案共用區的匯出原則。</block>
+  <block id="740f501b1102bb991f506fc070b69b62" category="paragraph">「 id 」：檔案共用區的 ID 。「名稱」：檔案共用區的名稱。「ize_GB」：位於Gibs的檔案共用大小。「 service_level 」：適用的服務層級名稱： Standard 、 Premium 、 Premium 分層、 Extreme 或 Extreme 分層。「傳輸協定」：用來存取檔案共用區（ NFS 、 CIFS 或多傳輸協定）的傳輸協定。「匯出原則」：檔案共用區的匯出原則。</block>
+  <block id="0ae4f649cb638a44103ed30a5e14cef6" category="list-text">「*管理S3金鑰*」對話方塊會顯示使用者的金鑰清單。</block>
+  <block id="c07cfd1794ff312f24f76453c87f14a6" category="list-text">在金鑰清單中、找到要刪除的金鑰、然後按一下*刪除*圖示。</block>
+  <block id="c0cef8704079ac9d0a8d333c712e81e7" category="paragraph">儲存服務是以相關服務層級訂閱已認可的儲存容量。NetApp Service Engine提供極致、極致分層、優質、優質分層和標準服務層級的檔案與區塊儲存、以及物件服務層級的物件式儲存設備。</block>
+  <block id="beed3ed2a3622ebedadc1bce021a0a99" category="paragraph">極致分層和優質分層服務層級可讓您監控冷資料或非使用中資料、並將其分層存放至低成本的物件儲存層、藉此減少儲存佔用空間及相關成本。分層原則設為自動、預設會將 31 天的資料保留為非使用中階層。</block>
+  <block id="3d4d1fc7bf36f420fa99c6f26575b46b" category="inline-link-macro">服務層級</block>
+  <block id="d031812ce034af3641d09a4021b0da54" category="paragraph">如需詳細資訊、請參閱 <block ref="497abe66362dea38708241c65bc89fa5" category="inline-link-macro-rx"></block>。</block>
+  <block id="89c9290084360b94aa7d480c8588eb8f" category="paragraph">建立後、檔案和區塊儲存項目會與服務層級建立關聯。隨著需求改變、可以在服務層級之間移動工作負載。極致、極致分層、頂級、優質分層和標準服務層級、提供不同等級的I/O效能（IOPS）和處理量（Mbps）、因此可根據需求量身打造儲存設備。</block>
+  <block id="e911bcc5173ca0894b6dda6da2bdc300" category="paragraph">如需分層服務的相關資訊、請參閱 <block ref="94c6f91dc11f09fa14ef2a1ab015d86b" category="inline-link-macro-rx"></block>。</block>
+  <block id="5d4907201ddbff03615305532b2cddb4" category="paragraph">服務最多可在特定時間點內使用突發流量、並以個別的收費率（如訂閱所定義）監控和計費。如需容量與使用量的詳細資訊、請參閱 <block ref="2f87ccdc18878c679c9bc7ba5fe93305" category="inline-link-macro-rx"></block>。也提供支援備份與災難恢復的資料保護服務。</block>
+  <block id="c6adba6217951ed0e1a8ae3a9a50e632" category="paragraph">如需詳細資訊、請參閱：</block>
+  <block id="77c31cb6f366fee2554a50788c64aadb" category="list-text"><block ref="77c31cb6f366fee2554a50788c64aadb" category="inline-link-rx"></block></block>
+  <block id="a2ddb4431dcf2a898d386c1f3b82c926" category="inline-link">檔案服務</block>
+  <block id="4e55f2b2dc7fadbfeab16b1c329eb9b9" category="list-text"><block ref="4e55f2b2dc7fadbfeab16b1c329eb9b9" category="inline-link-rx"></block></block>
+  <block id="85450ff0b80b6adb3c3ce5f738b79764" category="list-text"><block ref="85450ff0b80b6adb3c3ce5f738b79764" category="inline-link-rx"></block></block>
+  <block id="119be031ef4485d20c7683d291d0e9f6" category="inline-link">本文檔MetroCluster</block>
+  <block id="7ab4abf41de6d19de426375d57467f74" category="list-text"><block ref="7ab4abf41de6d19de426375d57467f74" category="inline-link-rx"></block></block>
+  <block id="5c0178adca796c95e44bf57340ccb9a6" category="list-text">超越區域內資料保護服務的承諾</block>
+  <block id="10b183cb0f66d629a1220515b8bde592" category="list-text">超越區域內資料保護服務的承諾。</block>
+  <block id="faee2c8e1167c37eb8137ff6d755cccb" category="cell">超越資料保護服務的承諾。</block>
+  <block id="917e18378785f13487328819efa30f4f" category="paragraph">資料保護服務是指支援資料備份的方法、以及必要時恢復資料的能力。</block>
+  <block id="94fab4b6d20e72c710b4dc92fdca1e8c" category="paragraph">NetApp服務引擎資料保護服務功能包括：</block>
+  <block id="c1feb6521ae42cd94cde4c528fa434ed" category="list-text">備份磁碟與共用（訂閱時需要資料保護服務）</block>
+  <block id="d45ea98ac0a65345f1dd94e65bb42a2a" category="list-text">磁碟與共享區的災難恢復（需訂購資料保護或資料保護進階服務）</block>
+  <block id="6ceb0ddf0588a800d3609a1d6b11aa58" category="paragraph">備份是指複製項目、複寫項目、並將複本儲存在原始區域以外的區域、該區域已啟用個別的傳輸協定（僅適用於區塊儲存）、且未啟用 MetroCluster 。NetApp Service Engine可在檔案與區塊儲存設備上提供備份（訂閱時需要資料保護服務）。共享區 / 磁碟的備份會儲存在訂閱時成本最低的效能層（即標準）備份區域中。</block>
+  <block id="f224ae50705a8eb518b8440ac9431b25" category="list-text">備份會導致總使用容量。此外、備份也會以資料保護訂閱費率產生成本。另請參閱 <block ref="d8aa712671d5c6776c74e6424ca3a097" category="inline-link-macro-rx"></block>。</block>
+  <block id="69bcfb52aefab6f4be3aa7f37a3f0a77" category="paragraph">非同步災難恢復可在檔案和區塊儲存設備上使用、而且訂閱時需要資料保護服務。</block>
+  <block id="91d2b86f168e4314f617407b7033bd53" category="list-text">災難恢復複本會增加總使用容量。此外、災難恢復也會以災難恢復訂閱率產生成本。另請參閱 <block ref="d8aa712671d5c6776c74e6424ca3a097" category="inline-link-macro-rx"></block>。</block>
+  <block id="be630f9484e58240547de19490ba3bce" category="paragraph">資料保護功能可在位於不同位置或故障網域的兩個不同區域之間同步複寫資料和組態。MetroCluster萬一某站台發生災難、系統管理員可以從存續站台提供資料。</block>
+  <block id="9c0a832783463bbbb05660067ef53922" category="list-text">同步災難恢復會以同步災難恢復訂閱率產生成本。另請參閱 <block ref="d8aa712671d5c6776c74e6424ca3a097" category="inline-link-macro-rx"></block>。</block>
+  <block id="f0cf0de0e58b8e756eb56dddb27b7554" category="paragraph">本節的圖表說明如何計算資料保護費用。</block>
+  <block id="49397b4ebb08764dcb02d0daef7ed910" category="list-text">資料保護服務費用（適用於原始Volume容量）。</block>
+  <block id="2084542f3c28bddda24a9c6902f325e2" category="paragraph">在同步災難恢復中、使用量和成本由下列項目組成：</block>
+  <block id="dc3f4e9988faa1da0926e2e92f5261bb" category="list-text">複寫複本會在目的地的相同效能層（與來源相同）收費。</block>
+  <block id="1a7d3740cc266eca0374f4a70ee95ad8" category="list-text">資料保護進階服務費用。</block>
+  <block id="5fe52caf721206b098580cb92dcb36f7" category="paragraph">如需參考API、您可以登入NetApp服務引擎網路介面、並從*左導覽窗格&gt; Support（支援）&gt; API Documentation（API文件）*檢視Swagger介面。</block>
+  <block id="66a0cc207bda8d47685024829c340964" category="paragraph">*哪些儲存服務優惠是Flex訂閱的一部分？*如需相關資訊、請參閱 <block ref="2d7ae50d49b6f40472431f1209fdcf6f" category="inline-link-macro-rx"></block></block>
+  <block id="d763cfba66b1ebf8cb2086744098068d" category="paragraph">Flex訂閱對應什麼？* Flex訂閱對應到單一站台或單一資料中心、可由不同的服務層級組成。</block>
+  <block id="d3867d58510e8dc8e1f07c8ccef6849c" category="paragraph">*極致分層和優質分層服務層級有哪些優點？*分層是在極致分層和優質分層服務層級中啟用的、可讓您減少儲存設備佔用空間和相關成本。NetApp 假設 25% 的資料很熱、而其餘 75% 的資料則較少使用或冷卻、並將其移至冷儲存設備。此外、您也可以查看使用量報告、瞭解存取資料的頻率、並根據資訊啟用分層服務。</block>
+  <block id="91d3cce2afd7a0a49cdd35f6ecd03319" category="list-text">為伺服器啟用非同步災難恢復資料保護。如需 NetApp Service Engine 中災難恢復運作方式的詳細資訊、請參閱 <block ref="a77c34ddf88ef814fd6a18a00bec0fb7" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3a3295c8ca71cbdbd8a6b7229c6e380" category="list-text">如果您訂閱同步災難恢復資料保護、此功能預設為啟用。</block>
+  <block id="319d8bdfe774ee2725dd60c484f69915" category="list-text">將其設定為啟用 CIFS 。NFS服務預設為啟用。</block>
+  <block id="c905f5db0577e6e647ed0c7f81c2849e" category="list-text">對於CIFS伺服器、您應該知道Active Directory認證、DNS伺服器、伺服器名稱、以及Active Directory組織單位（OU）（選用）。Active Directory 認證必須是擁有權限的使用者、才能將電腦加入 Active Directory 網域。</block>
+  <block id="460e9362f4cab8c9be8f760e6a0dfbf4" category="paragraph"><block ref="c7e0d953db804fc2899c3d7dfab9e722" category="inline-image-macro-rx" type="image"></block>步驟</block>
+  <block id="f81ba4d3d20f8f43a4e0606b73abc8af" category="list-text">新增網域名稱、DNS伺服器IP、伺服器名稱、以及Active Directory組織單位的名稱（可選）。</block>
+  <block id="d8d146845f60f1b46e9a66d89f33fb23" category="admonition">如果您已訂閱同步災難恢復資料保護、此功能會自動為您的區域啟動、且依預設會啟用同步災難恢復切換按鈕。您無法停用按鈕。</block>
+  <block id="993bcf2759df9f59acf3f5c0f23121ba" category="list-text">您也可以選擇新增標記和值。</block>
+  <block id="6e8954a7c4cfcf1082a0a2d82fb50808" category="admonition">如果您要建立啟用CIFS的伺服器、請針對輸入的網域名稱（FQDN）輸入Active Directory使用者名稱和Active Directory密碼、然後按一下*確認*。</block>
+  <block id="8240b24ccc41973db8acd6d12cfb4f39" category="paragraph">伺服器建立是以非同步工作的形式執行。您可以：</block>
+  <block id="5f230dce554a2eea512cf6ad0f2aec04" category="list-text">工作完成後、請檢查上「伺服器」清單中的伺服器狀態</block>
+  <block id="5b710f992e8961de5ec796dc23d97e2a" category="paragraph">Flex訂閱是一項訂閱型服務產品、可針對可部署於內部部署且可由NetApp、合作夥伴或客戶操作的區塊、檔案及物件資料類型、提供預先定義的效能服務層級（服務層級）的儲存容量。除了 Flex 訂閱所提供的基礎服務之外、您也可以額外付費選擇附加服務。下圖說明這些服務。</block>
+  <block id="8a153aa7d7f3e04524a8ba26c82b5715" category="admonition">備份與災難恢復服務可作為附加服務使用、而Snapshot則可作為基本儲存服務的一部分使用。</block>
+  <block id="bc1bf94ffed46e88b5723954ed7d8ed3" category="cell">單一區域快照（作為基本儲存服務的一部分提供）</block>
+  <block id="a68082b73ad5e36bea07f138e957fef2" category="cell">根據每小時、每日、每週和每月快照保留的備份數</block>
+  <block id="d65f8cd5dcce368ab1e4e1c317fa36db" category="list-text">在清單中找出使用者、然後按一下該使用者的編輯圖示。</block>
+  <block id="ea1458948853c05d7afdd2d8493a5bd7" category="list-text">在*編輯使用者*對話方塊中、變更使用者的物件儲存群組。</block>
+  <block id="d29061be317f608ea8a5842ec8713b79" category="list-text">按一下 * 更新 * 。這會建立工作來更新使用者的群組。如需追蹤工作的相關資訊、請參閱 <block ref="368a1d704bdc9ee6ea14e4516dfa810f" category="inline-link-macro-rx"></block>。</block>
+  <block id="665858ebca91aa26802a3a86bee3458f" category="paragraph">Keystone訂閱的容量使用量頁面會顯示訂閱一段時間內每個儲存服務層級的容量使用量。身為 NetApp 管理員、您可以在訂閱中檢視所有租戶和合作夥伴的容量使用報告。身為合作夥伴管理員、您可以針對每個訂閱的服務層級、檢視Flex訂閱使用量的容量報告。</block>
+  <block id="a042d1063a6b211be7ada8ceec871888" category="paragraph">使用此頁面上的圖形報告、可在個別索引標籤中檢視所有服務層級的趨勢使用量、以及附加資料保護服務。當服務處於連拍狀態時、橫幅會顯示目前計費週期所使用的連拍容量。</block>
+  <block id="47231d0aa304965e78b23d4e17fde44e" category="paragraph">使用此頁面上的圖形報告、可在個別索引標籤中檢視所有儲存服務的趨勢使用量、以及資料保護和進階保護等附加服務。當服務處於連拍狀態時、橫幅會顯示目前計費週期所使用的連拍容量。</block>
+  <block id="8d773f3c00141970609401182079d7d0" category="list-text">若要檢視清單、請從功能表中選取*物件儲存&gt;桶*。</block>
+  <block id="6f6cb72d544962fa333e2e34ce64f719" category="list-text">尺寸</block>
+  <block id="c8308b1eba7ba926a61b8fd802194386" category="list-text">物件</block>
+  <block id="a2a8d61c91e599b9767a25a53af35534" category="list-text">行動（例如刪除庫位）</block>
+  <block id="2a96a4cfac487b5cc41e8fd4506c4230" category="sidebar">效能服務層級或服務層級</block>
+  <block id="469b359223644ae76f8489201eaba251" category="sidebar">管理Azure NetApp Files</block>
+  <block id="1b0a895ad5dbae078e4d9e0514db2461" category="sidebar">管理Azure NetApp帳戶</block>
+  <block id="5397c058f4d19f86cf260de9d12c163e" category="sidebar">管理Azure容量資源池</block>
+  <block id="3367785c4c24c46720a1f71a3ba620db" category="sidebar">管理Azure Volume</block>
+  <block id="12c44922182533b1b7bb4417b61b95ec" category="sidebar">管理Cloud Volumes Service 適用於Google Cloud Platform的功能</block>
+  <block id="8f827fcb6054a7882181161868caf231" category="sidebar">備份您的磁碟區</block>
 </blocks>

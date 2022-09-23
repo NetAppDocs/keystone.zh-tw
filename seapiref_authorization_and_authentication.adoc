@@ -16,6 +16,8 @@ summary: Keystone 授權與驗證
 [role="lead"]
 NetApp 服務引擎 REST API 可透過任何可發出 HTTP 要求的網頁瀏覽器或程式設計平台來存取。NetApp 服務引擎支援基本 HTTP 驗證機制、以及 Java Web Token （ JWT ）承載驗證。在呼叫 API 之前、您必須先驗證使用者。
 
+如需參考API、您可以登入NetApp服務引擎網路介面、並從*左導覽窗格> Support（支援）> API Documentation（API文件）*檢視Swagger介面。
+
 
 
 == HTTP 狀態代碼

@@ -35,10 +35,10 @@ NetApp 服務引擎可讓您使用下列認證登入：
 | 角色 | 存取 
 
 
-| 合作夥伴管理員 / 帳戶擁有者 | 可執行管理租戶及其訂閱的所有工作。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["此連結"]。 
+| 合作夥伴管理員 / 帳戶擁有者 | 可執行管理租戶及其訂閱的所有工作。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-service-provider-administrator["此連結"]。 
 
 
-| 客戶 / 租戶管理員 | 客戶或租戶管理員可以執行與管理子租戶相關的所有行動。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["此連結"]。 
+| 客戶 / 租戶管理員 | 客戶或租戶管理員可以執行與管理子租戶相關的所有行動。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-customertenant-administrator["此連結"]。 
 
 
 | NetApp 管理員（讀取） | 所有元件的唯讀存取權。 
@@ -60,7 +60,7 @@ NetApp 服務引擎可讓您使用下列認證登入：
 .步驟
 . 在網頁瀏覽器中、前往 NetApp 服務引擎入口網站的 URL 。隨即顯示登入頁面。
 . 選取 * 本機使用者登入 * 。
-. 在「登入 NetApp Keystone 到資訊區」頁面上、輸入您的使用者名稱和密碼、然後按一下「 * 登入 * 」。
+. 在「登入NetApp服務引擎」頁面上、輸入您的使用者名稱和密碼、然後按一下*登入*。
 . 成功登入後、 NetApp Service Engine 網路介面會載入、並在儀表板開啟。如需 GUI 總覽、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服務引擎 Web 介面總覽"]。
 
 
@@ -73,7 +73,7 @@ NOTE: 如果登入成功、但看不到儀表板、請洽詢 NetApp 服務引擎
 
 若要使用 NetApp SSO 登入、您需要：
 
-* NetApp SSO 帳戶。您可以在 NetApp 支援網站申請帳戶、從登入畫面選取 * 建立 NetApp SSO 帳戶 * 、然後依照後續步驟進行。
+* NetApp SSO 帳戶。您可以從NetApp 支援網站 登入畫面選擇* Create NetApp SSO Account（建立NetApp SSO帳戶）*、然後依照後續步驟、在該畫面申請帳戶。
 * NetApp 服務引擎入口網站的 URL 。
 * 網頁瀏覽器。
 

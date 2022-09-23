@@ -17,8 +17,8 @@ summary: Keystone 刪除物件儲存群組
 使用此方法可刪除物件儲存群組。
 
 .步驟
-. 檢視 link:sewebiug_view_host_groups.html#view-host-groups["群組清單"]。
-. 請確定已選取正確的子租戶、且顯示幕顯示群組（非使用者）。
+. 檢視物件儲存群組 link:sewebiug_view_the_object_storage_group_and_users.html["檢視物件儲存群組和使用者"]。
+. 請確定已選取正確的子租戶、且您已按一下*群組*索引標籤。
 . 在清單中找出群組、然後按一下該群組的刪除圖示。
 . 若要確認刪除動作、請按一下 * 確認 * 。物件儲存群組即會從清單中移除。
 
