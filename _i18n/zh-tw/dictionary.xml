@@ -303,7 +303,6 @@
   <block id="8c4191676661fab67275af3b28085da7" category="list-text">合作夥伴管理員可以在現有訂閱到期時建立另一個訂閱、或是在現有訂閱不再有效的未來日期建立另一個訂閱。新訂閱的開始日期必須大於或等於目前的結束日期。</block>
   <block id="ff138ca03bebc3f223aa7473c49093cc" category="summary">NetApp 服務引擎 REST API</block>
   <block id="f85fe16835da940dc0eded602be1d88a" category="doc">NetApp 服務引擎 REST API</block>
-  <block id="4bb8f28d1ae5f4c793395a1ce16ebd50" category="paragraph">許多 API 呼叫會傳回大量記錄。可以指定「偏移」和「限制」值來限制記錄數量：</block>
   <block id="2c9821eb0bfa9053dd0b371fa82738f0" category="list-text">* 限制 * 要傳回的記錄數。</block>
   <block id="75100d42069de12445ab076dab1a5044" category="list-text">* 偏移。 * 傳回第一筆記錄之前要跳過的記錄數。例如、偏移一筆會跳過第一筆記錄、並從兩筆開始傳回記錄。</block>
   <block id="6e38eaf3c64cc8f5260081b7bb3a1eb2" category="paragraph">您也可以排序回應：</block>
@@ -408,7 +407,6 @@
   <block id="93e36e4f88c3da99d57144e4f8a90d2b" category="list-text">建立及管理物件儲存使用者、包括建立 S3 金鑰。</block>
   <block id="08adb405703760d625a89d2f8489e280" category="summary">Keystone 服務條款與說明總覽</block>
   <block id="4c81f84de3c6cf1b71adecb694feb770" category="doc">彈性訂閱服務條款與說明</block>
-  <block id="1cbddcf2fa8e22cb8595706c00cc4371" category="list-text">可訂購至少一年且最多三年的 FlexFlex 訂閱（ Flex 訂購） NetApp Keystone 。在初始期限之後、服務將每年續約一次。容量可以以最小 1 TiB 的增量遞增。</block>
   <block id="9597eb938e2fba159aa254b3a95e6efb" category="list-text">每個站台最小容量為 100 TiB 、每個站台可有一個或多個叢集、以符合最低容量需求。在合作夥伴營運模式中、我們會針對客戶、每個站台及各個服務層級、建立具有彈性最低需求的訂閱。</block>
   <block id="be9709b8de891bed2cb58977708e499e" category="list-text">租戶訂閱僅限於合作夥伴訂閱的服務層級。</block>
   <block id="87f73c8129d1f6a0026c085c19c37ee7" category="list-text">每個站台都有 20% 的突發容量可供使用；任何突發流量使用量只會在該計費期間計費。如果您需要超過 20% 的額外連絡要求、請聯絡支援部門。</block>
@@ -653,7 +651,6 @@
   <block id="9f06ecda84c1ae850f3ef9ef26ceb4f3" category="cell">適用於該實例的唯一識別碼 Cloud Volumes Service 。</block>
   <block id="8bc48e5f4724775e4f4601a4e4ed2687" category="cell">例項名稱 Cloud Volumes Service 。</block>
   <block id="5df5e1234496b4f4567b25a4b7b26ba3" category="cell">「 cc_job_env 」</block>
-  <block id="2fa447a56e54e8572e7ecaf28e975e80" category="cell">Cloud Manager 中的工作環境名稱。</block>
   <block id="c67906f7bee9799974a4de606d2420e2" category="cell">"cc_client_id"</block>
   <block id="2e83a5722e857f87078cabdc3cda5f38" category="cell">驗證 0 服務 ID 。</block>
   <block id="f00a35e02aec20c8d9cf536f9dd3bf33" category="cell">"cc_refresh_tokent"</block>
@@ -665,7 +662,6 @@
   <block id="fdfeff0c0589d5ab72dc570db74d59a7" category="cell">"cc_entions_id"</block>
   <block id="05daf3080cc6bf51d9a7488838b0650f" category="cell">Cloud Centra 工作環境的 ID 。</block>
   <block id="bca25748ae9ad08875b859cc2005f825" category="cell">《 azure_client_id 》</block>
-  <block id="8c39fc45872124f630a477f8a9db2747" category="cell">應用程式（用戶端） ID 。Cloud Manager 可用來驗證 Azure Active Directory 的 Active Directory 服務主體 ID 。</block>
   <block id="4e293b85fede02c268e93ef73f188710" category="cell">《 azure_client_secret 》</block>
   <block id="222fdbc61ee44a202596354abd406a32" category="cell">服務主體應用程式的用戶端機密值。</block>
   <block id="476995152e4de0614e55d1be3004b494" category="cell">《 azure_enture_id 》</block>
@@ -2543,7 +2539,6 @@
   <block id="6be9adc0bb5eb38197744a6ba6770654" category="list-text">子租戶已訂閱 Google Cloud 服務。</block>
   <block id="b22f259a7845cf612bcf5a7d485a6137" category="list-text">您有訂閱者服務帳戶的 Json 檔案、而且您知道與 Google Cloud 執行個體相關的 GCP 專案編號。</block>
   <block id="b3ae8c33b08587c2b6be6031629d0de3" category="inline-link">設定 Cloud Volumes Service 適用於 Google Cloud 的功能</block>
-  <block id="084cafb5240ee412a1336b10f1e95d54" category="list-text">確保 Cloud Volumes Service 支援團隊已在 Cloud Manager 上設定適用於 GCP 的功能。如需詳細資訊、請參閱<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>。</block>
   <block id="d900b34f4ec7d4c5aedb24b1b84b6642" category="list-text">從功能表中選取 * 雲端服務 * 。</block>
   <block id="300a306a4df8277005591f8c37dca4ad" category="list-text">按一下「 * 建立 * 」、然後按一下「 * Google Cloud * 」。</block>
   <block id="b9ff3c79bce6a74407aef38bc921b4d6" category="list-text">在 Google Cloud 的「 Create Cloud Service 」（建立雲端服務）頁面上、選取您要建立服務的子租戶、然後新增名稱和 GCP 專案編號。</block>
@@ -2830,14 +2825,6 @@
   <block id="b387af4e718e4b5565ce87f74234f50f" category="paragraph">*是否有機會在初始期限結束後轉換成購買項目？*不可以此優惠不包含轉換為購買的選項。此外、先前購買的 NetApp 產品不在本方案範圍之內。</block>
   <block id="a16dc1f5755db55741d2ae801d6aa73d" category="paragraph">*我可以申請特定的軟體版本嗎？*</block>
   <block id="ee62bd671134498c82c2878422e9f59a" category="paragraph">*是否會收到軟體升級的通知？*</block>
-  <block id="4b27d8b1b37284b9da0b4213e4e6675d" category="paragraph">|=| HTTP方法|路徑|說明|參數</block>
-  <block id="9104a21e58f1a69b57c6b2ae89602908" category="paragraph">|「POST」|「/v2.1 /租戶/｛租戶ID｝/服務資源/類別」|建立服務要求。|「租戶ID」：租戶識別碼。</block>
-  <block id="58e00570185a83ad51f69b7079961f6b" category="paragraph">|類別|必填</block>
-  <block id="4ef290f7b3c58a4e717e6cc36148b17f" category="paragraph">如果「eserve_type」是檔案服務或區塊儲存設備、則需要使用區域。|其他|分區</block>
-  <block id="0725399a92712a8b8a9b398144b43a68" category="cell">*申請本文範例：*...｛"Subject」："string"、"Comment（註釋）："string"、"category（類別）："fusion"、"priority（訂閱）："normal"、"fusion"："A-S00003969"、 「承諾」：｛「service_level」：「標準」、「new_承諾」：10｝、「區域」：「AU-East1-A」、「子租戶_id」：「5d2fb0fb4f47df00015274e3」、「Storage_object_type」：「檔案伺服器」、 「Storage_object_id」：「5d2fb0fb4f47df00015274e3」、「service_type」：「檔案服務」｝...*回應本文範例：*...｛"STATUS"：｛"user_message"："string"、"verbose_message"："string"、"code"："string"｝、"result"：｛"resove_Records"：1、"Records"：[｛"id"："string"、"Subject "："string"、"description"："string"、"STATUS"："new"、"priore" 「建立日期」：「2020-05-12T03：18：25 + 0000」、「更新日期」：「202020-05-12T03：18：25 + 0000」｝]=擷取服務要求類別下表列出指定租戶的擷取服務要求類別。</block>
-  <block id="b235a9ee30b02d07ff714bb1542b9b1d" category="paragraph">| HTTP方法|路徑|說明|參數</block>
-  <block id="3cfc9b45a25da8c56ea24ecc26ed6f54" category="paragraph">|「Get」|「/v2.1 /租戶/｛租戶ID｝/服務資源/類別」|「Retrieve service requests」類別。|「租戶ID：」（選用）會傳回指定租戶的服務要求。</block>
-  <block id="c31fc18f14b317fa271c222c8662ff0b" category="cell">必要的要求內容屬性：「無」*要求本文範例：*...無*回應本文範例：*...｛"STATUS"：｛"user_message"：「好。傳回5筆記錄。」、「verbose_message」：「」、「code"：200｝、「result」：｛"love_logges"：5、「Records」：[｛"key"：「DR」、「Value」：「災難恢復容錯移轉」｝、{「key」：「key」、「key」、「其他」、「訂閱值：｝、「 「備份還原」}]}...</block>
   <block id="8615a49d222eeb50c22f60e749d36d5e" category="paragraph">什麼是NetApp服務引擎？*</block>
   <block id="a5e1a7f3557344aca20fdd047ee9cace" category="paragraph">*客戶營運模式需要NetApp服務引擎？*</block>
   <block id="46eed4ec681c7ae2f6418744e02e8ba8" category="paragraph">* NetApp服務引擎安裝在何處？*</block>
@@ -3130,4 +3117,25 @@
   <block id="3367785c4c24c46720a1f71a3ba620db" category="sidebar">管理Azure Volume</block>
   <block id="12c44922182533b1b7bb4417b61b95ec" category="sidebar">管理Cloud Volumes Service 適用於Google Cloud Platform的功能</block>
   <block id="8f827fcb6054a7882181161868caf231" category="sidebar">備份您的磁碟區</block>
+  <block id="a57f88e039b309218996266b80792e58" category="cell"><block ref="3854361464b9a2c3832c47bd39cddf54" prefix="" category="inline-code"></block>：租戶識別碼。</block>
+  <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">類別</block>
+  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">必要</block>
+  <block id="787ad0b7a17de4ad6b1711bbf8d79fcb" category="cell">訂購</block>
+  <block id="102da3147e28a4669677fece4454c61f" category="cell"><block ref="b48b13e73a6ac2a86dc54425dd24d9ff" prefix="" category="inline-code"></block> 和<block ref="e4586172850ecb0954a632168fa0151a" prefix=" " category="inline-code"></block></block>
+  <block id="f92d949ea1f5479f6dd45574e5f59f28" category="cell"><block ref="2aae5dbec169c641bc991a21bba7ded3" prefix="" category="inline-code"></block>、<block ref="f5d285f3c30970bcfcb9cf6292e5948c" prefix=" " category="inline-code"></block>和<block ref="d8ebad67e49e38d52183df8396039c53" prefix=" " category="inline-code"></block></block>
+  <block id="ad1ec60c9e1f10f6a9f5d9f2c5254bc6" category="cell">技術</block>
+  <block id="1efcb45ce32fab1dd54282a048a8f6e3" category="cell"><block ref="f5d285f3c30970bcfcb9cf6292e5948c" prefix="" category="inline-code"></block> 和<block ref="f43697a993f56955e3f9e353b3b1f210" prefix=" " category="inline-code"></block>如果<block ref="f43697a993f56955e3f9e353b3b1f210" prefix=" " category="inline-code"></block> 是檔案服務或區塊儲存、需要區域。</block>
+  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="cell">其他</block>
+  <block id="ac10508ad70f95b289ff520585169501" category="section-title">擷取服務要求類別</block>
+  <block id="a6a3bee28fe66348826c742871e5920e" category="paragraph">下表列出指定租戶的擷取服務要求類別。</block>
+  <block id="ef64390758ed006361a142422376a39e" category="cell">擷取服務要求類別。</block>
+  <block id="ea56ca71a57b3800165f4d81ba320151" category="cell"><block ref="e1e0f0ad1318adbdd4cfa12016e5d06c" prefix="" category="inline-code"></block> （選用）傳回指定租戶的服務要求。</block>
+  <block id="fecdea178a71ffb2ee93ddcad3d9e020" category="paragraph">許多 API 呼叫會傳回大量記錄。您可以藉由指定來限制記錄數量<block ref="7a86c157ee9713c34fbd7a1ee40f0c5a" prefix=" " category="inline-code"></block> 和<block ref="aa9f73eea60a006820d0f8768bc8a3fc" prefix=" " category="inline-code"></block> 價值。</block>
+  <block id="e50d94eefbc2c17580b0e1711fe9e9e7" category="paragraph">限制這些值：</block>
+  <block id="d2860166293af0668ceaf6fdcb9f2694" category="paragraph">您可以建立使用者並將其新增至特定群組、以便指派物件儲存設備存取權給使用者。</block>
+  <block id="496e90ab3704e4ca4304b45b9f12bbd6" category="list-text">確保Cloud Volumes Service 支援團隊已在BlueXP上設定適用於GCP的功能。如需詳細資訊、請參閱<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>。</block>
+  <block id="2755dc789d3f5fb4106ccd91690ecf5a" category="cell">BlueXP中的工作環境名稱。</block>
+  <block id="d717179901a081426cfa25f7009d2d04" category="cell">應用程式（用戶端） ID 。BlueXP可用於驗證Azure Active Directory的Active Directory服務主體ID。</block>
+  <block id="a7aef034348bc38d9b7f16020d181733" category="paragraph">《Flex訂購》（Flex訂購）以下列服務條款與說明為指引NetApp Keystone 。</block>
+  <block id="0493ca6a55a3d28e65cc473a5710b470" category="list-text">彈性訂閱服務最少一年、最長三年。在初始期限之後、服務將每年續約一次。容量可以以最小 1 TiB 的增量遞增。</block>
 </blocks>

@@ -79,7 +79,7 @@ Cloud Volumes 服務的訂閱是在 NetApp 服務引擎之外進行管理。相�
 | 名稱 | 字串 | 例項名稱 Cloud Volumes Service 。 
 
 
-| 「 cc_job_env 」 | 字串 | Cloud Manager 中的工作環境名稱。 
+| 「 cc_job_env 」 | 字串 | BlueXP中的工作環境名稱。 
 
 
 | "cc_client_id" | 字串 | 驗證 0 服務 ID 。 
@@ -97,7 +97,7 @@ Cloud Volumes 服務的訂閱是在 NetApp 服務引擎之外進行管理。相�
 | "cc_entions_id" | 字串 | Cloud Centra 工作環境的 ID 。 
 
 
-| 《 azure_client_id 》 | 字串 | 應用程式（用戶端） ID 。Cloud Manager 可用來驗證 Azure Active Directory 的 Active Directory 服務主體 ID 。 
+| 《 azure_client_id 》 | 字串 | 應用程式（用戶端） ID 。BlueXP可用於驗證Azure Active Directory的Active Directory服務主體ID。 
 
 
 | 《 azure_client_secret 》 | 字串 | 服務主體應用程式的用戶端機密值。 
