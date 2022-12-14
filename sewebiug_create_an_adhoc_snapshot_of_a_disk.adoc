@@ -22,4 +22,5 @@ summary: Keystone 會建立磁碟的 adocad 快照
 . 在 Create Snapshot （創建快照）對話框中，輸入快照的名稱，然後單擊 * Create* （創建 * ）。
 
 
+.完成後
 快照可能需要幾分鐘時間才能使用。如果可用、您可以透過複製此快照來建立另一個磁碟。如需相關資訊、請參閱 link:sewebiug_create_a_disk_from_a_snapshot.html["從快照建立磁碟"]。

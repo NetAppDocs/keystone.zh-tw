@@ -25,4 +25,5 @@ summary: Keystone 建立物件儲存群組
 . 按一下「 * 建立 * 」。這會建立工作、以指定的設定建立群組。
 
 
+.完成後
 建立物件儲存群組會以非同步工作的形式執行。您可以在工作清單中檢查工作狀態。如需追蹤工作的相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。

@@ -41,6 +41,7 @@ Azure NetApp 帳戶清單會顯示登入使用者可存取之租約中所有 Azu
 
 本節說明如何新增 Azure NetApp 帳戶。
 
+.開始之前
 您需要：
 
 * Azure NetApp 帳戶所屬的子租戶

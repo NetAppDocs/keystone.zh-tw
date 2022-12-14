@@ -41,6 +41,7 @@ Azure Volumes 清單會顯示指定子租戶和位置的 Azure Volume Pool 清�
 
 本節說明如何新增 Azure Volume 。
 
+.開始之前
 您需要：
 
 * Azure Volume 所屬的子租戶

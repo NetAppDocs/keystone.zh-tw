@@ -3138,4 +3138,10 @@
   <block id="d717179901a081426cfa25f7009d2d04" category="cell">應用程式（用戶端） ID 。BlueXP可用於驗證Azure Active Directory的Active Directory服務主體ID。</block>
   <block id="a7aef034348bc38d9b7f16020d181733" category="paragraph">《Flex訂購》（Flex訂購）以下列服務條款與說明為指引NetApp Keystone 。</block>
   <block id="0493ca6a55a3d28e65cc473a5710b470" category="list-text">彈性訂閱服務最少一年、最長三年。在初始期限之後、服務將每年續約一次。容量可以以最小 1 TiB 的增量遞增。</block>
+  <block id="b1fb6edb6a9cd7a76214562e75ef8390" category="paragraph-title">耗用容量的計量</block>
+  <block id="7f5043ec0394d759e4ce437fc8c9cd52" category="paragraph-title">每月帳單</block>
+  <block id="51ebf10290dc90afa947ed3f3696db87" category="paragraph-title">每年計費</block>
+  <block id="6f79e617449041abacad9b220d0cdd03" category="paragraph-title">整月帳單的寬限期</block>
+  <block id="1a616d944b2a6237298adf4b4e0db510" category="paragraph-title">設定檔案伺服器或區塊存放區以支援非同步災難恢復</block>
+  <block id="1e53e767469d41ddc55c1ff94e72e9a6" category="paragraph-title">在檔案共用區或磁碟上啟用非同步災難恢復</block>
 </blocks>

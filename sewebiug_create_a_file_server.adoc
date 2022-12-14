@@ -21,6 +21,7 @@ summary: Keystone 建立檔案伺服器
 * 將其設定為啟用 CIFS 。NFS服務預設為啟用。
 
 
+.開始之前
 請確定您有下列項目來建立伺服器：
 
 * 主控伺服器的子租戶。
@@ -89,6 +90,7 @@ NOTE: 如果您已訂閱同步災難恢復資料保護、此功能會自動為�
 
 NOTE: 如果您要建立啟用CIFS的伺服器、請針對輸入的網域名稱（FQDN）輸入Active Directory使用者名稱和Active Directory密碼、然後按一下*確認*。
 
+.完成後
 伺服器建立是以非同步工作的形式執行。您可以：
 
 * 檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。

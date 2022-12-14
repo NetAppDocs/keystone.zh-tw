@@ -18,6 +18,7 @@ summary: Keystone 新增雲端服務
 
 NetApp Service Engine 支援 Azure NetApp Files
 
+.開始之前
 您需要雲端服務的相關資訊、包括連線至服務的認證資料。這些資訊會因雲端服務類型而異。
 
 .步驟

@@ -32,6 +32,7 @@ image:sewebiug_image30.png["錯誤：缺少圖形影像"]
 . 按一下「 * 確認 * 」。這會建立一個工作來刪除磁碟。
 
 
+.完成後
 刪除磁碟會以非同步工作的形式執行。您可以：
 
 * 檢查工作清單中的工作狀態。如需追蹤工作的相關資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
