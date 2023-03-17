@@ -36,7 +36,6 @@
   <block id="8ed6b5326fb7fbc0acbe1c8a62d8e455" category="list-text">檔案伺服器和檔案共用中的檔案儲存設備</block>
   <block id="f29014a2ac951e2d1fdac031f0e83c84" category="list-text">儲存在貯體中的物件</block>
   <block id="30c740c15df6835e786c16943f13c878" category="summary">Keystone 服務層級的度量和定義</block>
-  <block id="5b28c1e596f24c136b5eb202ade03b6f" category="doc">服務層級指標與定義</block>
   <block id="bd3e3fa30e712c1d806acc88cecbed18" category="paragraph">下列詞彙與定義適用於 NetApp Keystone 《不適用彈性訂閱》（ Flex 訂購）服務：</block>
   <block id="fccdf4385eaed208ed2da98088a58040" category="list-text">* GiB 、 TiB 及 PIB 。 * 使用 1024 （ 1 GiB = 101010^3^ 位元組、 1 TiB = 1010^4^ 位元組、以及 1PiB = 10104^5^ 位元組、測量資料儲存容量。</block>
   <block id="fdd7161b237f60b8f4481babf5f0254a" category="list-text">* IOPS/TiB 。 * 應用程式所要求的每秒傳輸協定作業、除以已分配的磁碟區邏輯大小。</block>
@@ -182,7 +181,6 @@
   <block id="e9c80bfaff45d429248172e90bf4cf17" category="list-text">* 正在刪除 .* 物件、並正在處理中。</block>
   <block id="942b6d4c89e3eda89bf1fc3fdbb422bb" category="list-text">* 佇列中 * 物件處於佇列狀態、正在處理中。</block>
   <block id="c6c8c040e27193ed150428f0ad7c3c1c" category="list-text">* 在 NetApp 服務引擎外部配置的「已匯入」物件、若不符合 NetApp Keystone 「支援此彈性訂閱」（ Flex 訂閱）的條件、則會以此狀態匯入。</block>
-  <block id="3929849d264a990dc00723acaab40f6d" category="admonition">此狀態通常表示物件上未套用 QoS 原則、因此無法由 NetApp 服務引擎作為 Flex 訂閱的一部分加以管理。您可以修改物件（透過編輯筆）、並指派適當的服務層級。這會將該物件的狀態變更為「運作中」。</block>
   <block id="a14e6fa33d61dda2c98b6ecf326fcf81" category="list-text">* 在 NetApp 服務引擎外部配置的非標準 * 物件、若不符合 NetApp Keystone 「支援彈性訂閱」（ Flex 訂閱）的條件、則會以此狀態匯入。</block>
   <block id="801418460dd7ff544d44c93f2ca1106b" category="inline-link-macro">提出服務要求</block>
   <block id="77c9210b10afdcdea17f78b57f8021f3" category="admonition">此狀態通常表示物件遺漏了一或多個準則、以供 NetApp 服務引擎管理、做為 Flex 訂閱的一部分。您可以 <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> 讓他們透過 NetApp 服務引擎入口網站進行標準化與管理、並由支援團隊進行營運。</block>
@@ -1140,17 +1138,8 @@
   <block id="00a06b08857b60c805bcaf007a9ddc9c" category="list-text">按一下 * 關閉 * 。</block>
   <block id="edea9398bafcc918142f79d91b628f61" category="list-text">再按一下「 * 關閉 * 」以關閉「管理 S3 金鑰」對話方塊。</block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">客戶可在 Active IQ 《關於 Keystone 的資訊</block>
-  <block id="262343e94e4c53e68a3899e4036dbba5" category="doc">Flex 訂閱客戶可以在 Active IQ 功能不全的情況下檢視哪些內容？</block>
-  <block id="902acbb4ec533e7ef722d0120abac953" category="paragraph">如果您訂閱 NetApp Keystone 了《支援不限彈性訂閱》（ Flex 訂閱）服務、您可以在 Active IQ 《支援不限數位顧問》儀表板上檢視您的使用報告和圖表。</block>
-  <block id="8aec6a2bcfb78af1fffa4f2c52dfe49d" category="inline-link-macro">《數位顧問》文件 Active IQ</block>
-  <block id="5b312d01bd3eecc97ac2f41e3e4ddf39" category="paragraph">如需 Active IQ 更多關於「景點數位顧問」的資訊、請參閱 <block ref="8ea1c0730bcdf181af831ad867c5fa88" category="inline-link-macro-rx"></block></block>
-  <block id="2b1092032299ace7c3847b060eb7665f" category="paragraph">如果您的站台預設已安裝 NetApp 服務引擎、除了 Active IQ 透過「支援資訊顧問」之外、您還可以透過 NetApp 服務引擎介面檢視使用量圖表。不過、在客戶管理的環境中、您無法存取 NetApp 服務引擎介面、而且您只能透過 Active IQ 「 BMC Digital Advisor 儀表板」檢視容量圖表和使用報告。如需客戶管理環境的相關資訊、請參閱 <block ref="6c1babef94ecdfe13ce1038b7eabf5ab" category="inline-link-macro-rx"></block></block>
   <block id="e444f8631d85c8cbe1bb61d4d60f630f" category="paragraph">從您的網站收集度量資料的時間間隔為 5 分鐘。</block>
-  <block id="2844749536976db1a7dcb3cac896aadb" category="paragraph">身為客戶、如果您已訂閱 Flex 訂閱服務、您可以在 Active IQ 下列資訊中檢視：</block>
-  <block id="69e4ec00604265b757632eda3f1e383b" category="list-text">* Keystone Flex 訂閱 * 小工具：如果您已登入 Active IQ 到 SageDigital Advisor 、您可以看到 * Keystone Flex 訂閱 * 小工具、其中摘要說明您購買的 Flex 訂閱服務的容量使用量。</block>
-  <block id="dbba74e6f62c29e1dea79d870e9f4b53" category="list-text">如果您按一下小工具上的 * 檢視詳細資料 * 、就會看到 * 基礎概念 - 容量使用率 * 儀表板。「 * 基礎概念 - 容量使用率 * 」儀表板可根據訂閱的服務（例如服務層級、資料保護和進階資料保護服務）、進一步細分和分析容量和使用量資料。儀表板也會顯示過去 1 、 7 和 30 天的已用、已認可和突發容量使用量圖表、並計算和分割您目前的計費期間內的平均累積量。</block>
   <block id="29cb371773858a73b7aca64ff6f208f4" category="inline-link-macro">透過「 View Flex 訂閱」檢視容量使用率 NetApp Keystone</block>
-  <block id="fc533fceebb994e8ef6bbeba15951fd9" category="paragraph">如需詳細資訊、請參閱 <block ref="30eccfcef2e1a5c7fe1b095bf8a3af1d" category="inline-link-macro-rx"></block>。</block>
   <block id="4c74eb10725ef789a112d7196fc50814" category="doc">不可退回的磁碟產品</block>
   <block id="a71a923ce460f262fee04be6c83b9215" category="paragraph">NetApp 是 NetApp Keystone 《不退貨磁碟（ NRD ）訂閱》（ Flex 訂閱）的一部分、延伸了不可退貨的磁碟（ NRD ）產品。</block>
   <block id="91490a22c70aeb4fedb0f509c37bcffa" category="paragraph">如果您購買了 NRD 方案以供彈性訂閱、則 NetApp 不會因為支援與維護活動而恢復整個服務期間所使用的實體儲存媒體、或是在服務終止時恢復 NetApp 在提供服務時所使用的所有實體資產。</block>
@@ -2553,7 +2542,6 @@
   <block id="c255734de720d66c0c72eafba01042a7" category="list-text">選取您要為其建立 Volume 的子租戶。</block>
   <block id="401c8b82211468039719631c9be4f363" category="list-text">選取地區和網路。此清單會根據 Cloud Volumes Service GCP 子租戶的不二帳戶進行篩選。</block>
   <block id="1027be2ec13d0a5c51b04348a001394d" category="list-text">新增磁碟區名稱。</block>
-  <block id="009cb2fa973a63420fb9c3e6d19e6bf7" category="list-text">選取適當的服務層級。</block>
   <block id="42ecabf130bec289f7d0a1d1d0f32de7" category="list-text">輸入磁碟區的檔案路徑做為建立權杖。</block>
   <block id="789713868a6149107b3da72729b9ea14" category="list-text">指派磁碟區配額（以位元組為單位）。</block>
   <block id="2527ce275aacdb527aaf9b12e9515877" category="list-text">如有需要、請新增磁碟區的標記。</block>
@@ -2740,7 +2728,6 @@
   <block id="f1a6c6c231e8d9c62635b2a2d1978c05" category="sidebar">營運模式與責任</block>
   <block id="e47f584bdec2639ea8ddd7a6ab227555" category="sidebar">租賃與多租戶共享</block>
   <block id="456d0deba6a86c9585590550c797502d" category="sidebar">營運</block>
-  <block id="6b9cddec4dacfc2b279a47aff83fcc02" category="sidebar">Flex 訂閱與 Active IQ 功能</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">版本資訊</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">修正問題</block>
@@ -2795,7 +2782,6 @@
   <block id="00b8e318a80a143ca212b4f3b0cb449f" category="paragraph">* 我可以訂購新的儲存服務嗎？ * 是的、您可以從 NetApp 服務引擎入口網站申請新的儲存服務或擴充至儲存服務。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。</block>
   <block id="eff136c1ba2e8a2d6e4b14ddd6a80383" category="paragraph">* 是否立即增加可用的儲存承諾？ * 視要求的容量而定、系統會判斷容量是否已部署、或是需要額外的設備才能出貨和安裝。</block>
   <block id="f71fb6dbf8a02dfaed157786a5d1337e" category="paragraph">* 工作負載是否可以在層級之間移動？ * 是的、只要使用者已訂閱工作負載移至的層級、即可在層級之間移動工作負載。不過、我們不建議從較高層移至較低層、因為這可能會導致效能降低。只要編輯檔案共用並變更服務層級設定、即可完成此程序。</block>
-  <block id="0d5e545b2de42575e5208d3abb79f68c" category="paragraph">* 哪些軟體版本 ONTAP （例如、支援）是預設安裝的？ * 視訂閱的服務層而定（例如 ONTAP 、使用檔案和區塊服務的版本、 SANtricity 使用物件的版本、以及 StorageGRID 使用物件的版本）、支援團隊會安裝最新的穩定版本、而不會發生安全性或功能問題。</block>
   <block id="7ae9036783fb54e0a52aedfa26814f6b" category="paragraph">*有哪些不同的營運模式、以及誰負責主要活動？*</block>
   <block id="f2ac98a13f280a4eeb27bb4780175f5e" category="paragraph">*什麼是NetApp營運模式？*</block>
   <block id="7dd4b2b13e8a8a109244cccfafe4b5a5" category="paragraph">*什麼是合作夥伴營運模式？*</block>
@@ -2985,15 +2971,11 @@
   <block id="201a10b44105a7f46600bd19700a5b0b" category="admonition">對於所選的檔案共用、如果SnapCenter 您在NetApp服務引擎以外的支援環境中建立了一些快照、您可以找到這些快照已匯入並列出供您選擇。您可以選取這些匯入的快照、然後複製其中的新檔案共用。</block>
   <block id="675fcd36774818dbea836dc02cf4d0d6" category="list-text">選中要從中克隆的快照旁邊的複選框，然後單擊* Next*（下一步*）。新的檔案共用區會繼承所選快照的內容。</block>
   <block id="278530798aa56115669d57d1e3fa9073" category="list-text">新增 * 名稱 * 和 * 共用路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。選擇最符合您需求的服務層級。</block>
-  <block id="775c0cf773e692f5b5aff6da7ff3a805" category="paragraph">支援以預先定義的服務層級或效能服務層級提供容量的Flex訂購（Flex訂購）NetApp Keystone 。</block>
-  <block id="fda90827f7dc62058d02279d98e89377" category="paragraph">每個服務層級（服務層級）都是由其I/O密度所定義、亦即效能（每秒輸入/輸出作業次數[IOP]）和已用儲存設備（儲存資料的TiB）的比率、亦即IOPS/TiB。</block>
   <block id="7cb1e7ec7bd37f6e4d6191d590b40dfe" category="paragraph">由Flex訂閱服務管理的每個Volume均與服務層級相關聯。所有的 I/O 作業和所有在個別磁碟區上使用的儲存設備、都會納入磁碟區的 I/O 密度計算中。</block>
   <block id="c369a24416627121068456b8b8aad586" category="paragraph">下表定義服務層級。</block>
   <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">不同儲存類型的服務層級</block>
   <block id="18cf673c6b162cc27313691486836fca" category="admonition">最短一年期限和最小100TiB容量、適用於任何檔案共用和區塊服務層級的NetApp直接商機組合。^2^ 針對通路商機所選的每個服務層、最低一年期限和最低指定容量。</block>
   <block id="c3010f4da438652aab9b42654d086f8d" category="admonition">最短一年期限和最小100TiB容量、適用於任何檔案共用和區塊服務層級的NetApp直接商機組合。^2^ 針對通路商機所選的每個服務層最低一年期限和最低指定容量。^3^ 針對任一商機類型所選取的每個服務層最低一年期限和最低指定容量。</block>
-  <block id="abafef4130ed8938c3153ad43e1ac52e" category="paragraph">您可以從NetApp服務引擎使用者介面的多個畫面、將服務層級指派給您的訂閱。如需詳細資訊、請參閱：</block>
-  <block id="1e40687eaf73dde4f163672091e3ee28" category="paragraph">**** <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
   <block id="39cd3f32af1f6142ceceefd9378ef437" category="list-text">所有與檔案伺服器相關的災難恢復複寫複本。您無法復原刪除伺服器。</block>
   <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">當耗用容量大於指定服務層級的已認可容量時、系統會記錄突發消耗、並據此套用費用。產生的每個使用記錄都會執行此程序。因此、「暴增使用量」反映出您的過度使用容量在承諾容量之外的數量和使用期限。</block>
   <block id="e0450cba6f565299b1277f655c94fa25" category="paragraph">在訂閱啟動的前60天內、您累積的任何暴增使用量都會記錄下來、但不會在您的Flex訂閱發票上扣除。此寬限期可讓您將儲存設備設定成適當的調適性服務品質（AQO）設定、以便適當監控及計費。正確設定儲存設備時、您可以避免發生任何非預期的暴增費用。在60天的初始寬限期之後累積的任何突發使用量、都會在下一張發票上支付。此寬限期不會影響您現有訂閱的任何修改或續約。</block>
@@ -3110,7 +3092,6 @@
   <block id="6f6cb72d544962fa333e2e34ce64f719" category="list-text">尺寸</block>
   <block id="c8308b1eba7ba926a61b8fd802194386" category="list-text">物件</block>
   <block id="a2a8d61c91e599b9767a25a53af35534" category="list-text">行動（例如刪除庫位）</block>
-  <block id="2a96a4cfac487b5cc41e8fd4506c4230" category="sidebar">效能服務層級或服務層級</block>
   <block id="469b359223644ae76f8489201eaba251" category="sidebar">管理Azure NetApp Files</block>
   <block id="1b0a895ad5dbae078e4d9e0514db2461" category="sidebar">管理Azure NetApp帳戶</block>
   <block id="5397c058f4d19f86cf260de9d12c163e" category="sidebar">管理Azure容量資源池</block>
@@ -3144,4 +3125,105 @@
   <block id="6f79e617449041abacad9b220d0cdd03" category="paragraph-title">整月帳單的寬限期</block>
   <block id="1a616d944b2a6237298adf4b4e0db510" category="paragraph-title">設定檔案伺服器或區塊存放區以支援非同步災難恢復</block>
   <block id="1e53e767469d41ddc55c1ff94e72e9a6" category="paragraph-title">在檔案共用區或磁碟上啟用非同步災難恢復</block>
+  <block id="66c777f6bba3f375b5c9f563b51df61b" category="list-text">選取適當的服務層級。</block>
+  <block id="89fb8980c16c92d28af72e0579cfac9c" category="summary">Keystone訂閱報告與圖表</block>
+  <block id="8d0df828e022d4082415c7c86746be9f" category="doc">數位顧問儀表板與報告（適用於Flex訂閱）</block>
+  <block id="1aa4a8544fc94c7ce0ff8c9bc46bb523" category="paragraph">利用此功能（Digital Advisor）儀表板、您可以監控與您的訂閱有關的使用情況、並產生報告NetApp Keystone Active IQ Digital Advisor 。在訂購Keystone服務時、您可以在Digital Advisor儀表板上的* Keystone Subscriptions *（基礎概念訂閱）小工具上檢視訂閱與使用的詳細資料。</block>
+  <block id="936acd8bca51b1c47ce51ce5d9e45134" category="admonition">此處提供的資訊同時適用於ONTAP 整個過程StorageGRID 。相關章節已指出例外情況。</block>
+  <block id="b5d0947d6bc5e70f868d560d859163f5" category="inline-link">透過NetApp Keystone 「View訂閱」檢視容量使用率</block>
+  <block id="90022a4ed9f097be4671116b6b5b7754" category="paragraph">如需Keystone Digital Advisor小工具的相關資訊、請參閱<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
+  <block id="af23688fe47e4923ebd83f7238688630" category="paragraph">若要檢視詳細資料、請執行下列步驟：</block>
+  <block id="e84dede1181b53e24bdf1d55508b83bf" category="list-text">在Digital Advisor上、按一下小工具上的*檢視更多詳細資料*、即可在「*基礎概念訂閱*」頁面上檢視磁碟區上的使用詳細資料和警示。或者、請從左側導覽窗格移至*一般&gt;基礎概念訂閱*。</block>
+  <block id="b49a48b1a3504debfe7fedab8ad4086d" category="paragraph">每個服務層級的訂閱詳細資料、使用圖表及磁碟區詳細資料、會顯示在「*基礎概念訂閱*」畫面上的不同索引標籤中。</block>
+  <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">服務層級指標與定義</block>
+  <block id="1cc53c243cc7aca8f5ccf3f64e634b22" category="admonition">Keystone訂閱的容量使用量會顯示在儀表板和報告的Tibs中、最多可顯示兩個小數位數。如果使用量低於0.01 TiB、則該值會顯示為<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> 或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。如需其他使用量指標、請參閱<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。如需Keystone中使用不同容量的相關資訊、請參閱<block ref="138642b64e1fce198a03042cd762c1d6" category="inline-link-rx"></block>。</block>
+  <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">檢視訂閱詳細資料</block>
+  <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">您可以在「*訂閱詳細資料*」標籤中檢視帳戶名稱的所有訂閱。</block>
+  <block id="3134c27d858b331bf91068bcd770722c" category="paragraph"><block ref="3134c27d858b331bf91068bcd770722c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">您可以針對每個訂閱號碼查看下列資訊：</block>
+  <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*訂閱編號*：NetApp指派的Keystone訂閱訂閱的訂閱編號。</block>
+  <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*追蹤ID*：訂閱啟動時指派的追蹤ID。這是每個訂閱和網站的唯一ID、用於追蹤訂閱。</block>
+  <block id="3644820829d44e327e43dd95769b1686" category="list-text">*帳單期間*：訂閱的帳單期間、例如每月、每季或每年。</block>
+  <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*開始日期*：訂閱的開始日期。</block>
+  <block id="b8905d711198e80b0e2927dff32cfd11" category="list-text">*結束日期*：訂閱的結束日期。根據此日期、您可能會看到即將到期的訂閱資訊訊息。</block>
+  <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用狀態*：指出已使用或過度使用的訂閱量。如果您想要檢視最高使用量記錄、可以依此欄排序清單。</block>
+  <block id="87620cf1d6b63757e4ea27dcc44a9358" category="list-text"><block ref="5d188bf7f39558255a337fa21a17a0b0" category="inline-image-macro-rx" type="image"></block>：單擊此圖標將打開*訂購時間系列*選項卡，您可以在該選項卡中查看此訂購中包含的每個服務級別的歷史使用數據。</block>
+  <block id="dc73bcb00aeb285be26cfd179924fe9e" category="paragraph">您可以按一下向下箭頭查看更多詳細資料、以取得訂閱記錄。詳細資料、例如服務層級名稱、已提交、已耗用、可用容量、以及目前和預提的突發使用量、都會顯示在TiB中。顯示記錄較高使用量的特定服務層級。也會顯示針對您的Volume所產生的任何警告和警示。</block>
+  <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">如需Keystone儲存服務和相關服務層級的相關資訊、請參閱<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
+  <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">您可以參閱下列使用指標、查看每個訂閱的使用狀態：</block>
+  <block id="3aaeea3f20263addb794c645bdef9c16" category="paragraph"><block ref="3aaeea3f20263addb794c645bdef9c16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">索引</block>
+  <block id="cf6ffa83aadbdcc3058434f093ea54ec" category="paragraph"><block ref="56a93b6a2a3614c3aeb1b9851c5e43f2" category="inline-image-macro-rx" type="image"></block>：未記錄服務層級已認可容量的容量使用量<block ref="bb7f7720d1162aeddd650a9a9446141b" category="inline-image-macro-rx" type="image"></block>：使用量正常、在承諾容量的80%內<block ref="7646cb232eca2204ee8b299f2fdebfb4" category="inline-image-macro-rx" type="image"></block>：最大使用量、也就是使用量即將達到100%或以上的承諾容量。「*已用*」欄會針對超過承諾容量80%的任何使用量、顯示此指標<block ref="2acc4efd0d7d55d52fc790f88116c2e0" category="inline-image-macro-rx" type="image"></block>：使用量在連拍限制之內。「尖峰消耗」是指服務層級100%承諾容量的耗用量、且在議定的高載使用量限制範圍內、例如120%<block ref="9dd31109acddbedcca8dcf80e09eebda" category="inline-image-macro-rx" type="image"></block>：表示耗用量超過規定的突發量限制</block>
+  <block id="6258cb1a842831f15b22f87325717f37" category="section-title">檢視歷史訂閱資料</block>
+  <block id="a514224616890dbac3dede8f0d533add" category="paragraph">「*訂閱時間系列*」索引標籤會顯示特定期間訂閱的歷史資料。垂直圖表會顯示所選時間範圍的使用詳細資料、並提供適當的指標、供您比較和產生報告。</block>
+  <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">單擊*訂購時間序列*選項卡。</block>
+  <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">選取您要檢視其詳細資料的必要訂閱。您帳戶名稱中的第一個訂閱依預設為選取狀態。</block>
+  <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">從*開始日期*和*結束日期*欄位的行事曆圖示中選取時間範圍。預設時間範圍是從帳單期間的開始日期到目前日期。</block>
+  <block id="22dcf7d0676ff8f536ed431a7b672de7" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。您可以將滑鼠游標停留在圖表上、以檢視該資料點上的已提交、已用、突發及超過突發限制資料的使用量明細。</block>
+  <block id="4ace5fc4007e7d1732831506700b3e06" category="paragraph"><block ref="4ace5fc4007e7d1732831506700b3e06" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">將顯示下列詳細資料：</block>
+  <block id="8cdd8d8e55dfdcaf50118c634169eaf7" category="list-text">*訂閱詳細資料*：訂閱的開始與結束日期、以及計費期間、例如每季、每年等。</block>
+  <block id="12ed0205cd7410bc01e15e4b8a285019" category="list-text">*使用圖表*：長條圖會顯示日期範圍內服務層級的名稱和該服務層級所耗用的容量。集合的日期和時間會顯示在圖表底部。</block>
+  <block id="a0844c086d0417165bb56c154e3ddbcc" category="admonition">根據查詢的日期範圍、使用量圖表會以30個資料點的範圍顯示。</block>
+  <block id="3a6ef8ff534dc5701b3936464bf23441" category="paragraph">長條圖中的下列色彩表示服務層級中定義的耗用容量：</block>
+  <block id="19e499aa450e552c41a06bb0742085d6" category="list-text">綠色：80%以內。</block>
+  <block id="744f7cb6bd1aa9077ff244891a651e80" category="list-text">黃色：80%- 100%。</block>
+  <block id="c3b2392317dad26eb62ae53f36697f5e" category="list-text">紅色：暴增使用量（100%承諾容量達到議定的暴增限制）</block>
+  <block id="7673426e4a1c3cc1b97d1f96f8bd076a" category="list-text">紫色：超過連拍限制或<block ref="a9793d8430f5962bfc6384a1d9f6d19b" prefix=" " category="inline-code"></block>。</block>
+  <block id="4bd2482822c2e802c391dac7e891d9b1" category="list-text">灰色：_臨時使用量_：當時間週期的確切資料無法使用時、系統會記錄使用量、並以先前資料收集點的可用資料取代使用量。</block>
+  <block id="e87913116d2be6cac8be4e9b2fdf61e4" category="list-text">*目前已用*：服務層級定義的已用容量（以TiB為單位）指標。此欄位使用特定色彩：</block>
+  <block id="500993209cab49c52b98999c19742b12" category="list-text">灰色：無。</block>
+  <block id="3cc6f4aa3b6f7beebb36ba03d0894c83" category="list-text">綠色：在承諾容量的80%以內。</block>
+  <block id="33ac206d1e2d75015388a71d724255eb" category="list-text">黃色：超過承諾容量80%的任何使用量。</block>
+  <block id="6294dd4382e993530f7872de2d246655" category="list-text">*目前爆發*：在定義的突發量限制內或以上耗用容量的指標。在議定的連拍限制內的任何使用量、例如超過承諾容量的20%、均在連拍限制內。進一步的使用量會被視為超出連拍限制的使用量。此欄位使用特定色彩：</block>
+  <block id="b19e15743d3257f81d946a8133069a26" category="list-text">紅色：爆發</block>
+  <block id="8cb9900bd09a496f0e4b2e4220549b55" category="list-text">紫色：超出連拍限制。</block>
+  <block id="2ace5c82683c2f75d293a1427df222e4" category="list-text">*預提突發*：目前計費期間每月計算的預提突發用量或耗用容量指標。應計的突發使用量是根據服務層級的已確認和已用容量來計算：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
+  <block id="393e226f044ba6b817b81de6d94e7276" category="admonition">*目前耗用*、*目前爆發*及*預提爆發*指標、可決定訂閱計費期間的使用量、而非查詢的日期範圍。</block>
+  <block id="b99a21b99fb9e230b533835afc100672" category="section-title">檢視系統詳細資料</block>
+  <block id="819abf779095094c4f296a2f1911a333" category="paragraph">在*系統詳細資料*索引標籤上、您可以在ONTAP 下列項目中檢視用量的使用量和其他詳細資料：針對功能、此索引標籤會顯示節點及其在物件儲存環境中的個別使用情形StorageGRID 。</block>
+  <block id="7fdbc37a63f55a7bf94c4f7eee9fbbb6" category="example-title">流通量資訊&lt;/strong&gt; &lt;strong&gt;</block>
+  <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">針對功能、*系統詳細資料*索引標籤會顯示Keystone訂閱所管理儲存環境中磁碟區的容量使用量、磁碟區類型、叢集、Aggregate及服務層級等資訊ONTAP 。</block>
+  <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">按一下*系統詳細資料*索引標籤。</block>
+  <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">選取訂閱編號。依預設、會選取第一個可用的訂閱號碼。</block>
+  <block id="881fb88f30cf9ba2d57147ddfb898685" category="paragraph">隨即顯示Volume詳細資料。您可以在欄之間捲動、並將滑鼠游標停留在欄標題旁的資訊圖示上、以深入瞭解這些欄。您可以依欄排序、並篩選清單以檢視特定資訊。您可以按一下*複製節點序號*按鈕來複製個別節點序號。</block>
+  <block id="2ebe85ca38ab100590dc16fd81d18da1" category="paragraph"><block ref="2ebe85ca38ab100590dc16fd81d18da1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">不只是個物件、更是個物件&lt;/strong&gt; &lt;strong&gt;</block>
+  <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">對於物件、此索引標籤會顯示物件儲存環境中節點的邏輯使用量StorageGRID 。</block>
+  <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">選取訂閱編號。依預設、會選取第一個可用的訂閱號碼。選取訂閱編號後、即會啟用物件儲存詳細資料的連結。</block>
+  <block id="1690678f16ffa10ab1e26e44aa686db5" category="paragraph"><block ref="1690678f16ffa10ab1e26e44aa686db5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">按一下連結、即可檢視每個節點的節點名稱和邏輯使用詳細資料。</block>
+  <block id="47e40976658c073c0e6048f08d9a27c6" category="paragraph"><block ref="47e40976658c073c0e6048f08d9a27c6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">產生報告</block>
+  <block id="4fdff89d4e1cb0e4a41e6c52ac0eca05" category="paragraph">您可以按一下*下載CSV*按鈕、針對訂閱詳細資料、時間範圍的歷史使用資料、以及每個索引標籤的系統詳細資料、來產生及檢視報告： <block ref="f865f0dd5bea740b7e77dd6862c1f366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">詳細資料會以CSV格式產生、您可以儲存以供未來使用。</block>
+  <block id="e14d9b45f9f7753ca5842f57c89f2f92" category="paragraph">在*訂購時間系列*標籤中、您可以選擇下載查詢日期範圍的預設30個資料點、或是每日報告。</block>
+  <block id="d5b4a5bc607e49724b373b44e10a1b6d" category="paragraph"><block ref="d5b4a5bc607e49724b373b44e10a1b6d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">*訂購時間系列*標籤的範例報告、其中會轉換圖形資料：</block>
+  <block id="0a5468723ee164f4220a0538b1ff32b4" category="paragraph"><block ref="0a5468723ee164f4220a0538b1ff32b4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">檢視警示</block>
+  <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">儀表板上的警示會傳送警示訊息、讓您瞭解儲存環境中發生的問題。</block>
+  <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">警示可分為兩種類型：</block>
+  <block id="7a0a61d280e201148fcd091f8167d88f" category="list-text">*資訊*：如為訂閱即將結束等問題、您可以看到資訊警示。將游標停留在資訊圖示上、即可深入瞭解問題。</block>
+  <block id="d08b54ee187c7327910bae3997812ee1" category="list-text">*警告*：不符合法規的問題會顯示為警告。例如、如果託管叢集內有未附加調適性QoS（AQO）原則的磁碟區、您會看到一則警告訊息。您可以按一下警告訊息上的連結、在「*系統詳細資料*」索引標籤中查看不相容磁碟區的清單。</block>
+  <block id="77561a56c28ac9cccc7140baff66eefa" category="paragraph">如需AQO原則的相關資訊、請參閱<block ref="eb9e151d2a405494b16ec028c9292f15" category="inline-link-rx"></block>。</block>
+  <block id="2f79ebd4f32cabd1114c688445ebf53e" category="paragraph"><block ref="2f79ebd4f32cabd1114c688445ebf53e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a8e64b58beb4844a89f1dc662bd47837" category="paragraph">請聯絡NetApp支援部門、以取得這些警示與警告訊息的詳細資訊。如需相關資訊、請參閱<block ref="a434e165bb861f31d95108a8980bc76d" category="inline-link-rx"></block>。</block>
+  <block id="f5db195a7ff1968e337408920b956125" category="paragraph">支援以預先定義的效能服務層級（服務層級）提供容量的Flex訂購（Flex訂購）NetApp Keystone 。</block>
+  <block id="4c351868537e82b27bc0dc0ae18a7633" category="paragraph">每個服務層級都是由其I/O密度所定義、即效能（每秒輸入/輸出作業次數[IOP]）與已使用儲存設備（儲存資料的TiB）的比率、即IOPS/TiB。</block>
+  <block id="c42f8376955b2ed929e56dac3d7fa30e" category="paragraph">您可以從NetApp服務引擎使用者介面的多個畫面、將服務層級指派給您的訂閱。如需詳細資訊、請參閱 <block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block>。</block>
+  <block id="80501b8cb950ef7173fcd14a0b645162" category="doc">Flex訂閱客戶可以在Active IQ Digital Advisor 功能不全的情況下檢視哪些內容？</block>
+  <block id="10a5d15772da49e32e43a900f71621ce" category="paragraph">如果您訂閱NetApp Keystone 了《支援NetApp訂閱（Flex訂閱）》服務、您可以在Active IQ Digital Advisor 《The》（Digital Advisor）儀表板上檢視使用報告和圖表。</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link-macro">數位顧問文件</block>
+  <block id="199941fcffe1cc10f1d78276fb963281" category="paragraph">如需Digital Advisor的詳細資訊、請參閱 <block ref="6ddd16d015a7ae88cd6e808110d98222" category="inline-link-macro-rx"></block>。</block>
+  <block id="4990a96b0c95260b0d9f8cfea8027323" category="paragraph">如果您的站台預設已安裝NetApp服務引擎、除了數位顧問之外、您也可以透過NetApp服務引擎介面來檢視使用量圖表。不過、在客戶管理的環境中、您無法存取NetApp服務引擎介面、而且只能透過Digital Advisor儀表板檢視容量圖表和使用量報告。如需客戶管理環境的相關資訊、請參閱<block ref="c3e9ea2899321a2aa6e747d59ecbded6" category="inline-link-rx"></block></block>
+  <block id="e26e1d65695e28b374df5ca908c92139" category="paragraph">身為客戶、如果您已訂閱Flex訂閱服務、您可以在Digital Advisor上檢視下列資訊：</block>
+  <block id="763ef308610fa0c0e4819b7d32e376db" category="list-text">* Keystone Flex訂閱*小工具：如果您已登入Digital Advisor、您可以看到* Keystone Flex訂閱*小工具、其中摘要說明您購買的Flex訂閱服務的容量使用量。</block>
+  <block id="25a073100ab530af78a4207498fddc80" category="paragraph">如需詳細資訊、請參閱 <block ref="261ab361347f64f3209b06735747fe46" category="inline-link-macro-rx"></block>。</block>
+  <block id="c8248eedf8c02ace20c31385d67a0f1e" category="paragraph">如需*基礎概念訂閱*索引標籤的相關資訊、請參閱_Digital Advisor儀表板與報告（適用於Flex訂閱）。</block>
+  <block id="efc03cbbb4d0230d7feb269ad27e9cef" category="admonition">此狀態通常表示物件上未套用 QoS 原則、因此無法由 NetApp 服務引擎作為 Flex 訂閱的一部分加以管理。您可以修改物件（透過編輯筆）、並指派適當的服務層級。這會將該物件的狀態變更為「運作中」。</block>
+  <block id="d7b031f9c8084a9ac68f816f54b2be3b" category="paragraph">*哪些軟體版本ONTAP （例如、支援）是預設安裝的？*視訂閱的服務層而定（例如ONTAP 、使用檔案和區塊服務的版本、SANtricity 使用物件的版本、以及StorageGRID 使用物件的版本）、支援團隊會安裝最新的穩定版本、而不會發生安全性或功能問題。</block>
+  <block id="596c605317cc14ada22698b4c013fd32" category="sidebar">Flex訂閱中的服務層級</block>
+  <block id="8629d433b3c29320111a02fbc3cc079b" category="sidebar">Flex訂閱與Active IQ Digital Advisor 功能</block>
+  <block id="63d539af1a31e2f3e8acd3fdd788eac6" category="sidebar">檢視Active IQ Digital Advisor 並產生來自於此的報告</block>
 </blocks>

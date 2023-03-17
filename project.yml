@@ -17,7 +17,7 @@ sidebar:
       entries:
       - title: 服務容量定義
         url: "/nkfsosm_keystone_service_capacity_definitions.html"
-      - title: 效能服務層級或服務層級
+      - title: Flex訂閱中的服務層級
         url: "/nkfsosm_performance.html"
       - title: 服務層級指標與定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
@@ -43,8 +43,11 @@ sidebar:
       url: "/nkfsosm_site_requirements.html"
     - title: 營運
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
-    - title: Flex 訂閱與 Active IQ 功能
+    - title: Flex訂閱與Active IQ Digital Advisor 功能
       url: "/nkfsosm-keystone-and-aiq.html"
+      entries:
+      - title: 檢視Active IQ Digital Advisor 並產生來自於此的報告
+        url: "/aiq-keystone-details.html"
   - title: 版本資訊
     entries:
     - title: 新增功能
