@@ -959,7 +959,6 @@
   <block id="47b6bb2cce100732829dd417cfe27e9d" category="paragraph">在建立檔案共用之前、您必須先建立檔案伺服器來裝載它們。</block>
   <block id="17782c2473a5c5a938084773440e31e4" category="section-title">檔案伺服器 API</block>
   <block id="b87703d88dc9a8880b9d61547ad69520" category="inline-link-macro">建立檔案伺服器</block>
-  <block id="6a2dbafb5fdf4ebd41dc120352241e18" category="paragraph">您可以使用檔案伺服器 API 來檢視及管理檔案伺服器。如需檔案伺服器的詳細資訊、請參閱 <block ref="70b9819566ab0e06252a3ab0c6d653f0" category="inline-link-macro-rx"></block>。</block>
   <block id="2fb3d6cbcc854678a2cb28db02fe2686" category="paragraph">/`v2.1 / 檔案伺服器 '</block>
   <block id="e8375dbbe88f10ddcdba084ff89f098b" category="cell">您可以擷取所有檔案伺服器的詳細資料。擷取檔案伺服器的詳細資料、例如檔案伺服器 ID 、名稱、區域、區域、租戶、 和標記。</block>
   <block id="fe3d02358ec201be64696b17fce634e0" category="paragraph">/`v2.1 / 檔案伺服器 /{id}</block>
@@ -3170,7 +3169,6 @@
   <block id="744f7cb6bd1aa9077ff244891a651e80" category="list-text">黃色：80%- 100%。</block>
   <block id="c3b2392317dad26eb62ae53f36697f5e" category="list-text">紅色：暴增使用量（100%承諾容量達到議定的暴增限制）</block>
   <block id="7673426e4a1c3cc1b97d1f96f8bd076a" category="list-text">紫色：超過連拍限制或<block ref="a9793d8430f5962bfc6384a1d9f6d19b" prefix=" " category="inline-code"></block>。</block>
-  <block id="4bd2482822c2e802c391dac7e891d9b1" category="list-text">灰色：_臨時使用量_：當時間週期的確切資料無法使用時、系統會記錄使用量、並以先前資料收集點的可用資料取代使用量。</block>
   <block id="e87913116d2be6cac8be4e9b2fdf61e4" category="list-text">*目前已用*：服務層級定義的已用容量（以TiB為單位）指標。此欄位使用特定色彩：</block>
   <block id="500993209cab49c52b98999c19742b12" category="list-text">灰色：無。</block>
   <block id="3cc6f4aa3b6f7beebb36ba03d0894c83" category="list-text">綠色：在承諾容量的80%以內。</block>
@@ -3226,4 +3224,6 @@
   <block id="596c605317cc14ada22698b4c013fd32" category="sidebar">Flex訂閱中的服務層級</block>
   <block id="8629d433b3c29320111a02fbc3cc079b" category="sidebar">Flex訂閱與Active IQ Digital Advisor 功能</block>
   <block id="63d539af1a31e2f3e8acd3fdd788eac6" category="sidebar">檢視Active IQ Digital Advisor 並產生來自於此的報告</block>
+  <block id="fcdba6ace545174b3125451ecdd38a60" category="admonition">將滑鼠移到橫條圖上時、您可能會檢視 _ 臨時使用 _ 資料。這是在時間週期的確切資料無法使用時所記錄的使用量、並由先前資料收集點的可用資料取代。</block>
+  <block id="bad6d4d49543b42a93697517b551920a" category="paragraph">您可以使用檔案伺服器 API 來檢視及管理檔案伺服器。如需檔案伺服器的詳細資訊、請參閱 <block ref="b7c7173b32246b86fba34bb5faef1e28" category="inline-link-macro-rx"></block>。</block>
 </blocks>
