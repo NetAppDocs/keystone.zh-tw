@@ -4,7 +4,7 @@ permalink: nkfsfaq_service_offer_details.html
 keywords: netapp, keystone, service, offer, details, 
 summary: 服務供應詳細資料 
 ---
-= 彈性訂閱服務優惠詳細資料
+= Keystone 服務項目
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: 服務供應詳細資料
 
 
 [role="lead"]
-下列問題可解答您對於 NetApp Keystone 《恆時資訊訂閱》服務產品的常見問題。
+下列問題可解答您對於 NetApp Keystone Keystone 服務產品的常見問題。
 
 *最小承諾容量是多少？*
 
-針對一個或多個服務層、每個站台提交的最小 NetApp Keystone 容量為 100 TiB （ Flex訂購 ）。
+NetApp Keystone 訂閱服務的最低承諾容量為 100 TiB 、每個站台橫跨一或多個服務層級。
 
-*彈性訂閱協議的一般期限為何？*
+Keystone 服務合約的一般期限為何？ *
 
-彈性訂購方案提供 12 、 24 及 36 個月的期限。
+Keystone 服務提供 12 、 24 和 36 個月的期間。
 
 *如何存取儲存設備？*
 
@@ -54,7 +54,7 @@ NetApp Service Engine 是協調與管理工具、可讓您用來配置儲存設�
 
 *租戶訂閱條款是否可延伸至合作夥伴的訂閱期限之外？*
 
-租戶訂閱可延伸至合作夥伴目前的 Flex 訂閱期限之外。建立訂閱時、以及使用量報告中、都會顯示警告。
+租戶訂閱可延伸至合作夥伴目前的 Keystone 服務期限之外。建立訂閱時、以及使用量報告中、都會顯示警告。
 
 *我可以在同ONTAP 一個支援叢集上混合多個訂閱嗎？*
 

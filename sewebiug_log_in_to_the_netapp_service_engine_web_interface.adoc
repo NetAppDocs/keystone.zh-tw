@@ -44,7 +44,7 @@ NetApp 服務引擎可讓您使用下列認證登入：
 | NetApp 管理員（讀取） | 所有元件的唯讀存取權。 
 
 
-| NetApp 管理員 | 完整存取權限、可在 NetApp Service Engine 入口網站中執行所有功能、以管理 NetApp Keystone 「支援資訊」訂閱、以及合作夥伴與租戶管理的所有活動。 
+| NetApp 管理員 | 在 NetApp Service Engine 入口網站中執行所有功能的完整存取權和權限、以管理 NetApp Keystone 訂閱服務、以及合作夥伴和租戶管理的所有活動。 
 |===
 
 
@@ -83,7 +83,7 @@ NOTE: 如果登入成功、但看不到儀表板、請洽詢 NetApp 服務引擎
 . 選擇 NetApp SSO 。
 . 在 SSO 登入頁面上、輸入您的使用者名稱和密碼、然後按一下 * 登入 * 。
 +
-成功登入 NetApp 服務引擎網路介面後、會顯示 Flex 訂閱儀表板。如需 GUI 總覽、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服務引擎 Web 介面總覽"]。
+成功登入後、會載入 NetApp Service Engine Web 介面、並顯示 Keystone 訂閱服務儀表板。如需 GUI 總覽、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["NetApp 服務引擎 Web 介面總覽"]。
 
 
 

@@ -4,7 +4,7 @@ permalink: aiq-keystone-details.html
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
 summary: Keystone訂閱報告與圖表 
 ---
-= 數位顧問儀表板與報告（適用於Flex訂閱）
+= Keystone 的數位顧問儀表板和報告
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -24,13 +24,14 @@ NOTE: 此處提供的資訊同時適用於ONTAP 整個過程StorageGRID 。相�
 若要檢視詳細資料、請執行下列步驟：
 
 .步驟
-. 在Digital Advisor上、按一下小工具上的*檢視更多詳細資料*、即可在「*基礎概念訂閱*」頁面上檢視磁碟區上的使用詳細資料和警示。或者、請從左側導覽窗格移至*一般>基礎概念訂閱*。
+. 登入Digital Advisor。您可以查看 * 基礎概念訂閱 * 小工具、其中摘要說明您所購買 Keystone 服務的容量使用量。
+. 在 * 基礎概念訂閱 * 小工具上、按一下 * 檢視更多詳細資料 * 、即可在 * 基礎概念訂閱 * 頁面上檢視磁碟區的使用詳細資料和警示。或者、請從左側導覽窗格移至*一般>基礎概念訂閱*。
 
 
 每個服務層級的訂閱詳細資料、使用圖表及磁碟區詳細資料、會顯示在「*基礎概念訂閱*」畫面上的不同索引標籤中。
 
 
-NOTE: Keystone訂閱的容量使用量會顯示在儀表板和報告的Tibs中、最多可顯示兩個小數位數。如果使用量低於0.01 TiB、則該值會顯示為 `0` 或 `No Usage`。如需其他使用量指標、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["服務層級指標與定義"]。如需Keystone中使用不同容量的相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["彈性訂閱服務容量定義"]。
+NOTE: Keystone訂閱的容量使用量會顯示在儀表板和報告的Tibs中、最多可顯示兩個小數位數。如果使用量低於0.01 TiB、則該值會顯示為 `0` 或 `No Usage`。如需其他使用量指標、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["服務層級指標與定義"]。如需Keystone中使用不同容量的相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone 服務容量定義"]。
 
 
 

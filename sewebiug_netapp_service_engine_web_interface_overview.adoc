@@ -26,7 +26,7 @@ summary: NetApp 服務引擎網路介面總覽
 * * NetApp 標誌。 * 隨時按一下此按鈕、即可將顯示畫面返回儀表板檢視。
 * * 租戶 * 顯示目前選取的租戶。若要變更租戶、請參閱 link:sewebiug_select_tenant.html["選取租戶"]。
 * * 工作。 * 按一下以檢視最近的資源配置工作狀態。圖示會變更色彩以顯示組態工作狀態。如需詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["工作與工作狀態指標"]。
-* * 使用者登入。 * 顯示目前登入的使用者名稱。按一下此圖示即可登出。如需詳細資訊、請參閱 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["登出 NetApp Service Engine 網路介面"]。
+* * 使用者登入。 * 顯示目前登入使用者的 nKeystore 名稱。按一下此圖示即可登出。如需詳細資訊、請參閱 link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-out-of-the-netapp-service-engine-web-interface["登出 NetApp Service Engine 網路介面"]。
 
 
 image:sewebiug_image9_dashboard1.png["NSE 儀表板 -1"]
@@ -37,7 +37,7 @@ image:sewebiug_image9_dashboard2.png["NSE 儀表板 -2"]
 
 == 儀表板檢視
 
-儀表板會顯示 NetApp Keystone 有關您的不二儲存訂閱資訊、例如使用容量、根據使用量計費、以及最近的警示和服務要求。這是您第一次登入 NetApp 服務引擎時的預設檢視。如需儀表板的詳細資訊、請參閱 link:sewebiug_dashboard.html["檢視 Flex 訂閱儀表板"]。
+儀表板會顯示 NetApp Keystone 有關您的不二儲存訂閱資訊、例如使用容量、根據使用量計費、以及最近的警示和服務要求。這是您第一次登入 NetApp 服務引擎時的預設檢視。如需儀表板的詳細資訊、請參閱 link:sewebiug_dashboard.html["檢視 Keystone 儀表板"]。
 
 
 
@@ -88,15 +88,15 @@ image:sewebiug_image9_dashboard2.png["NSE 儀表板 -2"]
 * * 運作 * 。 * 表示儲存資源已正確配置 / 修改、可供使用、線上及功能正常。
 * * 正在刪除 .* 物件、並正在處理中。
 * * 佇列中 * 物件處於佇列狀態、正在處理中。
-* * 在 NetApp 服務引擎外部配置的「已匯入」物件、若不符合 NetApp Keystone 「支援此彈性訂閱」（ Flex 訂閱）的條件、則會以此狀態匯入。
+* * 在 NetApp 服務引擎之外配置的物件、如果不符合 NetApp Keystone 訂閱條件、則會以此狀態匯入。
 +
 
-NOTE: 此狀態通常表示物件上未套用 QoS 原則、因此無法由 NetApp 服務引擎作為 Flex 訂閱的一部分加以管理。您可以修改物件（透過編輯筆）、並指派適當的服務層級。這會將該物件的狀態變更為「運作中」。
+NOTE: 此狀態通常表示物件上未套用 QoS 原則、因此無法由 NetApp Service Engine 作為 Keystone 訂閱的一部分加以管理。您可以修改物件（透過編輯筆）、並指派適當的服務層級。這會將該物件的狀態變更為「運作中」。
 
-* * 在 NetApp 服務引擎外部配置的非標準 * 物件、若不符合 NetApp Keystone 「支援彈性訂閱」（ Flex 訂閱）的條件、則會以此狀態匯入。
+* * 非標準。 * 在 NetApp 服務引擎之外配置的物件、如果不符合 NetApp Keystone 訂閱的條件、就會以此狀態匯入。
 +
 
-NOTE: 此狀態通常表示物件遺漏了一或多個準則、以供 NetApp 服務引擎管理、做為 Flex 訂閱的一部分。您可以 link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["提出服務要求"] 讓他們透過 NetApp 服務引擎入口網站進行標準化與管理、並由支援團隊進行營運。
+NOTE: 此狀態通常表示該物件遺漏了一或多個由 NetApp Service Engine 管理的準則、這是您 Keystone 訂閱的一部分。您可以 link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["提出服務要求"] 讓他們透過 NetApp 服務引擎入口網站進行標準化與管理、並由支援團隊進行營運。
 
 * * 聯絡支援部門。 * 當資源配置或修改工作無法完全完成時、即會出現此狀態。針對處於此狀態的項目、提出支援要求以解決此問題。
 * * 運作（用於備份的來源物件）。 * 下列為可能的狀態：

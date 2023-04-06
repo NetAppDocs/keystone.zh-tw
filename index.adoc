@@ -4,7 +4,7 @@ permalink: index.html
 keywords: netapp, keystone, service, offering, 
 summary: 歡迎使用 Keystone 文件入口網站。 
 ---
-= 適用於簽署的文件 NetApp Keystone
+= 適用於此產品的文件NetApp Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -13,42 +13,36 @@ summary: 歡迎使用 Keystone 文件入口網站。
 :imagesdir: ./media/
 
 
-《銷售資訊》是本服務項目的一部分。 NetApp Keystone NetApp Keystone支援內部部署資本支出（ capex ）替代方案的產品組合、可讓雲端之旅更順利發展、其中包括了《支援不限彈性付費》和《支援不限彈性訂閱》服務。 NetApp Keystone NetApp Keystone NetApp Keystone利用橫跨內部部署和雲端的儲存服務、提供無縫的混合雲體驗。 NetApp Keystone如需 NetApp Keystone 更多有關資訊、請參閱 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
+NetApp Keystone 是一套內部部署資本支出（資本支出）替代方案、可協助您順利邁向雲端之路。利用橫跨內部部署和雲端的儲存服務、提供無縫的混合雲體驗。 NetApp Keystone如需 NetApp Keystone 更多有關資訊、請參閱 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-如需 NetApp Keystone 更多有關《 Flexsion 訂閱指南 link:https://www.netapp.com/services/subscriptions/keystone/flex-subscription["Keystone Flex 訂閱"]
+如需 NetApp Keystone 更多有關資訊、請參閱 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
 
-Flex 訂閱是一項儲存即服務服務方案、可在內部部署系統上提供雲端體驗、並可連線至雲端、您可以依照自己的需求進行訂購。
-
-* *《Flex P立即 支付*》-《Sof Flex付費》（FlexPand、彈性支付）是一系列靈活的財務替代方案、包括傳統融資、租賃及固定/變動選項、可滿足客戶的現金流需求。NetApp Keystone NetApp Keystone
-* *《Flex訂閱*》-《SewFlex訂閱》（Flex訂閱）是一項隨需付費、成果型訂閱服務、提供內部部署的雲端體驗。NetApp Keystone NetApp Keystone
-
-
-image:nkfsosm_image1.png["錯誤：缺少圖形影像"]
+Keystone 是一項儲存即服務產品、可在內部部署系統上提供雲端般的體驗、並可依您的需求連線至雲端。
 
 
 
-== 彈性訂閱
+== 基礎概念
 
-Flex 訂閱是一種隨需付費的訂閱型服務模式、可為偏好使用營運成本消費模式的使用者、提供無縫的混合雲體驗、以利預先支付資本支出或租賃。它可減少與管理無法預測的容量成長及處理複雜採購週期相關的障礙、讓客戶加速實現價值所需時間。彈性訂閱可讓客戶根據業務優先順序調整經濟效益與營運。
+Keystone 是一種以隨成長付費訂閱為基礎的服務模式、可為偏好使用營運成本模式的人、提供無縫的混合雲體驗、讓他們更喜歡使用前期資本支出或租賃。它可減少與管理無法預測的容量成長及處理複雜採購週期相關的障礙、讓客戶加速實現價值所需時間。Keystone可讓客戶根據業務優先順序調整經濟效益與營運。
 
 image:nkfsosm_image2.png["錯誤：缺少圖形影像"]
 
-Flex訂閱是一項訂閱型服務產品、可針對可部署於內部部署且可由NetApp、合作夥伴或客戶操作的區塊、檔案及物件資料類型、提供預先定義的效能服務層級（服務層級）的儲存容量。除了 Flex 訂閱所提供的基礎服務之外、您也可以額外付費選擇附加服務。下圖說明這些服務。
+Keystone 是一項訂閱型服務、可針對區塊、檔案和物件資料類型、提供預先定義的效能服務層級（服務層級）儲存容量、可由 NetApp 、合作夥伴或客戶自行部署。除了 Keystone 提供的基礎服務之外、您也可以額外付費選擇附加服務。下圖說明這些服務。
 
 * * Data Protection Basic * 服務提供 NetApp SnapMirror 和 NetApp SnapVault 的功能、並具有預設設定。
 * * 資料保護進階 * 利用 NetApp MetroCluster 的支援功能、提供符合 RPO 的 SLA 服務。
 
 
 
-NOTE: Flex 訂閱使用 SnapVault 支援功能來執行備份作業、而 SnapMirror 則可用於災難恢復、以遠端複寫資料；不會自動容錯移轉及還原應用程式。
+NOTE: Keystone 使用 SnapVault 技術進行備份作業、使用 SnapMirror 進行災難恢復、以遠端複寫資料、而不會自動容錯移轉及還原應用程式。
 
 image:nkfsosm_image3.png["錯誤：缺少圖形影像"]
 
 
 
-=== 彈性訂閱的優點
+=== Keystone 的優點
 
-彈性訂閱提供下列優點：
+Keystone 提供下列優點：
 
 * 讓 IT 人員不再需要執行複雜的儲存相關工作、也能專注於應用程式管理
 * 減少前期資本投資

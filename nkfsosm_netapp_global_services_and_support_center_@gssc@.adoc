@@ -4,12 +4,12 @@ permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html
 keywords: netapp, keystone, global, services, support, center, gssc, 
 summary: NetApp 全球服務與支援中心（ GSSC ） 
 ---
-= 彈性訂閱服務營運
+= Keystone 服務作業
 :allow-uri-read: 
 
 
 [role="lead"]
-利用 NetApp 全球服務與支援中心（ GSSC ）、《成功案例》（英文）和《支援服務》（英文）經理來執行《支援服務》（英文） NetApp Keystone NetApp Keystone NetApp Keystone 。
+NetApp Keystone Keystone 服務是透過 NetApp 全球服務與支援中心（ GSSC ）、 NetApp Keystone 成功經理和 NetApp Keystone 服務交付經理來執行。
 
 
 
@@ -21,7 +21,7 @@ NetApp 可遠端為 NetApp Keystone 客戶提供營運服務。這些服務涵�
 
 == 其他資訊與支援聯絡人
 
-NetApp 全球服務與支援中心（ GSSC ）團隊主要支援 NetApp Keystone 服務對象為 SESTFlex 訂閱客戶。
+NetApp全球服務與支援中心（GSSC）團隊主要支援NetApp Keystone 服務給客戶。
 
 直接從 NetApp 服務引擎入口網站（ * 支援 > 服務要求 * ）提出問題單、並提供適當的問題詳細資料以取得協助。
 

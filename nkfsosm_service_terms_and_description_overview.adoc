@@ -4,7 +4,7 @@ permalink: nkfsosm_service_terms_and_description_overview.html
 keywords: netapp, keystone, service, terms, description, overview, 
 summary: Keystone 服務條款與說明總覽 
 ---
-= 彈性訂閱服務條款與說明
+= Keystone 服務條款與說明
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Keystone 服務條款與說明總覽
 
 
 [role="lead"]
-《Flex訂購》（Flex訂購）以下列服務條款與說明為指引NetApp Keystone 。
+NetApp Keystone 遵循下列服務條款與說明。
 
-* 彈性訂閱服務最少一年、最長三年。在初始期限之後、服務將每年續約一次。容量可以以最小 1 TiB 的增量遞增。
+* Keystone 服務最少可提供一年、最長可提供三年。在初始期限之後、服務將每年續約一次。容量可以以最小 1 TiB 的增量遞增。
 * 每個站台最小容量為 100 TiB 、每個站台可有一個或多個叢集、以符合最低容量需求。在合作夥伴營運模式中、我們會針對客戶、每個站台及各個服務層級、建立具有彈性最低需求的訂閱。
 * 100 TiB容量可以是單一服務層級、也可以是層級的組合。
 * 租戶訂閱僅限於合作夥伴訂閱的服務層級。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: nkfsosm_overview.html 
 keywords: netapp, keystone, kfs, overview, 
-summary: NetApp Flex 訂閱總覽 
+summary: NetApp Keystone 總覽 
 ---
 = 營運模式、角色和責任
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: NetApp Flex 訂閱總覽
 
 
 [role="lead"]
-《 Flex訂購 》（ Flex 訂購）是以租賃模式為基礎。 NetApp Keystone
+NetApp Keystone 是以租賃模式為基礎。
 
-彈性訂閱提供三種服務交付作業模式。
+Keystone 提供三種服務交付作業模式。
 
 * * NetApp 營運模式 * 可讓客戶訂閱所提供的服務（根據所選的效能層級和儲存服務類型）、並以額外成本選擇 NetApp 營運的選項。NetApp 定義架構與產品、安裝於客戶內部、並使用 NetApp 儲存設備與 IT 資源來管理日常基礎架構管理作業。可用的儲存服務類型包括檔案、區塊和物件。以 Cloud Volumes Service 適用於 GCP 和 AWS 的功能為基礎的儲存訂閱、也可透過 NetApp Keystone 您的實例來管理。
 * * 合作夥伴營運 * * 模式 * 類似於 NetApp 營運模式、但合作夥伴則為其終端客戶營運服務。在此模式中、合作夥伴是參照的合約方。租戶是合作夥伴或服務供應商的客戶、與 NetApp 並無計費關係。合作夥伴營運模式通常具有多租戶環境、租戶和終端客戶 / 租戶都有自己的訂閱、由服務供應商 / 合作夥伴負責計費。合作夥伴管理員會為所有租戶執行管理工作。管理員可以在合作夥伴操作模式中執行的功能、與 NetApp 營運模式中的管理員不同。

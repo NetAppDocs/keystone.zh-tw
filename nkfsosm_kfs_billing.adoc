@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_kfs_billing.html 
-keywords: netapp, keystone, billing, flex subscription billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
-summary: Keystone Flex 訂閱帳單 
+keywords: netapp, keystone, billing, Keystone billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
+summary: Keystone 帳單 
 ---
-= 彈性訂閱帳單
+= Keystone 帳單
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: Keystone Flex 訂閱帳單
 
 
 [role="lead"]
-支援 FlexFlex 訂閱（ Flex 訂閱）、可針對您的儲存訂閱提供可預測且預先定價的服務。 NetApp Keystone
+支援可預測且預先定價的儲存訂閱方案。NetApp Keystone
 
-如果您偏好營運支出（營運支出）消費模式而非資本支出（資本支出）或租賃、您可以選擇彈性訂閱隨需付費模式、以因應靈活且可擴充的消費需求。
+如果您偏好營運支出（營運支出）消費模式、而非資本支出（資本支出）或租賃模式、您可以選擇Keystone隨成長付費模式、以因應靈活且可擴充的消費需求。
 
-彈性訂閱提供下列帳單管理功能：
+Keystone提供您下列帳單管理功能：
 
-* 您可以根據 IOPS 和延遲承諾容量來支付費用、以滿足各種工作負載需求。不同的效能服務層級（ Extreme 、 Premium 、 Standard 和 Value ）可讓您根據購買的 Flex 訂閱服務層級來管理儲存設備。
+* 您可以根據 IOPS 和延遲承諾容量來支付費用、以滿足各種工作負載需求。不同的效能服務層級（ Extreme 、 Premium 、 Standard 及 Value ）可讓您根據 Keystone 服務所購買的服務層級來管理儲存設備。
 * 它提供可預測的計費方式、可針對已提交的容量、以及針對可變（突發）容量使用量的「依使用量付費」。
 * 您可以針對硬體、核心作業系統及支援選擇套裝組合價格、只需支付一美元 / TiB 的價格。每種儲存類型、檔案、區塊、物件或雲端儲存服務都有一張發票。
 * 選擇靈活的服務條款與付款條件：您可以選擇每個站台 12 個月、 100TiB 或更多。之後、您可以自動續約 12 個月或每月續約。
 
 
-彈性訂閱計費是根據已提交的容量和可變的突發消耗量而計算。
+Keystone計費是根據已提交的容量和可變的突發消耗量來計算。
 
-如需已認可及突發容量使用量的相關資訊、請參閱 link:nkfsosm_keystone_service_capacity_definitions.html["彈性訂閱服務容量定義"]。
+如需已認可及突發容量使用量的相關資訊、請參閱 link:nkfsosm_keystone_service_capacity_definitions.html["Keystone 服務容量定義"]。
 
 如需如何檢視帳單詳細資料的詳細資訊、請參閱 link:sewebiug_billing.html["檢視帳單"]。
 
@@ -36,10 +36,10 @@ summary: Keystone Flex 訂閱帳單
 
 == 根據已提交的容量進行計費
 
-承諾容量是指各方（ NetApp / 合作夥伴和客戶）在單一訂閱中議定的各種服務容量。此容量會在每份 Flex 訂閱訂單上註明、並會依實際使用量計費。
+承諾容量是指各方（ NetApp / 合作夥伴和客戶）在單一訂閱中議定的各種服務容量。此容量會在每個Keystone訂單上註明、而且會計費、無論實際使用量為何。
 
 .耗用容量的計量
-NetApp 是 Flex 訂閱服務部署的一部分、持續監控及衡量服務使用量。系統每五分鐘會產生一筆使用量記錄、詳述目前的訂閱耗用容量。這些記錄會在計費期間內彙總、以產生發票和使用報告。
+作爲Keystone服務部署的一部分，NetApp會持續監控和衡量服務的使用量。系統每五分鐘會產生一筆使用量記錄、詳述目前的訂閱耗用容量。這些記錄會在計費期間內彙總、以產生發票和使用報告。
 
 
 
@@ -51,7 +51,7 @@ NetApp 是 Flex 訂閱服務部署的一部分、持續監控及衡量服務使�
 
 == 帳單排程
 
-彈性訂閱服務每月和每年計費一次。
+Keystone 服務每月及每年收費。
 
 .每月帳單
 發票每月寄出一次。在下一個月內、系統會寄送一張發票給您提供服務的月份。例如、您在一月份使用的服務發票會在二月初寄送。此發票包含已確認容量的費用、以及任何突發使用量（若適用）。
@@ -60,13 +60,13 @@ NetApp 是 Flex 訂閱服務部署的一部分、持續監控及衡量服務使�
 每個訂購年度開始時、系統會產生一張發票、以支付已確認容量的最低付款額。它會在訂閱開始日期產生。另一張發票會在訂閱季度結束時寄出、並將該季任何突發使用量的適用費用加總。如果已提交的容量在訂閱期間有所變更、則會在承諾容量變更生效的同一天、針對該訂閱年其餘時間按比例支付的最低付款額、寄送發票。
 
 .整月帳單的寬限期
-在訂閱啟動的前60天內、您累積的任何暴增使用量都會記錄下來、但不會在您的Flex訂閱發票上扣除。此寬限期可讓您將儲存設備設定成適當的調適性服務品質（AQO）設定、以便適當監控及計費。正確設定儲存設備時、您可以避免發生任何非預期的暴增費用。在60天的初始寬限期之後累積的任何突發使用量、都會在下一張發票上支付。此寬限期不會影響您現有訂閱的任何修改或續約。
+在訂閱啟動的前 60 天內、您累積的任何突發使用量都會記錄下來、但不會在 Keystone 服務發票上收取費用。此寬限期可讓您將儲存設備設定成適當的調適性服務品質（AQO）設定、以便適當監控及計費。正確設定儲存設備時、您可以避免發生任何非預期的暴增費用。在60天的初始寬限期之後累積的任何突發使用量、都會在下一張發票上支付。此寬限期不會影響您現有訂閱的任何修改或續約。
 
 
 
-== 彈性訂閱帳單的其他案例
+== Keystone計費的其他案例
 
-彈性訂閱計費有幾種案例、您應該熟悉這些案例。
+Keystone計費有幾種案例、您應該熟悉這些案例。
 
 
 
@@ -84,9 +84,9 @@ NetApp 是 Flex 訂閱服務部署的一部分、持續監控及衡量服務使�
 
 === 帳單 MetroCluster for 本
 
-進階資料保護功能使用 NetApp MetroCluster 功能、在兩個實體分隔的叢集之間鏡射資料。在鏡射式集合體上 MetroCluster 、資料會在每個叢集上寫入兩次。彈性訂閱服務的消費費用會獨立於每一方、因此會產生兩個相同的消費記錄。如果您透過 ONTAP VMware System Manager （系統管理程式）或 Active IQ Unified Manager VMware （ Unified Manager ）監控叢集、您可能會發現這些工具所報告的使用量與 Flex 訂閱量之間有差異。System Manager 和 Unified Manager 不會在鏡射（遠端）叢集上報告磁碟區、因此會報告一半的使用量度量、而 Flex 訂閱服務會報告一半的使用量。
+進階資料保護功能使用 NetApp MetroCluster 功能、在兩個實體分隔的叢集之間鏡射資料。在鏡射式集合體上 MetroCluster 、資料會在每個叢集上寫入兩次。每一側的基礎概念服務使用費、會產生兩筆相同的使用記錄。如果您透過 ONTAP 系統管理員（系統管理員）或 Active IQ Unified Manager （ Unified Manager ）監控叢集、您可能會發現這些工具和 Keystone 服務所報告的使用量差異。System Manager和Unified Manager不會在鏡射（遠端）叢集上報告磁碟區、因此會報告Keystone服務報告的使用量數據一半。
 
-例如：站台 A 和站台 B 是 MetroCluster 以整套組態設定。當使用者在站台 A 中建立 10TB 的磁碟區時、站台 B 會建立相同的 10TB 磁碟區Flex 訂閱可區分各磁碟區、並在每個站台額外記錄 10TB 的使用量、總容量增加 20TB 。System Manager 和 Unified Manager 報告在站台 A 中建立 10TB 磁碟區
+例如：站台 A 和站台 B 是 MetroCluster 以整套組態設定。當使用者在站台 A 中建立 10TB 的磁碟區時、站台 B 會建立相同的 10TB 磁碟區Keystone 可區分每個站台的磁碟區和記錄額外的 10TB 使用量、總容量增加 20TB 。System Manager 和 Unified Manager 報告在站台 A 中建立 10TB 磁碟區
 
 
 
@@ -98,7 +98,7 @@ NetApp 是 Flex 訂閱服務部署的一部分、持續監控及衡量服務使�
 
 === 計費和調適性 QoS 原則
 
-彈性訂閱會根據服務層級來衡量使用量。每個服務層級都與特定的調適性服務品質（QoS）原則相關聯。在部署期間、您將會收到訂閱的 Flex 訂閱服務每個 QoS 原則的詳細資料。在儲存管理作業期間、請確定您的磁碟區已根據訂閱的服務層級指派適當的QoS原則、以避免發生非預期的計費。如需 ONTAP 更多有關 QoS 原則的資訊、請參閱 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["透過 QoS 總覽來保證處理量"]。
+Keystone 會根據服務層級來測量使用量。每個服務層級都與特定的調適性服務品質（QoS）原則相關聯。在部署期間、系統會通知您訂閱的Keystone服務的每個QoS原則詳細資料。在儲存管理作業期間、請確定您的磁碟區已根據訂閱的服務層級指派適當的QoS原則、以避免發生非預期的計費。如需 ONTAP 更多有關 QoS 原則的資訊、請參閱 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["透過 QoS 總覽來保證處理量"]。
 
 
 
@@ -136,4 +136,4 @@ FlexGroups 是根據 FlexGroup 功能隨需調整的 QoS 原則來收費的。�
 
 === 系統與根磁碟區的收費
 
-系統和根磁碟區會在 Flex 訂閱服務的整體監控中受到監控、但不會計入或計費。這些磁碟區的使用量可免除計費。
+系統和根磁碟區會在Keystone服務的整體監控中受到監控、但不會計入或計費。這些磁碟區的使用量可免除計費。

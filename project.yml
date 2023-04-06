@@ -9,7 +9,7 @@ settings:
   langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: FlexFlex 訂閱 NetApp Keystone
+  - title: NetApp Keystone 服務
     url: "/index.html"
     entries:
     - title: 服務條款與說明
@@ -17,7 +17,7 @@ sidebar:
       entries:
       - title: 服務容量定義
         url: "/nkfsosm_keystone_service_capacity_definitions.html"
-      - title: Flex訂閱中的服務層級
+      - title: Keystone 中的服務層級
         url: "/nkfsosm_performance.html"
       - title: 服務層級指標與定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
@@ -31,19 +31,19 @@ sidebar:
         url: "/nkfsosm_nrd.html"
       - title: 美國公民支援
         url: "/nkfsosm_uscs.html"
-      - title: Flex 訂閱與 Equinix
+      - title: Keystone與Equinix
         url: "/nkfsosm_equinix.html"
     - title: 營運模式與責任
       url: "/nkfsosm_overview.html"
     - title: 租賃與多租戶共享
       url: "/nkfsosm_tenancy_overview.html"
-    - title: 彈性訂閱基礎架構
+    - title: Keystone基礎架構
       url: "/nkfsosm_keystone_service_delivery_architecture_overview.html"
     - title: 站台需求
       url: "/nkfsosm_site_requirements.html"
     - title: 營運
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
-    - title: Flex訂閱與Active IQ Digital Advisor 功能
+    - title: Keystone與Active IQ Digital Advisor
       url: "/nkfsosm-keystone-and-aiq.html"
       entries:
       - title: 檢視Active IQ Digital Advisor 並產生來自於此的報告
@@ -56,10 +56,10 @@ sidebar:
       url: "/rn_fixed_issues.html"
     - title: 已知問題
       url: "/rn_known_issues.html"
-  - title: 彈性訂閱常見問題集
+  - title: Keystone 訂閱常見問題集
     url: "/nkfsfaq_overview.html"
     entries:
-    - title: 彈性訂閱
+    - title: Keystone 訂閱
       url: "/nkfsfaq_keystone_subscription.html"
     - title: 服務供應詳細資料
       url: "/nkfsfaq_service_offer_details.html"
@@ -84,7 +84,7 @@ sidebar:
         url: "/sewebiug_select_tenant.html"
       - title: 檢視 NetApp 服務引擎 Web 介面
         url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
-    - title: 檢視 Flex 訂閱儀表板
+    - title: 檢視 Keystone 訂閱 DSflashboard
       url: "/sewebiug_dashboard.html"
     - title: 檢視帳單
       url: "/sewebiug_billing.html"

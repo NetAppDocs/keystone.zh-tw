@@ -14,7 +14,7 @@ summary: 已修正NetApp服務引擎的問題
 
 
 [role="lead"]
-先前版本的NetApp Service Engine已修正下列問題、讓您成功使用NetApp Keystone 您的《支援更新訂閱》服務。
+先前版本的 NetApp 服務引擎中發現的下列問題已修正、可讓您成功使用 NetApp Keystone 服務。
 
 [cols="3*"]
 |===

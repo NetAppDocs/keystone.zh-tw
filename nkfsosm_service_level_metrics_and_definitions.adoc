@@ -14,7 +14,7 @@ summary: Keystone 服務層級的度量和定義
 
 
 [role="lead"]
-下列詞彙與定義適用於 NetApp Keystone 《不適用彈性訂閱》（ Flex 訂購）服務：
+NetApp Keystone 中使用以下術語和定義：
 
 * * GiB 、 TiB 及 PIB 。 * 使用 1024 （ 1 GiB = 101010^3^ 位元組、 1 TiB = 1010^4^ 位元組、以及 1PiB = 10104^5^ 位元組、測量資料儲存容量。
 * * IOPS/TiB 。 * 應用程式所要求的每秒傳輸協定作業、除以已分配的磁碟區邏輯大小。

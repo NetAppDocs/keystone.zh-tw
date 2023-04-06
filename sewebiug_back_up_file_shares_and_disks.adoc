@@ -21,7 +21,7 @@ NOTE: 當您建立或編輯磁碟區的備份原則時、系統會自動建立�
 
 如需相關資訊、請參閱 link:seapiref_backups_apis.html["備份API"]
 
-您可以透過NetApp SnapMirror技術來備份來源磁碟區、此技術可與您的Flex訂閱搭配使用。如需相關資訊、請參閱 link:index.html#flex-subscription["請按這裡"]。
+備份來源磁碟區是透過啟用 Keystone 訂閱服務的 NetApp SnapMirror 技術來啟用。如需相關資訊、請參閱 link:index.html#flex-subscription["請按這裡"]。
 
 當您建立或編輯Volume時、會定義其備份排程。備份會依照預定的時間間隔進行、並儲存在目的地系統中。為了讓備份正常運作、SnapMirror關係應與目的地環境建立。不同區域的複寫檔案共用和磁碟會儲存在每個叢集上的專用備份儲存 VM （儲存虛擬機器、也稱為 SVM ）上。可在 ONTAP 不同區域的兩個獨立的叢集之間執行備份。
 

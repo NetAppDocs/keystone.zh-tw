@@ -14,9 +14,9 @@ summary: 檢視及下載帳單詳細資料
 
 
 [role="lead"]
-您可以在 NetApp Keystone NetApp Service Engine 儀表板和 Billing （帳單）畫面上、檢視您的《支援》（ Flex 訂購）上所有訂閱服務的每月費用。
+您可以在 NetApp 服務引擎儀表板和帳單畫面上、檢視 NetApp Keystone 訂閱服務上所有訂閱服務的每月費用。
 
-您可以檢視先前幾個月內所有已訂閱的 Flex 訂閱服務的帳單詳細資料。每個月的尖峰流量計費會以高亮顯示。
+您可以檢視過去幾個月 Keystone 訂閱服務所有訂閱服務的帳單詳細資料。每個月的尖峰流量計費會以高亮顯示。
 
 image:billing.png[""]
 
@@ -37,4 +37,4 @@ NOTE: 您也可以按一下儀表板上*截至日期成本*小工具右上角的
 . 選取表格中所列的任何月份。表中會顯示您本月的所有訂閱內容、以及相關的帳單。費用會根據承諾的容量和突發使用量來分攤。
 
 
-如需帳單的詳細資訊、請參閱 link:nkfsosm_kfs_billing.html["彈性訂閱帳單"]
+如需帳單的詳細資訊、請參閱 link:nkfsosm_kfs_billing.html["Keystone 帳單"]

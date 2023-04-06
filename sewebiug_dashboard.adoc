@@ -4,7 +4,7 @@ permalink: sewebiug_dashboard.html
 keywords: netapp, keystone, view, dashboard, capacity utilization, monthly charges, alerts, service request 
 summary: 儀表板檢視 
 ---
-= 檢視 Flex 訂閱儀表板
+= 檢視 NetApp 服務引擎上的 Keystone 儀表板
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ summary: 儀表板檢視
 
 儀表板會在下列小工具中顯示重要資訊、您可以按一下這些小工具進行深入分析：
 
-* * 容量使用率： * 顯示您訂閱服務的容量使用率、例如 Keystone Flex 訂閱、 Keystone Flex 公用程式和 Cloud Services 。按一下長條圖、即可前往每個服務層級的中斷使用率圖表。您可以檢視每個服務層級和附加服務（例如資料保護和進階保護）的未使用、耗用和突發使用量。它可協助您識別是否需要為訂閱新增更多容量、或是選擇不同的服務層級。
+* * 容量使用率： * 顯示訂閱服務的容量使用率、例如 Keystone 訂閱服務和雲端服務。按一下長條圖、即可前往每個服務層級的中斷使用率圖表。您可以檢視每個服務層級和附加服務（例如資料保護和進階保護）的未使用、耗用和突發使用量。它可協助您識別是否需要為訂閱新增更多容量、或是選擇不同的服務層級。
 * *至今成本（計費）：*此區段是根據您的合作夥伴管理員權限而提供。它會顯示您所有訂閱的每月總費用。您可以檢視過去四個月的帳單詳細資料。將游標移到圖表上方時、您可以根據您的承諾和突發使用量、檢視費用的分段。如果您有多個訂閱訂閱訂閱某項訂閱服務、按一下某個月的長條圖、訂閱清單就會顯示在「帳單」畫面上。如需帳單的詳細資訊、請參閱 link:sewebiug_billing.html["檢視帳單"]。
 * * 警示： * 顯示最近的警示摘要、例如狀態、訊息及建立時間。如需警示的詳細資訊、請參閱 link:sewebiug_alerts.html["建立及管理警示"]。
 * * 服務要求： * 顯示最近的服務要求摘要、依優先順序及建立時間排序。如需服務要求的詳細資訊、請參閱 link:sewebiug_raise_a_service_request.html["提出服務要求"]。
