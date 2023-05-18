@@ -114,8 +114,8 @@ NOTE: 使用者或群組名稱應遵循標準 AD 格式。如果輸入的使用�
 .完成後
 * 僅限 CIFS 類型共用：若要讓共用區可供主機名稱使用、您的網域管理員必須以 CIFS 伺服器名稱和 IP 位址來更新 DNS 記錄。否則、只能透過 IP 位址存取共用區。例如：
 +
-** 更新 DNS 記錄後、請使用主機名稱或 IP 來存取共用區：例如 file://hostname/share["\hostname\share"^] 或 file://IP/share["\ip\share"^]
-** 在沒有更新 DNS 記錄的情況下、您必須使用 IP 位址來存取共享區、例如 file://IP/share["\ip\share"^]
+** 更新 DNS 記錄後、請使用主機名稱或 IP 來存取共用區：例如 file://["\hostname\share"^] 或 file://["\ip\share"^]
+** 在沒有更新 DNS 記錄的情況下、您必須使用 IP 位址來存取共享區、例如 file://["\ip\share"^]
 
 
 * 建立共用區會以非同步工作的形式執行。您可以：

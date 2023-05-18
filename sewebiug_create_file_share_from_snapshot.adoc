@@ -34,8 +34,8 @@ NOTE: 對於所選的檔案共用、如果SnapCenter 您在NetApp服務引擎以
 .完成後
 * 僅限 CIFS 類型共用：若要讓共用區可供主機名稱使用、您的網域管理員應使用 CIFS 伺服器名稱和 IP 位址來更新 DNS 記錄。否則、只能透過 IP 位址存取共用區。例如：
 +
-** 更新 DNS 記錄後、請使用主機名稱或 IP 來存取共用區：例如 file://hostname/share["\hostname\share"^] 或 file://IP/share["\ip\share"^]
-** 如果沒有更新 DNS 記錄、您應該使用 IP 位址來存取共用區、例如 file://IP/share["\ip\share"^]
+** 更新 DNS 記錄後、請使用主機名稱或 IP 來存取共用區：例如 file://["\hostname\share"^] 或 file://["\ip\share"^]
+** 如果沒有更新 DNS 記錄、您應該使用 IP 位址來存取共用區、例如 file://["\ip\share"^]
 
 
 * * Create Share* 以非同步工作的形式執行。您可以：

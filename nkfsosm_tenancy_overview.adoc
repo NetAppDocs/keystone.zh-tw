@@ -27,7 +27,7 @@ NOTE: 在 Keystone 環境中、單一租賃是 NetApp 營運的模式、而多�
 .子租戶
 Keystone 子租戶完全存在於與多對一關聯的父租戶內。子租戶可在租戶內部提供邏輯資源分離、並作為回饋報告的基礎。所有儲存資源（即檔案服務、區塊儲存和物件儲存）都屬於子租戶。
 
-image:nkfsosm_image10.png[""]
+image:nkfsosm_image10.png["租賃架構"]
 
 
 

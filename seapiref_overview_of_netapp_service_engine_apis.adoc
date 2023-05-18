@@ -52,7 +52,7 @@ NetApp Service Engine 提供一組 API 、透過 REST 風格的 Web 服務介面
 
 NetApp 服務引擎支援區域和區域的概念、如下圖所示。區域代表資料中心或站台、而區域代表區域內的儲存子單位（技術上是資料中心 / 站台內的叢集）。多個區域支援資料可用度與資料保護（ DP ）功能。
 
-image:seapiref_image1.png["錯誤：缺少圖形影像"]
+image:seapiref_image1.png["區域和區域關係"]
 
 單一 NetApp 服務引擎執行個體可支援一或多個租戶。NetApp Service Engine 將租戶和子租戶的概念當成階層實體、用來擁有或管理儲存服務。
 

@@ -1,12 +1,17 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_keystone_service_capacity_definitions.html 
+keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
+summary: Keystone 服務容量定義 
+---
 = Keystone 服務容量定義
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
 
-
---- 定義側欄：側欄永久連結： nkfsosm_keystone_service_capacity_definitions.html 關鍵字： NetApp 、 keystone 、服務、容量、定義、 突發、承諾容量、消耗容量、計費容量摘要：基礎概念服務容量定義 --
-
-
-
-= Keystone 服務容量定義
 
 [role="lead"]
 此功能包括：NetApp Keystone

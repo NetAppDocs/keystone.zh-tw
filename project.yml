@@ -21,6 +21,8 @@ sidebar:
         url: "/nkfsosm_performance.html"
       - title: 服務層級指標與定義
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
+      - title: Keystone 中的自適應服務品質
+        url: "/aqos-kfs.html"
       - title: 帳單
         url: "/nkfsosm_kfs_billing.html"
       - title: 資料保護

@@ -26,7 +26,6 @@
   <block id="648c58637f3ee6ceee5a88bedcdadcde" category="section-title">NetApp 服務引擎的主要概念</block>
   <block id="13fd5896918659251fe2f5bf181b010f" category="paragraph">NetApp 服務引擎支援區域和區域的概念、如下圖所示。區域代表資料中心或站台、而區域代表區域內的儲存子單位（技術上是資料中心 / 站台內的叢集）。多個區域支援資料可用度與資料保護（ DP ）功能。</block>
   <block id="341d84aa26cb4521474864e04ea2a63b" category="inline-image-macro">錯誤：缺少圖形影像</block>
-  <block id="5a0b4973d48063535696aa9e17c4d1a7" category="paragraph"><block ref="5a0b4973d48063535696aa9e17c4d1a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f1aaa0834c53b85da9b4a081d34a946" category="paragraph">單一 NetApp 服務引擎執行個體可支援一或多個租戶。NetApp Service Engine 將租戶和子租戶的概念當成階層實體、用來擁有或管理儲存服務。</block>
   <block id="cfec8dcefc0bb72f0cd2b90d8ecaa9f0" category="paragraph">子租戶是租戶內的實體。它可用於回報、安全性分離等等。</block>
   <block id="e5e9dc3c16d4b85d14949811db406ceb" category="paragraph">每個子租戶都會建立儲存項目。每個子租戶都可以擁有多個適合該子租戶的類型和編號儲存項目。</block>
@@ -208,12 +207,9 @@
   <block id="19709f95e2f7cabc9fabb37976eb0fb8" category="paragraph">使用下表中的方法擷取以檔案名稱識別的報告。</block>
   <block id="b70bd5e05fa0187ee018a83a5138d67b" category="cell">擷取以檔案名稱識別的報告。</block>
   <block id="09118463562b5775f9ff30e47161c4f9" category="cell">「檔案名稱（字串）」：報告檔案名稱。</block>
-  <block id="e4355ea354829ede276c4aa44fe13eb2" category="summary">歡迎使用 Keystone 文件入口網站。</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
-  <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="173cfa01f909dadb1cc7bb7d43b24a2e" category="list-text">* Data Protection Basic * 服務提供 NetApp SnapMirror 和 NetApp SnapVault 的功能、並具有預設設定。</block>
   <block id="1ca92842b9f8718a33770baa49c236e6" category="list-text">* 資料保護進階 * 利用 NetApp MetroCluster 的支援功能、提供符合 RPO 的 SLA 服務。</block>
-  <block id="98fe652f43ec6cef9ce4e8038be74733" category="paragraph"><block ref="98fe652f43ec6cef9ce4e8038be74733" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8bd95ed1921f37e6566d5e1a15654f19" category="list-text">讓 IT 人員不再需要執行複雜的儲存相關工作、也能專注於應用程式管理</block>
   <block id="948e87abc7966fff3728ef34d8d32e67" category="list-text">減少前期資本投資</block>
   <block id="b5634f05db946f67802388928f9d60ab" category="list-text">讓客戶在不過度資源配置的情況下、也能滿足他們的需求</block>
@@ -221,7 +217,6 @@
   <block id="fca11f76a1ce41bfeffb0cda186de37d" category="list-text">繞過複雜的組織採購程序、簡化基礎架構的資源配置</block>
   <block id="722f683c00fc1f7fe8eb43eecdbf09f8" category="list-text">確保內部部署的資料安全無虞</block>
   <block id="1a8f20342523eaa8f9195dffa647161c" category="list-text">可適當控制法規遵循、效能及安全性</block>
-  <block id="a0a35eef0076381c8b78bfe2cdbed28b" category="paragraph"><block ref="a0a35eef0076381c8b78bfe2cdbed28b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ba791218e3e41923099db15abe057c18" category="list-text">從左側導覽窗格中選取 * 檔案服務 * 、然後選取 * 共享 * 。</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">完成後</block>
   <block id="3f715514a2bfe764cac754c65809be90" category="list-text">僅限 CIFS 類型共用：若要讓共用區可供主機名稱使用、您的網域管理員應使用 CIFS 伺服器名稱和 IP 位址來更新 DNS 記錄。否則、只能透過 IP 位址存取共用區。例如：</block>
@@ -242,7 +237,6 @@
   <block id="181f65b9b38ac696b5bd533415493da2" category="list-text">按一下「 * 建立 * 」。這會建立工作、以使用指定的設定來建立使用者。</block>
   <block id="4729405599ad6dbc220c87d7a0c3ec4a" category="paragraph">Create 使用者會以非同步工作的形式執行。您可以：</block>
   <block id="8e6fc98e081283f66ed3168150e5d498" category="list-text">工作完成後、請檢查「使用者」清單中的共用狀態。</block>
-  <block id="560c822dc17f9ac8ce69bf5b11416ace" category="paragraph"><block ref="560c822dc17f9ac8ce69bf5b11416ace" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f503801323daa68428cbc58b04af9c66" category="section-title">NetApp 營運（單一租賃）環境中的訂購模式</block>
   <block id="f414f33dd36c7df5855c80c5efb4a954" category="list-text">訂閱是由 NetApp 管理員或 GSSC 針對租戶和區域所建立。</block>
   <block id="7e58a49da804872ab7943c863fa6aedd" category="list-text">訂閱名稱衍生自訂閱租戶的帳單實體。</block>
@@ -1045,7 +1039,6 @@
   <block id="f1206f9fadc5ce41694f69129aecac26" category="list-text">設定</block>
   <block id="507a3a88cebc46603ce2be8eaa924eee" category="list-text">部署</block>
   <block id="79b7581616a6892a33647af8676f7c45" category="list-text">正式上線</block>
-  <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b407d85189fae6568411d1e0477e1a61" category="paragraph">系統管理與監控</block>
   <block id="d2986ac8cb6bd55892099c1ffd6b1f6f" category="list-text">監控</block>
   <block id="4b1b4dc8cf38b3c64b1d657da8f5ac8c" category="list-text">報告</block>
@@ -1395,9 +1388,6 @@
   <block id="f9452e95d52ebd12efeebe564007d35d" category="summary">訂購 NetApp Keystone</block>
   <block id="f65085dc4bb69a27d3e266d2c5504a2b" category="list-text">支援電子郵件： mailto ： keystone.services@netapp.com[keystone.services@netapp.com^]</block>
   <block id="d0a96adfc74a1b7215d05e43eb9ac7eb" category="list-text">提報電子郵件： mailto ： keystone.escalations@netapp.com[keystone.escalations@netapp.com^]</block>
-  <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">此處列出檔案、區塊和物件儲存設備的服務層級。</block>
-  <block id="89c3a4001bb90f26ff84b68cb534b8ee" category="paragraph">報告磁碟區層級的 I/O 密度計算、以顯示上週的尖峰 I/O 密度。尖峰效能取決於每小時的時間間隔。每個磁碟區的 I/O 密度報告會每月產生一次、以衡量各服務層級的遵循程度。</block>
-  <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">檔案服務</block>
   <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* 支援的傳輸協定 * ： NFS 、 CIFS 、 iSCSI 及 FC</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">* 服務層級 *</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">* 極致 *</block>
@@ -1420,31 +1410,21 @@
   <block id="49f593d642a7f3dccf1fe5bf08aaf55a" category="cell">* 最大處理量 MBps （ 32kb/IOP ） *</block>
   <block id="0584ce565c824b7b7f50282d9a19945b" category="cell">384..</block>
   <block id="c74d97b01eae257e44aa9d5bade97baf" category="cell">16</block>
-  <block id="eea2274bcc20c5ab5c322a30dcee6258" category="cell">* 延遲 *</block>
   <block id="99f8d77b50f8491531357b2d907d59d1" category="cell">不到 1 毫秒</block>
   <block id="6fad0b609a57af2ae4dbbf92ff728673" category="cell">低於 2 毫秒</block>
   <block id="342e06f2c04b016459176bdbbd984dfe" category="cell">低於 17 毫秒</block>
-  <block id="6dc055784da42aa0a64927764707636c" category="cell">* 最小容量 * 、 1 、 2^</block>
-  <block id="5c3110c52843bef1e5effeb6f09a6ab9" category="cell">100 TiB^1^</block>
-  <block id="6b2c7dcd56a1cb15a3943cec9cbc288a" category="cell">15 TiB^2^</block>
-  <block id="2d46634ee64919ed31d1417b57f21934" category="cell">25 TiB^2^</block>
-  <block id="7d7a1cbef5663cabe63cfb0d8ca01cb8" category="cell">50 TiB^2^</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="section-title">區塊儲存</block>
   <block id="8e634bafd4732f9f05a35ceb5ed54902" category="paragraph">* 支援的傳輸協定 * ： FC 與 iSCSI</block>
   <block id="2f569257101cf136a49d983584bfc44f" category="cell">高效能運算</block>
   <block id="887af0da9693198de27d195a46aa6675" category="cell">視訊監控</block>
-  <block id="346042acde3f070972b08ae84fafa549" category="cell">5.500</block>
   <block id="a078c2a6f2d4313df0b942ebf9d6b940" category="cell">4 、 000</block>
   <block id="17e62166fc8586dfa4d1bc0e1742c08b" category="cell">43.</block>
   <block id="c16a5320fa475530d9583c34fd356ef5" category="cell">31</block>
   <block id="f369b2981da1e28bb1901ae50eeb877a" category="cell">低於 0.5 毫秒</block>
-  <block id="bf9224ad67754b6fee4e952851b35d3e" category="cell">100 TiB^3^</block>
-  <block id="2378ad2afb80cd0122c6f07757ca1321" category="cell">300 TiB^3^</block>
   <block id="670aaecb1a526fbed439dad3ec353a96" category="section-title">物件儲存</block>
   <block id="58d801506333ab644845942779162cbc" category="paragraph">* 支援的傳輸協定 * ： S3</block>
   <block id="497031794414a552435f90151ac3b54b" category="cell">物件</block>
   <block id="346ddf53d2d569d0bb73eb7826cf95d8" category="cell">媒體儲存庫、歸檔</block>
-  <block id="29de402441037919e9b47a4ad8a12baa" category="cell">500 TiB^3^</block>
   <block id="ca8753839370b664573eb5b98cb26008" category="summary">Keystone 檢視伺服器</block>
   <block id="64856dafe45ad19629d4fb53e01214b8" category="doc">檢視伺服器</block>
   <block id="9b78b54ffb9c1a0c3cbe0850a1da48e6" category="paragraph">「伺服器」清單會顯示屬於所選租戶的檔案伺服器。若要檢視清單、請從功能表中選取「檔案服務」 &gt; 「伺服器」。</block>
@@ -2236,10 +2216,8 @@
   <block id="50b3ca2bf45db45c46e3f489f5322d29" category="list-text">管理及操作服務的工具、例如 OpsRamp 、 Active IQ VMware 及 Active IQ Unified Manager VMware 等。</block>
   <block id="25ee4245ff35e15ec0a6dda5f6cd1765" category="inline-link-macro">《 VMware 數位顧問文件》 Active IQ</block>
   <block id="32577a69f048903f418e8743cf0bac99" category="paragraph">如需 NetApp Keystone 更多有關使用 Active IQ 效益技術整合的資訊、請參閱 <block ref="38a54c9e880fa18a2a1c016836ec12db" category="inline-link-macro-rx"></block></block>
-  <block id="fc051047f55f16b2ba9881dd1f074063" category="paragraph"><block ref="fc051047f55f16b2ba9881dd1f074063" category="inline-image-macro-rx" type="image"></block></block>
   <block id="154899bfba4f244880d8d8dae2bd4625" category="list-text">支援監控及簡易儲存資源配置的圖形介面（ NetApp Service Engine 網路介面）。</block>
   <block id="484bbc8723fb454613a0af113567bc2a" category="list-text">一組 NetApp 服務引擎 REST API 、可執行更進階的設定與儲存管理動作。</block>
-  <block id="4fe249fd11a4d63ff19500469f271f6c" category="paragraph"><block ref="4fe249fd11a4d63ff19500469f271f6c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b01d8c4c08d74db1b2ec0d2c3ee4e0ad" category="paragraph">NetApp 服務引擎入口網站是單一介面、可讓客戶執行下列工作：</block>
   <block id="d79d981e75d77c1fad1bb30f8c0f894e" category="list-text">訂購儀表板：檢視已訂閱容量的狀態、以及使用量。</block>
   <block id="81ccfbf3dcf427cf92a64d3c55325446" category="list-text">儲存資源配置：建立 NFS/CIFS 檔案共用、 FC/iSCSI 磁碟和 S3 儲存區的工作流程。</block>
@@ -2811,10 +2789,6 @@
   <block id="201a10b44105a7f46600bd19700a5b0b" category="admonition">對於所選的檔案共用、如果SnapCenter 您在NetApp服務引擎以外的支援環境中建立了一些快照、您可以找到這些快照已匯入並列出供您選擇。您可以選取這些匯入的快照、然後複製其中的新檔案共用。</block>
   <block id="675fcd36774818dbea836dc02cf4d0d6" category="list-text">選中要從中克隆的快照旁邊的複選框，然後單擊* Next*（下一步*）。新的檔案共用區會繼承所選快照的內容。</block>
   <block id="278530798aa56115669d57d1e3fa9073" category="list-text">新增 * 名稱 * 和 * 共用路徑 * 。更新其他設定、例如指派 * 服務層級 * 、然後按一下 * 建立 * 。選擇最符合您需求的服務層級。</block>
-  <block id="c369a24416627121068456b8b8aad586" category="paragraph">下表定義服務層級。</block>
-  <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">不同儲存類型的服務層級</block>
-  <block id="18cf673c6b162cc27313691486836fca" category="admonition">最短一年期限和最小100TiB容量、適用於任何檔案共用和區塊服務層級的NetApp直接商機組合。^2^ 針對通路商機所選的每個服務層、最低一年期限和最低指定容量。</block>
-  <block id="c3010f4da438652aab9b42654d086f8d" category="admonition">最短一年期限和最小100TiB容量、適用於任何檔案共用和區塊服務層級的NetApp直接商機組合。^2^ 針對通路商機所選的每個服務層最低一年期限和最低指定容量。^3^ 針對任一商機類型所選取的每個服務層最低一年期限和最低指定容量。</block>
   <block id="39cd3f32af1f6142ceceefd9378ef437" category="list-text">所有與檔案伺服器相關的災難恢復複寫複本。您無法復原刪除伺服器。</block>
   <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">當耗用容量大於指定服務層級的已認可容量時、系統會記錄突發消耗、並據此套用費用。產生的每個使用記錄都會執行此程序。因此、「暴增使用量」反映出您的過度使用容量在承諾容量之外的數量和使用期限。</block>
   <block id="17165dfb97a3399066f5846aed0c4af9" category="list-text">如果未將新資料寫入磁碟區、則不考慮使用標準和價值服務層級的複製磁碟區。例如、在備份或還原使用案例中、從複製磁碟區備份或還原資料不會變更複製磁碟區本身的資料、也不會將其視為使用量。</block>
@@ -2823,7 +2797,6 @@
   <block id="eb71f31c80be60d1b83c15a9023c5aa0" category="paragraph">若要將資料分層至任何第三方物件儲存設備、請聯絡Keystone成功管理程式。</block>
   <block id="742eeba5dde6c1c0f5b7c867d0ee4115" category="paragraph">如需FabricPool 有關使用資訊技術進行Keystone訂閱的資訊、請參閱 <block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block>。</block>
   <block id="49e55f1469134d874d5c920897870fab" category="section-title">系統與根磁碟區的收費</block>
-  <block id="6a1836144168f39941f392b695d13d99" category="paragraph"><block ref="6a1836144168f39941f392b695d13d99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd5fb265e740e897efd97ec6db65e09f" category="paragraph">身為合作夥伴管理員、您可以查看所選子租戶的每月帳單細分。</block>
   <block id="7405166a7ce32802615fd74dd60f9ac4" category="admonition">您也可以按一下儀表板上*截至日期成本*小工具右上角的箭頭、或是在小工具中代表一個月的任何長條、以檢視「帳單」頁面。系統會顯示您所選月份的所有訂閱內容。</block>
   <block id="37c88707e5f04d4dd1d96b217e3b8f6b" category="list-text">您也可以將游標停留在代表月份的橫條圖上、以檢視其他詳細資料。</block>
@@ -2962,7 +2935,6 @@
   <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">服務層級指標與定義</block>
   <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">檢視訂閱詳細資料</block>
   <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">您可以在「*訂閱詳細資料*」標籤中檢視帳戶名稱的所有訂閱。</block>
-  <block id="3134c27d858b331bf91068bcd770722c" category="paragraph"><block ref="3134c27d858b331bf91068bcd770722c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">您可以針對每個訂閱號碼查看下列資訊：</block>
   <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*訂閱編號*：NetApp指派的Keystone訂閱訂閱的訂閱編號。</block>
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*追蹤ID*：訂閱啟動時指派的追蹤ID。這是每個訂閱和網站的唯一ID、用於追蹤訂閱。</block>
@@ -2970,24 +2942,16 @@
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*開始日期*：訂閱的開始日期。</block>
   <block id="b8905d711198e80b0e2927dff32cfd11" category="list-text">*結束日期*：訂閱的結束日期。根據此日期、您可能會看到即將到期的訂閱資訊訊息。</block>
   <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用狀態*：指出已使用或過度使用的訂閱量。如果您想要檢視最高使用量記錄、可以依此欄排序清單。</block>
-  <block id="87620cf1d6b63757e4ea27dcc44a9358" category="list-text"><block ref="5d188bf7f39558255a337fa21a17a0b0" category="inline-image-macro-rx" type="image"></block>：單擊此圖標將打開*訂購時間系列*選項卡，您可以在該選項卡中查看此訂購中包含的每個服務級別的歷史使用數據。</block>
-  <block id="dc73bcb00aeb285be26cfd179924fe9e" category="paragraph">您可以按一下向下箭頭查看更多詳細資料、以取得訂閱記錄。詳細資料、例如服務層級名稱、已提交、已耗用、可用容量、以及目前和預提的突發使用量、都會顯示在TiB中。顯示記錄較高使用量的特定服務層級。也會顯示針對您的Volume所產生的任何警告和警示。</block>
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">如需Keystone儲存服務和相關服務層級的相關資訊、請參閱<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
   <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">您可以參閱下列使用指標、查看每個訂閱的使用狀態：</block>
-  <block id="3aaeea3f20263addb794c645bdef9c16" category="paragraph"><block ref="3aaeea3f20263addb794c645bdef9c16" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">索引</block>
-  <block id="cf6ffa83aadbdcc3058434f093ea54ec" category="paragraph"><block ref="56a93b6a2a3614c3aeb1b9851c5e43f2" category="inline-image-macro-rx" type="image"></block>：未記錄服務層級已認可容量的容量使用量<block ref="bb7f7720d1162aeddd650a9a9446141b" category="inline-image-macro-rx" type="image"></block>：使用量正常、在承諾容量的80%內<block ref="7646cb232eca2204ee8b299f2fdebfb4" category="inline-image-macro-rx" type="image"></block>：最大使用量、也就是使用量即將達到100%或以上的承諾容量。「*已用*」欄會針對超過承諾容量80%的任何使用量、顯示此指標<block ref="2acc4efd0d7d55d52fc790f88116c2e0" category="inline-image-macro-rx" type="image"></block>：使用量在連拍限制之內。「尖峰消耗」是指服務層級100%承諾容量的耗用量、且在議定的高載使用量限制範圍內、例如120%<block ref="9dd31109acddbedcca8dcf80e09eebda" category="inline-image-macro-rx" type="image"></block>：表示耗用量超過規定的突發量限制</block>
   <block id="6258cb1a842831f15b22f87325717f37" category="section-title">檢視歷史訂閱資料</block>
-  <block id="a514224616890dbac3dede8f0d533add" category="paragraph">「*訂閱時間系列*」索引標籤會顯示特定期間訂閱的歷史資料。垂直圖表會顯示所選時間範圍的使用詳細資料、並提供適當的指標、供您比較和產生報告。</block>
   <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">單擊*訂購時間序列*選項卡。</block>
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">選取您要檢視其詳細資料的必要訂閱。您帳戶名稱中的第一個訂閱依預設為選取狀態。</block>
   <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">從*開始日期*和*結束日期*欄位的行事曆圖示中選取時間範圍。預設時間範圍是從帳單期間的開始日期到目前日期。</block>
-  <block id="22dcf7d0676ff8f536ed431a7b672de7" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。您可以將滑鼠游標停留在圖表上、以檢視該資料點上的已提交、已用、突發及超過突發限制資料的使用量明細。</block>
-  <block id="4ace5fc4007e7d1732831506700b3e06" category="paragraph"><block ref="4ace5fc4007e7d1732831506700b3e06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">將顯示下列詳細資料：</block>
   <block id="8cdd8d8e55dfdcaf50118c634169eaf7" category="list-text">*訂閱詳細資料*：訂閱的開始與結束日期、以及計費期間、例如每季、每年等。</block>
   <block id="12ed0205cd7410bc01e15e4b8a285019" category="list-text">*使用圖表*：長條圖會顯示日期範圍內服務層級的名稱和該服務層級所耗用的容量。集合的日期和時間會顯示在圖表底部。</block>
-  <block id="a0844c086d0417165bb56c154e3ddbcc" category="admonition">根據查詢的日期範圍、使用量圖表會以30個資料點的範圍顯示。</block>
   <block id="3a6ef8ff534dc5701b3936464bf23441" category="paragraph">長條圖中的下列色彩表示服務層級中定義的耗用容量：</block>
   <block id="19e499aa450e552c41a06bb0742085d6" category="list-text">綠色：80%以內。</block>
   <block id="744f7cb6bd1aa9077ff244891a651e80" category="list-text">黃色：80%- 100%。</block>
@@ -3008,30 +2972,20 @@
   <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">針對功能、*系統詳細資料*索引標籤會顯示Keystone訂閱所管理儲存環境中磁碟區的容量使用量、磁碟區類型、叢集、Aggregate及服務層級等資訊ONTAP 。</block>
   <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">按一下*系統詳細資料*索引標籤。</block>
   <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">選取訂閱編號。依預設、會選取第一個可用的訂閱號碼。</block>
-  <block id="881fb88f30cf9ba2d57147ddfb898685" category="paragraph">隨即顯示Volume詳細資料。您可以在欄之間捲動、並將滑鼠游標停留在欄標題旁的資訊圖示上、以深入瞭解這些欄。您可以依欄排序、並篩選清單以檢視特定資訊。您可以按一下*複製節點序號*按鈕來複製個別節點序號。</block>
-  <block id="2ebe85ca38ab100590dc16fd81d18da1" category="paragraph"><block ref="2ebe85ca38ab100590dc16fd81d18da1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">不只是個物件、更是個物件&lt;/strong&gt; &lt;strong&gt;</block>
   <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">對於物件、此索引標籤會顯示物件儲存環境中節點的邏輯使用量StorageGRID 。</block>
   <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">選取訂閱編號。依預設、會選取第一個可用的訂閱號碼。選取訂閱編號後、即會啟用物件儲存詳細資料的連結。</block>
-  <block id="1690678f16ffa10ab1e26e44aa686db5" category="paragraph"><block ref="1690678f16ffa10ab1e26e44aa686db5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">按一下連結、即可檢視每個節點的節點名稱和邏輯使用詳細資料。</block>
-  <block id="47e40976658c073c0e6048f08d9a27c6" category="paragraph"><block ref="47e40976658c073c0e6048f08d9a27c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">產生報告</block>
-  <block id="4fdff89d4e1cb0e4a41e6c52ac0eca05" category="paragraph">您可以按一下*下載CSV*按鈕、針對訂閱詳細資料、時間範圍的歷史使用資料、以及每個索引標籤的系統詳細資料、來產生及檢視報告： <block ref="f865f0dd5bea740b7e77dd6862c1f366" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">詳細資料會以CSV格式產生、您可以儲存以供未來使用。</block>
-  <block id="e14d9b45f9f7753ca5842f57c89f2f92" category="paragraph">在*訂購時間系列*標籤中、您可以選擇下載查詢日期範圍的預設30個資料點、或是每日報告。</block>
-  <block id="d5b4a5bc607e49724b373b44e10a1b6d" category="paragraph"><block ref="d5b4a5bc607e49724b373b44e10a1b6d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">*訂購時間系列*標籤的範例報告、其中會轉換圖形資料：</block>
-  <block id="0a5468723ee164f4220a0538b1ff32b4" category="paragraph"><block ref="0a5468723ee164f4220a0538b1ff32b4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">檢視警示</block>
   <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">儀表板上的警示會傳送警示訊息、讓您瞭解儲存環境中發生的問題。</block>
   <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">警示可分為兩種類型：</block>
   <block id="7a0a61d280e201148fcd091f8167d88f" category="list-text">*資訊*：如為訂閱即將結束等問題、您可以看到資訊警示。將游標停留在資訊圖示上、即可深入瞭解問題。</block>
   <block id="d08b54ee187c7327910bae3997812ee1" category="list-text">*警告*：不符合法規的問題會顯示為警告。例如、如果託管叢集內有未附加調適性QoS（AQO）原則的磁碟區、您會看到一則警告訊息。您可以按一下警告訊息上的連結、在「*系統詳細資料*」索引標籤中查看不相容磁碟區的清單。</block>
   <block id="77561a56c28ac9cccc7140baff66eefa" category="paragraph">如需AQO原則的相關資訊、請參閱<block ref="eb9e151d2a405494b16ec028c9292f15" category="inline-link-rx"></block>。</block>
-  <block id="2f79ebd4f32cabd1114c688445ebf53e" category="paragraph"><block ref="2f79ebd4f32cabd1114c688445ebf53e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8e64b58beb4844a89f1dc662bd47837" category="paragraph">請聯絡NetApp支援部門、以取得這些警示與警告訊息的詳細資訊。如需相關資訊、請參閱<block ref="a434e165bb861f31d95108a8980bc76d" category="inline-link-rx"></block>。</block>
-  <block id="4c351868537e82b27bc0dc0ae18a7633" category="paragraph">每個服務層級都是由其I/O密度所定義、即效能（每秒輸入/輸出作業次數[IOP]）與已使用儲存設備（儲存資料的TiB）的比率、即IOPS/TiB。</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link-macro">數位顧問文件</block>
   <block id="199941fcffe1cc10f1d78276fb963281" category="paragraph">如需Digital Advisor的詳細資訊、請參閱 <block ref="6ddd16d015a7ae88cd6e808110d98222" category="inline-link-macro-rx"></block>。</block>
   <block id="d7b031f9c8084a9ac68f816f54b2be3b" category="paragraph">*哪些軟體版本ONTAP （例如、支援）是預設安裝的？*視訂閱的服務層而定（例如ONTAP 、使用檔案和區塊服務的版本、SANtricity 使用物件的版本、以及StorageGRID 使用物件的版本）、支援團隊會安裝最新的穩定版本、而不會發生安全性或功能問題。</block>
@@ -3044,7 +2998,6 @@
   <block id="582e8b474c4c411c4bfbaa64ebf38461" category="paragraph">NetApp Keystone 是一種新的靈活內部部署訂閱型採購模式。它可讓客戶消除管理資源的障礙、並完成冗長的採購週期、進而加速實現價值。Keystone 服務可讓客戶根據業務優先順序調整經濟效益。如需詳細資訊、請參閱 <block ref="e54def7567bc3788d2fec2fa9a5026d4" category="inline-link-macro-rx"></block>。</block>
   <block id="2c73325886a5bb00150c4f6251e0fe6d" category="paragraph">Keystone 服務有哪些好處？ *</block>
   <block id="e8fae73e1864731d82c5af04538f4b0b" category="paragraph">Keystone 服務的部分優點如下：</block>
-  <block id="14384a9ad0a54dc5a3ba41313d3f91fb" category="paragraph">--- 定義側欄：側欄永久連結： nkfsosm_keystone_service_capacity_definitions.html 關鍵字： NetApp 、 keystone 、服務、容量、定義、 突發、承諾容量、消耗容量、計費容量摘要：基礎概念服務容量定義 --</block>
   <block id="96d2b38eee6470bf2333246e23312820" category="paragraph">此功能包括：NetApp Keystone</block>
   <block id="07a94a7bd2b381bae37a94cd365377c7" category="paragraph">這是客戶放入Keystone基礎架構的資料。所有Keystone容量均指邏輯容量。例如、如果基礎架構上儲存了1個TiB檔案、則必須購買至少1個TiB容量。</block>
   <block id="dfe3a64edf2cc8e36f72d43579e07d11" category="list-text">Keystone服務提供超過承諾容量20%的容量。</block>
@@ -3189,9 +3142,6 @@
   <block id="c04de822849a69b106080c4121f9936c" category="list-text">* 非標準。 * 在 NetApp 服務引擎之外配置的物件、如果不符合 NetApp Keystone 訂閱的條件、就會以此狀態匯入。</block>
   <block id="22dc3956acd0c1c011f37cec3f332d69" category="admonition">此狀態通常表示該物件遺漏了一或多個由 NetApp Service Engine 管理的準則、這是您 Keystone 訂閱的一部分。您可以 <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> 讓他們透過 NetApp 服務引擎入口網站進行標準化與管理、並由支援團隊進行營運。</block>
   <block id="64e53d0250b48253841708a269aa9ef3" category="summary">Keystone 效能服務層級</block>
-  <block id="7bb45ed1c44b24e3467af52573764a53" category="paragraph">NetApp Keystone 提供預先定義的效能服務層級容量（服務層級）。</block>
-  <block id="ccc2d0f52940259874b8f9b759c2073a" category="paragraph">由Keystone服務管理的每個Volume都與服務層級相關聯。所有 I/O 作業和在個別磁碟區上使用的所有儲存設備、都會納入磁碟區的 I/O 密度計算。</block>
-  <block id="42511be44369fa72bd6e7314d949364e" category="paragraph">您可以從NetApp服務引擎使用者介面的多個畫面、將服務層級指派給您的訂閱。如需詳細資訊、請參閱 <block ref="678d7f07c3c6f8b6162f789c01992ea4" category="inline-link-macro-rx"></block>。</block>
   <block id="74692532fcc640962f96132119394098" category="paragraph">Keystone 服務有三種操作模式。這些常見問題集與這些營運模式有關。</block>
   <block id="6076a11aebeaaa6dbe074a0a08b1b142" category="list-text">選取租戶。儀表板隨即顯示。如需相關資訊、請參閱 <block ref="dd1715a7c78c6dc04fdff72810b50dc1" category="inline-link-macro-rx"></block></block>
   <block id="c556196a410876d85c1dc7aafc4fee9f" category="doc">Keystone基礎架構</block>
@@ -3206,4 +3156,131 @@
   <block id="c06919229cadbe5cd8d5d386238c994e" category="sidebar">Keystone 訂閱常見問題集</block>
   <block id="6e0ffc28497d27ad3c6bea6ff91952d8" category="sidebar">Keystone 訂閱</block>
   <block id="01f997e2a423afa5cbbc884d9826beb8" category="sidebar">檢視 Keystone 訂閱 DSflashboard</block>
+  <block id="918d1cd98a55c119d7e4e81b3cfac0f8" category="summary">Keystone 調適性服務品質（ AQO ）</block>
+  <block id="2cc739ab414b782a0ba5a2dafc3c878f" category="doc">Keystone 中的自適應服務品質</block>
+  <block id="5f558fad18c536fde918f6d8470c0f4c" category="paragraph">儲存服務品質（QoS）是一項關鍵技術、可確保應用程式獲得一致且可預測的效能。如果沒有 QoS 、某些工作負載（例如用於開機多個系統的工作負載）可能會在一段時間內消耗大部分或全部資源、並影響其他工作負載。如需QoS的相關資訊、請參閱<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>。</block>
+  <block id="acdda1c20fb3985ce840929f7525c803" category="section-title">調適性QoS</block>
+  <block id="24fe24243f6cf0a0fada99032a85c028" category="inline-link">關於調適性QoS</block>
+  <block id="3e0c227cab019a94ad107467446bc4a1" category="paragraph">Keystone 服務會使用 Adaptive QoS （ AQO ）、根據磁碟區大小來動態維持 IOPS/TiB 比率。如需AQO原則的相關資訊、請參閱<block ref="837de1b03a328f464002642d845ea947" category="inline-link-rx"></block>。</block>
+  <block id="b41d880d5f9cddb842b19d183ce73f2e" category="paragraph">Keystone提供AQO原則、讓您在叢集正式作業後即可設定。您應確保所有磁碟區都與系統中已建立且可用的正確AQO原則相關聯。</block>
+  <block id="772f84cc1580c3b2eb870e7f4a05c668" category="paragraph">如果 ONTAP Volume 未套用 AQO 原則、則該磁碟區不符合法規要求。沒有 QoS 原則的磁碟區是系統提供任何可用輸入輸出作業的最後一個優先順序清單。不過、如果有任何輸入輸出作業可用、則該磁碟區可能會使用所有可用的 IOS 。</block>
+  <block id="8076a815ea253b898f1e1205fc7aa039" category="admonition">如果您尚未將 AQO 原則套用至磁碟區、則會根據您的訂閱、以最高的服務層級來測量這些磁碟區並收取費用。這可能導致意外的突發費用。</block>
+  <block id="bc26ba2885b2bd7d8c41202e1d58b847" category="section-title">調適性 QoS 設定</block>
+  <block id="d2c88ef05da757a3aeaaf8bc9fe70038" category="paragraph">Adaptive QoS （ AQO ）設定會因服務層級而異。</block>
+  <block id="3e1621011a15ff9b858d144dd8b32184" category="cell">* 政策名稱 *</block>
+  <block id="93c756223ca0ced7c8d807e176f861a3" category="cell">* 極致 * 與 * 極致分層 *</block>
+  <block id="ff68631a0d10b38d2b323da42e788055" category="cell">* 優質 * 與 * 優質分層 *</block>
+  <block id="e61bad254169eaf696462c655e0bb47a" category="cell">* 預期的 IOPS *</block>
+  <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
+  <block id="8dea0526cd966f1d2b8537ec99d156b6" category="cell">* 預期的 IOPS 分配 *</block>
+  <block id="d948b8bd026bed9e90e7989a41fdbb46" category="cell">已分配空間</block>
+  <block id="7954bc4f3c43f3e699c2169329a71b4b" category="cell">* 尖峰 IOPS *</block>
+  <block id="13533e52f2c161b3cad8ec91b2a8bc26" category="cell">* 尖峰 IOPS 配置 *</block>
+  <block id="fd5c2880a704553c642b2e60a6ff5cf2" category="cell">*區塊大小*</block>
+  <block id="de66b0668daa0803e4322ddd80158d6c" category="cell">32 萬</block>
+  <block id="24acc0fc2175fef09b1a2963dcd51bb1" category="inline-image-macro">區域和區域關係</block>
+  <block id="3cc7e158f8699d90d955763d4ad3a6bb" category="paragraph"><block ref="3cc7e158f8699d90d955763d4ad3a6bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="978c8164dc991cb5252f85067c6fdbe4" category="inline-image-macro">租賃架構</block>
+  <block id="5cee2df0715294af225b93a062c0b3bf" category="paragraph"><block ref="5cee2df0715294af225b93a062c0b3bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ce0a3714c71298667d65ee297b12efd2" category="paragraph">Keystone 以訂閱為基礎、以預先定義的效能服務層級（服務層級）提供資料儲存容量。由Keystone服務管理的每個Volume都與服務層級相關聯。</block>
+  <block id="f93af6ea2aaeafbfa26e3fe0954ccc1a" category="paragraph">每個服務層級都是根據其 I/O 密度（即 IOPS/TiB/Volume ）來定義。這是效能的比率（每秒輸入 / 輸出作業次數 [IOP] ）和分配的儲存容量（ TiB ）、即每個磁碟區平均延遲的 IOPS/TiB 。</block>
+  <block id="0d2770e6697ff41e6cac5eec9a3d728b" category="paragraph">磁碟區的 I/O 密度是以每小時的時間間隔計算、以報告尖峰 I/O 密度。磁碟區的 I/O 密度報告會每月產生一次。</block>
+  <block id="26ee386c417635b5c1e5d8ffd5bbb0bd" category="paragraph">此處列出檔案、區塊和物件儲存類型的服務層級。</block>
+  <block id="8edf08839950862fe56f04959fd3f87b" category="section-title">檔案儲存的服務層級</block>
+  <block id="10fde21ab3bcb7083e8e5bed1ca3af80" category="cell">* 每個磁碟區分配的最大 IOPS / 邏輯 TiB *</block>
+  <block id="0402a8a3b6eb168a997a74fb30635a37" category="cell">* 每個磁碟區分配的目標 IOPS / 邏輯 TiB *</block>
+  <block id="bed05c1f8f35eb6280e2bbc20794825c" category="cell">* 每個磁碟區分配的最大 Mbps/ 邏輯 TiB *</block>
+  <block id="61871926ab208323c9981229029b2c82" category="cell">*平均延遲*</block>
+  <block id="d6b228a8ed209a51c109dc08e1f357ce" category="cell">* 區塊大小 *</block>
+  <block id="bf79e80bcc6c0a1ed97c7270c5aa6360" category="section-title">深入瞭解檔案儲存的服務層級</block>
+  <block id="c4701e06633afc0b1161fbc6049cc803" category="paragraph">服務層級度量取決於下列情況：</block>
+  <block id="210b39d4b6b8c3231fc8e5027adff975" category="list-text">檔案與區塊儲存的服務層級支援 ONTAP 9.7 及更新版本。</block>
+  <block id="02007b308c5bfea2eb09b0fa9b7f04d5" category="list-text">IOPS / TiB/Volume 、 Mbps/TiB/Volume 和服務層級的延遲值、是根據磁碟區中儲存的邏輯資料量、 32KB 區塊大小、以及 70% 讀取和 30% 寫入 IO 作業的隨機組合而定。</block>
+  <block id="1ce7cadb42fda63031710acdb1e36d13" category="list-text">實際的 IOPS/TiB/Volume 和 Mbps/TiB/Volume 可能會因實際或假設的區塊大小、系統工作負載並行處理或輸入輸出作業而異。</block>
+  <block id="58ec0dfd62f9630c9b479a35a8b38962" category="list-text">延遲不包括下列項目：</block>
+  <block id="e777748ce6788629275890358373ad33" category="list-text">應用程式或主機延遲</block>
+  <block id="303d588a44f75e97197277df23fe31a6" category="list-text">客戶與控制器連接埠之間的網路延遲</block>
+  <block id="66da45e9c280e17b214fda19697e0c52" category="list-text">在 FabricPool 的情況下、與資料傳輸相關的間接成本</block>
+  <block id="0fd1f337932287ae81d08c74974e8e88" category="list-text">QoS 會自動套用延遲、使 IO 保持在服務層級最大值內</block>
+  <block id="85bc0e8522deb39494936f2ff6c542e4" category="list-text">延遲值不適用於 MetroCluster 寫入作業。這些寫入作業需視遠端系統的距離而定。</block>
+  <block id="7f3016a798d65c7f0d25cbde5e2c95b6" category="list-text">如果儲存系統上的一個或多個磁碟區沒有指派 AQO 原則、則這些磁碟區會視為不相容的磁碟區、而且這些系統沒有適用的目標服務層級。</block>
+  <block id="d292740ed171285325a91f3bddbbc59d" category="list-text">除非分層原則設為「無」、而且雲端中沒有區塊、否則預期的 IOPS _ 才會針對 FabricPool 。預期的 IOPS _ 是針對非 SnapMirror 同步關係中的磁碟區。</block>
+  <block id="acad586f6e3c240e49bc22095d3d4c92" category="list-text">工作負載 IO 作業必須在所有部署的控制器之間進行平衡、這取決於 Keystone 順序。</block>
+  <block id="1256942c94d399bcecc06318a23887e2" category="section-title">區塊儲存的服務層級</block>
+  <block id="d3c97afc8b4986d186e623295f348fec" category="cell">5 、 500</block>
+  <block id="e5a4cf7b6c8ebfdefa41faab2b2fc12f" category="section-title">物件儲存的服務層級</block>
+  <block id="0ba4439ee9a46d9d9f14c60f88f45f87" category="inline-image-macro">檢查</block>
+  <block id="2c21fb28bfa079bac10074fb46528030" category="cell"><block ref="2c21fb28bfa079bac10074fb46528030" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="72cedb4011bb3b8175b8fe1013b23cee" category="inline-image-macro">KS-Infrastructure</block>
+  <block id="589812ff47f2ace9d0321e7e0cc1349e" category="paragraph"><block ref="589812ff47f2ace9d0321e7e0cc1349e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="31d6b6f48c9c3b45e43d0a7f91fa68ae" category="inline-image-macro">KS-architecture</block>
+  <block id="c1dcba1c197607307ac99eb420d848a8" category="paragraph"><block ref="c1dcba1c197607307ac99eb420d848a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed6736a84f4c19935077bc72bc043890" category="summary">NetApp Keystone 是一項隨成長付費的儲存即服務方案、可在單一訂閱下提供內部部署和雲端資料儲存服務、並可在雲端之間重新分配儲存支出。</block>
+  <block id="7851c7dc22287278c0102d8c2973f79b" category="inline-image-macro">Keystone arch</block>
+  <block id="d7f25eda72ffc7d44074ad3c4292c129" category="paragraph"><block ref="d7f25eda72ffc7d44074ad3c4292c129" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="51543cae6c0bf5ae4bf7c4e28be0eeaa" category="inline-image-macro">Keystone 服務</block>
+  <block id="af62e715e88586950d9cd9496f456488" category="paragraph"><block ref="af62e715e88586950d9cd9496f456488" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79da17fa16c14866aa3306a4541afec5" category="inline-image-macro">效益</block>
+  <block id="d5f09abcaaeae775c256fb4fff1f7f24" category="paragraph"><block ref="d5f09abcaaeae775c256fb4fff1f7f24" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41a7d4440132225535ddd040dd7eec64" category="cell"><block ref="41a7d4440132225535ddd040dd7eec64" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41220b85d8467c5822466b54e2f77fdf" category="inline-image-macro">訂閱詳細資料索引標籤</block>
+  <block id="3863c999fd2904d6bd45c5fac0637857" category="paragraph"><block ref="3863c999fd2904d6bd45c5fac0637857" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">圖示</block>
+  <block id="465b53bf56fb8c088ea55a58377aec59" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：單擊此圖標將打開*訂購時間系列*選項卡，您可以在該選項卡中查看此訂購中包含的每個服務級別的歷史使用數據。</block>
+  <block id="0e25c249c47d5b9cd3933dea0b0e9bfb" category="paragraph">您可以按一下向下箭頭查看更多詳細資料、以取得訂閱記錄。詳細資料、例如服務層級名稱、已提交、已耗用、可用容量、以及目前和預提的突發使用量、都會顯示在TiB中。</block>
+  <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">顯示記錄較高使用量的特定服務層級。您也可以檢視針對磁碟區所產生的警告和警示。</block>
+  <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">圖示</block>
+  <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="47ad2f3b9648e3f48662d8605e8e8bdb" category="paragraph"><block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
+<block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
+<block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>：未記錄服務層級已認可容量的容量使用量<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>：使用量正常、在承諾容量的80%內<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大使用量、也就是使用量即將達到100%或以上的承諾容量。「*已用*」欄會針對超過承諾容量80%的任何使用量、顯示此指標<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：使用量在連拍限制之內。「尖峰消耗」是指服務層級100%承諾容量的耗用量、且在議定的高載使用量限制範圍內、例如120%<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示耗用量超過規定的突發量限制</block>
+  <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">「 * 訂閱時間系列 * 」索引標籤會顯示您在特定期間內 Keystone 訂閱的歷史資料。垂直圖表會顯示所選時間範圍的使用詳細資料、並提供適當的指標、供您比較和產生報告。</block>
+  <block id="abc995760236584824b9e9fb494224ef" category="admonition">為獲得最佳效能和使用者體驗、請將查詢的日期範圍限制在三個月或更短。</block>
+  <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。您可以將滑鼠游標移至圖表上方、以檢視該資料收集點的已提交、已使用、突發量及突發量限制資料上方的使用量明細。</block>
+  <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">歷史資料</block>
+  <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">根據查詢的日期範圍、使用圖表會顯示在 30 個資料收集點範圍內。</block>
+  <block id="9c559d13aa46e64e5c1b49a0e0a1432e" category="example-title">&lt;strong&gt; Data Protect查詢 &lt;/strong&gt; 的詳細資料</block>
+  <block id="cdd4bd25f20c449a0963f56aa74dcbab" category="paragraph">如果您已訂閱資料保護（ DP ）服務、您可以在 * 訂閱時間系列 * 索引標籤上、根據 MetroCluster 主要和鏡射站台來檢視使用資料的分隔。</block>
+  <block id="087f6b1f88be44a104173a6f203b90b1" category="paragraph">如需資料保護的相關資訊、請參閱<block ref="4f245631ed62c18d2a1d6d25320b34f1" category="inline-link-rx"></block>。</block>
+  <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">如果您的 ONTAP 儲存環境中的叢集是在 MetroCluster 設定中設定、則 Keystone 訂閱的使用量資料會分割成同一時間系列圖表、以顯示基礎服務層級的主要站台和鏡射站台使用量。</block>
+  <block id="281d16d13e34f7444117e4fa04008cd2" category="admonition">消費橫條圖只會分割為基本服務層級。對於 DP 服務層級、不會顯示此標界。</block>
+  <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">資料保護服務層級</block>
+  <block id="d1bb5be7c1d9696a6692a5707b28c8a6" category="paragraph">對於 DP 服務層級、總使用量會分割、每個站台的使用量會以個別的訂閱方式反映並計費；這是主要站台的一項訂閱、鏡射站台的另一項訂閱。因此、當您在 * 訂閱時間系列 * 索引標籤上選取主要站台的訂閱編號時、 DP 服務層級的使用率圖表只會顯示主要站台的個別使用量詳細資料。由於 MetroCluster 組態中的每個站台都會做為來源和鏡射、因此每個站台的總使用量都會包含在該站台建立的來源和鏡射磁碟區。</block>
+  <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基礎服務層級</block>
+  <block id="2da97e4dcd0aded3c38f66cbf8f9886b" category="paragraph">不過、對於基礎服務層級、每個磁碟區都會依照主要站台和鏡射站台的資源配置來收費、因此相同的長條圖會根據主要站台和鏡射站台的使用量來分割。</block>
+  <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">主要訂閱內容</block>
+  <block id="d8476da72783640883a9e5629643666c" category="paragraph">下圖顯示 _ 極致 _ 服務層級和主要訂閱號碼的圖表。同一時間系列圖表會以主要站台所使用的彩色代碼較淡的陰影標記鏡射站台使用量。滑鼠游標上的工具提示會分別顯示主要站台和鏡射站台的消耗分佈（在 TiB 中）、分別為 1.02 TiB 和 1.05 TiB 。</block>
+  <block id="7cbd40b0470c3f0ea1063db9202530ff" category="inline-image-macro">MCC 主要</block>
+  <block id="69ee7237e9b9f659b4b0f2cee316a662" category="paragraph"><block ref="69ee7237e9b9f659b4b0f2cee316a662" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="691f3f8af0331dffbbb99f55392f1b1d" category="paragraph">對於 _ 資料保護極致 _ 服務層級、圖表如下所示：</block>
+  <block id="4bb0adac0644b7c8396196d410d47909" category="inline-image-macro">MCC 主要基礎</block>
+  <block id="2788c6179b3412862ccb0aa51af8fb00" category="paragraph"><block ref="2788c6179b3412862ccb0aa51af8fb00" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cd9124dc0715967bbbd4e31ad8a6f35d" category="paragraph-title">次要（鏡射網站）訂閱內容</block>
+  <block id="780f5e670e2c04a97e27a55ce4e5fe77" category="paragraph">當您檢查次要訂閱時、您可以看到相同資料收集點的 _Extreme 服務層級橫條圖會反轉、而主要站台和鏡射站台的使用量分別為 1.05 TiB 和 1.02 TiB 。</block>
+  <block id="ff58d4e2d2a69e5e91f9509907ba3bd1" category="inline-image-macro">MCC 鏡射</block>
+  <block id="292d6b6f6df888f5de022ad6bebc7e52" category="paragraph"><block ref="292d6b6f6df888f5de022ad6bebc7e52" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="096ba4c1255ddf7f6a7f129dc338ad4d" category="paragraph">對於 _ 資料保護極致 _ 服務層級、圖表會顯示在同一個集合點：</block>
+  <block id="ab682f0abbe8b97aaec76b435ca52575" category="inline-image-macro">MCC 鏡射基礎</block>
+  <block id="32b6695c9f1befd719e0c7b2c28dfea1" category="paragraph"><block ref="32b6695c9f1befd719e0c7b2c28dfea1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48d59ef93e565c1c62d4604f7ddf6561" category="inline-link">瞭MetroCluster 解資料保護與災難恢復</block>
+  <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">如需 MetroCluster 如何保護資料的相關資訊、請參閱<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block>。</block>
+  <block id="793c1a98e090ba1b0f167e3a8b0c5b37" category="paragraph">隨即顯示Volume詳細資料。您可以在欄之間捲動、並將滑鼠游標停留在欄標題旁的資訊圖示上、以深入瞭解這些欄。您可以依欄排序、並篩選清單以檢視特定資訊。</block>
+  <block id="6857abe02d1e9615946756081a1a8169" category="admonition">對於資料保護服務、會出現另一欄、指出磁碟區是 MetroCluster 組態中的主要磁碟區還是鏡射磁碟區。您可以按一下*複製節點序號*按鈕來複製個別節點序號。</block>
+  <block id="0bb9d5f8cc89f1784aecd52a98b80f07" category="inline-image-macro">系統詳細資料索引標籤</block>
+  <block id="8b672bec07d1efa43e526f4981ffb4e7" category="paragraph"><block ref="8b672bec07d1efa43e526f4981ffb4e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4f42ad6a3c3832d3bf584971680c1ebb" category="inline-image-macro">SG 系統詳細資料</block>
+  <block id="99f0b49642035c5cfb207aac14d1a8a5" category="paragraph"><block ref="99f0b49642035c5cfb207aac14d1a8a5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="32213372d6e54774952c294947e823b3" category="inline-image-macro">SG 快顯視窗</block>
+  <block id="95d8d7b4f026ffa4ad680a1e5997be51" category="paragraph"><block ref="95d8d7b4f026ffa4ad680a1e5997be51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26b4aee602cdc66122bb6d728f867b41" category="inline-image-macro">下載報告圖示</block>
+  <block id="0f3423da50b7d7441392096dd6c78fac" category="paragraph">您可以按一下*下載CSV*按鈕、針對訂閱詳細資料、時間範圍的歷史使用資料、以及每個索引標籤的系統詳細資料、來產生及檢視報告： <block ref="785382ed2a85b4539c4016da106c0215" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="71a1fbaca678e13a8273c81f0c6acf72" category="paragraph">在 * 訂閱時間系列 * 索引標籤中、您可以選擇下載查詢日期範圍的預設 30 個資料收集點或每日報告的報告。</block>
+  <block id="69d93398ad0e22b2ac431db7ec005308" category="inline-image-macro">報告範例</block>
+  <block id="ae36f6805d5f090b092ed6be03fa8820" category="paragraph"><block ref="ae36f6805d5f090b092ed6be03fa8820" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7df8a07436fa2a6fa44c6c89de1dc353" category="paragraph"><block ref="7df8a07436fa2a6fa44c6c89de1dc353" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="abca7cba75e5a9ff86b1490f32891f82" category="inline-image-macro">警示</block>
+  <block id="2fdc90e57385ab614099e9145cde6b8e" category="paragraph"><block ref="2fdc90e57385ab614099e9145cde6b8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="be10ab795d4b4daf77ddb3146f1aac29" category="inline-image-macro">計費表</block>
+  <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

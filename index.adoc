@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: index.html 
 keywords: netapp, keystone, service, offering, 
-summary: 歡迎使用 Keystone 文件入口網站。 
+summary: NetApp Keystone 是一項隨成長付費的儲存即服務方案、可在單一訂閱下提供內部部署和雲端資料儲存服務、並可在雲端之間重新分配儲存支出。 
 ---
 = 適用於此產品的文件NetApp Keystone
 :hardbreaks:
@@ -15,7 +15,7 @@ summary: 歡迎使用 Keystone 文件入口網站。
 
 NetApp Keystone 是一套內部部署資本支出（資本支出）替代方案、可協助您順利邁向雲端之路。利用橫跨內部部署和雲端的儲存服務、提供無縫的混合雲體驗。 NetApp Keystone如需 NetApp Keystone 更多有關資訊、請參閱 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-如需 NetApp Keystone 更多有關資訊、請參閱 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
+如需 NetApp Keystone 更多有關資訊、請參閱 https://["NetApp Keystone"]。
 
 Keystone 是一項儲存即服務產品、可在內部部署系統上提供雲端般的體驗、並可依您的需求連線至雲端。
 
@@ -25,7 +25,7 @@ Keystone 是一項儲存即服務產品、可在內部部署系統上提供雲�
 
 Keystone 是一種以隨成長付費訂閱為基礎的服務模式、可為偏好使用營運成本模式的人、提供無縫的混合雲體驗、讓他們更喜歡使用前期資本支出或租賃。它可減少與管理無法預測的容量成長及處理複雜採購週期相關的障礙、讓客戶加速實現價值所需時間。Keystone可讓客戶根據業務優先順序調整經濟效益與營運。
 
-image:nkfsosm_image2.png["錯誤：缺少圖形影像"]
+image:nkfsosm_image2.png["Keystone arch"]
 
 Keystone 是一項訂閱型服務、可針對區塊、檔案和物件資料類型、提供預先定義的效能服務層級（服務層級）儲存容量、可由 NetApp 、合作夥伴或客戶自行部署。除了 Keystone 提供的基礎服務之外、您也可以額外付費選擇附加服務。下圖說明這些服務。
 
@@ -36,7 +36,7 @@ Keystone 是一項訂閱型服務、可針對區塊、檔案和物件資料類�
 
 NOTE: Keystone 使用 SnapVault 技術進行備份作業、使用 SnapMirror 進行災難恢復、以遠端複寫資料、而不會自動容錯移轉及還原應用程式。
 
-image:nkfsosm_image3.png["錯誤：缺少圖形影像"]
+image:nkfsosm_image3.png["Keystone 服務"]
 
 
 
@@ -53,4 +53,4 @@ Keystone 提供下列優點：
 * 可適當控制法規遵循、效能及安全性
 
 
-image:nkfsosm_image4.png["錯誤：缺少圖形影像"]
+image:nkfsosm_image4.png["效益"]

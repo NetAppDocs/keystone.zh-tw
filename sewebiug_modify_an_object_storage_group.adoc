@@ -23,7 +23,7 @@ summary: Keystone 修改物件儲存群組
 +
 如需使用清單中項目的詳細資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["清單檢視動作"]。
 
-. 在*編輯群組*對話方塊中、修改適用於群組的S3原則。如需S3原則的相關資訊、請參閱 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["在原則中指定權限"]。
+. 在*編輯群組*對話方塊中、修改適用於群組的S3原則。如需S3原則的相關資訊、請參閱 https://["在原則中指定權限"]。
 . 您可以視需要新增其他原則聲明。
 . 按一下 * 更新 * 。這會建立工作、以指定的設定修改群組。如需追蹤工作的相關資訊、請參閱 link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["請按這裡"]。
 

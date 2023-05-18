@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: aqos-kfs.html 
+keywords: aqos, qos, adaptive quality of service, quality of service 
+summary: Keystone 調適性服務品質（ AQO ） 
+---
+= Keystone 中的自適應服務品質
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+儲存服務品質（QoS）是一項關鍵技術、可確保應用程式獲得一致且可預測的效能。如果沒有 QoS 、某些工作負載（例如用於開機多個系統的工作負載）可能會在一段時間內消耗大部分或全部資源、並影響其他工作負載。如需QoS的相關資訊、請參閱 https://["透過 QoS 總覽來保證處理量"^]。
+
+
+
+== 調適性QoS
+
+Keystone 服務會使用 Adaptive QoS （ AQO ）、根據磁碟區大小來動態維持 IOPS/TiB 比率。如需AQO原則的相關資訊、請參閱 https://["關於調適性QoS"^]。
+
+Keystone提供AQO原則、讓您在叢集正式作業後即可設定。您應確保所有磁碟區都與系統中已建立且可用的正確AQO原則相關聯。
+
+如果 ONTAP Volume 未套用 AQO 原則、則該磁碟區不符合法規要求。沒有 QoS 原則的磁碟區是系統提供任何可用輸入輸出作業的最後一個優先順序清單。不過、如果有任何輸入輸出作業可用、則該磁碟區可能會使用所有可用的 IOS 。
+
+
+NOTE: 如果您尚未將 AQO 原則套用至磁碟區、則會根據您的訂閱、以最高的服務層級來測量這些磁碟區並收取費用。這可能導致意外的突發費用。
+
+
+
+=== 調適性 QoS 設定
+
+Adaptive QoS （ AQO ）設定會因服務層級而異。
+
+|===
+
+
+| * 政策名稱 * | * 極致 * 與 * 極致分層 * | * 優質 * 與 * 優質分層 * | * 標準 * | * 價值 * 
+
+
+| * 預期的 IOPS * | 6 、 144 | 2 、 048 | 128/128 | 64 
+
+
+| * 預期的 IOPS 分配 * 4+| 已分配空間 
+
+
+| * 尖峰 IOPS * | 12288/3 | 4 、 096 | 512 | 128/128 
+
+
+| * 尖峰 IOPS 配置 * 4+| 已分配空間 
+
+
+| *區塊大小* 4+| 32 萬 
+|===

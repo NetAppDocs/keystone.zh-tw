@@ -46,7 +46,7 @@ Keystone 提供三種服務交付作業模式。
 * 部署
 * 正式上線
 
-| image:check.png[""] | 無 
+| image:check.pngcheck["檢查"] | 無 
 
 
  a| 
@@ -57,7 +57,7 @@ Keystone 提供三種服務交付作業模式。
 * 執行管理工作
 * 警示
 
-| 無 | image:check.png[""] 
+| 無 | image:check.png["檢查"] 
 
 
  a| 
@@ -67,7 +67,7 @@ Keystone 提供三種服務交付作業模式。
 * 管理效能
 * 管理 SLA
 
-| 無 | image:check.png[""] 
+| 無 | image:check.png["檢查"] 
 
 
  a| 
@@ -78,7 +78,7 @@ Keystone 提供三種服務交付作業模式。
 * 軟體支援
 * 升級與修補程式
 
-| image:check.png[""] | 無 
+| image:check.png["檢查"] | 無 
 |===
 
 
