@@ -18,7 +18,7 @@ summary: 概述 NetApp Keystone
 
 * NetApp Keystone 什麼是呢？*
 
-NetApp Keystone 是內部部署資本支出（資本支出）替代方案的組合。如需詳細資訊、請參閱 https://["NetApp Keystone"]。
+NetApp Keystone 是內部部署資本支出（資本支出）替代方案的組合。如需詳細資訊、請參閱 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
 
 *此功能如何讓我的客戶受益？NetApp Keystone *
 

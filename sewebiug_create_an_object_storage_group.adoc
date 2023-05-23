@@ -21,7 +21,7 @@ summary: Keystone 建立物件儲存群組
 . 請確定已選取正確的子租戶、且您已按一下*群組*索引標籤。
 . 按一下 * 建立群組 * 。
 . 在「建立群組」對話方塊中、輸入群組名稱。
-. 從清單中選取 S3 原則。如需S3原則的相關資訊、請參閱 https://["在原則中指定權限"]。
+. 從清單中選取 S3 原則。如需S3原則的相關資訊、請參閱 https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["在原則中指定權限"]。
 . 按一下「 * 建立 * 」。這會建立工作、以指定的設定建立群組。
 
 

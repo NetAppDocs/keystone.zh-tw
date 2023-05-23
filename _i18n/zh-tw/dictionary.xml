@@ -3281,4 +3281,6 @@
   <block id="2fdc90e57385ab614099e9145cde6b8e" category="paragraph"><block ref="2fdc90e57385ab614099e9145cde6b8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be10ab795d4b4daf77ddb3146f1aac29" category="inline-image-macro">計費表</block>
   <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">「 * 訂閱時間系列 * 」索引標籤會顯示您在特定期間內 Keystone 訂閱的歷史資料。垂直圖表會顯示所選時間範圍的使用詳細資料、並提供適當的指標、供您比較和產生報告。</block>
+  <block id="abc995760236584824b9e9fb494224ef" category="admonition">為獲得最佳效能和使用者體驗、請將查詢的日期範圍限制在三個月或更短。</block>
 </blocks>

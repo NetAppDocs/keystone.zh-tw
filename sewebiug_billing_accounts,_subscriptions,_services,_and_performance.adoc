@@ -40,10 +40,10 @@ NOTE: 如果多個資料中心需要儲存設備、則每個資料中心都需�
 
 如需詳細資訊、請參閱：
 
-* https://["區塊儲存"]
-* https://["檔案服務"]
-* https://["物件儲存"]
-* https://["本文檔MetroCluster"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_block_storage_overview.html["區塊儲存"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_file_services_overview.html["檔案服務"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_object_storage_overview.html["物件儲存"]
+* https://docs.netapp.com/us-en/ontap-metrocluster/index.html["本文檔MetroCluster"]
 
 
 
