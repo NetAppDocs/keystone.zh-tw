@@ -64,9 +64,11 @@ NOTE: 顯示記錄較高使用量的特定服務層級。您也可以檢視針�
 image:usage-indicator.png["圖示"]
 
 .索引
-image:usage-indicator.png["圖示"]
-image:usage-indicator.png["圖示"]
-image:icon-grey.png["圖示"]：未記錄服務層級已認可容量的容量使用量image:icon-green.png["圖示"]：使用量正常、在承諾容量的80%內image:icon-amber.png["圖示"]：最大使用量、也就是使用量即將達到100%或以上的承諾容量。「*已用*」欄會針對超過承諾容量80%的任何使用量、顯示此指標image:icon-red.png["圖示"]：使用量在連拍限制之內。「尖峰消耗」是指服務層級100%承諾容量的耗用量、且在議定的高載使用量限制範圍內、例如120%image:icon-purple.png["圖示"]：表示耗用量超過規定的突發量限制
+image:icon-grey.png["圖示"]：未記錄服務層級已認可容量的容量使用量
+image:icon-green.png["圖示"]：使用量正常、在承諾容量的80%內
+image:icon-amber.png["圖示"]：最大使用量、也就是使用量即將達到100%或以上的承諾容量。「*已用*」欄會針對超過承諾容量80%的任何使用量、顯示此指標
+image:icon-red.png["圖示"]：使用量在連拍限制之內。「尖峰消耗」是指服務層級100%承諾容量的耗用量、且在議定的高載使用量限制範圍內、例如120%
+image:icon-purple.png["圖示"]：表示耗用量超過規定的突發量限制
 
 
 

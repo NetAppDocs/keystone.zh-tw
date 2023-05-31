@@ -3229,9 +3229,6 @@
   <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">顯示記錄較高使用量的特定服務層級。您也可以檢視針對磁碟區所產生的警告和警示。</block>
   <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">圖示</block>
   <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="47ad2f3b9648e3f48662d8605e8e8bdb" category="paragraph"><block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
-<block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
-<block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>：未記錄服務層級已認可容量的容量使用量<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>：使用量正常、在承諾容量的80%內<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大使用量、也就是使用量即將達到100%或以上的承諾容量。「*已用*」欄會針對超過承諾容量80%的任何使用量、顯示此指標<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：使用量在連拍限制之內。「尖峰消耗」是指服務層級100%承諾容量的耗用量、且在議定的高載使用量限制範圍內、例如120%<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示耗用量超過規定的突發量限制</block>
   <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。您可以將滑鼠游標移至圖表上方、以檢視該資料收集點的已提交、已使用、突發量及突發量限制資料上方的使用量明細。</block>
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">歷史資料</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
@@ -3283,4 +3280,9 @@
   <block id="abc995760236584824b9e9fb494224ef" category="admonition">為獲得最佳效能和使用者體驗、請將查詢的日期範圍限制在三個月或更短。</block>
   <block id="e34cff1dbe58bcff4567c9224e5370c6" category="list-text">*結束日期*：訂閱的結束日期。空白日期表示訂閱沒有結束日期、而且會自動更新。根據這個日期、您可能會看到即將到期的訂閱資訊訊息、或附加了自動續約原則。</block>
   <block id="85701aafc47f53d769db3988637e595c" category="admonition">空白圖表表示您的環境在該資料收集點沒有可用的資料。</block>
+  <block id="2e4921125672d7122b9c21478a168883" category="paragraph"><block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>：未記錄服務層級已認可容量的容量使用量
+<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>：使用量正常、在承諾容量的80%內
+<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大使用量、也就是使用量即將達到100%或以上的承諾容量。「*已用*」欄會針對超過承諾容量80%的任何使用量、顯示此指標
+<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：使用量在連拍限制之內。「尖峰消耗」是指服務層級100%承諾容量的耗用量、且在議定的高載使用量限制範圍內、例如120%
+<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示耗用量超過規定的突發量限制</block>
 </blocks>
