@@ -14,7 +14,7 @@ summary: Keystone 效能服務層級
 
 
 [role="lead"]
-Keystone 以訂閱為基礎、以預先定義的效能服務層級（服務層級）提供資料儲存容量。由Keystone服務管理的每個Volume都與服務層級相關聯。
+Keystone 提供預先定義的效能服務層級（服務層級）或以訂閱為基礎的費率方案、以提供資料儲存容量。由Keystone服務管理的每個Volume都與服務層級相關聯。
 
 每個服務層級都是根據其 I/O 密度（即 IOPS/TiB/Volume ）來定義。這是效能的比率（每秒輸入 / 輸出作業次數 [IOP] ）和分配的儲存容量（ TiB ）、即每個磁碟區平均延遲的 IOPS/TiB 。
 

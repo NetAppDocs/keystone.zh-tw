@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: aiq-keystone-details.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, MetroCluster, StorageGRID, consumption details 
 summary: Keystone訂閱報告與圖表 
 ---
 = Keystone 的數位顧問儀表板和報告
@@ -45,6 +45,11 @@ image:aiq-ks-dtls.png["訂閱詳細資料索引標籤"]
 
 * *訂閱編號*：NetApp指派的Keystone訂閱訂閱的訂閱編號。
 * *追蹤ID*：訂閱啟動時指派的追蹤ID。這是每個訂閱和網站的唯一ID、用於追蹤訂閱。
++
+
+TIP: 如果您的訂閱已指派資料保護服務層級或費率方案、則工具提示可協助您識別 MetroCluster 設定中合作夥伴訂閱的追蹤 ID 。若要瞭解如何檢視 MetroCluster 組態中合作夥伴訂閱的詳細使用量、請參閱 https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["資料保護的其他詳細資料"]。
+
+* * 使用類型 * ：您可能已訂閱多個 Keystone （版本 1 ）或 Keystone STaaS （版本 2 ）訂閱。服務層級的費率計畫規則可能會因兩種訂閱類型而異。透過查看此欄中的值、您就知道使用類型是根據兩者的已配置或邏輯使用量計費 `v1` 或 `v2`。如需 Keystone STaaS 的詳細資訊、請參閱 https://docs.netapp.com/us-en/keystone-staas/index.html["Keystone STaaS 文件"]。
 * *帳單期間*：訂閱的帳單期間、例如每月、每季或每年。
 * *開始日期*：訂閱的開始日期。
 * *結束日期*：訂閱的結束日期。空白日期表示訂閱沒有結束日期、而且會自動更新。根據這個日期、您可能會看到即將到期的訂閱資訊訊息、或附加了自動續約原則。
@@ -55,7 +60,7 @@ image:aiq-ks-dtls.png["訂閱詳細資料索引標籤"]
 您可以按一下向下箭頭查看更多詳細資料、以取得訂閱記錄。詳細資料、例如服務層級名稱、已提交、已耗用、可用容量、以及目前和預提的突發使用量、都會顯示在TiB中。
 
 
-NOTE: 顯示記錄較高使用量的特定服務層級。您也可以檢視針對磁碟區所產生的警告和警示。
+TIP: 顯示記錄較高使用量的特定服務層級。您也可以檢視針對磁碟區所產生的警告和警示。
 
 如需Keystone儲存服務和相關服務層級的相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["服務層級"]。
 
@@ -82,7 +87,7 @@ image:icon-purple.png["圖示"]：表示耗用量超過規定的突發量限制
 . 從*開始日期*和*結束日期*欄位的行事曆圖示中選取時間範圍。預設時間範圍是從帳單期間的開始日期到目前日期。
 +
 
-NOTE: 為獲得最佳效能和使用者體驗、請將查詢的日期範圍限制在三個月或更短。
+TIP: 為獲得最佳效能和使用者體驗、請將查詢的日期範圍限制在三個月或更短。
 
 . 按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。您可以將滑鼠游標移至圖表上方、以檢視該資料收集點的已提交、已使用、突發量及突發量限制資料上方的使用量明細。
 
@@ -132,10 +137,14 @@ NOTE: *目前耗用*、*目前爆發*及*預提爆發*指標、可決定訂閱�
 
 
 
-.<strong> Data Protect查詢 </strong> 的詳細資料
+
+
+=== 資料保護的其他詳細資料
+
+.按一下這裡
 [%collapsible]
 ====
-如果您已訂閱資料保護（ DP ）服務、您可以在 * 訂閱時間系列 * 索引標籤上、根據 MetroCluster 主要和鏡射站台來檢視使用資料的分隔。
+如果您已訂閱資料保護（ DP ）服務、您可以在 * 訂閱時間系列 * 索引標籤上、根據 MetroCluster 合作夥伴網站、檢視消費資料的分佈。
 
 如需資料保護的相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html["資料保護"]。
 
@@ -145,7 +154,7 @@ NOTE: *目前耗用*、*目前爆發*及*預提爆發*指標、可決定訂閱�
 NOTE: 消費橫條圖只會分割為基本服務層級。對於 DP 服務層級、不會顯示此標界。
 
 .資料保護服務層級
-對於 DP 服務層級、總使用量會分割、每個站台的使用量會以個別的訂閱方式反映並計費；這是主要站台的一項訂閱、鏡射站台的另一項訂閱。因此、當您在 * 訂閱時間系列 * 索引標籤上選取主要站台的訂閱編號時、 DP 服務層級的使用率圖表只會顯示主要站台的個別使用量詳細資料。由於 MetroCluster 組態中的每個站台都會做為來源和鏡射、因此每個站台的總使用量都會包含在該站台建立的來源和鏡射磁碟區。
+對於 DP 服務層級、總使用量會分割、每個合作夥伴站台的使用量會以個別訂閱方式反映並計費、這是主要站台的一項訂閱、鏡射站台的另一項訂閱。因此、當您在 * 訂閱時間系列 * 索引標籤上選取主要站台的訂閱編號時、 DP 服務層級的使用率圖表只會顯示主要站台的個別使用量詳細資料。由於 MetroCluster 組態中的每個合作夥伴站台都會做為來源和鏡射、因此每個站台的總使用量都會包含在該站台建立的來源和鏡射磁碟區。
 
 .基礎服務層級
 不過、對於基礎服務層級、每個磁碟區都會依照主要站台和鏡射站台的資源配置來收費、因此相同的長條圖會根據主要站台和鏡射站台的使用量來分割。
@@ -177,7 +186,11 @@ image:dp-mir.png["MCC 鏡射基礎"]
 
 在*系統詳細資料*索引標籤上、您可以在ONTAP 下列項目中檢視用量的使用量和其他詳細資料：針對功能、此索引標籤會顯示節點及其在物件儲存環境中的個別使用情形StorageGRID 。
 
-.流通量資訊</strong> <strong>
+
+
+=== ONTAP Volume 詳細資料
+
+.按一下這裡
 [%collapsible]
 ====
 針對功能、*系統詳細資料*索引標籤會顯示Keystone訂閱所管理儲存環境中磁碟區的容量使用量、磁碟區類型、叢集、Aggregate及服務層級等資訊ONTAP 。
@@ -197,7 +210,11 @@ NOTE: 對於資料保護服務、會出現另一欄、指出磁碟區是 MetroCl
 image:aiq-ks-sysdtls.png["系統詳細資料索引標籤"]
 
 ====
-.不只是個物件、更是個物件</strong> <strong>
+
+
+=== StorageGRID 節點與使用詳細資料
+
+.按一下這裡
 [%collapsible]
 ====
 對於物件、此索引標籤會顯示物件儲存環境中節點的邏輯使用量StorageGRID 。
@@ -241,6 +258,10 @@ image:report.png["報告範例"]
 
 * *資訊*：如為訂閱即將結束等問題、您可以看到資訊警示。將游標停留在資訊圖示上、即可深入瞭解問題。
 * *警告*：不符合法規的問題會顯示為警告。例如、如果託管叢集內有未附加調適性QoS（AQO）原則的磁碟區、您會看到一則警告訊息。您可以按一下警告訊息上的連結、在「*系統詳細資料*」索引標籤中查看不相容磁碟區的清單。
++
+
+NOTE: 如果您已訂閱單一服務層級或費率方案、您將無法看到不相容磁碟區的警示。
+
 +
 如需AQO原則的相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies["計費和調適性 QoS 原則"]。
 

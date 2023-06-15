@@ -2967,11 +2967,9 @@
   <block id="393e226f044ba6b817b81de6d94e7276" category="admonition">*目前耗用*、*目前爆發*及*預提爆發*指標、可決定訂閱計費期間的使用量、而非查詢的日期範圍。</block>
   <block id="b99a21b99fb9e230b533835afc100672" category="section-title">檢視系統詳細資料</block>
   <block id="819abf779095094c4f296a2f1911a333" category="paragraph">在*系統詳細資料*索引標籤上、您可以在ONTAP 下列項目中檢視用量的使用量和其他詳細資料：針對功能、此索引標籤會顯示節點及其在物件儲存環境中的個別使用情形StorageGRID 。</block>
-  <block id="7fdbc37a63f55a7bf94c4f7eee9fbbb6" category="example-title">流通量資訊&lt;/strong&gt; &lt;strong&gt;</block>
   <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">針對功能、*系統詳細資料*索引標籤會顯示Keystone訂閱所管理儲存環境中磁碟區的容量使用量、磁碟區類型、叢集、Aggregate及服務層級等資訊ONTAP 。</block>
   <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">按一下*系統詳細資料*索引標籤。</block>
   <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">選取訂閱編號。依預設、會選取第一個可用的訂閱號碼。</block>
-  <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">不只是個物件、更是個物件&lt;/strong&gt; &lt;strong&gt;</block>
   <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">對於物件、此索引標籤會顯示物件儲存環境中節點的邏輯使用量StorageGRID 。</block>
   <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">選取訂閱編號。依預設、會選取第一個可用的訂閱號碼。選取訂閱編號後、即會啟用物件儲存詳細資料的連結。</block>
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">按一下連結、即可檢視每個節點的節點名稱和邏輯使用詳細資料。</block>
@@ -3180,7 +3178,6 @@
   <block id="3cc7e158f8699d90d955763d4ad3a6bb" category="paragraph"><block ref="3cc7e158f8699d90d955763d4ad3a6bb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="978c8164dc991cb5252f85067c6fdbe4" category="inline-image-macro">租賃架構</block>
   <block id="5cee2df0715294af225b93a062c0b3bf" category="paragraph"><block ref="5cee2df0715294af225b93a062c0b3bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ce0a3714c71298667d65ee297b12efd2" category="paragraph">Keystone 以訂閱為基礎、以預先定義的效能服務層級（服務層級）提供資料儲存容量。由Keystone服務管理的每個Volume都與服務層級相關聯。</block>
   <block id="f93af6ea2aaeafbfa26e3fe0954ccc1a" category="paragraph">每個服務層級都是根據其 I/O 密度（即 IOPS/TiB/Volume ）來定義。這是效能的比率（每秒輸入 / 輸出作業次數 [IOP] ）和分配的儲存容量（ TiB ）、即每個磁碟區平均延遲的 IOPS/TiB 。</block>
   <block id="0d2770e6697ff41e6cac5eec9a3d728b" category="paragraph">磁碟區的 I/O 密度是以每小時的時間間隔計算、以報告尖峰 I/O 密度。磁碟區的 I/O 密度報告會每月產生一次。</block>
   <block id="26ee386c417635b5c1e5d8ffd5bbb0bd" category="paragraph">此處列出檔案、區塊和物件儲存類型的服務層級。</block>
@@ -3233,13 +3230,10 @@
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">歷史資料</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">根據查詢的日期範圍、使用圖表會顯示在 30 個資料收集點範圍內。</block>
-  <block id="9c559d13aa46e64e5c1b49a0e0a1432e" category="example-title">&lt;strong&gt; Data Protect查詢 &lt;/strong&gt; 的詳細資料</block>
-  <block id="cdd4bd25f20c449a0963f56aa74dcbab" category="paragraph">如果您已訂閱資料保護（ DP ）服務、您可以在 * 訂閱時間系列 * 索引標籤上、根據 MetroCluster 主要和鏡射站台來檢視使用資料的分隔。</block>
   <block id="087f6b1f88be44a104173a6f203b90b1" category="paragraph">如需資料保護的相關資訊、請參閱<block ref="4f245631ed62c18d2a1d6d25320b34f1" category="inline-link-rx"></block>。</block>
   <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">如果您的 ONTAP 儲存環境中的叢集是在 MetroCluster 設定中設定、則 Keystone 訂閱的使用量資料會分割成同一時間系列圖表、以顯示基礎服務層級的主要站台和鏡射站台使用量。</block>
   <block id="281d16d13e34f7444117e4fa04008cd2" category="admonition">消費橫條圖只會分割為基本服務層級。對於 DP 服務層級、不會顯示此標界。</block>
   <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">資料保護服務層級</block>
-  <block id="d1bb5be7c1d9696a6692a5707b28c8a6" category="paragraph">對於 DP 服務層級、總使用量會分割、每個站台的使用量會以個別的訂閱方式反映並計費；這是主要站台的一項訂閱、鏡射站台的另一項訂閱。因此、當您在 * 訂閱時間系列 * 索引標籤上選取主要站台的訂閱編號時、 DP 服務層級的使用率圖表只會顯示主要站台的個別使用量詳細資料。由於 MetroCluster 組態中的每個站台都會做為來源和鏡射、因此每個站台的總使用量都會包含在該站台建立的來源和鏡射磁碟區。</block>
   <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基礎服務層級</block>
   <block id="2da97e4dcd0aded3c38f66cbf8f9886b" category="paragraph">不過、對於基礎服務層級、每個磁碟區都會依照主要站台和鏡射站台的資源配置來收費、因此相同的長條圖會根據主要站台和鏡射站台的使用量來分割。</block>
   <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">主要訂閱內容</block>
@@ -3285,4 +3279,15 @@
 <block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>：最大使用量、也就是使用量即將達到100%或以上的承諾容量。「*已用*」欄會針對超過承諾容量80%的任何使用量、顯示此指標
 <block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>：使用量在連拍限制之內。「尖峰消耗」是指服務層級100%承諾容量的耗用量、且在議定的高載使用量限制範圍內、例如120%
 <block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>：表示耗用量超過規定的突發量限制</block>
+  <block id="f57aa475ec783bf5f654ae84fb0b5e09" category="paragraph">Keystone 提供預先定義的效能服務層級（服務層級）或以訂閱為基礎的費率方案、以提供資料儲存容量。由Keystone服務管理的每個Volume都與服務層級相關聯。</block>
+  <block id="463e83e0e081379ee2766e73b3eecd12" category="inline-link">資料保護的其他詳細資料</block>
+  <block id="03c5694e908728e2ac20cf09a2828523" category="admonition">如果您的訂閱已指派資料保護服務層級或費率方案、則工具提示可協助您識別 MetroCluster 設定中合作夥伴訂閱的追蹤 ID 。若要瞭解如何檢視 MetroCluster 組態中合作夥伴訂閱的詳細使用量、請參閱<block ref="79d54d9bd1527f09da2a1c650bb1ebe9" category="inline-link-rx"></block>。</block>
+  <block id="29005d0d658d65418d353d36b2bb6f04" category="inline-link">Keystone STaaS 文件</block>
+  <block id="5d37c3b0ff8e3607561838b8a2c41ce6" category="list-text">* 使用類型 * ：您可能已訂閱多個 Keystone （版本 1 ）或 Keystone STaaS （版本 2 ）訂閱。服務層級的費率計畫規則可能會因兩種訂閱類型而異。透過查看此欄中的值、您就知道使用類型是根據兩者的已配置或邏輯使用量計費<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> 或<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。如需 Keystone STaaS 的詳細資訊、請參閱<block ref="6e40e8ebb5f38b7cc6ad272c1589745e" category="inline-link-rx"></block>。</block>
+  <block id="936ccdb97115e9f35a11d35e3d5b5cad" category="example-title">按一下這裡</block>
+  <block id="0897cfec13f189dd654fd1a11a3ccb31" category="paragraph">如果您已訂閱資料保護（ DP ）服務、您可以在 * 訂閱時間系列 * 索引標籤上、根據 MetroCluster 合作夥伴網站、檢視消費資料的分佈。</block>
+  <block id="ea477a5ac64777287c5e9f0ffda4e1ca" category="paragraph">對於 DP 服務層級、總使用量會分割、每個合作夥伴站台的使用量會以個別訂閱方式反映並計費、這是主要站台的一項訂閱、鏡射站台的另一項訂閱。因此、當您在 * 訂閱時間系列 * 索引標籤上選取主要站台的訂閱編號時、 DP 服務層級的使用率圖表只會顯示主要站台的個別使用量詳細資料。由於 MetroCluster 組態中的每個合作夥伴站台都會做為來源和鏡射、因此每個站台的總使用量都會包含在該站台建立的來源和鏡射磁碟區。</block>
+  <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAP Volume 詳細資料</block>
+  <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRID 節點與使用詳細資料</block>
+  <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">如果您已訂閱單一服務層級或費率方案、您將無法看到不相容磁碟區的警示。</block>
 </blocks>
