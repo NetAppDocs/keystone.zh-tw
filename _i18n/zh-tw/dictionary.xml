@@ -2929,11 +2929,8 @@
   <block id="936acd8bca51b1c47ce51ce5d9e45134" category="admonition">此處提供的資訊同時適用於ONTAP 整個過程StorageGRID 。相關章節已指出例外情況。</block>
   <block id="b5d0947d6bc5e70f868d560d859163f5" category="inline-link">透過NetApp Keystone 「View訂閱」檢視容量使用率</block>
   <block id="90022a4ed9f097be4671116b6b5b7754" category="paragraph">如需Keystone Digital Advisor小工具的相關資訊、請參閱<block ref="553d5c0a148912943ee201440d3b98c5" category="inline-link-rx"></block>。</block>
-  <block id="af23688fe47e4923ebd83f7238688630" category="paragraph">若要檢視詳細資料、請執行下列步驟：</block>
-  <block id="b49a48b1a3504debfe7fedab8ad4086d" category="paragraph">每個服務層級的訂閱詳細資料、使用圖表及磁碟區詳細資料、會顯示在「*基礎概念訂閱*」畫面上的不同索引標籤中。</block>
   <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">服務層級指標與定義</block>
   <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">檢視訂閱詳細資料</block>
-  <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">您可以在「*訂閱詳細資料*」標籤中檢視帳戶名稱的所有訂閱。</block>
   <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">您可以針對每個訂閱號碼查看下列資訊：</block>
   <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*訂閱編號*：NetApp指派的Keystone訂閱訂閱的訂閱編號。</block>
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*追蹤ID*：訂閱啟動時指派的追蹤ID。這是每個訂閱和網站的唯一ID、用於追蹤訂閱。</block>
@@ -2941,10 +2938,8 @@
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*開始日期*：訂閱的開始日期。</block>
   <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*使用狀態*：指出已使用或過度使用的訂閱量。如果您想要檢視最高使用量記錄、可以依此欄排序清單。</block>
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">如需Keystone儲存服務和相關服務層級的相關資訊、請參閱<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
-  <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">您可以參閱下列使用指標、查看每個訂閱的使用狀態：</block>
   <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">索引</block>
   <block id="6258cb1a842831f15b22f87325717f37" category="section-title">檢視歷史訂閱資料</block>
-  <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">單擊*訂購時間序列*選項卡。</block>
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">選取您要檢視其詳細資料的必要訂閱。您帳戶名稱中的第一個訂閱依預設為選取狀態。</block>
   <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">從*開始日期*和*結束日期*欄位的行事曆圖示中選取時間範圍。預設時間範圍是從帳單期間的開始日期到目前日期。</block>
   <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">將顯示下列詳細資料：</block>
@@ -2974,7 +2969,6 @@
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">按一下連結、即可檢視每個節點的節點名稱和邏輯使用詳細資料。</block>
   <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">產生報告</block>
   <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">詳細資料會以CSV格式產生、您可以儲存以供未來使用。</block>
-  <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">*訂購時間系列*標籤的範例報告、其中會轉換圖形資料：</block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">檢視警示</block>
   <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">儀表板上的警示會傳送警示訊息、讓您瞭解儲存環境中發生的問題。</block>
   <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">警示可分為兩種類型：</block>
@@ -3035,7 +3029,6 @@
   <block id="535fdb1ab2c166c0c63a26bfd6b8a4dd" category="paragraph">Keystone 提供下列優點：</block>
   <block id="56db599b367f1290318fb4abdd42ed2b" category="doc">Keystone 的數位顧問儀表板和報告</block>
   <block id="34c39bccff9d0d20e19cce35894ae174" category="list-text">登入Digital Advisor。您可以查看 * 基礎概念訂閱 * 小工具、其中摘要說明您所購買 Keystone 服務的容量使用量。</block>
-  <block id="d896c0f2329a0638824e70e536ea67ae" category="list-text">在 * 基礎概念訂閱 * 小工具上、按一下 * 檢視更多詳細資料 * 、即可在 * 基礎概念訂閱 * 頁面上檢視磁碟區的使用詳細資料和警示。或者、請從左側導覽窗格移至*一般&gt;基礎概念訂閱*。</block>
   <block id="5ce1e0f4461b25c4ab605e7e1107117a" category="paragraph">NetApp 服務引擎入口網站可讓您管理及監控 NetApp Keystone 服務。入口網站包含下列元件：</block>
   <block id="0d77f7db2828214c8d1ad32c5f8b881f" category="paragraph">租戶可以是客戶、合作夥伴或帳單實體。租戶持有 Keystone 訂閱服務的訂閱（或多個訂閱）。</block>
   <block id="f087729432bd756193396b1e0365c0c9" category="doc">檢視 NetApp 服務引擎上的 Keystone 儀表板</block>
@@ -3149,7 +3142,6 @@
   <block id="a3297beb0c913ab1ce7de0647b5264d0" category="sidebar">Keystone與Active IQ Digital Advisor</block>
   <block id="c06919229cadbe5cd8d5d386238c994e" category="sidebar">Keystone 訂閱常見問題集</block>
   <block id="6e0ffc28497d27ad3c6bea6ff91952d8" category="sidebar">Keystone 訂閱</block>
-  <block id="01f997e2a423afa5cbbc884d9826beb8" category="sidebar">檢視 Keystone 訂閱 DSflashboard</block>
   <block id="918d1cd98a55c119d7e4e81b3cfac0f8" category="summary">Keystone 調適性服務品質（ AQO ）</block>
   <block id="2cc739ab414b782a0ba5a2dafc3c878f" category="doc">Keystone 中的自適應服務品質</block>
   <block id="5f558fad18c536fde918f6d8470c0f4c" category="paragraph">儲存服務品質（QoS）是一項關鍵技術、可確保應用程式獲得一致且可預測的效能。如果沒有 QoS 、某些工作負載（例如用於開機多個系統的工作負載）可能會在一段時間內消耗大部分或全部資源、並影響其他工作負載。如需QoS的相關資訊、請參閱<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>。</block>
@@ -3217,9 +3209,6 @@
   <block id="41220b85d8467c5822466b54e2f77fdf" category="inline-image-macro">訂閱詳細資料索引標籤</block>
   <block id="3863c999fd2904d6bd45c5fac0637857" category="paragraph"><block ref="3863c999fd2904d6bd45c5fac0637857" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">圖示</block>
-  <block id="465b53bf56fb8c088ea55a58377aec59" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：單擊此圖標將打開*訂購時間系列*選項卡，您可以在該選項卡中查看此訂購中包含的每個服務級別的歷史使用數據。</block>
-  <block id="0e25c249c47d5b9cd3933dea0b0e9bfb" category="paragraph">您可以按一下向下箭頭查看更多詳細資料、以取得訂閱記錄。詳細資料、例如服務層級名稱、已提交、已耗用、可用容量、以及目前和預提的突發使用量、都會顯示在TiB中。</block>
-  <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">顯示記錄較高使用量的特定服務層級。您也可以檢視針對磁碟區所產生的警告和警示。</block>
   <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">圖示</block>
   <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。您可以將滑鼠游標移至圖表上方、以檢視該資料收集點的已提交、已使用、突發量及突發量限制資料上方的使用量明細。</block>
@@ -3250,7 +3239,6 @@
   <block id="95d8d7b4f026ffa4ad680a1e5997be51" category="paragraph"><block ref="95d8d7b4f026ffa4ad680a1e5997be51" category="inline-image-macro-rx" type="image"></block></block>
   <block id="26b4aee602cdc66122bb6d728f867b41" category="inline-image-macro">下載報告圖示</block>
   <block id="0f3423da50b7d7441392096dd6c78fac" category="paragraph">您可以按一下*下載CSV*按鈕、針對訂閱詳細資料、時間範圍的歷史使用資料、以及每個索引標籤的系統詳細資料、來產生及檢視報告： <block ref="785382ed2a85b4539c4016da106c0215" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71a1fbaca678e13a8273c81f0c6acf72" category="paragraph">在 * 訂閱時間系列 * 索引標籤中、您可以選擇下載查詢日期範圍的預設 30 個資料收集點或每日報告的報告。</block>
   <block id="69d93398ad0e22b2ac431db7ec005308" category="inline-image-macro">報告範例</block>
   <block id="ae36f6805d5f090b092ed6be03fa8820" category="paragraph"><block ref="ae36f6805d5f090b092ed6be03fa8820" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7df8a07436fa2a6fa44c6c89de1dc353" category="paragraph"><block ref="7df8a07436fa2a6fa44c6c89de1dc353" category="inline-image-macro-rx" type="image"></block></block>
@@ -3258,7 +3246,6 @@
   <block id="2fdc90e57385ab614099e9145cde6b8e" category="paragraph"><block ref="2fdc90e57385ab614099e9145cde6b8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="be10ab795d4b4daf77ddb3146f1aac29" category="inline-image-macro">計費表</block>
   <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">「 * 訂閱時間系列 * 」索引標籤會顯示您在特定期間內 Keystone 訂閱的歷史資料。垂直圖表會顯示所選時間範圍的使用詳細資料、並提供適當的指標、供您比較和產生報告。</block>
   <block id="abc995760236584824b9e9fb494224ef" category="admonition">為獲得最佳效能和使用者體驗、請將查詢的日期範圍限制在三個月或更短。</block>
   <block id="e34cff1dbe58bcff4567c9224e5370c6" category="list-text">*結束日期*：訂閱的結束日期。空白日期表示訂閱沒有結束日期、而且會自動更新。根據這個日期、您可能會看到即將到期的訂閱資訊訊息、或附加了自動續約原則。</block>
   <block id="85701aafc47f53d769db3988637e595c" category="admonition">空白圖表表示您的環境在該資料收集點沒有可用的資料。</block>
@@ -3270,7 +3257,6 @@
   <block id="f57aa475ec783bf5f654ae84fb0b5e09" category="paragraph">Keystone 提供預先定義的效能服務層級（服務層級）或以訂閱為基礎的費率方案、以提供資料儲存容量。由Keystone服務管理的每個Volume都與服務層級相關聯。</block>
   <block id="29005d0d658d65418d353d36b2bb6f04" category="inline-link">Keystone STaaS 文件</block>
   <block id="5d37c3b0ff8e3607561838b8a2c41ce6" category="list-text">* 使用類型 * ：您可能已訂閱多個 Keystone （版本 1 ）或 Keystone STaaS （版本 2 ）訂閱。服務層級的費率計畫規則可能會因兩種訂閱類型而異。透過查看此欄中的值、您就知道使用類型是根據兩者的已配置或邏輯使用量計費<block ref="6654c734ccab8f440ff0825eb443dc7f" prefix=" " category="inline-code"></block> 或<block ref="1b267619c4812cc46ee281747884ca50" prefix=" " category="inline-code"></block>。如需 Keystone STaaS 的詳細資訊、請參閱<block ref="6e40e8ebb5f38b7cc6ad272c1589745e" category="inline-link-rx"></block>。</block>
-  <block id="936ccdb97115e9f35a11d35e3d5b5cad" category="example-title">按一下這裡</block>
   <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAP Volume 詳細資料</block>
   <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRID 節點與使用詳細資料</block>
   <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">如果您已訂閱單一服務層級或費率方案、您將無法看到不相容磁碟區的警示。</block>
@@ -3278,10 +3264,8 @@
   <block id="22af05fccc86b1f0d7872faea8c654a4" category="paragraph">如果您已訂閱資料保護服務、則會將特定服務層級指派給您的訂閱、例如 _Data Protect Extreme 、 _Data Protect Premium_ 等等。如需相關資訊、請參閱<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block></block>
   <block id="1929ab48c05126f8a997e319160674e8" category="admonition">Keystone 訂閱的容量使用量會顯示在儀表板和報告的 Tibs 中、並四捨五入至兩位小數位數。如果使用量低於0.01 TiB、則該值會顯示為<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> 或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。如需其他使用量指標、請參閱<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。如需Keystone中使用不同容量的相關資訊、請參閱<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
   <block id="8640c6867f9a397cb1e15b5dc86f5663" category="admonition">如果您的訂閱已指派資料保護服務層級或費率方案、則工具提示可協助您識別 MetroCluster 設定中合作夥伴訂閱的追蹤 ID 。若要瞭解如何檢視 MetroCluster 組態中合作夥伴訂閱的詳細使用量、請參閱<block ref="ea85780aae2041c315d8d2c95c2ef380" category="inline-link-rx"></block>。</block>
-  <block id="8e357471a27451528c5b9baff9e6ce0c" category="paragraph">如果您已訂閱資料保護服務、您可以在 * 訂閱時間系列 * 標籤上檢視 MetroCluster 合作夥伴網站的使用資料分佈。</block>
   <block id="1e082e4448eecee03f6bd4c2605a41bc" category="paragraph">如需資料保護的相關資訊、請參閱<block ref="88c192a22c75988714ca0d6a3ba44ff9" category="inline-link-rx"></block>。</block>
   <block id="e6b09591607b38dfa571b28e166b8e42" category="admonition">消費橫條圖只會分割為基本服務層級。對於資料保護服務層級、不會顯示此標界。</block>
-  <block id="a5ee6c11183b804a6d34deec216a083c" category="paragraph">對於資料保護服務層級、總使用量會在合作夥伴網站之間分割、每個合作夥伴網站的使用量會以個別的訂閱方式反映並計費；這是一次主要網站訂閱、另一次則是鏡射網站訂閱。因此、當您在 * 訂閱時間系列 * 索引標籤上選取主要站台的訂閱編號時、 DP 服務層級的使用率圖表只會顯示主要站台的個別使用量詳細資料。由於 MetroCluster 組態中的每個合作夥伴站台都會做為來源和鏡射、因此每個站台的總使用量都會包含在該站台建立的來源和鏡射磁碟區。</block>
   <block id="dc22a90e0f32f2a7c39774489ee8fb79" category="admonition">「 * 訂閱詳細資料 * 」標籤中訂閱的 tacking ID 旁邊的工具提示可協助您在 MetroCluster 設定中識別合作夥伴訂閱。</block>
   <block id="fe1654f1038a98c579f04107a47b091b" category="paragraph">對於基礎服務層級、每個磁碟區都會在主要站台和鏡射站台上依資源配置收費、因此相同的長條圖會根據主要站台和鏡射站台的使用量來分割。</block>
   <block id="6f66763d1fa17a342e4bfd7244527ffb" category="paragraph">下圖顯示 _ 極致 _ 服務層級（基本服務層級）和主要訂閱號碼的圖表。同一時間系列圖表會以主要站台所使用的彩色代碼較淡的陰影標記鏡射站台使用量。滑鼠游標上的工具提示會分別顯示主要站台和鏡射站台的消耗分佈（在 TiB 中）、分別為 1.02 TiB 和 1.05 TiB 。</block>
@@ -3292,4 +3276,25 @@
   <block id="a124cd9706a171f6aa398360fb7ee547" category="paragraph">您可以根據儲存環境、以及儲存與使用需求來選擇服務層級。根據預設、您可以使用基本服務層級。如果您選擇了特定服務、則其他服務層級也可以使用。例如、對於資料保護服務、 _ 資料保護 &lt;base-service-level&gt; _ 服務層級會指派給您的訂閱。</block>
   <block id="12e64e130cc4e82cf93d846901ed35da" category="paragraph">此處列出檔案、區塊和物件儲存類型的基本服務層級。</block>
   <block id="6839a21037309515ac19670a2a6b09fe" category="paragraph">基礎服務層級度量取決於下列情況：</block>
+  <block id="42bb1b11612744ae96538087e8d89e64" category="paragraph">若要檢視 Keystone 訂閱和使用詳細資料、請執行下列步驟：</block>
+  <block id="0e36e4920a72685c5bf66bc9dcc92631" category="list-text">在 * 基礎概念訂閱 * 小工具上、按一下 * 檢視更多詳細資料 * 、即可在 * 基礎概念訂閱 * 頁面上檢視磁碟區的使用詳細資料和警示。或者、請從左側導覽窗格移至*一般&gt;基礎概念訂閱*。
+每個服務層級的訂閱詳細資料、使用圖表及磁碟區詳細資料、會顯示在「*基礎概念訂閱*」畫面上的不同索引標籤中。</block>
+  <block id="97bc392a54093706b77166ffad5ea0d0" category="section-title">檢視所有訂閱</block>
+  <block id="2fe8aaafbfc1675fe82744032b0d0cf7" category="paragraph">您可以在 * 所有訂閱 * 索引標籤中檢視所有訂閱的清單。</block>
+  <block id="6af07443bb9ad7040cdd401c709ccbab" category="inline-image-macro">所有訂閱索引標籤的影像</block>
+  <block id="1026961b348768f00fe99c6335970163" category="paragraph"><block ref="1026961b348768f00fe99c6335970163" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0217421b29817efbd12b8a6b40478e08" category="list-text"><block ref="f5416884a5e4dfec0dfa2f3734568648" category="inline-image-macro-rx" type="image"></block>：按一下此圖示即可開啟 * 訂閱詳細資料 * 索引標籤、其中包含該訂閱的其他詳細資料。</block>
+  <block id="327f95562dd791a77e81a667b1df9fa2" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>：按一下此圖示會開啟 * 時間序列 * 索引標籤、您可以在其中查看此訂閱所包含之每個服務層級的歷史使用資料。
+您可以參閱下列使用指標、查看每個訂閱的使用狀態：</block>
+  <block id="8ef32aa104ea3562916b70b4b76567dc" category="paragraph">若要瞭解訂閱的詳細資料、請按一下 * 訂閱詳細資料 * 標籤、然後選取所需的訂閱號碼。</block>
+  <block id="5c5d0bc72c60ee286bac97972345b3e3" category="paragraph">詳細資料、例如服務層級名稱、已提交、已耗用、可用容量、以及目前和預提的突發使用量、都會顯示在TiB中。</block>
+  <block id="6d3602bc1499d37d6352a07745fe82a3" category="inline-image-macro">資訊圖示</block>
+  <block id="d99c74aa854c016d1663a41aa2c66269" category="admonition">。 <block ref="41cd2369ab2f394456f5dd45b77d6e7d" category="inline-image-macro-rx" type="image"></block> 每一欄旁邊的圖示提供該欄的完整資訊。顯示記錄較高使用量的特定服務層級。您也可以檢視針對磁碟區所產生的警告和警示。</block>
+  <block id="83528b1e6d4213feabc83b2181314b13" category="paragraph">「 * 時間系列 * 」標籤會顯示您在特定期間內 Keystone 訂閱的歷史資料。垂直圖表會顯示所選時間範圍的使用詳細資料、並提供適當的指標、供您比較和產生報告。</block>
+  <block id="132388a6a35c7d25ea2062b8273f7f26" category="list-text">按一下 * 時間序列 * 標籤。</block>
+  <block id="8344f7a6b8dcdb4c4ccdda87c123a728" category="paragraph">如果您已訂閱資料保護服務、您可以在 * 時間系列 * 索引標籤上檢視 MetroCluster 合作夥伴網站的使用資料分佈。</block>
+  <block id="4795287a6f8c3961f5253f7ecd3113a8" category="paragraph">對於資料保護服務層級、總使用量會在合作夥伴網站之間分割、每個合作夥伴網站的使用量會以個別的訂閱方式反映並計費；這是一次主要網站訂閱、另一次則是鏡射網站訂閱。因此、當您在 * 時間系列 * 索引標籤上選取主要站台的訂閱號碼時、 DP 服務層級的使用率圖表只會顯示主要站台的個別使用量詳細資料。由於 MetroCluster 組態中的每個合作夥伴站台都會做為來源和鏡射、因此每個站台的總使用量都會包含在該站台建立的來源和鏡射磁碟區。</block>
+  <block id="af81edf5bcc17eaccb12af11d8027e2a" category="paragraph">在 * 時間序列 * 索引標籤中、您可以選擇下載查詢日期範圍的預設 30 個資料收集點或每日報告的報告。</block>
+  <block id="1ab7bb685c5a04401573e75118c580cb" category="paragraph">* 時間序列 * 標籤的範例報告、其中會轉換圖形資料：</block>
+  <block id="c0bce484f13c952e32f78691687f5ae8" category="sidebar">檢視 Keystone 訂閱儀表板</block>
 </blocks>
