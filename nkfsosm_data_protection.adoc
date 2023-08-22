@@ -24,7 +24,7 @@ NetApp Keystone 資料保護服務可備份您的資料、並可在必要時進�
 
 NOTE: 備份與災難恢復服務可作為附加服務使用、而Snapshot則可作為基本儲存服務的一部分使用。
 
-如果您已訂閱資料保護服務、則會將特定服務層級指派給您的訂閱、例如 _Data Protect Extreme 、 _Data Protect Premium_ 等等。如需相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["資料保護的其他詳細資料"]
+如果您已訂閱資料保護服務、則會將特定服務層級指派給您的訂閱、例如 _Data Protect Extreme 、 _Data Protect Premium_ 等等。如需相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#reference-charts-for-data-protection["資料保護參考圖表"]。
 
 |===
 |  | 單一區域快照（作為基本儲存服務的一部分提供） | 多區域備份（資料保護附加元件） | 多區域災難恢復（資料保護附加元件） 

@@ -15,8 +15,6 @@ summary: NetApp Keystone 是一項隨成長付費的儲存即服務方案、可�
 
 NetApp Keystone 是一套內部部署資本支出（資本支出）替代方案、可協助您順利邁向雲端之路。利用橫跨內部部署和雲端的儲存服務、提供無縫的混合雲體驗。 NetApp Keystone如需 NetApp Keystone 更多有關資訊、請參閱 link:https://www.netapp.com/services/subscriptions/keystone/["NetApp Keystone"]
 
-如需 NetApp Keystone 更多有關資訊、請參閱 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
-
 Keystone 是一項儲存即服務產品、可在內部部署系統上提供雲端般的體驗、並可依您的需求連線至雲端。
 
 
@@ -54,3 +52,5 @@ Keystone 提供下列優點：
 
 
 image:nkfsosm_image4.png["效益"]
+
+Keystone 服務與 NetApp Keystone STaaas 產品不同。如需 NetApp Keystone STaaas 的詳細資訊、請參閱 https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaas] 。
