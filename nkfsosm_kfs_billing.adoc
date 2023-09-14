@@ -30,8 +30,6 @@ Keystone計費是根據已提交的容量和可變的突發消耗量來計算。
 
 如需已認可及突發容量使用量的相關資訊、請參閱 link:nkfsosm_keystone_service_capacity_definitions.html["Keystone 服務容量定義"]。
 
-如需如何檢視帳單詳細資料的詳細資訊、請參閱 link:sewebiug_billing.html["檢視帳單"]。
-
 
 
 == 根據已提交的容量進行計費

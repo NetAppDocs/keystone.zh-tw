@@ -41,7 +41,7 @@ summary: Keystone 服務容量定義
 
 * 提交的容量無法減少
 * 承諾的容量不得在您的訂閱到期前 90 天增加、除非該訂閱將續約 12 個月。
-* 您可以透過 NetApp 服務引擎介面或 Keystone Success Manager 要求變更已提交的容量。如需要求變更的相關資訊、請參閱 link:sewebiug_raise_a_service_request.html["提出服務要求"]。
+* 您可以透過 Keystone Success Manager 要求變更提交容量。
 
 
 

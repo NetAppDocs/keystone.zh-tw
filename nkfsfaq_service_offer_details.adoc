@@ -26,15 +26,16 @@ Keystone 服務提供 12 、 24 和 36 個月的期間。
 
 *如何存取儲存設備？*
 
-在 NetApp 營運（標準）模式中、儲存控制器（ ONTAP 系統管理程式或系統管理存取權）由 NetApp 擁有及管理。您只能透過 NetApp 服務引擎 UI 和 API 來監控及管理儲存設備。在客戶管理（或精簡）部署中、 NetApp 服務引擎 UI 和 API 主要用於計費功能、您可以存取儲存控制器、例如 Active IQ Unified Manager ：功能不受限的功能、例如功能不受限的功能、 ONTAP 也可以直接存取 ONTAP 功能不受限的叢集。
+在 NetApp 營運（標準）模式中、儲存控制器（ ONTAP 系統管理程式或系統管理存取權）由 NetApp 擁有及管理。您只能透過 Active IQ Digital Advisor UI 監控儲存設備。
+在客戶管理（或精簡）部署中、 Active IQ Digital Advisor UI 主要用於計費功能、您可以存取儲存控制器、例如 Active IQ Unified Manager 和 ONTAP 系統管理員、並直接存取 ONTAP 叢集。
 
 *如何管理服務？*
 
-NetApp Service Engine 是協調與管理工具、可讓您用來配置儲存設備、並取得服務使用量的報告。
+您可以針對任何需求提出支援服務單。
 
 *如何增加訂閱的承諾容量？*
 
-您可以透過 NetApp 服務引擎管理工具或 NetApp Keystone 其支援中心經理提交容量新增申請。
+透過您的 NetApp Keystone 成功經理。
 
 *增加容量是否會延長期限？*
 

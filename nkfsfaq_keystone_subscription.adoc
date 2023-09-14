@@ -30,8 +30,6 @@ Keystone 對應到什麼？ * Keystone 對應到單一站台或單一資料中�
 
 *合作夥伴是否可以向客戶銷售比從NetApp購買更多的容量？*租戶訂閱不受合作夥伴購買容量的限制。合作夥伴可以向客戶銷售比從 NetApp 購買更多的容量。超過購買容量的容量稱為超額訂閱。
 
-*是否提供API來整合客戶工具？*是的、RESTful API可整合至您自己的應用程式。瀏覽至 * 支援 > API 文件 * 、查看 Keystone 服務的 API 文件。如需詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Keystone API 指南"]。
-
 *什麼是突發容量？*您可以將使用量增加或減少、最高可達承諾容量的20%。突發容量使用量是每日測量、僅在使用時計費。例如、如果提交的容量為 100 TiB 、則最多可增加 120 TiB 。
 
 *使用突發負載是否需要付費？*高達20%的已提交容量的突發容量使用量、其收費率與已提交容量相同、超過20%已提交容量的任何使用量、均以50%的保費收費。
@@ -40,11 +38,14 @@ Keystone 對應到什麼？ * Keystone 對應到單一站台或單一資料中�
 
 *如何將突發容量分配給租戶？*將突發容量分配給合作夥伴、由合作夥伴根據需求進一步將容量分配給客戶。
 
-*我可以在哪裡看到已認可和突發容量使用量？* NetApp服務引擎內建儀表板、可根據已認可的容量來報告已用容量。
+* 我可以在哪裡查看承諾容量和突發容量使用量？ *
+在 Active IQ Digital Advisor 儀表板中。
 
-*如果我在已確認的容量使用量中達到某個百分比、是否會有任何通知？*是、管理工具會透過NetApp服務引擎儀表板提供容量使用通知。
+* 如果我在已承諾容量使用量中達到某個百分比、是否會收到任何通知？ *
+是的、管理工具會透過 Active IQ Digital Advisor 儀表板提供容量使用量通知。
 
-* 如何檢視 Keystone 使用情形？ * NetApp 服務引擎提供儀表板檢視、其中包含訂閱的所有服務資訊、以及使用量。如需 NetApp 服務引擎的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["請按這裡"]。
+* 如何檢視 Keystone 使用情形？ *
+Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服務資訊、以及使用量。
 
 * 我要如何回報服務的任何問題？ NetApp Keystone * 可透過下列各種管道取得支援：
 
@@ -52,7 +53,8 @@ Keystone 對應到什麼？ * Keystone 對應到單一站台或單一資料中�
 * 提報電子郵件： mailto ： keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
 
 
-* 我可以訂購新的儲存服務嗎？ * 是的、您可以從 NetApp 服務引擎入口網站申請新的儲存服務或擴充至儲存服務。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。
+* 我可以訂購新的儲存服務嗎？ *
+是的、您可以要求提供新的儲存服務或擴充至儲存服務、只需執行 KSM 即可。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。
 
 * 是否立即增加可用的儲存承諾？ * 視要求的容量而定、系統會判斷容量是否已部署、或是需要額外的設備才能出貨和安裝。
 

@@ -26,36 +26,10 @@ Keystone 基礎架構架構、設計、技術選擇和元件產品僅適用於 N
 
 Keystone 基礎架構包含多個元件：
 
-* NetApp 服務引擎的使用者介面（ Web 入口網站）。
-* 適用於整合的 NetApp 服務引擎 API 。
 * 包含儲存控制器的Keystone基礎架構
-* 管理及操作服務的工具、例如 OpsRamp 、 Active IQ VMware 及 Active IQ Unified Manager VMware 等。
+* 管理和操作服務的工具、例如 OpsRamp 、 Active IQ Digital Advisor 和 Active IQ Unified Manager 。
 
 
 如需 NetApp Keystone 更多有關使用 Active IQ 效益技術整合的資訊、請參閱 link:https://docs.netapp.com/us-en/active-iq/["《 VMware 數位顧問文件》 Active IQ"]
 
 image:nkfsosm_image8.png["KS-Infrastructure"]
-
-
-
-== NetApp 服務引擎
-
-您可以使用 NetApp Service Engine 入口網站、在 NetApp 、合作夥伴或客戶營運模式中管理及監控 Keystone 服務。入口網站包含下列功能：
-
-* 支援監控及簡易儲存資源配置的圖形介面（ NetApp Service Engine 網路介面）。
-* 一組 NetApp 服務引擎 REST API 、可執行更進階的設定與儲存管理動作。
-
-
-image:nkfsosm_image9.png["KS-architecture"]
-
-NetApp 服務引擎入口網站是單一介面、可讓客戶執行下列工作：
-
-* 訂購儀表板：檢視已訂閱容量的狀態、以及使用量。
-* 儲存資源配置：建立 NFS/CIFS 檔案共用、 FC/iSCSI 磁碟和 S3 儲存區的工作流程。
-* 資料保護：在已配置的檔案共用區或磁碟上建立快照並設定備份原則或資料複寫。
-* 報告：檢視檔案共用和磁碟庫存、以及不同服務層級的容量使用趨勢。
-* 管理訂閱。透過入口網站訂購現有訂閱或新服務的額外容量。
-* 提交服務要求或支援問題、並檢視其狀態
-
-
-NetApp 服務引擎的完整功能僅適用於 NetApp 營運模式。在客戶或合作夥伴經營的模式中、 NetApp 服務引擎功能僅限於報告與訂閱管理。

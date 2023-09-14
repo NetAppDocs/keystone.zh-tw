@@ -47,6 +47,8 @@ TIP: 按一下 * 訂閱 * 連結、即可在 * 訂閱 * 索引標籤中檢視篩
 
 
 
+image:db-card.png["不含 SLA"]
+
 如需Digital Advisor的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"]。
 
 如需 * 基礎概念訂閱 * 索引標籤的相關資訊、請參閱 _Digital Advisor 儀表板和 Keystone 報告。

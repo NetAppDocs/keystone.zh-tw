@@ -33,7 +33,7 @@ NetApp 服務引擎儀表板經過重新設計、包含下列新元件：
 * * 容量使用率 * 、用於檢視您所訂閱服務的已用容量。
 * * 每月費用（帳單） * 、用於檢視您所有訂閱的每月總費用。
 * * 警示 * ：檢視環境中最新警示的摘要。
-* * 服務要求 * 、用於檢視環境中最近產生的服務要求清單。如需詳細資訊、請參閱 link:sewebiug_dashboard.html["檢視 Keystone 儀表板"]。
+* * 服務要求 * 、用於檢視環境中最近產生的服務要求清單。
 
 
 
@@ -42,13 +42,13 @@ NetApp 服務引擎儀表板經過重新設計、包含下列新元件：
 
 新增了一個 * 帳單 * 畫面、可輕鬆存取及計算您的歷史帳單資料。此畫面提供與您所有訂閱服務相關的每月費用全方位檢視。
 
-請從儀表板上的 * 每月費用 * 小工具瀏覽此畫面、或從 * 管理 > 帳單 * 檢視每月訂閱層級的費用細分、以查看您所有訂閱服務的費用。計費資料是根據您的承諾和突發容量使用量而定、可在前幾個月內供您使用。如需詳細資訊、請參閱 link:sewebiug_billing.html["檢視帳單"]。
+請從儀表板上的 * 每月費用 * 小工具瀏覽此畫面、或從 * 管理 > 帳單 * 檢視每月訂閱層級的費用細分、以查看您所有訂閱服務的費用。計費資料是根據您的承諾和突發容量使用量而定、可在前幾個月內供您使用。
 
 
 
 === 新警示畫面
 
-此版本中引入了一個新的 * 警示 * 畫面、其中列出所有系統產生和使用者產生的警示。此畫面也可讓您針對環境相關的重大事件建立自訂警示訊息、並將其傳達給其他使用者。他們可以視需要檢視和關閉警示。如需詳細資訊、請參閱 link:sewebiug_alerts.html["建立及管理警示"]。
+此版本中引入了一個新的 * 警示 * 畫面、其中列出所有系統產生和使用者產生的警示。此畫面也可讓您針對環境相關的重大事件建立自訂警示訊息、並將其傳達給其他使用者。他們可以視需要檢視和關閉警示。
 
 
 
@@ -77,18 +77,6 @@ NetApp 服務引擎現在支援服務供應商管理多租戶環境。您可以�
 * * 訂閱： * 身為合作夥伴管理員、您可以分別從 * 訂閱 * > * 基礎概念訂閱 * 和 * 訂閱 * > * 租戶訂閱 * 檢視及更新訂閱與租戶訂閱。身為租戶管理員、您只能檢視租戶訂閱。
 * * 使用者： * 根據您的角色、您可以根據需求、將權限指派給租賃中的新使用者或現有使用者。角色可以是 NetApp 管理員、具有唯讀權限的 NetApp 管理員、合作夥伴管理員或租戶管理員。身為合作夥伴管理員、您只能將合作夥伴管理員或租戶管理員角色指派給新使用者。租戶管理員使用者只能將租戶管理員角色指派給其他使用者。
 * * 網路功能表： * 身為合作夥伴管理員、您可以檢視為租賃所定義的網路。您也可以從 * 網路 * > * 子網路 * 建立子租戶和區域的子網路。這是終端客戶或子租戶在配置儲存設備時所需的。
-* API 支援：本版本提供「 / 租戶 / ｛ 租戶 ID ｝ / 區域 / ｛ zo_name ｝ / 子網路」和「 / 租戶 / ｛ 租戶 ID ｝ / 區域 / ｛ zion_name ｝ / 子網路 / ｛ id ｝ / 標籤」 API 、以建立及檢視子租戶的子網路。
-
-
-如需此功能的詳細資訊、請參閱下列連結：
-
-* link:nkfsosm_overview.html["營運模式、角色和責任"]
-* link:nkfsosm_tenancy_overview.html["Keystone 中的租賃和多租戶"]
-* link:sewebiug_dashboard.html["檢視 Keystone 儀表板"]
-* link:sewebiug_working_with_reports.html["檢視報告"]
-* link:sewebiug_managing_subscriptions.html["管理訂閱"]
-* link:sewebiug_managing_tenants_and_subtenants.html["管理租戶和租戶"]
-* link:sewebiug_define_network_configurations.html["定義租戶和子租戶的網路"]
 
 
 
@@ -150,7 +138,7 @@ NOTE: Cloud Volumes 服務的訂閱是在 NetApp 服務引擎之外進行管理�
 
 === 限制使用者存取 CIFS 共用區的資源
 
-您現在可以指定存取控制清單（ ACL ）來限制 CIFS （ SMB ）或多重傳輸協定共用區的使用者存取。您可以根據 Active Directory （ AD ）設定來指定 Windows 使用者或群組、以新增至 ACL 。link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["深入瞭解"]。
+您現在可以指定存取控制清單（ ACL ）來限制 CIFS （ SMB ）或多重傳輸協定共用區的使用者存取。您可以根據 Active Directory （ AD ）設定來指定 Windows 使用者或群組、以新增至 ACL 。
 
 
 
@@ -201,19 +189,19 @@ NetApp 服務引擎支援使用主機群組。主機群組是一組 FC 傳輸協
 
 ==== 建議的變更會導致使用突發容量時發出通知
 
-顯示建議資源配置變更的通知、會導致訂閱量暴增。使用者可以選擇繼續、因為他們知道訂閱將會爆發、或選擇不繼續執行此動作。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["深入瞭解"]。
+顯示建議資源配置變更的通知、會導致訂閱量暴增。使用者可以選擇繼續、因為他們知道訂閱將會爆發、或選擇不繼續執行此動作。
 
 
 
 ==== 訂閱量暴增時發出通知
 
-當訂閱量暴增時、會顯示通知橫幅。link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["深入瞭解"]。
+當訂閱量暴增時、會顯示通知橫幅。
 
 
 
 ==== 容量報告會顯示尖峰使用量
 
-容量報告、顯示訂閱量暴增的天數和使用的突發容量量。link:sewebiug_working_with_reports.html#capacity-usage["深入瞭解"]。
+容量報告、顯示訂閱量暴增的天數和使用的突發容量量。
 
 
 
