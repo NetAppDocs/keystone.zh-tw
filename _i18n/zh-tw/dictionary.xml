@@ -373,7 +373,6 @@
   <block id="ff6306dccf086261b36fc9764ec0a69c" category="section-title">複製磁碟區的收費</block>
   <block id="0e3a3dc0c3eeb16df240b7eafc4a840c" category="paragraph">如果將磁碟區複製到 ONTAP 支援區中、並將其用於備份及還原資料、您可以繼續使用複本、而無需支付任何額外費用。然而、貴企業長期用於任何其他用途的複製磁碟區則需支付費用。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
-  <block id="9ecca21c579121ef7bd72dc9d12e518a" category="list-text">在建立複製磁碟區的前 24 小時內、不會考慮使用複製磁碟區；在此期間不會產生任何費用。</block>
   <block id="cded8c4b6c98886d10fcb9c2503ce0a4" category="section-title">帳單 MetroCluster for 本</block>
   <block id="ba4c22a98feebac558bbaac68b704e09" category="section-title">暫用磁碟區收費</block>
   <block id="480da42f59e7a8b523d40d52ba830cb8" category="paragraph">有時 ONTAP 、當搬移 Volume 時、會由現象開發出暫用（ TMP ） Volume 。這些暫存磁碟區的壽命很短、而且不會測量這些磁碟區的使用量以供計費。</block>
@@ -463,7 +462,6 @@
   <block id="f0a98503f7025814de673358cbfc2ebc" category="inline-link-macro">不需付費即可使用FabricPool</block>
   <block id="ea5f2a3107ef6a292b858bed2431fd2d" category="paragraph">如需帳單資訊、請參閱 <block ref="6bfa617ca63af4eb1b55b6cf1d8469f3" category="inline-link-macro-rx"></block>。</block>
   <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">當耗用容量大於指定服務層級的已認可容量時、系統會記錄突發消耗、並據此套用費用。產生的每個使用記錄都會執行此程序。因此、「暴增使用量」反映出您的過度使用容量在承諾容量之外的數量和使用期限。</block>
-  <block id="17165dfb97a3399066f5846aed0c4af9" category="list-text">如果未將新資料寫入磁碟區、則不考慮使用標準和價值服務層級的複製磁碟區。例如、在備份或還原使用案例中、從複製磁碟區備份或還原資料不會變更複製磁碟區本身的資料、也不會將其視為使用量。</block>
   <block id="822d70344d224e2e68e8dcf4ec044c3c" category="paragraph">SnapMirror目的地Volume的定價受來源所指派服務層級的QoS原則所規範。但是、如果來源沒有相關聯的 QoS 原則、則會根據可用的最低服務層級來計費目的地。</block>
   <block id="cde520829ff4c329d0a877769052c136" category="paragraph">如果資料是從Keystone系統分層到ONTAP 不只是單純儲存服務（S3）物件儲存或NetApp StorageGRID 支援、則熱層（Keystone系統）的耗用容量將會減少分層的資料量、進而影響計費結果。無論ONTAP 您的需求StorageGRID 是由Keystone訂閱涵蓋的不只是S3儲存設備或是一套系統。</block>
   <block id="eb71f31c80be60d1b83c15a9023c5aa0" category="paragraph">若要將資料分層至任何第三方物件儲存設備、請聯絡Keystone成功管理程式。</block>
@@ -610,7 +608,6 @@
   <block id="1506e8c7e13ed05e538e60e10a3477b1" category="paragraph">Keystone計費是根據已提交的容量和可變的突發消耗量來計算。</block>
   <block id="1ff2df6e8089d3512e911414c676a7f3" category="paragraph">如需已認可及突發容量使用量的相關資訊、請參閱 <block ref="540abd097156d3d90f0e80c5419e5bbd" category="inline-link-macro-rx"></block>。</block>
   <block id="93aa15f9790e71bb597ff6890e152fec" category="paragraph">承諾容量是指各方（ NetApp / 合作夥伴和客戶）在單一訂閱中議定的各種服務容量。此容量會在每個Keystone訂單上註明、而且會計費、無論實際使用量為何。</block>
-  <block id="64e874f787e16bb9b53261356f2214cb" category="paragraph">作爲Keystone服務部署的一部分，NetApp會持續監控和衡量服務的使用量。系統每五分鐘會產生一筆使用量記錄、詳述目前的訂閱耗用容量。這些記錄會在計費期間內彙總、以產生發票和使用報告。</block>
   <block id="43a5ebf4acc8e67d9f252d84c9db5e28" category="paragraph">Keystone 服務每月及每年收費。</block>
   <block id="295067c36f2198f1e7c354cad560fee0" category="paragraph">在訂閱啟動的前 60 天內、您累積的任何突發使用量都會記錄下來、但不會在 Keystone 服務發票上收取費用。此寬限期可讓您將儲存設備設定成適當的調適性服務品質（AQO）設定、以便適當監控及計費。正確設定儲存設備時、您可以避免發生任何非預期的暴增費用。在60天的初始寬限期之後累積的任何突發使用量、都會在下一張發票上支付。此寬限期不會影響您現有訂閱的任何修改或續約。</block>
   <block id="bb6903e39254cc1a8d4ee2116c8e91e1" category="section-title">Keystone計費的其他案例</block>
@@ -856,4 +853,40 @@ Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服
   <block id="44c12892899f5e7bf5392fa79a9bec09" category="paragraph">* 我可以訂購新的儲存服務嗎？ *
 是的、您可以要求提供新的儲存服務或擴充至儲存服務、只需執行 KSM 即可。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。</block>
   <block id="5ca214ff5f0a53028e6d59319fa58c02" category="list-text">管理和操作服務的工具、例如 OpsRamp 、 Active IQ Digital Advisor 和 Active IQ Unified Manager 。</block>
+  <block id="24cba01226edf9c3d3a2a54ff2dcb01b" category="section-title">檢視 ONTAP Volume 效能</block>
+  <block id="3b53297f45bd7b71fc7268ad58677e21" category="paragraph">您可以按一下 * 效能 * 索引標籤、檢視 Keystone 訂閱所管理的 ONTAP 磁碟區效能詳細資料。</block>
+  <block id="0fb53446c9ba4fb31807c3858dd35fc5" category="paragraph">您可能無法使用此索引標籤來檢視 ONTAP 磁碟區上的效能指標。請聯絡支援部門以檢視此標籤。</block>
+  <block id="6e72d1d005343795162600a4ae63ec11" category="list-text">按一下 * 效能 * 標籤。</block>
+  <block id="f1addfc8f24f051397cc85f6926bf8ed" category="list-text">選取訂閱編號。依預設、會選取第一個訂閱號碼。</block>
+  <block id="f642e4642652119f9ec47a2dc27c51ff" category="list-text">從清單中選取所需的磁碟區名稱。</block>
+  <block id="52dc465dcb6a1292788d1d65f181d28c" category="inline-image-macro">圖表圖示</block>
+  <block id="c3663dd8e997e8e07f88f594ea89534a" category="paragraph">或者、您也可以按一下 <block ref="813df7a1965c665b3db93a22dec39701" category="inline-image-macro-rx" type="image"></block> 在 * Volumes （磁碟區） * 標籤中的 Volume （ ONTAP 磁碟區）上的圖示、可導覽至此標籤。</block>
+  <block id="748946393eca5431e5760647d605462b" category="list-text">選取查詢的日期範圍。日期範圍可以是月份的開始日期、或是訂閱開始日期到目前日期或訂閱結束日期。</block>
+  <block id="c811676c9572fd69b7211c6d89a274c7" category="paragraph">擷取的詳細資料是根據每個服務層級的服務層級目標而定。例如、尖峰 IOPS 、最大處理量、目標延遲和其他指標、都是由服務層級的個別設定所決定。如需設定的詳細資訊、請參閱<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
+  <block id="8145d7f98eef781aeba1bf4e2ed3d8a0" category="admonition">如果您選取 *SLO 參考線 * 核取方塊、則 IOPS 、處理量和延遲圖表會根據服務層級的服務層級目標呈現。否則，它們會以實際數字顯示。</block>
+  <block id="1c9f2c60f5b1a2cf540da5ecfcf8f343" category="paragraph">橫式圖表上顯示的效能資料是每五分鐘間隔的平均值、並依照查詢的日期範圍進行排列。您可以捲動圖表、將滑鼠移到特定的資料點上、進一步深入瞭解收集的資料。</block>
+  <block id="be7199993fdc167e8dadd6faa046275c" category="paragraph">您可以根據訂閱號碼、 Volume 名稱和所選日期範圍的組合、來檢視和比較下列各節中的效能指標。詳細資料會依指派給磁碟區的服務層級顯示。您可以看到叢集名稱和磁碟區類型、也就是指派給磁碟區的讀寫權限。也會顯示與該 Volume 相關的任何警告訊息。</block>
+  <block id="4f1b175c93064365bb72c5f847f7bbd0" category="section-title">IOPS/TiB</block>
+  <block id="a0746619a848c7d48f648ce50934b43d" category="paragraph">本節會根據查詢的日期範圍、顯示 Volume 中工作負載的輸入輸出圖形。顯示服務層級的尖峰 IOPS 和目前的 IOPS （過去五分鐘內、非根據查詢日期範圍）、以及時間範圍的最小、最大和平均 IOPS （以 IOPS/TiB 為單位）。</block>
+  <block id="39b7678a1c994ad158e2003e86860ff2" category="inline-image-macro">圖表的 IOPS 區段</block>
+  <block id="6eef5220ce0ee019d4add6ef8f2212e8" category="paragraph"><block ref="6eef5220ce0ee019d4add6ef8f2212e8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35484398406e066f146becbf5ade9a1f" category="section-title">處理量（ Mbps/TiB ）</block>
+  <block id="da4fa7ec69d7af1bb610207a3c277040" category="paragraph">本節會根據查詢的日期範圍、顯示 Volume 中工作負載的處理量圖表。顯示服務層級（ SLO Max ）的最大處理量和目前處理量（過去五分鐘內、並非根據查詢的日期範圍）、以及時間範圍的最小、最大和平均處理量（以 Mbps/TiB 為單位）。</block>
+  <block id="7f753ebf99003e3a50de147adbf5688c" category="inline-image-macro">處理量圖表</block>
+  <block id="ded93b2a5ebed6aba8869fc052419dbb" category="paragraph"><block ref="ded93b2a5ebed6aba8869fc052419dbb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="561523f74b83ed5c17b02cb73ff8a80e" category="section-title">延遲（毫秒）</block>
+  <block id="e2ca784e5909e7dac9c413d2bf636dac" category="paragraph">本節會根據查詢的日期範圍、顯示 Volume 中工作負載的延遲圖表。會顯示服務層級（ SLO Target ）的最大延遲、以及目前延遲（過去五分鐘內、並非根據查詢的日期範圍）、以及時間範圍的最小、最大和平均延遲（以毫秒為單位）。</block>
+  <block id="edf72d8b9161ba73ea48bf2e68fe9aed" category="paragraph">此圖表具有下列色彩：</block>
+  <block id="81989d847dc8278048053c5d03a4bea2" category="list-text">淺藍色： _Latency 。這是實際延遲、包括 Keystone 服務以外的任何延遲。這可能包括額外的延遲、例如網路和用戶端之間的延遲。</block>
+  <block id="4c8726ebb2509982ab96801bddd96ce9" category="list-text">深藍色： _ 有效延遲 _ 。有效延遲僅適用於您的 Keystone 服務與 SLA 相關的延遲。</block>
+  <block id="ff4b5372ded8ea29de7805373e0a5338" category="inline-image-macro">效能圖表</block>
+  <block id="f00c097e03b4ce4a62527a13752de77d" category="paragraph"><block ref="f00c097e03b4ce4a62527a13752de77d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b8e154beb0e4292a33a0a1882f0e5a11" category="section-title">已用邏輯（ TiB ）</block>
+  <block id="72870aad377aa9744011edff931cfbe7" category="paragraph">此區段會顯示已配置的磁碟區容量和邏輯使用容量。目前的邏輯使用容量（過去五分鐘內、不是根據查詢的日期範圍）、以及時間範圍的最小、最大和平均使用量、都會顯示在 Tibs 中。在此圖表上、灰色區域代表已認可容量、黃色圖表則表示邏輯使用。</block>
+  <block id="55501f4ad85eceeadd5249ad583111f6" category="inline-image-macro">已用邏輯容量圖表</block>
+  <block id="5d511ef587684e994c938c0e19441988" category="paragraph"><block ref="5d511ef587684e994c938c0e19441988" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="99f9f3f7fd3897f360e290d6916cfe33" category="paragraph">作爲Keystone服務部署的一部分，NetApp會持續監控和衡量服務的使用量。每五分鐘至少一次、系統會產生一筆使用記錄、詳述訂閱目前的使用容量。這些記錄會在計費期間內彙總、以產生發票和使用報告。</block>
+  <block id="308838aa7669887098042a1899ce59bc" category="list-text">只要實體磁碟區的大小低於父磁碟區的 10% 、就不需要充電（與父磁碟區中使用的實體容量相比、複製磁碟區中使用的實體容量）。</block>
+  <block id="80a3381e7f0324d1481403cc81d8b605" category="list-text">複製的磁碟區沒有 24 小時寬限期、只會考慮複製的大小。</block>
+  <block id="5e46e614581cd458f9521294062d3783" category="list-text">一旦複製磁碟區超過父磁碟區實體大小的 10% 、複製就會以標準磁碟區（邏輯使用容量）計費。</block>
 </blocks>
