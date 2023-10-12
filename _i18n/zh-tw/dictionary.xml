@@ -494,17 +494,12 @@
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">如需Keystone儲存服務和相關服務層級的相關資訊、請參閱<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
   <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">索引</block>
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">選取您要檢視其詳細資料的必要訂閱。您帳戶名稱中的第一個訂閱依預設為選取狀態。</block>
-  <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">將顯示下列詳細資料：</block>
-  <block id="12ed0205cd7410bc01e15e4b8a285019" category="list-text">*使用圖表*：長條圖會顯示日期範圍內服務層級的名稱和該服務層級所耗用的容量。集合的日期和時間會顯示在圖表底部。</block>
-  <block id="3a6ef8ff534dc5701b3936464bf23441" category="paragraph">長條圖中的下列色彩表示服務層級中定義的耗用容量：</block>
   <block id="19e499aa450e552c41a06bb0742085d6" category="list-text">綠色：80%以內。</block>
   <block id="744f7cb6bd1aa9077ff244891a651e80" category="list-text">黃色：80%- 100%。</block>
   <block id="c3b2392317dad26eb62ae53f36697f5e" category="list-text">紅色：暴增使用量（100%承諾容量達到議定的暴增限制）</block>
   <block id="7673426e4a1c3cc1b97d1f96f8bd076a" category="list-text">紫色：超過連拍限制或<block ref="a9793d8430f5962bfc6384a1d9f6d19b" prefix=" " category="inline-code"></block>。</block>
   <block id="3cc6f4aa3b6f7beebb36ba03d0894c83" category="list-text">綠色：在承諾容量的80%以內。</block>
   <block id="8cb9900bd09a496f0e4b2e4220549b55" category="list-text">紫色：超出連拍限制。</block>
-  <block id="2ace5c82683c2f75d293a1427df222e4" category="list-text">*預提突發*：目前計費期間每月計算的預提突發用量或耗用容量指標。應計的突發使用量是根據服務層級的已確認和已用容量來計算：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
-  <block id="393e226f044ba6b817b81de6d94e7276" category="admonition">*目前耗用*、*目前爆發*及*預提爆發*指標、可決定訂閱計費期間的使用量、而非查詢的日期範圍。</block>
   <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">選取訂閱編號。依預設、會選取第一個可用的訂閱號碼。</block>
   <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">對於物件、此索引標籤會顯示物件儲存環境中節點的邏輯使用量StorageGRID 。</block>
   <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">選取訂閱編號。依預設、會選取第一個可用的訂閱號碼。選取訂閱編號後、即會啟用物件儲存詳細資料的連結。</block>
@@ -695,10 +690,8 @@
   <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">圖示</block>
   <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">圖示</block>
   <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。您可以將滑鼠游標移至圖表上方、以檢視該資料收集點的已提交、已使用、突發量及突發量限制資料上方的使用量明細。</block>
   <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">歷史資料</block>
   <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">根據查詢的日期範圍、使用圖表會顯示在 30 個資料收集點範圍內。</block>
   <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">資料保護服務層級</block>
   <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">基礎服務層級</block>
   <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">主要訂閱內容</block>
@@ -733,7 +726,6 @@
   <block id="382af8e8b2bf82c4df59a255786526a2" category="section-title">ONTAP Volume 詳細資料</block>
   <block id="fc33c921eada2f71b3a548355734f006" category="section-title">StorageGRID 節點與使用詳細資料</block>
   <block id="248ee1b5c36074ad26f09b9a95a55dca" category="admonition">如果您已訂閱單一服務層級或費率方案、您將無法看到不相容磁碟區的警示。</block>
-  <block id="1929ab48c05126f8a997e319160674e8" category="admonition">Keystone 訂閱的容量使用量會顯示在儀表板和報告的 Tibs 中、並四捨五入至兩位小數位數。如果使用量低於0.01 TiB、則該值會顯示為<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> 或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。如需其他使用量指標、請參閱<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。如需Keystone中使用不同容量的相關資訊、請參閱<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
   <block id="1e082e4448eecee03f6bd4c2605a41bc" category="paragraph">如需資料保護的相關資訊、請參閱<block ref="88c192a22c75988714ca0d6a3ba44ff9" category="inline-link-rx"></block>。</block>
   <block id="e6b09591607b38dfa571b28e166b8e42" category="admonition">消費橫條圖只會分割為基本服務層級。對於資料保護服務層級、不會顯示此標界。</block>
   <block id="fe1654f1038a98c579f04107a47b091b" category="paragraph">對於基礎服務層級、每個磁碟區都會在主要站台和鏡射站台上依資源配置收費、因此相同的長條圖會根據主要站台和鏡射站台的使用量來分割。</block>
@@ -768,7 +760,6 @@
   <block id="d1ee1008d1ce164e525dc97a67d40db9" category="section-title">檢視歷史使用資料</block>
   <block id="a4369c61f00316f67d280309b8795cde" category="paragraph">「 * 容量趨勢 * 」索引標籤會顯示您在特定期間內 Keystone 訂閱的歷史資料。垂直圖表會顯示所選時間範圍的使用詳細資料、並提供適當的指標、供您比較和產生報告。</block>
   <block id="c55747de1491eae1cf9b3dcb88464eb6" category="list-text">按一下 * 容量趨勢 * 標籤。</block>
-  <block id="28092c6b2f146233ff0fb71f61f900c8" category="list-text">* 目前使用量 * ：訂閱的開始與結束日期、以及帳單期間、例如每季、每年等。</block>
   <block id="f78e637f004f2f88d00788573427275d" category="paragraph">如果您已訂閱資料保護服務、您可以在 * 容量趨勢 * 索引標籤上檢視 MetroCluster 合作夥伴站台的使用資料分佈。</block>
   <block id="08134d25afe98c23b355727b97aa82c6" category="paragraph">如果您的 ONTAP 儲存環境中的叢集是在 MetroCluster 設定中設定、則 Keystone 訂閱的使用量資料會分割成相同的歷史資料圖表、以顯示基礎服務層級的主要站台和鏡射站台使用量。</block>
   <block id="9e4646f0a1f084400c82a4d9adb3c5e9" category="paragraph">對於資料保護服務層級、總使用量會在合作夥伴網站之間分割、每個合作夥伴網站的使用量會以個別的訂閱方式反映並計費；這是一次主要網站訂閱、另一次則是鏡射網站訂閱。因此、當您在 * 容量趨勢 * 索引標籤上選取主要站台的訂閱號碼時、 DP 服務層級的使用率圖表只會顯示主要站台的個別使用量詳細資料。由於 MetroCluster 組態中的每個合作夥伴站台都會做為來源和鏡射、因此每個站台的總使用量都會包含在該站台建立的來源和鏡射磁碟區。</block>
@@ -817,7 +808,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="3e498d18a01f45a36455420c90039b11" category="paragraph">如果您已訂閱資料保護服務、則會將特定服務層級指派給您的訂閱、例如 _Data Protect Extreme 、 _Data Protect Premium_ 等等。如需相關資訊、請參閱<block ref="d5315190bb421978743d96da8bcbb8fc" category="inline-link-rx"></block>。</block>
   <block id="e955bc45d89b64846fbac528eea48809" category="list-text">*結束日期*：訂閱的結束日期。如果您有每月自動更新的計費月訂閱、您會看到<block ref="3201d1330dc2228e5eaa1f9ecab30666" prefix=" " category="inline-code"></block> 而非結束日期。根據這個日期、您可能會看到即將到期的訂閱資訊訊息、或附加了自動續約原則。</block>
-  <block id="a3d9f37345e4f544017b6ef103b88b31" category="list-text">從*開始日期*和*結束日期*欄位的行事曆圖示中選取時間範圍。對於已過期的訂閱、預設日期範圍是訂閱的開始和結束日期。對於現有訂閱、預設時間範圍是從計費期間的開始日期到目前日期。您無法選擇未來日期。</block>
   <block id="7be5abac822defa8ec27d754113b604f" category="admonition">為獲得最佳效能和使用者體驗、請將查詢的日期範圍限制為三個月。</block>
   <block id="7ebe44b7365bc5d907f6f3cdced9094c" category="list-text">*目前已用*：服務層級定義的已用容量（以TiB為單位）指標。此欄位使用特定色彩：</block>
   <block id="5c69a894a823a6f1e25d1f277385ff77" category="list-text">無色彩：突發或超過突發使用量。</block>
@@ -850,8 +840,6 @@
 是的、管理工具會透過 Active IQ Digital Advisor 儀表板提供容量使用量通知。</block>
   <block id="4679c89d8e6576b50c0ec6dc84d66501" category="paragraph">* 如何檢視 Keystone 使用情形？ *
 Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服務資訊、以及使用量。</block>
-  <block id="44c12892899f5e7bf5392fa79a9bec09" category="paragraph">* 我可以訂購新的儲存服務嗎？ *
-是的、您可以要求提供新的儲存服務或擴充至儲存服務、只需執行 KSM 即可。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。</block>
   <block id="5ca214ff5f0a53028e6d59319fa58c02" category="list-text">管理和操作服務的工具、例如 OpsRamp 、 Active IQ Digital Advisor 和 Active IQ Unified Manager 。</block>
   <block id="24cba01226edf9c3d3a2a54ff2dcb01b" category="section-title">檢視 ONTAP Volume 效能</block>
   <block id="3b53297f45bd7b71fc7268ad58677e21" category="paragraph">您可以按一下 * 效能 * 索引標籤、檢視 Keystone 訂閱所管理的 ONTAP 磁碟區效能詳細資料。</block>
@@ -861,7 +849,6 @@ Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服
   <block id="f642e4642652119f9ec47a2dc27c51ff" category="list-text">從清單中選取所需的磁碟區名稱。</block>
   <block id="52dc465dcb6a1292788d1d65f181d28c" category="inline-image-macro">圖表圖示</block>
   <block id="c3663dd8e997e8e07f88f594ea89534a" category="paragraph">或者、您也可以按一下 <block ref="813df7a1965c665b3db93a22dec39701" category="inline-image-macro-rx" type="image"></block> 在 * Volumes （磁碟區） * 標籤中的 Volume （ ONTAP 磁碟區）上的圖示、可導覽至此標籤。</block>
-  <block id="748946393eca5431e5760647d605462b" category="list-text">選取查詢的日期範圍。日期範圍可以是月份的開始日期、或是訂閱開始日期到目前日期或訂閱結束日期。</block>
   <block id="c811676c9572fd69b7211c6d89a274c7" category="paragraph">擷取的詳細資料是根據每個服務層級的服務層級目標而定。例如、尖峰 IOPS 、最大處理量、目標延遲和其他指標、都是由服務層級的個別設定所決定。如需設定的詳細資訊、請參閱<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>。</block>
   <block id="8145d7f98eef781aeba1bf4e2ed3d8a0" category="admonition">如果您選取 *SLO 參考線 * 核取方塊、則 IOPS 、處理量和延遲圖表會根據服務層級的服務層級目標呈現。否則，它們會以實際數字顯示。</block>
   <block id="1c9f2c60f5b1a2cf540da5ecfcf8f343" category="paragraph">橫式圖表上顯示的效能資料是每五分鐘間隔的平均值、並依照查詢的日期範圍進行排列。您可以捲動圖表、將滑鼠移到特定的資料點上、進一步深入瞭解收集的資料。</block>
@@ -889,4 +876,23 @@ Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服
   <block id="308838aa7669887098042a1899ce59bc" category="list-text">只要實體磁碟區的大小低於父磁碟區的 10% 、就不需要充電（與父磁碟區中使用的實體容量相比、複製磁碟區中使用的實體容量）。</block>
   <block id="80a3381e7f0324d1481403cc81d8b605" category="list-text">複製的磁碟區沒有 24 小時寬限期、只會考慮複製的大小。</block>
   <block id="5e46e614581cd458f9521294062d3783" category="list-text">一旦複製磁碟區超過父磁碟區實體大小的 10% 、複製就會以標準磁碟區（邏輯使用容量）計費。</block>
+  <block id="e8176abe19fdbbe4305962be219084b2" category="admonition">Keystone 訂閱的容量使用量會顯示在儀表板和報告的 Tibs 中、並四捨五入至兩位小數位數。如果使用量低於0.01 TiB、則該值會顯示為<block ref="cfcd208495d565ef66e7dff9f98764da" prefix=" " category="inline-code"></block> 或<block ref="31c2db4909d0d3638d380d92c0a194e0" prefix=" " category="inline-code"></block>。在這些索引標籤中輸入查詢的本機時間會轉換為 UTC 時間。因此、您可能會看到根據查詢時間傳回的資料有細微差異。</block>
+  <block id="bc175ffde055d74266df92b003372145" category="paragraph">如需使用量計量的相關資訊、請參閱<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。如需Keystone中使用不同容量的相關資訊、請參閱<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
+  <block id="ef67282c9adc01fdca335af4d78a2c4b" category="list-text">如果您要檢視歷史資料並分析容量使用趨勢、請選取 * 容量趨勢 * 。如果您想要檢視歷史突發量使用資料、並根據發票分析帳單使用量、請選取 * 累積突發 * 。</block>
+  <block id="856c97744d50a2803c2f50202219de2d" category="section-title">檢視容量趨勢</block>
+  <block id="b7d541aea481ae26f60f1033b3cab726" category="paragraph">如果您已選取 * 容量趨勢 * 選項、請遵循下列步驟：</block>
+  <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">從*開始日期*和*結束日期*欄位的行事曆圖示中選取時間範圍。選取查詢的日期範圍。日期範圍可以是月份的開始日期、或是訂閱開始日期到目前日期或訂閱結束日期。您無法選擇未來日期。</block>
+  <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。</block>
+  <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">長條圖會顯示服務層級名稱、以及日期範圍內該服務層級所耗用的容量。集合的日期和時間會顯示在圖表底部。根據查詢的日期範圍、使用圖表會顯示在 30 個資料收集點範圍內。您可以將滑鼠游標移至圖表上方、以檢視該資料收集點的已提交、已使用、突發量及突發量限制資料上方的使用量明細。</block>
+  <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">長條圖中的下列色彩代表服務層級中定義的耗用容量。圖表中的每月資料會以垂直線分隔。</block>
+  <block id="4bc2af7993e31ca7b54c80a630603236" category="paragraph">您可以按一下切換按鈕 * 顯示目前使用量 * 、以檢視訂閱計費期間的目前使用量和突發量使用量。這些不取決於查詢的日期範圍。</block>
+  <block id="a122d7ff9fbb0694ecb095cdf8f27baa" category="section-title">檢視歷史突發資料</block>
+  <block id="7f4aafd34e1281a2bb7098e5b06084bd" category="paragraph">如果您選擇了 * 累積突發 * 選項、依預設、您可以查看過去 12 個月的每月累計突發使用量資料。您可以依過去 30 個月的日期範圍查詢。</block>
+  <block id="75ddfeb3beb9d2a265ac2ce3b66ef050" category="admonition">在目前的計費週期中、每月計算累積的突發使用量或消耗容量。根據以下公式、根據服務層級的已認可和使用容量來計算累積的突發使用量：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
+  <block id="952c204f277570032cf6454e003c63da" category="inline-image-macro">累積的突發使用圖表</block>
+  <block id="b9e135b5bcd23b0beff424e32497e77c" category="paragraph"><block ref="b9e135b5bcd23b0beff424e32497e77c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36234decc68306d26e71012f98474aa1" category="paragraph">此功能可在僅預覽模式中使用。請聯絡您的 KSM 以深入瞭解此功能。</block>
+  <block id="efca37f4dc4125775aa5043cc3e4ba6c" category="list-text">選取查詢的日期範圍。日期範圍可以是月份的開始日期、或是訂閱開始日期到目前日期或訂閱結束日期。您無法選擇未來日期。</block>
+  <block id="0116cc33ffc94de41f0b9cda437db400" category="paragraph">* 我可以訂購新的儲存服務嗎？ *
+是的、可以透過 KSM 要求新的儲存服務或擴充至儲存服務。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。</block>
 </blocks>
