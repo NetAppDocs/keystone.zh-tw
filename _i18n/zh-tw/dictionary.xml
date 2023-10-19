@@ -885,7 +885,6 @@ Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服
   <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。</block>
   <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">長條圖會顯示服務層級名稱、以及日期範圍內該服務層級所耗用的容量。集合的日期和時間會顯示在圖表底部。根據查詢的日期範圍、使用圖表會顯示在 30 個資料收集點範圍內。您可以將滑鼠游標移至圖表上方、以檢視該資料收集點的已提交、已使用、突發量及突發量限制資料上方的使用量明細。</block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">長條圖中的下列色彩代表服務層級中定義的耗用容量。圖表中的每月資料會以垂直線分隔。</block>
-  <block id="4bc2af7993e31ca7b54c80a630603236" category="paragraph">您可以按一下切換按鈕 * 顯示目前使用量 * 、以檢視訂閱計費期間的目前使用量和突發量使用量。這些不取決於查詢的日期範圍。</block>
   <block id="a122d7ff9fbb0694ecb095cdf8f27baa" category="section-title">檢視歷史突發資料</block>
   <block id="7f4aafd34e1281a2bb7098e5b06084bd" category="paragraph">如果您選擇了 * 累積突發 * 選項、依預設、您可以查看過去 12 個月的每月累計突發使用量資料。您可以依過去 30 個月的日期範圍查詢。</block>
   <block id="75ddfeb3beb9d2a265ac2ce3b66ef050" category="admonition">在目前的計費週期中、每月計算累積的突發使用量或消耗容量。根據以下公式、根據服務層級的已認可和使用容量來計算累積的突發使用量：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
@@ -895,4 +894,6 @@ Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服
   <block id="efca37f4dc4125775aa5043cc3e4ba6c" category="list-text">選取查詢的日期範圍。日期範圍可以是月份的開始日期、或是訂閱開始日期到目前日期或訂閱結束日期。您無法選擇未來日期。</block>
   <block id="0116cc33ffc94de41f0b9cda437db400" category="paragraph">* 我可以訂購新的儲存服務嗎？ *
 是的、可以透過 KSM 要求新的儲存服務或擴充至儲存服務。申請將由 NetApp Keystone 部門團隊處理、然後再提供使用。</block>
+  <block id="4c81eafa216c925957e13d302baa98d5" category="paragraph">您可以按一下切換按鈕 * 顯示目前使用量 * 、以檢視目前計費週期的使用量、突發量使用量及累積量資料。這些詳細資料並非以查詢的日期範圍為基礎。</block>
+  <block id="6b7dfe5a7e219d1bb1b0d4dec89d1cb1" category="list-text">* 累積突發量 * ：目前計費期間每月計算的累計突發量或使用容量指標。應計的突發使用量是根據服務層級的已確認和已用容量來計算：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
 </blocks>
