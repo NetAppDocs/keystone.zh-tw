@@ -27,7 +27,8 @@ NetApp全球服務與支援中心（GSSC）團隊主要支援NetApp Keystone 服
 
 您也可以使用下列資訊聯絡支援團隊。
 
-* 全球服務聯絡人：https://www.netapp.com/us/contact-us/support.aspx[]
+* 全球服務聯絡人：
+https://www.netapp.com/us/contact-us/support.aspx[]
 * 如果您有需要提報的待處理個案 / 問題單、請傳送電子郵件至下列其中一個地址： Keystone.services@netapp.com Keystone.escalations@netapp.com
 * NetApp 使用 OpsRamp, 這是一種雲端型遠端閘道解決方案 , 可主動監控 NetApp Keystone 及連線至該環境以進行疑難排解。如需 OpsRamp 的相關資訊、請參閱 https://www.opsramp.com/#[]。
 

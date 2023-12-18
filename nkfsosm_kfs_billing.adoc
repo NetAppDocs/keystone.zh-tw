@@ -97,7 +97,8 @@ Keystone計費有幾種案例、您應該熟悉這些案例。
 
 === 計費和調適性 QoS 原則
 
-Keystone 會根據服務層級來測量使用量。每個服務層級都與特定的調適性服務品質（QoS）原則相關聯。在部署期間、系統會通知您訂閱的Keystone服務的每個QoS原則詳細資料。在儲存管理作業期間、請確定您的磁碟區已根據訂閱的服務層級指派適當的QoS原則、以避免發生非預期的計費。如需 ONTAP 更多有關 QoS 原則的資訊、請參閱 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["透過 QoS 總覽來保證處理量"]。
+Keystone 會根據服務層級來測量使用量。每個服務層級都與特定的調適性服務品質（QoS）原則相關聯。在部署期間、系統會通知您訂閱的Keystone服務的每個QoS原則詳細資料。在儲存管理作業期間、請確定您的磁碟區已根據訂閱的服務層級指派適當的QoS原則、以避免發生非預期的計費。
+如需 ONTAP 更多有關 QoS 原則的資訊、請參閱 link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["透過 QoS 總覽來保證處理量"^]。
 
 
 

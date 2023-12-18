@@ -18,15 +18,22 @@ summary: 概述 NetApp Keystone
 
 * NetApp Keystone 什麼是呢？*
 
-NetApp Keystone 是內部部署資本支出（資本支出）替代方案的組合。如需詳細資訊、請參閱 https://www.netapp.com/services/keystone/["NetApp Keystone"]。
+NetApp Keystone 是內部部署資本支出（資本支出）替代方案的組合。
+如需詳細資訊、請參閱 https://www.netapp.com/services/keystone/["NetApp Keystone"^]。
 
 *此功能如何讓我的客戶受益？NetApp Keystone *
 
-這個橋樑連接了資本支出和混合雲策略的支柱、提供敏捷度、財務靈活度及降低財務風險、協助客戶滿足現金流和業務需求。 NetApp Keystone
+NetApp Keystone 是連結資本支出和混合雲策略的橋樑、提供靈活度、財務靈活度、並降低財務風險、協助客戶滿足其現金流和業務需求。
 
 NetApp Keystone 品牌提供靈活的付款解決方案組合、包括傳統融資、租賃及固定 / 可變選項、適合注重現金的客戶、以及 Keystone 服務。
 
-* Keystone 服務（ OPEX 、類似雲端的體驗）： * * 偏好 100% 的營運成本、因此資產不會最終出現在客戶的資產負債表上 * 內部 / 外部服務供應商希望將成本與使用量 / 營收一致 * 工作負載與不可預測的容量成長 * 重新配置一般儲存工作的 IT 資源（移轉、技術更新、升級、 等） * 將工作負載移轉至雲端之前的短期解決方案 * 將工作負載從雲端傳回內部部署
+* Keystone 服務（ OpEx 、類似雲端的體驗）： *
+* 偏好 100% 營運成本、因此資產不會最終出現在客戶的資產負債表上
+* 內部 / 外部服務供應商希望將成本與使用率 / 營收保持一致
+* 容量成長不可預測的工作負載
+* 從一般儲存工作（移轉、技術更新、升級等）重新配置 IT 資源
+* 將工作負載移轉至雲端之前的短期解決方案
+* 將工作負載從雲端移回內部部署
 
 * NetApp Keystone 什麼是呢？*
 

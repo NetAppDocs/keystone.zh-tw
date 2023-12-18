@@ -16,6 +16,10 @@ summary: 客戶可在 Active IQ 《關於 Keystone 的資訊
 [role="lead"]
 如果您已訂閱 NetApp Keystone 服務、您可以在 Active IQ Digital Advisor （數位顧問）儀表板的 * 基礎概念訂閱 * 小工具中、取得訂閱的概觀。
 
+您可以依客戶名稱或包含多個客戶的報價表名稱來搜尋 Keystone 訂閱詳細資料。如需如何依觀察名單搜尋 Keystone 訂閱的相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm-keystone-and-aiq.html#search-by-using-keystone-watchlists["使用 Keystone 觀察名單進行搜尋"]。
+
+Digital Advisor 提供統一化的儀表板、可透過 * 切換至舊的 / 新的儀表板 * 按鈕、深入瞭解不同層級的訂閱資料和使用資訊。
+
 Digital Advisor 提供統一化的儀表板、可讓您透過 * 切換至舊的 / 新的儀表板 * 按鈕、深入瞭解不同層級的訂閱資料和使用資訊。
 
 .預設（舊）儀表板
@@ -49,6 +53,27 @@ TIP: 按一下 * 訂閱 * 連結、即可在 * 訂閱 * 索引標籤中檢視篩
 
 image:db-card.png["不含 SLA"]
 
-如需Digital Advisor的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"]。
+如需Digital Advisor的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"^]。
 
 如需 * 基礎概念訂閱 * 索引標籤的相關資訊、請參閱 _Digital Advisor 儀表板和 Keystone 報告。
+
+
+
+== 使用 Keystone 觀察名單進行搜尋
+
+觀察名單是 Active IQ Digital Advisor （數位顧問）的一項功能。如需相關資訊、請參閱 https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["瞭解觀察名單"^]。如需建立報價表的相關資訊、請參閱 https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["建立觀察名單"^]。
+
+Keystone 支援建立報價表、並由他們進行搜尋、以檢視多位客戶的訂閱詳細資料。請依照下列步驟為 Keystone 客戶建立報價表：
+
+. 在 * 建立報價表 * 畫面上、提供 Keystone 報價表的名稱。
+. 在 * Add Systems By * （按 * 添加系統）字段中選擇 * Category （類別） * 。* 客戶 * 預設會在 * 選擇類別 * 欄位中選取。
+. 依客戶名稱搜尋所需客戶、然後新增。您只能新增您有權檢視其詳細資料的客戶。
+. 按一下「*建立觀察名單*」。Digital Advisor 畫面會顯示新觀察名單的資料。
+
+
+在 Digital Advisor 畫面上依觀察清單進行搜尋時、您可以在 * Keystone Subscriptions* 小工具的 * Subscription* 下拉式清單中檢視客戶及其訂閱內容。
+
+
+TIP: 如果您正在 * 基礎概念訂閱 * Widget 上檢視 _new_ 儀表板、請按一下 * 切換至舊儀表板 * 以檢視清單。
+
+image:watchlist.png["觀察名單畫面"]

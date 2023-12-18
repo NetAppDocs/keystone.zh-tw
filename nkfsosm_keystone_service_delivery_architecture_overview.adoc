@@ -30,6 +30,6 @@ Keystone 基礎架構包含多個元件：
 * 管理和操作服務的工具、例如 OpsRamp 、 Active IQ Digital Advisor 和 Active IQ Unified Manager 。
 
 
-如需 NetApp Keystone 更多有關使用 Active IQ 效益技術整合的資訊、請參閱 link:https://docs.netapp.com/us-en/active-iq/["《 VMware 數位顧問文件》 Active IQ"]
+如需 NetApp Keystone 更多有關使用 Active IQ 效益技術整合的資訊、請參閱 link:https://docs.netapp.com/us-en/active-iq/["《 VMware 數位顧問文件》 Active IQ"^]
 
 image:nkfsosm_image8.png["KS-Infrastructure"]

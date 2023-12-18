@@ -30,13 +30,13 @@ NOTE: 此處提供的資訊同時適用於ONTAP 整個過程StorageGRID 。相�
 
 
 
-NOTE: Keystone 訂閱的容量使用量會顯示在儀表板和報告的 Tibs 中、並四捨五入至兩位小數位數。如果使用量低於0.01 TiB、則該值會顯示為 `0` 或 `No Usage`。在這些索引標籤中輸入查詢的本機時間會轉換為 UTC 時間。因此、您可能會看到根據查詢時間傳回的資料有細微差異。
+NOTE: Keystone 訂閱的容量使用量會顯示在儀表板和報告的 Tibs 中、並四捨五入至兩位小數位數。如果使用量低於0.01 TiB、則該值會顯示為 `0` 或 `No Usage`。這些畫面上的資料會以 UTC 時間（伺服器時區）顯示。當您輸入查詢日期時、系統會自動將其視為 UTC 時間。
 
 如需使用量計量的相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["服務層級指標與定義"]。如需Keystone中使用不同容量的相關資訊、請參閱 https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone 服務容量定義"]。
 
 
 
-== 檢視訂閱
+== 訂閱
 
 您可以在 * 訂閱 * 索引標籤中檢視訂閱清單。
 
@@ -71,7 +71,7 @@ image:icon-purple.png["圖示"]：表示耗用量超過規定的突發量限制
 
 
 
-== 檢視訂閱的使用詳細資料
+== 目前使用量
 
 若要瞭解訂閱的詳細資料、請按一下 * 目前使用情況 * 標籤、然後選取所需的訂閱號碼。
 
@@ -86,7 +86,7 @@ TIP: 。 image:icon-info.png["資訊圖示"] 每一欄旁邊的圖示提供該�
 
 
 
-== 檢視歷史使用資料
+== 容量趨勢
 
 「 * 容量趨勢 * 」索引標籤會顯示您在特定期間內 Keystone 訂閱的歷史資料。垂直圖表會顯示所選時間範圍的使用詳細資料、並提供適當的指標、供您比較和產生報告。
 
@@ -215,7 +215,7 @@ image:dp-mir.png["MCC 鏡射基礎"]
 ====
 
 
-== 檢視磁碟區和物件詳細資料
+== Volume 與物件
 
 在 * Volume & Objects* 標籤上、您可以在 ONTAP 中檢視磁碟區的使用量和其他詳細資料。針對功能、此索引標籤會顯示節點及其在物件儲存環境中的個別使用情形StorageGRID 。
 
@@ -224,7 +224,7 @@ NOTE: 此索引標籤的名稱會因您站台的部署性質而異。如果您�
 
 
 
-=== ONTAP Volume 詳細資料
+=== 檢視 ONTAP Volume 詳細資料
 
 .深入瞭解
 [%collapsible]
@@ -248,12 +248,12 @@ image:aiq-ks-sysdtls.png["Volume  ；物件索引標籤"]
 ====
 
 
-=== StorageGRID 節點與使用詳細資料
+=== 檢視 StorageGRID 節點和使用量
 
 .深入瞭解
 [%collapsible]
 ====
-對於物件、此索引標籤會顯示物件儲存環境中節點的邏輯使用量StorageGRID 。
+對於 StorageGRID 、此索引標籤會顯示物件儲存節點的邏輯使用量。
 
 .步驟
 . 按一下 * 物件 * 索引標籤。
@@ -270,11 +270,12 @@ image:sg-link-2.png["SG 快顯視窗"]
 ====
 
 
-== 檢視 ONTAP Volume 效能
+== 效能
 
-您可以按一下 * 效能 * 索引標籤、檢視 Keystone 訂閱所管理的 ONTAP 磁碟區效能詳細資料。
+「 * 效能 * 」標籤可讓您檢視 Keystone 訂閱所管理的 ONTAP 磁碟區效能指標。
 
-您可能無法使用此索引標籤來檢視 ONTAP 磁碟區上的效能指標。請聯絡支援部門以檢視此標籤。
+
+TIP: 您也可以選擇使用此索引標籤。請聯絡支援部門以檢視此標籤。
 
 .步驟
 . 按一下 * 效能 * 標籤。
