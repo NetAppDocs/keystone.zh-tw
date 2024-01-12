@@ -856,16 +856,12 @@ Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服
   <block id="80a3381e7f0324d1481403cc81d8b605" category="list-text">複製的磁碟區沒有 24 小時寬限期、只會考慮複製的大小。</block>
   <block id="5e46e614581cd458f9521294062d3783" category="list-text">一旦複製磁碟區超過父磁碟區實體大小的 10% 、複製就會以標準磁碟區（邏輯使用容量）計費。</block>
   <block id="bc175ffde055d74266df92b003372145" category="paragraph">如需使用量計量的相關資訊、請參閱<block ref="98a30cfc42e5138070cb8b3bae486e43" category="inline-link-rx"></block>。如需Keystone中使用不同容量的相關資訊、請參閱<block ref="8838b1277b7691fb50f3e6bca15d5781" category="inline-link-rx"></block>。</block>
-  <block id="ef67282c9adc01fdca335af4d78a2c4b" category="list-text">如果您要檢視歷史資料並分析容量使用趨勢、請選取 * 容量趨勢 * 。如果您想要檢視歷史突發量使用資料、並根據發票分析帳單使用量、請選取 * 累積突發 * 。</block>
   <block id="856c97744d50a2803c2f50202219de2d" category="section-title">檢視容量趨勢</block>
   <block id="b7d541aea481ae26f60f1033b3cab726" category="paragraph">如果您已選取 * 容量趨勢 * 選項、請遵循下列步驟：</block>
   <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">從*開始日期*和*結束日期*欄位的行事曆圖示中選取時間範圍。選取查詢的日期範圍。日期範圍可以是月份的開始日期、或是訂閱開始日期到目前日期或訂閱結束日期。您無法選擇未來日期。</block>
   <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">按一下*檢視詳細資料*。每個服務層級的訂閱歷史使用量資料會根據所選時間範圍顯示。</block>
   <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">長條圖會顯示服務層級名稱、以及日期範圍內該服務層級所耗用的容量。集合的日期和時間會顯示在圖表底部。根據查詢的日期範圍、使用圖表會顯示在 30 個資料收集點範圍內。您可以將滑鼠游標移至圖表上方、以檢視該資料收集點的已提交、已使用、突發量及突發量限制資料上方的使用量明細。</block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">長條圖中的下列色彩代表服務層級中定義的耗用容量。圖表中的每月資料會以垂直線分隔。</block>
-  <block id="a122d7ff9fbb0694ecb095cdf8f27baa" category="section-title">檢視歷史突發資料</block>
-  <block id="7f4aafd34e1281a2bb7098e5b06084bd" category="paragraph">如果您選擇了 * 累積突發 * 選項、依預設、您可以查看過去 12 個月的每月累計突發使用量資料。您可以依過去 30 個月的日期範圍查詢。</block>
-  <block id="75ddfeb3beb9d2a265ac2ce3b66ef050" category="admonition">在目前的計費週期中、每月計算累積的突發使用量或消耗容量。根據以下公式、根據服務層級的已認可和使用容量來計算累積的突發使用量：<block ref="0664f1d332f0bb3aa9231cb5f4fb3bca" prefix=" " category="inline-code"></block>。</block>
   <block id="952c204f277570032cf6454e003c63da" category="inline-image-macro">累積的突發使用圖表</block>
   <block id="b9e135b5bcd23b0beff424e32497e77c" category="paragraph"><block ref="b9e135b5bcd23b0beff424e32497e77c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="36234decc68306d26e71012f98474aa1" category="paragraph">此功能可在僅預覽模式中使用。請聯絡您的 KSM 以深入瞭解此功能。</block>
@@ -919,4 +915,8 @@ Active IQ Digital Advisor 提供儀表板檢視、其中包含訂閱的所有服
   <block id="53ee52defbf70af2e9afed973e812462" category="paragraph">NetApp Keystone 是一套內部部署資本支出（資本支出）替代方案、可協助您順利邁向雲端之路。利用橫跨內部部署和雲端的儲存服務、提供無縫的混合雲體驗。 NetApp Keystone
 如需 NetApp Keystone 更多有關資訊、請參閱 <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
   <block id="073ad031fe3412f290d7e3ed4beeb9b4" category="paragraph">Keystone 服務與 NetApp Keystone STaaas 產品不同。如需 NetApp Keystone STaaas 的詳細資訊、請參閱 https://docs.netapp.com/us-en/keystone-staas/index.html[Keystone STaaas^] 。</block>
+  <block id="989f69001ddcc32301bcbd805f65e578" category="list-text">如果您要檢視歷史資料並分析容量使用趨勢、請選取 * 容量趨勢 * 。如果您想要檢視已產生發票的歷史突發量使用資料、請選取 * 發票累計突發 * 。您可以使用此資料來分析發票上的帳單使用量。</block>
+  <block id="b01022ea67a6b913d57f7194fcc72d9d" category="section-title">檢視已開發票的累積爆發</block>
+  <block id="db0ef40224829d8428d6c42004012b26" category="paragraph">如果您選擇了 * 已開票的累積突發 * 選項、依預設、您可以查看過去 12 個月內已計費的每月累計突發使用資料。您可以依過去 30 個月的日期範圍查詢。會顯示發票資料的橫條圖、如果使用量尚未計費、您會看到該月的 _待發 。</block>
+  <block id="393673167b0e2f5fe79a42f45c884852" category="admonition">發票預提暴增使用量是根據服務層級的已提交和使用容量、根據每個計費週期計算。</block>
 </blocks>
