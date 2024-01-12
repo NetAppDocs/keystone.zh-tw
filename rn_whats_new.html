@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>此 NetApp Keystone 服務版本的新增功能</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="此 NetApp Keystone 服務版本的新增功能" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/keystone/rn_whats_new.html" />
+	<meta property="og:description" content="NetApp 服務引擎的新功能" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/keystone/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="NetApp 服務引擎的新功能">
+  <meta name="keywords" content=" netapp, keystone, release notes, new features, what"s new,"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/keystone/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/keystone/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-tw/keystone/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/keystone/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-tw/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/keystone/rn_whats_new.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/keystone/rn_whats_new.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/keystone/js/na-search.js'></script><script src='/zh-tw/keystone/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-tw/keystone/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/keystone/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/keystone/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/keystone/js/jszip.min.js'></script><script src='/zh-tw/keystone/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-tw/keystone/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/tw">
+                <image id="ie-header-logo" src="/zh-tw/keystone/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文件</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-tw/keystone/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">繁體中文</span>
+                    <img src="/zh-tw/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-tw/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/keystone/rn_whats_new.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-tw/keystone/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">所有 NetApp</span>
+                    <img src="/zh-tw/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-tw/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支援</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知識庫</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">訓練</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-tw/keystone/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-tw/keystone/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文件</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-tw/keystone/">-->
+      Keystone
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-tw/keystone/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-tw/keystone/search.html" 
+        data-type="widget"
+        data-placeholder="搜尋說明文件"
+        data-no-results-found="找不到 {query} 的結果"
+        data-did-you-mean="搜尋 {suggestion}。"
+        data-no-results-found-did-you-mean="找不到 {query} 的結果。您的意思是 {suggestion} 嗎？"
+        data-results-found="找到 {hitCount} 個結果"
+        data-error-message="發生錯誤。請再試一次。"
+        data-error-reset="重設搜尋"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp Keystone 服務"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/keystone/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> NetApp Keystone 服務</div>-->
+         NetApp Keystone 服務
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="服務條款與說明"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_service_terms_and_description_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsosm_service_terms_and_description_overview.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 服務條款與說明</div>-->
+         服務條款與說明
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="服務容量定義"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_keystone_service_capacity_definitions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_keystone_service_capacity_definitions.html">
+        服務容量定義
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone 中的服務層級"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_performance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_performance.html">
+        Keystone 中的服務層級
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="服務層級指標與定義"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_service_level_metrics_and_definitions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_service_level_metrics_and_definitions.html">
+        服務層級指標與定義
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone 中的自適應服務品質"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/aqos-kfs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/aqos-kfs.html">
+        Keystone 中的自適應服務品質
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="帳單"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_kfs_billing.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_kfs_billing.html">
+        帳單
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="資料保護"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_data_protection.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_data_protection.html">
+        資料保護
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="分層"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_tiering.html">
+        分層
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="不可退回的磁碟"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_nrd.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_nrd.html">
+        不可退回的磁碟
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="美國公民支援"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_uscs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_uscs.html">
+        美國公民支援
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone與Equinix"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_equinix.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/nkfsosm_equinix.html">
+        Keystone與Equinix
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="營運模式與責任"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsosm_overview.html">
+        營運模式與責任
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="租賃與多租戶共享"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_tenancy_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsosm_tenancy_overview.html">
+        租賃與多租戶共享
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone基礎架構"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_keystone_service_delivery_architecture_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsosm_keystone_service_delivery_architecture_overview.html">
+        Keystone基礎架構
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="站台需求"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_site_requirements.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsosm_site_requirements.html">
+        站台需求
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="營運"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm_netapp_global_services_and_support_center_@gssc@.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsosm_netapp_global_services_and_support_center_@gssc@.html">
+        營運
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone與Active IQ Digital Advisor"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsosm-keystone-and-aiq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsosm-keystone-and-aiq.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Keystone與Active IQ Digital Advisor</div>-->
+         Keystone與Active IQ Digital Advisor
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="檢視Active IQ Digital Advisor 並產生來自於此的報告"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/aiq-keystone-details.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-tw/keystone/aiq-keystone-details.html">
+        檢視Active IQ Digital Advisor 並產生來自於此的報告
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="版本資訊"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 版本資訊</div>-->
+         版本資訊
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增功能"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/rn_whats_new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/rn_whats_new.html">
+        新增功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="修正問題"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/rn_fixed_issues.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/rn_fixed_issues.html">
+        修正問題
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="已知問題"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/rn_known_issues.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/rn_known_issues.html">
+        已知問題
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone 訂閱常見問題集"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsfaq_overview.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/keystone/nkfsfaq_overview.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-tw/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-tw/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Keystone 訂閱常見問題集</div>-->
+         Keystone 訂閱常見問題集
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone 訂閱"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsfaq_keystone_subscription.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsfaq_keystone_subscription.html">
+        Keystone 訂閱
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="服務供應詳細資料"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsfaq_service_offer_details.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsfaq_service_offer_details.html">
+        服務供應詳細資料
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="營運模式"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/nkfsfaq_operating_models.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-tw/keystone/nkfsfaq_operating_models.html">
+        營運模式
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律聲明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/rn_whats_new.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-tw/keystone/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-tw/keystone"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-tw/keystone"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-tw/keystone/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">此 NetApp Keystone 服務版本的新增功能</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-09-14 10:43:16 +0000">09/14/2023</time>
+        
+    
+    
+        <span>貢獻者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-tw/keystone/images/discuss-sm.svg" alt="" class="github-icon" />建議變更</span>
+        <img src="/zh-tw/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-tw/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/keystone.zh-tw/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-tw/keystone/rn_whats_new.html&page-title=此 NetApp Keystone 服務版本的新增功能" class="page-nav-contribute-link" role="button">請求文件變更</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/rn_whats_new.adoc" class="page-nav-contribute-link" role="button">編輯本頁</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >瞭解如何貢獻</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-tw/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-tw/keystone/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-tw/keystone/pdfs/fullsite-sidebar/適用於此產品的文件NetApp_Keystone.pdf" >
+                    <img src="/zh-tw/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>此文件 PDF 的網站</a>
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/keystone/pdfs/sidebar/NetApp_Keystone_服務.pdf" 
+            
+          >
+            <img src="/zh-tw/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            NetApp Keystone 服務
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/keystone/pdfs/sidebar/服務條款與說明.pdf" 
+            
+          >
+            <img src="/zh-tw/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            服務條款與說明
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/keystone/pdfs/sidebar/Keystone與Active_IQ_Digital_Advisor.pdf" 
+            
+          >
+            <img src="/zh-tw/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Keystone與Active IQ Digital Advisor
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/keystone/pdfs/sidebar/版本資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            版本資訊
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-tw/keystone/pdfs/sidebar/Keystone_訂閱常見問題集.pdf" 
+            
+          >
+            <img src="/zh-tw/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Keystone 訂閱常見問題集
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-tw/keystone/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>個別的 PDF 文件集合<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>版本資訊會告知您 NetApp Keystone 訂閱服務中引進的新功能和增強功能、以及已知的限制和修正。</p>
+</div>
+<div class="paragraph">
+<p>不同版本的 NetApp Service Engine 中引進下列功能、以支援 Keystone 訂閱服務所提供的增強功能：</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="netapp-service-engine-2-2-中介紹的功能">NetApp Service Engine 2.2 中介紹的功能</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本的新功能包括全新的儀表板、適用於新的小工具、包括帳單、容量使用率、服務要求和警示。此版本也包含新的帳單和警示管理畫面、以及將訂閱的服務功能表重新命名為 Cloud Services 。</p>
+</div>
+<div class="sect2">
+<h3 id="增強的儀表板檢視">增強的儀表板檢視</h3>
+<div class="paragraph">
+<p>NetApp 服務引擎儀表板經過重新設計、包含下列新元件：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* 容量使用率 * 、用於檢視您所訂閱服務的已用容量。</p>
+</li>
+<li>
+<p>* 每月費用（帳單） * 、用於檢視您所有訂閱的每月總費用。</p>
+</li>
+<li>
+<p>* 警示 * ：檢視環境中最新警示的摘要。</p>
+</li>
+<li>
+<p>* 服務要求 * 、用於檢視環境中最近產生的服務要求清單。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="新的帳單畫面">新的帳單畫面</h3>
+<div class="paragraph">
+<p>新增了一個 * 帳單 * 畫面、可輕鬆存取及計算您的歷史帳單資料。此畫面提供與您所有訂閱服務相關的每月費用全方位檢視。</p>
+</div>
+<div class="paragraph">
+<p>請從儀表板上的 * 每月費用 * 小工具瀏覽此畫面、或從 * 管理 &gt; 帳單 * 檢視每月訂閱層級的費用細分、以查看您所有訂閱服務的費用。計費資料是根據您的承諾和突發容量使用量而定、可在前幾個月內供您使用。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="新警示畫面">新警示畫面</h3>
+<div class="paragraph">
+<p>此版本中引入了一個新的 * 警示 * 畫面、其中列出所有系統產生和使用者產生的警示。此畫面也可讓您針對環境相關的重大事件建立自訂警示訊息、並將其傳達給其他使用者。他們可以視需要檢視和關閉警示。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="增強的使用者介面">增強的使用者介面</h3>
+<div class="paragraph">
+<p>NetApp Service Engine 使用者介面已進行下列增強功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>左側導覽窗格上的 * 儀表板 * 功能表提供直覺式導覽點、可存取儀表板。</p>
+</li>
+<li>
+<p>左導覽窗格上的 * 已訂閱服務 * 功能表已重新命名為 * Cloud Services* 。+ + +</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="netapp-service-engine-2-1-中介紹的功能">NetApp Service Engine 2.1 中介紹的功能</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本的新功能包括在 Keystone 環境中支援多租戶、以及分層功能、可協助將非使用中資料移至成本較低的本機或雲端層。</p>
+</div>
+<div class="sect2">
+<h3 id="為服務供應商介紹-keystone-訂閱服務">為服務供應商介紹 Keystone 訂閱服務</h3>
+<div class="paragraph">
+<p>NetApp 服務引擎現在支援服務供應商管理多租戶環境。您可以執行資源配置、報告、帳單及管理擁有自己訂閱的客戶等功能。為了支援此功能、我們進行了下列增強功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* 儀表板： * 儀表板會針對特定訂閱編號顯示儲存訂閱資訊、例如服務層級、每個服務層級的容量使用量、以及附加資料保護服務。身為服務供應商、您可以檢視 NetApp Keystone 訂閱和租戶訂閱的詳細資料。身為租戶管理員、您可以檢視您租戶的所有租戶訂閱詳細資料。</p>
+</li>
+<li>
+<p>* 報告： * 您可以針對 NetApp Keystone 訂閱使用量及租戶使用量、建立容量和效能報告。身為合作夥伴管理員、您可以從 * 報告 * &gt; * 基礎概念使用 * 檢視訂閱使用量的容量報告。身為合作夥伴管理員、您可以從 * Reports &gt; * Tenant usage* / * Capacity usage* 檢視特定租戶的容量使用量報告。身為租戶管理員、您可以從 * 報告 * &gt; * 租戶使用情況 * 檢視租戶使用情況報告。</p>
+</li>
+<li>
+<p>* 訂閱： * 身為合作夥伴管理員、您可以分別從 * 訂閱 * &gt; * 基礎概念訂閱 * 和 * 訂閱 * &gt; * 租戶訂閱 * 檢視及更新訂閱與租戶訂閱。身為租戶管理員、您只能檢視租戶訂閱。</p>
+</li>
+<li>
+<p>* 使用者： * 根據您的角色、您可以根據需求、將權限指派給租賃中的新使用者或現有使用者。角色可以是 NetApp 管理員、具有唯讀權限的 NetApp 管理員、合作夥伴管理員或租戶管理員。身為合作夥伴管理員、您只能將合作夥伴管理員或租戶管理員角色指派給新使用者。租戶管理員使用者只能將租戶管理員角色指派給其他使用者。</p>
+</li>
+<li>
+<p>* 網路功能表： * 身為合作夥伴管理員、您可以檢視為租賃所定義的網路。您也可以從 * 網路 * &gt; * 子網路 * 建立子租戶和區域的子網路。這是終端客戶或子租戶在配置儲存設備時所需的。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="分層">分層</h3>
+<div class="paragraph">
+<p>NetApp Keystone Keystone 服務現在包含運用 NetApp FabricPool 技術的分層功能。它可識別較不常用的資料、並將其分層至由 NetApp 擁有、部署及管理的內部部署冷儲存設備。您可以訂閱極致分層或優質分層服務層級、以選擇分層。</p>
+</div>
+<div class="paragraph">
+<p>下列 API 已經過修改、納入新分層服務層級的新屬性值：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>檔案服務 API</p>
+</li>
+<li>
+<p>區塊儲存區 API</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如需詳細資訊、請參閱下列連結：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="nkfsosm_tiering.html">"分層"</a></p>
+</li>
+<li>
+<p><a href="nkfsosm_performance.html">"服務層級"</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>｛ sp ｝ + ｛ sp ｝ + ｛ sp ｝</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="netapp-service-engine-2-0-1-中介紹的功能">NetApp Service Engine 2.0.1 中介紹的功能</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本的新功能包括：</p>
+</div>
+<div class="sect2">
+<h3 id="支援-google-cloud-platform-的-cloud-volumes-services">支援 Google Cloud Platform 的 Cloud Volumes Services</h3>
+<div class="paragraph">
+<p>NetApp Service Engine 現在除了現有 Azure NetApp Files 的支援功能之外、還能支援 Cloud Volumes Services for Google Cloud Platform （ GCP ）。您現在可以從 NetApp 服務引擎管理訂閱的服務、以及配置和修改 Google Cloud Volumes 。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="註">
+</td>
+<td class="content">
+Cloud Volumes 服務的訂閱是在 NetApp 服務引擎之外進行管理。相關認證資料會提供給 NetApp 服務引擎、以便連線至雲端服務。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="能夠管理-netapp-服務引擎以外的資源配置">能夠管理 NetApp 服務引擎以外的資源配置</h3>
+<div class="paragraph">
+<p>這些磁碟區（磁碟和檔案共用）已經存在於客戶環境中、屬於在 NetApp Service Engine 中設定的儲存 VM 、現在可以在您的 NetApp Keystone 訂閱中檢視和管理。NetApp 服務引擎以外配置的磁碟區現在會以適當的狀態代碼列在「 * 共享區 * 」和「 * 磁碟 * 」頁面上。背景程序會定期執行、並在您的 NetApp 服務引擎執行個體中匯入外部工作負載。</p>
+</div>
+<div class="paragraph">
+<p>匯入的磁碟和檔案共用可能與 NetApp 服務引擎上現有的磁碟和檔案共用不相同。匯入之後、這些磁碟和檔案共用會分類為「非標準」狀態。您可以從 * 支援 &gt; 服務要求 &gt; 新服務要求 * 提出服務要求、以便透過 NetApp 服務引擎入口網站進行標準化與管理。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="與-netapp-服務引擎整合-snapcenter">與 NetApp 服務引擎整合 SnapCenter</h3>
+<div class="paragraph">
+<p>作爲與 NetApp 服務引擎進行完整性整合的一部分 SnapCenter 、您現在可以從 SnapCenter NetApp 服務引擎執行個體以外的您的支援環境所建立的 Snapshot 複製磁碟和檔案共用。從 NetApp 服務引擎入口網站上的現有 Snapshot 複製檔案共用區或磁碟時、會列出這些 Snapshot 供您選擇。擷取程序會在背景中定期執行、以便在 NetApp 服務引擎執行個體中匯入 Snapshot 。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="維護備份的新畫面">維護備份的新畫面</h3>
+<div class="paragraph">
+<p>全新的 * 備份 * 畫面可讓您檢視及管理環境中所建立之磁碟和檔案共用的備份。您可以編輯備份原則、中斷與來源磁碟區的備份關係、以及刪除具有所有恢復點的備份磁碟區。此功能可保留備份（做為孤立備份）、即使來源磁碟區已刪除、也可於稍後還原。若要從特定的還原點還原檔案共用區或磁碟、您可以從 * 支援 &gt; 服務要求 &gt; 新服務要求 * 提出服務要求。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="限制使用者存取-cifs-共用區的資源">限制使用者存取 CIFS 共用區的資源</h3>
+<div class="paragraph">
+<p>您現在可以指定存取控制清單（ ACL ）來限制 CIFS （ SMB ）或多重傳輸協定共用區的使用者存取。您可以根據 Active Directory （ AD ）設定來指定 Windows 使用者或群組、以新增至 ACL 。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="netapp-service-engine-2-0-中介紹的功能">NetApp Service Engine 2.0 中介紹的功能</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此版本的新功能包括：</p>
+</div>
+<div class="sect2">
+<h3 id="支援-metrocluster">支援 MetroCluster</h3>
+<div class="paragraph">
+<p>NetApp Service Engine 支援以 MetroCluster 各種功能組態設定的站台。支援不中斷儲存的同步鏡射功能、可提供恢復點目標（ RPO ） 0 或恢復時間目標（ RTO ） 0 的資料保護功能。 MetroCluster ONTAP支援可轉譯為 NetApp 服務引擎內的同步災難恢復功能。 MetroCluster每一邊 MetroCluster 的一個實例都會登錄為個別的區域、每個區域都有自己的訂閱、其中包含資料保護進階費率計畫。在啟用 MetroCluster 的區域中建立的共用或磁碟、會同步複寫到第二個區域。複寫區域的使用量遵循適用於已配置儲存設備之區域的資料保護進階速率計畫。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-volumes-服務支援">Cloud Volumes 服務支援</h3>
+<div class="paragraph">
+<p>NetApp 服務引擎現在有能力支援 Cloud Volumes Services 。它現在可以支援 Azure NetApp Files 功能不只是功能不一。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="註">
+</td>
+<td class="content">
+Cloud Volumes 服務的訂閱是在 NetApp 服務引擎之外進行管理。相關認證資料會提供給 NetApp 服務引擎、以便連線至雲端服務。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>NetApp 服務引擎支援：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>配置或修改 Cloud Volumes Services 磁碟區（包括擷取快照的能力）</p>
+</li>
+<li>
+<p>將資料備份到 Cloud Volumes Services 區域</p>
+</li>
+<li>
+<p>檢視 NSE 庫存中的 Cloud Volumes Services Volume</p>
+</li>
+<li>
+<p>檢視 Cloud Volumes Services 使用量。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="主機群組">主機群組</h3>
+<div class="paragraph">
+<p>NetApp 服務引擎支援使用主機群組。主機群組是一組 FC 傳輸協定主機全球連接埠名稱（ WWPN ）或 iSCSI 主機節點名稱（ IQN ）。您可以定義主機群組並將其對應至磁碟、以控制哪些啟動器可以存取磁碟。主機群組取代了為每個磁碟指定個別啟動器的需求、並允許下列項目：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>將另一個磁碟顯示給同一組啟動器</p>
+</li>
+<li>
+<p>在多個磁碟上更新啟動器集</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="突發使用量與通知">突發使用量與通知</h3>
+<div class="paragraph">
+<p>部分 NetApp 服務引擎支援的儲存訂閱可讓客戶使用超出其承諾容量的突發容量、此容量會在訂閱的承諾容量之外另行收費。使用者必須瞭解何時該使用或使用突發容量來控制使用量和成本。</p>
+</div>
+<div class="sect3">
+<h4 id="建議的變更會導致使用突發容量時發出通知">建議的變更會導致使用突發容量時發出通知</h4>
+<div class="paragraph">
+<p>顯示建議資源配置變更的通知、會導致訂閱量暴增。使用者可以選擇繼續、因為他們知道訂閱將會爆發、或選擇不繼續執行此動作。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="訂閱量暴增時發出通知">訂閱量暴增時發出通知</h4>
+<div class="paragraph">
+<p>當訂閱量暴增時、會顯示通知橫幅。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="容量報告會顯示尖峰使用量">容量報告會顯示尖峰使用量</h4>
+<div class="paragraph">
+<p>容量報告、顯示訂閱量暴增的天數和使用的突發容量量。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="效能報告">效能報告</h3>
+<div class="paragraph">
+<p>NetApp Service Engine 網路介面中的新效能報告會顯示個別磁碟或共用的效能資訊、並以下列效能評量為準：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IOPS/TiB （每秒每個 TB 的輸入 / 輸出作業）：儲存設備上每秒的輸入和輸出作業（ IOPS ）發生率。</p>
+</li>
+<li>
+<p>處理量（以 Mbps 為單位）：往返儲存媒體的資料傳輸率（以每秒 MB 為單位）。</p>
+</li>
+<li>
+<p>延遲（毫秒）：從磁碟或共用區讀取和寫入的平均時間（毫秒）。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="訂購管理">訂購管理</h3>
+<div class="paragraph">
+<p>訂閱管理功能已增強。您現在可以：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>申請資料保護附加元件、或申請訂閱或服務的額外資料保護附加元件容量</p>
+</li>
+<li>
+<p>檢視資料保護使用容量</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="帳單強化">帳單強化</h3>
+<div class="paragraph">
+<p>帳單現在支援測量 ONTAP 及計費功能、以利使用 Snapshot （檔案和區塊）儲存設備。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="隱藏的-cifs-共用區">隱藏的 CIFS 共用區</h3>
+<div class="paragraph">
+<p>NetApp 服務引擎支援建立隱藏的 CIFS 共用區。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-tw/keystone/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-tw/keystone/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本頁</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用條款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隱私權政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">傳送有關本網頁的意見反應</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/keystone/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/keystone/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/keystone/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/keystone/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-tw/keystone/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
